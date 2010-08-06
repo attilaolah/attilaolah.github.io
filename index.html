@@ -3,7 +3,7 @@ layout: front-page
 title: "{Attila Ol&aacute;h}'s weblog"
 ---
 
-{% for post in site.posts %}
+{% for post in site.posts limit:8 %}
   <div class="post-preview">
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
     <blockquote>
