@@ -24,14 +24,24 @@ a:hover, a:active {
 ul > li {
   list-style-type: square;
 }
-cite, code, tt {
+.clear {
+  clear: both;
+}
+
+/* Code blocks */
+pre, cite, code, tt {
   background: url(/media/images/bg-box.png) repeat scroll left top transparent;
   border-bottom: 1px solid #ddd;
   color: #333;
   font: 0.95em 'Consolas','Deja Vu Sans Mono','Bitstream Vera Sans Mono',monospace;
+  padding: 0.5em;
+  cite, code, tt {
+      background: transparent;
+      border-bottom: none;
+  }
 }
-.clear {
-  clear: both;
+cite, code, tt {
+  padding: 1px 2px;
 }
 
 /* Page Structure */
@@ -87,6 +97,20 @@ body {
           h2 {
             font-size: 1.25em;
           }
+            .date {
+              background: url(/media/images/icons/date.png) no-repeat scroll left top transparent;
+              display: inline-block;
+              height: 16px;
+              margin: 0 -2px -4px 2px;
+              width: 16px;
+            }
+            .tags {
+              background: url(/media/images/icons/tag.png) no-repeat scroll left top transparent;
+              display: inline-block;
+              height: 16px;
+              margin: 0 -2px -4px 2px;
+              width: 16px;
+            }
         }
       }
     }

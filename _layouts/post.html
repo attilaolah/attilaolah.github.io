@@ -4,7 +4,7 @@ layout: base
 
 <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 <blockquote>
-  Posted on <tt>{{ page.date | date_to_string }}</tt>; tags: {% for tag in page.tags %}<tt>{{ tag }}</tt>{% if forloop.last %};{% else %}, {% endif %}{% endfor %}
+  <span class="date"></span> posted on: <tt>{{ page.date | date_to_string }}</tt>; <span class="tags"></span> tags: {% for tag in page.tags %}<tt>{{ tag }}</tt>{% if forloop.last %};{% else %}, {% endif %}{% endfor %}
 </blockquote>
 
 {{ content }}

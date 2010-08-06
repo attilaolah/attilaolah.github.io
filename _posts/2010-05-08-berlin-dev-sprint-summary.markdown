@@ -5,13 +5,7 @@ tags:
  - Germany
  - Berlin
  - web programming
-summary: "I've spent the last two weeks in Berlin, Germany, working on two
-projects: an ecommerce web application and a Facebook application. The former
-is actually an ongoing project, involving many interesting technologies, such
-as working with the eBay API, extending the Django admin, geocoding (and
-reverse geocoding), CMS, domain and subdomain management, etc. The other
-project is a smaller one that also emphatizes on geological location of the
-users."
+summary: A short summary of the last two weeks spent in Berlin, Germany.
 ---
 
 Summary
