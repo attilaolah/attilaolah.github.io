@@ -4,7 +4,7 @@ title: Framework-independent social networking middleware
 tags:
  - Python
  - WSGI
- - social networking
+ - social networs
 summary: "<tt>ao.social</tt> is a social networking middleware that aims to provide
 a generic interface for multiple social networking web services."
 ---
