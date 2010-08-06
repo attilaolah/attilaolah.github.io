@@ -8,9 +8,6 @@ summary: "I'm writing this down here so I don't have to look for it every time
 I compile my kernel."
 ---
 
-Kernel Configuration
---------------------
-
 I use ``genkernel`` to compile the kernel:
 
     $ sudo genkernel --clean --color --install --loglevel=5 --mrproper \
