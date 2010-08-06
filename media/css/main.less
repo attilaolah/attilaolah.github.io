@@ -1,31 +1,132 @@
+/* Common Styles */
+
+html,
 body {
-  color: red;
+  border: none;
+  color: #000;
+  font: 14px/150% 'Lucida Grande','Lucida Sans Unicode','Geneva','Verdana',sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
-  > .header {
-    background: url(/media/images/body-pattern.png) repeat scroll left top #7ce;
-    padding: 8px 0 0;
+}
+
+/* Common color palette */
+h1, h2, h3, h4, h5, h6, a, a:link, a:visited {
+  color: #c30;
+  > a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+a:hover, a:active {
+  color: #f30;
+}
+ul > li {
+  list-style-type: square;
+}
+cite, code, tt {
+  background: url(/media/images/bg-box.png) repeat scroll left top transparent;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  font: 0.95em 'Consolas','Deja Vu Sans Mono','Bitstream Vera Sans Mono',monospace;
+}
+.clear {
+  clear: both;
+}
+
+/* Page Structure */
+body {
+  > .wrapper {
+    min-height: 100%;
     position: relative;
-    > .title {
-      color: white;
-      font: 60px Georgia,Utopia,'Palatino Linotype',Palatino,serif;
-      margin: 0 auto;
-      padding: 0.7em 0 0.3em;
-      text-align: left;
-      text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
-      width: 1000px;
+    > .header {
+      background: url(/media/images/body-pattern.png) repeat scroll left top #7ce;
+      padding: 8px 0 0;
+      position: relative;
+      > .title {
+        color: white;
+        font: 60px Georgia,Utopia,'Palatino Linotype',Palatino,serif;
+        margin: 0 auto;
+        padding: 0.7em 0 0.3em;
+        text-align: left;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+        width: 1000px;
+        a {
+          color: inherit;
+          text-decoration: inherit;
+        }
+      }
+      > .flower {
+        background: url(/media/images/bg-flower.png) no-repeat scroll left bottom transparent;
+        bottom: 0px;
+        height: 245px;
+        position: absolute;
+        right: 0px;
+        width: 280px;
+      }
+      > .grass {
+        background: url(/media/images/bg-grass.png) repeat-x scroll center bottom transparent;
+        height: 100px;
+      }
     }
-    > .flower {
-      background: url(/media/images/bg-flower.png) no-repeat scroll left bottom transparent;
-      bottom: 0px;
-      height: 245px;
+    > .container {
+      background: url(/media/images/body-pattern.png) repeat scroll left top #6b3;
+      padding: 0 10px 120px 10px;
+      > .content {
+        margin: 0 auto;
+        width: 1000px;
+        > .main {
+          background: url(/media/images/bg-box.png) repeat scroll left top transparent;
+          margin: 0 auto;
+          padding: 0.5em 20px 20px;
+          float: left;
+          width: 720px;
+          h1 {
+            font-size: 1.5em;
+          }
+          h2 {
+            font-size: 1.25em;
+          }
+        }
+      }
+    }
+    .footer {
+      background: url(/media/images/footer-pattern.png) repeat scroll left top #310;
+      bottom: 0;
+      color: #fff;
+      font: 13.34px Arial, Helvetica, sans-serif;
+      padding: 5px 0;
       position: absolute;
-      right: 0px;
-      width: 280px;
-    }
-    > .grass {
-      background: url(/media/images/bg-grass.png) repeat-x scroll center bottom transparent;
-      height: 100px;
+      text-align: center;
+      width: 100%;
+      a {
+        color: #fda;
+        text-decoration: none;
+      }
+      a:hover,
+      a:active {
+        color: #ffc;
+        text-decoration: underline;
+      }
+      ul {
+        border-bottom: 1px solid #310;
+        padding: 6px 0 10px;
+        margin: 0 auto 5px;
+        width: 810px;
+      li {
+        border-right: 1px solid #310;
+        list-style-type: none;
+        display: inline;
+        padding: 0 10px;
+        margin: 0 -4px 0 0;
+      }
+      li:first-child {
+        border-left: none;
+      }
+      li:last-child {
+        border-right: none;
+      }
+      }
     }
   }
 }

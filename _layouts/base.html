@@ -7,11 +7,31 @@
     <script src="/media/js/less-min.js"></script>
   </head>
   <body>
-    <div class="header">
-      <h1 class="title">{Attila Ol&aacute;h}'s weblog</h1>
-      <div class="flower"></div>
-      <div class="grass"></div>
+    <div class="wrapper">
+      <div class="header">
+        <h1 class="title"><a href="/">{Attila Ol&aacute;h}'s weblog</a></h1>
+        <div class="flower"></div>
+        <div class="grass"></div>
+      </div>
+      <div class="container">
+        <div class="content">
+          <div class="main">
+            {{ content }}
+          </div>
+          <div class="sidebar"></div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="footer">
+        <ul>
+          <li>&copy; 2010. Licensed under a <a href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons Attribution 3.0 Unported License</a>.</li>
+          <li><a href="/">home</a></li>
+          <li><a href="http://github.com/aatiis">me @ github</a></li>
+          <li><a href="mailto:attilaolah@gmail.com">contact</a></li>
+        </ul>
+        Pages created using <a href="http://github.com/mojombo/jekyll">jekyll</a>. Styled using <a href="http://github.com/cloudhead/less.js">less.js</a>. Hosted by <a href="http://github.com/">GitHub</a>.
+      </div>
     </div>
-    {{ content }}
   </body>
 </html>
