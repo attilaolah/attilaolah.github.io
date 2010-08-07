@@ -8,7 +8,7 @@
 (function () {
     // API KEYS
     var api_key_fb = '108684282519237',
-        api_key_ga = 'UA-13035482-2';
+        api_key_ga = 'UA-13035482-3';
     // Set up ASYNC load
     var asynchronous_javascript_loader = (function () {
         // Private members
