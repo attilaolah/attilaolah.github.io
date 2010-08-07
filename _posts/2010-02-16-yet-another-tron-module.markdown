@@ -3,7 +3,7 @@ layout: post
 title: Yet another tron module for the Google AI Challenge
 tags:
  - Python
- - game
+ - games
 summary: <tt>ao.tron</tt> is a Python module for the Google AI Challenge.
 ---
 

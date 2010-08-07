@@ -14,7 +14,7 @@ I use ``genkernel`` to compile the kernel:
         --menuconfig all
 
 To have all of my hardware working, I change the following things (``+`` means
-enable, ``-`` menas disable):
+enable, ``-`` means disable):
 
     * General setup
       + Local version - append to kernel release: '-aiur-r1'

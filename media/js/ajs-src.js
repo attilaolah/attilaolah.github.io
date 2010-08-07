@@ -6,6 +6,9 @@
 
 // Asynchronous JavaScript loader & startup scripts for aatiis.me
 (function () {
+    // API KEYS
+    var api_key_fb = '108684282519237',
+        api_key_ga = 'UA-13035482-2';
     // Set up ASYNC load
     var asynchronous_javascript_loader = (function () {
         // Private members
@@ -23,7 +26,7 @@
     // Set up Facebook Async init
     var facebook_async_init = function () { 
         FB.init({
-            'appId': '108684282519237',
+            'appId': api_key_fb,
             'status': true,
             'cookie': true,
             'xfbml': true
@@ -37,12 +40,22 @@
         div.id = 'fb-root';
         document.getElementsByTagName('body')[0].appendChild(div);
     };
+    var load_external_js = function () {
+        // Call the other script files from here
+        asynchronous_javascript_loader('http://connect.facebook.net/en_US/all.js');
+        asynchronous_javascript_loader('http://www.google-analytics.com/ga.js');
+    };
     var init_main = function () {
         // List init functions here
         init_facebook_div();
+        load_external_js();
     };
     // Export the window onload event listener
     window['onload'] = init_main;
-    // Call the other script files from here
-    asynchronous_javascript_loader('http://connect.facebook.net/en_US/all.js');
+    // Initialize and export Google Analytics queue
+    var google_analitics_gaq = window['_gaq'] || [
+        ['_setAccount', api_key_ga],
+        ['_trackPageview']
+    ];
+    window['_gaq'] = google_analitics_gaq;
 })();
