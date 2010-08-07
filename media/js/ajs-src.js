@@ -123,6 +123,7 @@
     };
     var load_external_js = function () {
         // Call the other script files from here
+        asynchronous_javascript_loader('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
         asynchronous_javascript_loader('http://connect.facebook.net/en_US/all.js');
         asynchronous_javascript_loader('http://www.google-analytics.com/ga.js');
     };
@@ -132,4 +133,16 @@
         load_external_js();
     };
     ready(init_main);
+
+    // Wait for jQuery to load
+    var wait_for_jquery = function (fn) {
+        while ((typeof($) === 'undefined') || !($() && $().jquery)) {
+            setTimeout(function () { wait_for_jquery(fn); }, 10);
+            return;
+        }
+        fn();
+    };
+    //wait_for_jquery(function () {
+    //    alert($);
+    //});
 })();
