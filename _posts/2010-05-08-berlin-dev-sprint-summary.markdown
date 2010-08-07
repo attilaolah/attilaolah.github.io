@@ -4,7 +4,7 @@ title: Summary of this spring's dev sprint in Berlin
 tags:
  - Germany
  - Berlin
- - web programming
+ - programming
 summary: A short summary of the last two weeks spent in Berlin, Germany.
 ---
 
