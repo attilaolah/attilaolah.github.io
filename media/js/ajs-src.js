@@ -126,6 +126,7 @@
         asynchronous_javascript_loader('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
         asynchronous_javascript_loader('http://connect.facebook.net/en_US/all.js');
         asynchronous_javascript_loader('http://www.google-analytics.com/ga.js');
+        asynchronous_javascript_loader('/media/js/data-src.js');
     };
     var init_main = function () {
         // List init functions here
@@ -134,15 +135,4 @@
     };
     ready(init_main);
 
-    // Wait for jQuery to load
-    var wait_for_jquery = function (fn) {
-        while ((typeof($) === 'undefined') || !($() && $().jquery)) {
-            setTimeout(function () { wait_for_jquery(fn); }, 10);
-            return;
-        }
-        fn();
-    };
-    //wait_for_jquery(function () {
-    //    alert($);
-    //});
 })();

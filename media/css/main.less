@@ -27,6 +27,9 @@ ul > li {
 .clear {
   clear: both;
 }
+.hidden {
+  display: none;
+}
 
 /* Code blocks */
 pre, cite, code, tt {
@@ -97,27 +100,75 @@ body {
           h2 {
             font-size: 1.25em;
           }
-            .date {
-              background: url(/media/images/icons/date.png) no-repeat scroll left top transparent;
-              display: inline-block;
-              height: 16px;
-              margin: 0 -2px -4px 2px;
-              width: 16px;
+          .date {
+            background: url(/media/images/skin/icons/date.png) no-repeat scroll left top transparent;
+            display: inline-block;
+            height: 16px;
+            margin: 0 -2px -4px 2px;
+            width: 16px;
+          }
+          .tags {
+            background: url(/media/images/skin/icons/tag.png) no-repeat scroll left top transparent;
+            display: inline-block;
+            height: 16px;
+            margin: 0 -2px -4px 2px;
+            width: 16px;
+          }
+          .like {
+            display: inline-block;
+            position: relative;
+            .fb_edge_widget_with_comment {
+              top: 3px;
             }
-            .tags {
-              background: url(/media/images/icons/tag.png) no-repeat scroll left top transparent;
-              display: inline-block;
-              height: 16px;
-              margin: 0 -2px -4px 2px;
-              width: 16px;
+          }
+        }
+        > .sidebar {
+          float: right;
+          width: 230px;
+          > .archives {
+            background: url(/media/images/bg-box.png) repeat scroll left top transparent;
+            > .loader {
+              background: url(/media/images/skin/ajax-loader-green.gif) no-repeat scroll 6px 8px transparent;
+              padding: 2px 2px 4px 26px;
+
             }
-            .like {
-              display: inline-block;
-              position: relative;
-              .fb_edge_widget_with_comment {
-                top: 3px;
+            ul {
+              margin: 0;
+              padding: 0 0 0 15px;
+              li {
+                list-style-type: none;
+                margin: 0 0 0 -15px;
+                padding: 0 0 0 15px;
+                span {
+                  color: #c30;
+                  cursor: pointer;
+                }
               }
             }
+            > ul {
+              font-size: 12px;
+              margin: 0 0 0 15px;
+              padding: 5px 0 5px 5px;
+              > li {
+                background: url(/media/images/skin/icons/archives-folder.png) no-repeat scroll left 5px transparent;
+                > ul {
+                  > li {
+                    background: url(/media/images/skin/icons/archives-folder.png) no-repeat scroll left 5px transparent;
+                    > ul {
+                      > li {
+                        cursor: normal;
+                        background: url(/media/images/skin/icons/archives-file.png) no-repeat scroll left 5px transparent;
+                        margin: 0 0 0 -17px;
+                        a {
+                          text-decoration: none;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
