@@ -5,7 +5,7 @@ tags:
  - Python
  - WSGI
  - Django
-summary: "<tt>ao.shorturl</tt> is a library for integrating short URLs to a web
+summary: "<code>ao.shorturl</code> is a library for integrating short URLs to a web
 application."
 ---
 

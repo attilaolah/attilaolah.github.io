@@ -4,8 +4,8 @@ layout: base
 
 <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 <blockquote>
-  <span class="date"></span> posted on: <tt>{{ page.date | date_to_string }}</tt>;
-  <span class="tags"></span> tags: {% for tag in page.tags %}<tt>{{ tag }}</tt>{% if forloop.last %};{% else %}, {% endif %}{% endfor %}
+  <span class="date"></span> posted on: <code>{{ page.date | date_to_string }}</code>;
+  <span class="tags"></span> tags: {% for tag in page.tags %}<code>{{ tag }}</code>{% if forloop.last %};{% else %}, {% endif %}{% endfor %}
   <span class="like">
     <fb:like href="http://aatiis.me{{ page.url }}" layout="button_count" show_faces="false" width="80" font="lucida grande"></fb:like>
   </span>
