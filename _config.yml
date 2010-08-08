@@ -9,3 +9,6 @@ pygments: true
 
 # Produce an index for related posts
 lsi: true
+
+# Exclude some files:
+exclude: CNAME, README.rst
