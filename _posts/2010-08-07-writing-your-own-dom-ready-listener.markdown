@@ -75,13 +75,14 @@ The source code
                 // If IE event model is used
                 } else if (document.attachEvent) {
 
-                    // ensure firing before onload; maybe late but safe also for iframes
+                    // Ensure firing before onload; maybe late but safe also for iframes
                     document.attachEvent("onreadystatechange", idempotent_fn);
                     
                     // A fallback to window.onload, that will always work
                     window.attachEvent("onload", idempotent_fn);
 
-                    // If IE and not a frame: continually check to see if the document is ready
+                    // If IE and not a frame:
+                    // continually check to see if the document is ready
                     var toplevel = false;
 
                     try {

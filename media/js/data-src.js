@@ -7,9 +7,9 @@
 (function () {
 
     // Wait for jQuery to load
-    var wait_for_jquery = function (fn) {
-        while ((typeof($) !== 'function') || !($() && $()['jquery'])) {
-            setTimeout(function () { wait_for_jquery(fn); }, 10);
+    var wait_for_jquery_treeview = function (fn) {
+        while ((typeof($) !== 'function') || !($() && $()['jquery'] && $()['treeview'])) {
+            setTimeout(function () { wait_for_jquery_treeview(fn); }, 10);
             return;
         }
         fn();
@@ -50,14 +50,14 @@
 
     var process_json_data = function (data) {
         var data = eval('(' + data + ')'),
-            ul = $('<ul/>', { 'class': 'j_archive_list' });
+            ul = $('<ul/>', { 'class': 'j_archive_list treeview' });
 
         for (var i in data) if (data.hasOwnProperty(i)) {
             // Append each year to the list
             var year = data[i].date.slice(26, 30);
             if (!(ul.children('.j_year_' + year)[0])) {
-                ul.append($('<li/>', { 'class': 'year j_year_' + year })
-                  .append($('<span/>').text(year))
+                ul.append($('<li/>', { 'class': 'j_year_' + year })
+                  .append($('<span/>', { 'class': 'folder' }).text(year))
                 );
             }
             // Append each month to the list
@@ -68,8 +68,8 @@
                 }
                 ul.children('.j_year_' + year)
                   .find('.j_months')
-                  .append($('<li/>', { 'class': 'month j_month_' + month.toLowerCase() })
-                    .append($('<span/>').text(month))
+                  .append($('<li/>', { 'class': 'j_month_' + month.toLowerCase() })
+                    .append($('<span/>', { 'class': 'folder' }).text(month))
                     .append($('<ul/>', { 'class': 'j_posts' }))
                   );
             }
@@ -79,20 +79,21 @@
               .find('.j_month_' + month.toLowerCase())
               .find('.j_posts')
               .append($('<li/>', { 'class': 'post j_post' })
-                .append($('<a/>', { href: data[i].url }).text(data[i].title))
+                .append($('<a/>', { href: data[i].url, 'class': 'file' }).text(data[i].title))
               );
         }
-        // Set up mouse toggle events
-        ul.find('span').click(function (event) {
-            $(event.target).siblings('ul').slideToggle('fast');
-        });
-        // Toggle everything but the first year & month
+        // Set up the tree view
         $('.j_archives').append(ul).find('.j_loader').remove();
-        $('.j_months').not(':first').add($('.j_posts').not(':first')).toggle();
+        ul.treeview({
+            animated: 'fast',
+            collapsed: true
+        });
+        // Expand the first month
+        $('.j_archive_list span:first').click().parent().find('ul li:first span').click()
     };
 
     // Load archives when jQuery is ready
-    wait_for_jquery(function () {
+    wait_for_jquery_treeview(function () {
         $(load_json_data);
     });
 

@@ -155,42 +155,6 @@ body {
               padding: 3px 2px 3px 30px;
 
             }
-            ul {
-              margin: 0;
-              padding: 0 0 0 15px;
-              li {
-                list-style-type: none;
-                margin: 0 0 0 -15px;
-                padding: 0 0 0 15px;
-                span {
-                  color: #c30;
-                  cursor: pointer;
-                }
-              }
-            }
-            > ul {
-              font-size: 12px;
-              margin: 0 2px 0 20px;
-              padding: 5px 0 5px 5px;
-              > li {
-                background: url(/media/images/skin/icons/archives-folder.png) no-repeat scroll left 5px transparent;
-                > ul {
-                  > li {
-                    background: url(/media/images/skin/icons/archives-folder.png) no-repeat scroll left 5px transparent;
-                    > ul {
-                      > li {
-                        cursor: normal;
-                        background: url(/media/images/skin/icons/archives-file.png) no-repeat scroll left 5px transparent;
-                        margin: 0 0 0 -17px;
-                        a {
-                          text-decoration: none;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
           }
           > .blogs {
             > .header {
@@ -205,6 +169,9 @@ body {
                 list-style-type: none;
                 margin: 0 0 5px -10px;
                 padding: 0 0 0 16px;
+                a {
+                  text-decoration: none;
+                }
               }
             }
           }
@@ -264,4 +231,54 @@ body {
       }
     }
   }
+}
+
+/* XXX: boilerplate */
+.treeview {
+  font-size: 12px;
+  line-height: 100%;
+  margin: 0;
+  padding: 5px 5px 10px 10px;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    background: url(/media/images/skin/treeview/treeview-default-line.gif) 0 0 no-repeat;
+    margin: 0;
+    padding: 3px 0 2px 16px;
+    a { text-decoration: none; }
+    .folder, .file { padding: 0 0 2px 18px; display: inline-block; }
+    .folder { background: url(/media/images/skin/treeview/folder.gif) 0 -1px no-repeat; }
+    .file { background: url(/media/images/skin/treeview/file.gif) 0 1px no-repeat; line-height: 125%; }
+    li.post + li.post {
+      margin-top: -5px;
+    }
+    li.post.last {
+      padding-bottom: 0;
+      a, span {
+        padding-bottom: 0;
+      }
+    }
+  }
+  li.expandable .folder { background: url(/media/images/skin/treeview/folder-closed.gif) 0 -1px no-repeat; }
+  li.collapsable, li.expandable { background-position: 0 -176px; }
+  li.last { background-position: 0 -1766px }
+  li.lastCollapsable, li.lastExpandable { background-image: url(/media/images/skin/treeview/treeview-default.gif); }  
+  li.lastCollapsable { background-position: 0 -111px }
+  li.lastExpandable { background-position: -32px -67px }
+
+  .hitarea {
+    background: url(/media/images/skin/treeview/treeview-default.gif) -64px -25px no-repeat;
+    height: 16px;
+    width: 16px;
+    margin-left: -16px;
+    float: left;
+    cursor: pointer;
+  }
+  .expandable-hitarea { background-position: -80px -3px; }
+  div.lastCollapsable-hitarea, div.lastExpandable-hitarea { background-position: 0; }
+
+  .hover { color: red; cursor: pointer; }
 }

@@ -126,7 +126,8 @@
         asynchronous_javascript_loader('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
         asynchronous_javascript_loader('http://connect.facebook.net/en_US/all.js');
         asynchronous_javascript_loader('http://www.google-analytics.com/ga.js');
-        asynchronous_javascript_loader('/media/js/data-src.js');
+        asynchronous_javascript_loader('/media/js/jquery-treeview-min.js');
+        asynchronous_javascript_loader('/media/js/data-min.js');
     };
     var init_main = function () {
         // List init functions here
