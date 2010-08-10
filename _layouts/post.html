@@ -6,9 +6,6 @@ layout: base
 <blockquote>
   <span class="date"></span> posted on: <code>{{ page.date | date_to_string }}</code>;
   <span class="tags"></span> tags: {% for tag in page.tags %}<code>{{ tag }}</code>{% if forloop.last %};{% else %}, {% endif %}{% endfor %}
-  <span class="like">
-    <fb:like href="http://aatiis.me{{ page.url }}" layout="button_count" show_faces="false" width="80" font="lucida grande"></fb:like>
-  </span>
 </blockquote>
 
 {{ content }}
