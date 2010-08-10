@@ -2,6 +2,7 @@
 // @compilation_level ADVANCED_OPTIMIZATIONS
 // @output_file_name ajs-min.js
 // @js_externs FB.init = function (arg){};
+// @js_externs hljs.initHighlighting = function (){};
 // ==/ClosureCompiler==
 
 // Asynchronous JavaScript loader & startup scripts for aatiis.me
@@ -115,11 +116,41 @@
         };
     })();
 
+    // Set up CSS loader
+    var css_loader = (function () {
+        // Private members
+        var create = function (url) {
+            var script = document.createElement('link');
+            script.rel = 'stylesheet';
+            script.type = 'text/css';
+            script.href = url;
+            document.getElementsByTagName('head')[0].appendChild(script);
+        };
+        // Public: export a Function object
+        return function (url) {
+            setTimeout(function () { create(url); }, 1);
+        };
+    })();
+
+    // Wait for HLJS to load
+    var wait_for_hljs = function (fn) {
+        while (typeof(hljs) !== 'object') {
+            setTimeout(function () { wait_for_hljs(fn); }, 10);
+            return;
+        }
+        fn();
+    };
+
     // Set up the dom ready event handler
     var init_facebook_div = function () {
         var div = document.createElement('div');
         div.id = 'fb-root';
         document.getElementsByTagName('body')[0].appendChild(div);
+    };
+    var init_hljs = function () {
+        wait_for_hljs(function () {
+            hljs.initHighlighting();
+        })
     };
     var load_external_js = function () {
         // Call the other script files from here
@@ -128,11 +159,19 @@
         asynchronous_javascript_loader('http://www.google-analytics.com/ga.js');
         asynchronous_javascript_loader('/media/js/jquery-treeview-min.js');
         asynchronous_javascript_loader('/media/js/data-min.js');
+        asynchronous_javascript_loader('/media/js/hljs-pack.js');
     };
+    var load_external_css = function () {
+        // XXX: load external css here
+    };
+
+
     var init_main = function () {
         // List init functions here
         init_facebook_div();
+        init_hljs();
         load_external_js();
+        load_external_css();
     };
     ready(init_main);
 
