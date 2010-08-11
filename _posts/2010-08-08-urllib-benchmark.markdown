@@ -351,9 +351,9 @@ If you run it, it will also prent the result summary, something like this:
      * crawling: http://theoatmeal.com/comics/slinky
      * crawling: http://theoatmeal.com/blog/floss
      ...
-     Finishing benchmark, writing results to file `results.cvs`
-     Total times:
-      * urllib2: 183.593553543
-      * urllib3: 95.9748189449
+    Finishing benchmark, writing results to file `results.cvs`
+    Total times:
+     * urllib2: 183.593553543
+     * urllib3: 95.9748189449
 
 As you can see, ``urllib3`` appears to be twice as fast as ``urllib2``.
