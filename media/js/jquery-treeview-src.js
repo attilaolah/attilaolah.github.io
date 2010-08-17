@@ -270,4 +270,4 @@
     // Initialize plugin once jQuery is loaded
     wait_for_jquery(jquery_tree_view);
 
-})();
+}());

@@ -99,7 +99,7 @@
             }
         };
         return ready_event_listener;
-    })();
+    }());
 
     // Set up ASYNC load
     var asynchronous_javascript_loader = (function () {
@@ -114,7 +114,7 @@
         return function (url) {
             setTimeout(function () { create(url); }, 1);
         };
-    })();
+    }());
 
     // Set up CSS loader
     var css_loader = (function () {
@@ -130,7 +130,7 @@
         return function (url) {
             setTimeout(function () { create(url); }, 1);
         };
-    })();
+    }());
 
     // Wait for HLJS to load
     var wait_for_hljs = function (fn) {
@@ -175,4 +175,4 @@
     };
     ready(init_main);
 
-})();
+}());
