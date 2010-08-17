@@ -301,5 +301,5 @@ Here is the source code, you can copy-paste it or download it from
 License
 -------
 
-This source code placed into the [Public
+This source code is placed into the [Public
 Domain](http://en.wikipedia.org/wiki/Public_domain).
