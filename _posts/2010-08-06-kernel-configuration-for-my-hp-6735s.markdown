@@ -71,3 +71,7 @@ enable, ``-`` means disable):
       + DOS/FAT/NT Filesystems
         + NTFS file system support
           + NTFS write support
+
+**Note:** this configuration applies for
+[``2.6.35.*``](http://www.kernel.org/), i.e., my generated kernel looks like
+this: ``kernel-genkernel-x86_64-2.6.35-gentoo-r1-aiur-r1``.
