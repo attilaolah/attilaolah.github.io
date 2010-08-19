@@ -26,7 +26,7 @@ here](/downloads/javascript/jt-test.html).
     <html xmlns:jt="http://www.example.com/jt">
       <head>
         <meta charset="utf-8" />
-        <title>HTML Script Insertion Test</title>
+        <title>JavaScript TAL Test</title>
         <script src="jt-src.js"></script>
       </head>
       <body>
@@ -58,7 +58,7 @@ render the document to look like this:
     <html xmlns:jt="http://www.example.com/jt">
       <head>
         <meta charset="utf-8" />
-        <title>HTML Script Insertion Test</title>
+        <title>JavaScript TAL Test</title>
         <script src="jt-src.js"></script>
       </head>
       <body>
