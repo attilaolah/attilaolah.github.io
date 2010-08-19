@@ -27,7 +27,7 @@ here](/downloads/javascript/jt-test.html).
       <head>
         <meta charset="utf-8" />
         <title>HTML Script Insertion Test</title>
-        <script src="jt-min.js"></script>
+        <script src="jt-src.js"></script>
       </head>
       <body>
         <h1 jt:content="'Foo, bar: ' + 42 + '!'"></h1>
@@ -50,7 +50,7 @@ here](/downloads/javascript/jt-test.html).
       </body>
     </html>
 
-The script is loaded from the "``jt-min.js``" file, and as soon as the
+The script is loaded from the "``jt-src.js``" file, and as soon as the
 [DOM](http://en.wikipedia.org/wiki/Document_Object_Model) is ready, it will
 render the document to look like this:
 
@@ -104,8 +104,7 @@ The source code
 
 The source code wwights ``~6.9K``, or ``~1.6K`` minified (``~730 bytes`` when
 minified & gzipped). The source can be downloaded from
-[here](/downloads/javascript/jt-src.js), or you can grab the minified version
-from [here](/downloads/javascript/jt-min.js).
+[here](/downloads/javascript/jt-src.js).
 
 
 License
