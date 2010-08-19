@@ -42,7 +42,7 @@
                 }
                 ready_event_fired = true;
                 return fn();
-            }
+            };
 
             // The DOM ready check for Internet Explorer
             var do_scroll_check = function () {
@@ -65,7 +65,7 @@
 
             // If the browser ready event has already occured
             if (document.readyState === "complete") {
-                return idempotent_fn()
+                return idempotent_fn();
             }
 
             // Mozilla, Opera and webkit nightlies currently support this event
