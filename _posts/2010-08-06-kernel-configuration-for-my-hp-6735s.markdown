@@ -28,7 +28,7 @@ enable, ``-`` means disable):
         - Deprecated /proc/acpi/event support
     * Networking support
       + Wireless
-        - cfg80211 - wireless configuration API
+        + cfg80211 - wireless configuration API
     * Device Drivers
       * Network device support
         * Ethernet (10 or 100Mbit)
