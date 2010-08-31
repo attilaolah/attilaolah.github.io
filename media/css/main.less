@@ -1,3 +1,8 @@
+/*
+ * This code is is placed under the Public Domain.
+ * Written by Attila Olah, http://aatiis.me/ <attilaolah@gmail.com>
+ */
+
 /* Common Styles */
 
 html,
@@ -11,6 +16,9 @@ body {
 }
 
 /* Common color palette */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
 h1, h2, h3, h4, h5, h6, a, a:link, a:visited {
   color: #c30;
   > a {
@@ -23,6 +31,9 @@ a:hover, a:active {
 }
 ul > li {
   list-style-type: square;
+}
+p {
+  margin: 1em 0;
 }
 .clear {
   clear: both;
@@ -93,48 +104,49 @@ body {
       padding: 0 10px 120px 10px;
       > .content {
         margin: 0 auto;
-        width: 960px;
-        > .main {
-          background: url(/media/images/skin/bg-box.png) repeat scroll left top transparent;
-          margin: 0 auto;
-          padding: 0.5em 20px 20px;
-          float: left;
-          width: 680px;
-          h1 {
-            font-size: 1.5em;
-          }
-          h2 {
-            font-size: 1.25em;
-          }
-          blockquote {
-            margin: 1em 0;
-          }
-          .summary {
-            margin: 1em 0 1em 40px;
-          }
-          img {
+        width: 85%;
+        min-width: 960px;
+        .pad {
+          padding: 0 15px 0 0;
+          .main {
             background: url(/media/images/skin/bg-box.png) repeat scroll left top transparent;
-            padding: 4px;
-            border: 1px solid white;
-          }
-          .date {
-            background: url(/media/images/skin/icons/date.png) no-repeat scroll left top transparent;
-            display: inline-block;
-            height: 16px;
-            margin: 0 -2px -4px 2px;
-            width: 16px;
-          }
-          .tags {
-            background: url(/media/images/skin/icons/tag.png) no-repeat scroll left top transparent;
-            display: inline-block;
-            height: 16px;
-            margin: 0 -2px -4px 2px;
-            width: 16px;
+            padding: 0.5em 20px 20px;
+            h1 {
+              font-size: 1.5em;
+              margin: 0.67em 0;
+            }
+            h2 {
+              font-size: 1.25em;
+              margin: 0.83em 0;
+            }
+            blockquote {
+              margin: 1em 0;
+            }
+            .summary {
+              margin: 1em 0 1em 40px;
+            }
+            img {
+              background: url(/media/images/skin/bg-box.png) repeat scroll left top transparent;
+              padding: 4px;
+              border: 1px solid white;
+            }
+            .date {
+              background: url(/media/images/skin/icons/date.png) no-repeat scroll left top transparent;
+              display: inline-block;
+              height: 16px;
+              margin: 0 -2px -4px 2px;
+              width: 16px;
+            }
+            .tags {
+              background: url(/media/images/skin/icons/tag.png) no-repeat scroll left top transparent;
+              display: inline-block;
+              height: 16px;
+              margin: 0 -2px -4px 2px;
+              width: 16px;
+            }
           }
         }
-        > .sidebar {
-          float: right;
-          width: 230px;
+        .sidebar {
           > div {
             background: url(/media/images/skin/bg-box.png) repeat scroll left top transparent;
             margin: 0 0 10px;
@@ -175,21 +187,6 @@ body {
               }
             }
           }
-        > .facebook {
-          > .header {
-              background: url(/media/images/skin/icons/facebook-page.png) no-repeat scroll 4px 7px transparent;
-          }
-          > .box {
-            background: url("/media/images/skin/bg-box.png") repeat scroll left top transparent;
-            height: 252px;
-            overflow: hidden;
-            position: relative;
-            > .fb_iframe_widget {
-              top: -2px;
-              left: -1px;
-            }
-          }
-        }
         }
       }
     }
@@ -198,7 +195,7 @@ body {
       bottom: 0;
       color: #fff;
       font: 13.34px Arial, Helvetica, sans-serif;
-      padding: 5px 0;
+      padding: 5px 0 10px;
       position: absolute;
       text-align: center;
       width: 100%;

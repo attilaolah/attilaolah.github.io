@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="blogcatalog" content="9BC9991366" />
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/media/css/oocss.css" type="text/css" />
     <link rel="stylesheet/less" href="/media/css/main.less" type="text/css" />
     <script src="/media/js/less-min.js"></script>
     <script src="/media/js/ajs-min.js"></script>
@@ -17,32 +18,33 @@
       </div>
       <div class="container">
         <div class="content">
-          <div class="main">
-            {{ content }}
-          </div>
-          <div class="sidebar">
-            <div class="j_archives archives">
-              <div class="header">Archives</div>
-              <div class="j_loader loader">Loading archives...</div>
+          <div class="line">
+            <div class="unit size4of5">
+              <div class="pad">
+                <div class="main">
+                  {{ content }}
+                </div>
+              </div>
             </div>
-            <div class="blogs">
-              <div class="header">Fellow bloggers</div>
-              <ul>
-                <li><a href="http://blog.notdot.net/">Nick's Blog</a></li>
-                <li><a href="http://www.codinghorror.com/blog/">Coding Horror</a></li>
-                <li><a href="http://37signals.com/svn/">Signal vs. Noise</a></li>
-              </ul>
-            </div>
-            <div class="facebook">
-              <div class="header">Facebook page</div>
-              <div class="box">
-                <fb:like-box profile_id="108684282519237" width="232" stream="false" header="false"></fb:like-box>
+            <div class="unit size1of5 lastUnit">
+              <div class="sidebar">
+                <div class="j_archives archives">
+                  <div class="header">Archives</div>
+                  <div class="j_loader loader">Loading archives...</div>
+                </div>
+                <div class="blogs">
+                  <div class="header">Worth checking out</div>
+                  <ul>
+                    <li><a href="http://blog.notdot.net/">Nick's Blog</a></li>
+                    <li><a href="http://www.codinghorror.com/blog/">Coding Horror</a></li>
+                    <li><a href="http://37signals.com/svn/">Signal vs. Noise</a></li>
+                    <li><a href="http://www.stubbornella.org/">Stubbornella</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="clear"></div>
         </div>
-        <div class="clear"></div>
       </div>
       <div class="footer">
         <ul>
@@ -51,7 +53,9 @@
           <li><a href="http://github.com/aatiis">me @ github</a></li>
           <li><a href="mailto:attilaolah@gmail.com">contact</a></li>
         </ul>
-        Pages created using <a href="http://github.com/mojombo/jekyll">jekyll</a>. Styled using <a href="http://github.com/cloudhead/less.js">less.js</a>. Hosted by <a href="http://github.com/">GitHub</a>.
+        Pages created using <a href="http://github.com/mojombo/jekyll">jekyll</a>.
+        Styled using <a href="http://github.com/cloudhead/less.js">less.js</a> &amp; <a href="http://wiki.github.com/stubbornella/oocss/grids">oocss grids</a>.
+        Hosted by <a href="http://github.com/">GitHub</a>.
       </div>
     </div>
   </body>
