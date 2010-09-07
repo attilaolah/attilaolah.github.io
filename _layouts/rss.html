@@ -9,10 +9,10 @@
     {% for post in site.posts limit:10 %}
     <item>
       <title>{{ post.title }}</title>
-      <link>http://aatiis.me/{{ post.url }}</link>
+      <link>http://aatiis.me{{ post.url }}</link>
       <description>{{ post.summary }}</description>
       <pubDate>{{ post.date}}</pubDate>
-      <guid>http://aatiis.me/{{ post.url }}</guid>
+      <guid>http://aatiis.me{{ post.url }}</guid>
     </item>
     {% endfor %}
   </channel>
