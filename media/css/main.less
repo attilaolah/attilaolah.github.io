@@ -48,13 +48,17 @@ p {
   display: none;
 }
 
+._white(@bg: transparent) {
+  background: url(/media/images/skin/bg-box.png) repeat scroll left top @bg;
+}
+
 /* Code blocks */
 pre, cite, code {
-  background: url(/media/images/skin/bg-box.png) repeat scroll left top transparent;
   border-bottom: 1px solid #ddd;
   color: #333;
   font: 0.95em 'Consolas','Deja Vu Sans Mono','Bitstream Vera Sans Mono',monospace;
   padding: 0.5em;
+  ._white();
   cite, code {
       background: transparent;
       border-bottom: none;
@@ -87,13 +91,15 @@ body {
           text-decoration: inherit;
         }
       }
-      > .flower {
-        background: url(/media/images/skin/bg-flower.png) no-repeat scroll left bottom transparent;
+      > .canvas, > .flower {
         bottom: 0px;
         height: 245px;
         position: absolute;
         right: 0px;
         width: 280px;
+      }
+      > .flower {
+        background: url(/media/images/skin/bg-flower.png) no-repeat scroll left bottom transparent;
       }
       > .grass {
         background: url(/media/images/skin/bg-grass.png) repeat-x scroll center bottom transparent;
@@ -109,8 +115,8 @@ body {
         .pad {
           padding: 0 15px 0 0;
           .main {
-            background: url(/media/images/skin/bg-box.png) repeat scroll left top transparent;
             padding: 0.5em 20px 20px;
+            ._white();
             h1 {
               font-size: 1.5em;
               margin: 0.67em 0;
@@ -126,9 +132,9 @@ body {
               margin: 1em 0 1em 40px;
             }
             img {
-              background: url(/media/images/skin/bg-box.png) repeat scroll left top transparent;
               padding: 4px;
               border: 1px solid white;
+              ._white();
             }
             .date {
               background: url(/media/images/skin/icons/date.png) no-repeat scroll left top transparent;
@@ -144,12 +150,33 @@ body {
               margin: 0 -2px -4px 2px;
               width: 16px;
             }
+            .hr {
+              ._white();
+              padding: 2px;
+              margin-bottom: 5px;
+            }
+            .comments {
+              ._white();
+              padding: 5px 0 5px 10px;
+              > .hr {
+                margin: 5px 10px 10px 0;
+              }
+              > .fb_iframe_widget {
+                width: 100% !important;
+                > span {
+                  width: inherit !important;
+                  > iframe {
+                    width: inherit !important;
+                  }
+                }
+              }
+            }
           }
         }
         .sidebar {
           > div {
-            background: url(/media/images/skin/bg-box.png) repeat scroll left top transparent;
             margin: 0 0 10px;
+            ._white();
             > .header {
               border-bottom: 1px dotted #3d3;
               font-weight: bold;
@@ -287,7 +314,7 @@ pre {
   code {
     display: block;
     color: #000;
-    background: url("/media/images/skin/bg-box.png") repeat scroll left top transparent;
+    ._white();
   }
 
   .comment,
