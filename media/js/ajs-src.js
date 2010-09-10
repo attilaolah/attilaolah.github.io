@@ -160,8 +160,8 @@
         asynchronous_javascript_loader('/media/js/jquery-treeview-min.js');
         asynchronous_javascript_loader('/media/js/data-min.js');
         asynchronous_javascript_loader('/media/js/hljs-pack.js');
-        asynchronous_javascript_loader('/media/js/tween-src.js');
-        asynchronous_javascript_loader('/media/js/canvas-src.js');
+        asynchronous_javascript_loader('/media/js/tween-min.js');
+        asynchronous_javascript_loader('/media/js/canvas-min.js');
     };
     var load_external_css = function () {
         // XXX: load external css here
