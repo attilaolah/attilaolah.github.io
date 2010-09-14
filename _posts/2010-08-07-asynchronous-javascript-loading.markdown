@@ -43,7 +43,7 @@ I use the following snippet to load external JS:
     asynchronous_javascript_loader('/media/js/some-local-js-file.js');
 
 })();
-{% highlight javascript %}
+{% endhighlight %}
 
 I put all that stuff in a closure so nothing gets exported to to the global
 namespace. Note that the ``setTimeout`` trick is [from
