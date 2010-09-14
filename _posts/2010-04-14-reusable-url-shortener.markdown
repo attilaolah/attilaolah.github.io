@@ -233,10 +233,8 @@ If you use Django, you can access an object's short URL from a template with
 the ``shorturl`` template tag. To use it, add ``ao.shorturl`` to your
 ``INSTALLED_APPS``. Then in the template you can do something like this:
 
-{% highlight django %}
-{{ "{" }}% load shorturl %{{ "}" }}
-<a href="{{ "{" }}% shorturl city %{{ "}" }}">{{ "{" }}{ city.name }{{ "}" }}</a>
-{% endhighlight %}
+    {{ "\x7b" }}% load shorturl %{{ "\x7d" }}
+    <a href="{{ "\x7b" }}% shorturl city %{{ "\x7d" }}">{{ "\x7b" }}{ city.name }{{ "\x7d" }}</a>
 
 Note that this will create an *absolute* url.
 
