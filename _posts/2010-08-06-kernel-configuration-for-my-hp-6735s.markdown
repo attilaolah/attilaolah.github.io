@@ -11,8 +11,7 @@ I compile my kernel."
 I use ``genkernel`` to compile the kernel:
 
 {% highlight console %}
-$ sudo genkernel --clean --color --install --loglevel=5 --mrproper \
-    --menuconfig all
+$ sudo genkernel --clean --color --install --loglevel=5 --mrproper --menuconfig all
 {% endhighlight %}
 
 To have all of my hardware working, I change the following things (``+`` means

@@ -22,24 +22,28 @@ SpiderMonkey
 
 Not to worry, it is in [Portage](http://www.gentoo-portage.com/).
 
-    $ eix spidermonkey
-    [D] dev-lang/spidermonkey
-         Available versions:  1.7.0 {threadsafe}
-         Installed versions:  1.7.0-r2(22:29:31 08/15/10)(unicode -threadsafe)
-         Homepage:            http://www.mozilla.org/js/spidermonkey/
-         Description:         Stand-alone JavaScript C library
+{% highlight console %}
+$ eix spidermonkey
+[D] dev-lang/spidermonkey
+     Available versions:  1.7.0 {threadsafe}
+     Installed versions:  1.7.0-r2(22:29:31 08/15/10)(unicode -threadsafe)
+     Homepage:            http://www.mozilla.org/js/spidermonkey/
+     Description:         Stand-alone JavaScript C library
+{% endhighlight %}
 
 Installing it is a simple `emerge spidermonkey`. As we can see, it installs the
 `js` executable:
 
-    $ equery f spidermonkey | grep bin 
-    /usr/bin
-    /usr/bin/js
-    /usr/bin/jscpucfg
+{% highlight console %}
+$ equery f spidermonkey | grep bin 
+/usr/bin
+/usr/bin/js
+/usr/bin/jscpucfg
 
-    $ js
-    js> 2+2
-    4
+$ js
+js> 2+2
+4
+{% endhighlight %}
 
 Rhino
 -----
@@ -47,44 +51,48 @@ Rhino
 This one is in Portage too. It is slotted, so you can install 1.5 and 1.6 side
 by side:
 
-    $ eix rhino
-    [D] dev-java/rhino
-         Available versions:
-            (1.5)   1.5.5-r4 (~)1.5.5-r5
-            (1.6)   1.6.5
-            {doc elibc_FreeBSD examples source}
-         Installed versions:  1.5.5-r5(1.5)(12:11:26 09/09/10)(-doc -elibc_FreeBSD -source) \
-            1.7.2-r2(1.6)(12:10:58 09/09/10)(-doc -elibc_FreeBSD -examples -source)
-         Homepage:            http://www.mozilla.org/rhino/
-         Description:         An open-source implementation of JavaScript written in Java.
+{% highlight console %}
+$ eix rhino
+[D] dev-java/rhino
+     Available versions:
+        (1.5)   1.5.5-r4 (~)1.5.5-r5
+        (1.6)   1.6.5
+        {doc elibc_FreeBSD examples source}
+     Installed versions:  1.5.5-r5(1.5)(12:11:26 09/09/10)(-doc -elibc_FreeBSD -source) \
+        1.7.2-r2(1.6)(12:10:58 09/09/10)(-doc -elibc_FreeBSD -examples -source)
+     Homepage:            http://www.mozilla.org/rhino/
+     Description:         An open-source implementation of JavaScript written in Java.
+{% endhighlight %}
 
 I have both 1.5 and 1.6 installed:
 
-    $ equery f rhino
-    [ Searching for packages matching rhino... ]
-    * Contents of dev-java/rhino-1.5.5-r5:
-    /usr
-    /usr/bin
-    /usr/bin/jsscript-1.5
-    /usr/share
-    /usr/share/rhino-1.5
-    /usr/share/rhino-1.5/lib
-    /usr/share/rhino-1.5/lib/js.jar
-    /usr/share/rhino-1.5/package.env
-    * Contents of dev-java/rhino-1.7.2-r2:
-    /usr
-    /usr/bin
-    /usr/bin/jsscript-1.6
-    /usr/share
-    /usr/share/rhino-1.6
-    /usr/share/rhino-1.6/lib
-    /usr/share/rhino-1.6/lib/js.jar
-    /usr/share/rhino-1.6/package.env
+{% highlight console %}
+$ equery f rhino
+[ Searching for packages matching rhino... ]
+* Contents of dev-java/rhino-1.5.5-r5:
+/usr
+/usr/bin
+/usr/bin/jsscript-1.5
+/usr/share
+/usr/share/rhino-1.5
+/usr/share/rhino-1.5/lib
+/usr/share/rhino-1.5/lib/js.jar
+/usr/share/rhino-1.5/package.env
+* Contents of dev-java/rhino-1.7.2-r2:
+/usr
+/usr/bin
+/usr/bin/jsscript-1.6
+/usr/share
+/usr/share/rhino-1.6
+/usr/share/rhino-1.6/lib
+/usr/share/rhino-1.6/lib/js.jar
+/usr/share/rhino-1.6/package.env
 
-    $ /usr/bin/jsscript-1.6 
-    Rhino 1.7 release 2 2010 09 09
-    js> 2+2
-    4
+$ /usr/bin/jsscript-1.6 
+Rhino 1.7 release 2 2010 09 09
+js> 2+2
+4
+{% endhighlight %}
 
 
 node.js
@@ -94,18 +102,20 @@ It is currently not in Portage, but adding [monoid's
 overlay](http://github.com/monoid/gentoo-nodejs) from
 [GitHub](http://github.com/) will probably make your life somewhat easier.
 
-    $ layman -f -o http://github.com/downloads/monoid/gentoo-nodejs/nodejs-layman.xml -a nodejs
-    $ emerge nodejs
+{% highlight console %}
+$ layman -f -o http://github.com/downloads/monoid/gentoo-nodejs/nodejs-layman.xml -a nodejs
+$ emerge nodejs
 
-    $ equery f nodejs | grep bin
-    /usr/bin
-    /usr/bin/node
-    /usr/bin/node-repl
-    /usr/bin/node-waf
+$ equery f nodejs | grep bin
+/usr/bin
+/usr/bin/node
+/usr/bin/node-repl
+/usr/bin/node-waf
 
-    $ node
-    node> (function (n) { console.log(n*n); }(10000));
-    100000000
+$ node
+node> (function (n) { console.log(n*n); }(10000));
+100000000
+{% endhighlight %}
 
 Now we can run less.js from the command line too.
 
