@@ -66,6 +66,7 @@ handlers and sites:
 >>> foo = shorturl.registerHandler(name='foo')
 >>> shorturl.getHandler(name='foo') is shorturl.getHandler('foo') is foo
 True
+{% endhighlight %}
 
 If you don't have the ``zope.component`` and ``zope.interface`` packages
 available, you won't be able to use named handlers.
@@ -241,21 +242,21 @@ Note that this will create an *absolute* url.
 Test the template tag:
 
 {% highlight pycon %}
-    >>> from ao.shorturl.templatetags import shorturl
+>>> from ao.shorturl.templatetags import shorturl
 
-    >>> class Parser(object):
-    ...     def split_contents(self):
-    ...         return (None, 'xxx')
-    ...
+>>> class Parser(object):
+...     def split_contents(self):
+...         return (None, 'xxx')
+...
 
-    >>> node = shorturl.shorturl(None, Parser())
-    >>> node
-    <ao.shorturl.templatetags.shorturl.URL object at ...>
+>>> node = shorturl.shorturl(None, Parser())
+>>> node
+<ao.shorturl.templatetags.shorturl.URL object at ...>
 
-    >>> node.render({'xxx': None})
-    Traceback (most recent call last):
-    ...
-    NotImplementedError: You must overload `construct_url`.
+>>> node.render({'xxx': None})
+Traceback (most recent call last):
+...
+NotImplementedError: You must overload `construct_url`.
 {% endhighlight %}
 
 Clean up after the tests:
