@@ -131,12 +131,10 @@ There are some handy shortcats for Django applications. If you add
 ``ao.social`` to your ``INSTALLED_APPS``, the ``social`` template library will
 become available. It contains the following three template tags:
 
-{# hard-coded django template example #}
 <div class="highlight"><pre><code class="django"><span class="cp">{<!--//-->%</span> <span class="k">apikey</span> <span class="nv">method</span> <span class="cp">%<!--//-->}</span><span class="x"></span></code></pre></div>
 
 ``apikey`` returns the api key for the given method. Not available for Google.
 
-{# hard-coded django template example #}
 <div class="highlight"><pre><code class="django"><span class="cp">{<!--//-->%</span> <span class="k">liginbutton</span> <span class="nv">method</span> <span class="nv">onlogin</span> <span class="cp">%<!--//-->}</span><span class="x"></span></code></pre></div>
 
 Renders a login button. For Facebook, it will render an
@@ -148,7 +146,6 @@ Facebook Connect script in the template.
 [JavaScript](http://en.wikipedia.org/wiki/JavaScript) statement that will be
 executed upon successful login.
 
-{# hard-coded django template example #}
 <div class="highlight"><pre><code class="django"><span class="cp">{<!--//-->%</span> <span class="k">avatar</span> <span class="nv">height</span> <span class="nv">width</span> <span class="cp">%<!--//-->}</span><span class="x"></span></code></pre></div>
 
 Displays the user's profile picture.

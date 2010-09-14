@@ -113,7 +113,7 @@ The source code
     });
 
 })();
-{% highlight javascript %}
+{% endhighlight %}
 
 As you can see, no globals are exported by this code snippet. This is very
 useful if you just want to do some early DOM manipulation without including
@@ -137,4 +137,4 @@ jQuery's license comment:
  * Dual licensed under the MIT or GPL Version 2 licenses.
  * http://jquery.org/license
  */
-{% highlight javascript %}
+{% endhighlight %}
