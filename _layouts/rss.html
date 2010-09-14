@@ -1,19 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Attila O.&apos;s weblog</title>
     <link>http://aatiis.me/</link>
     <description>My personal blog.</description>
     <language>en-us</language>
-    {% for post in site.posts limit:1 %}<lastBuildDate>{{ post.date}}</lastBuildDate>{% endfor %}
-    {% for post in site.posts limit:10 %}
+    {% for post in site.posts limit:1 %}<lastBuildDate>{{ post.date | date:"%a, %d %b %Y %H:%m:%S %z" }}</lastBuildDate>{% endfor %}
+    <atom:link href="http://feeds.feedburner.com/aatiisme" rel="self" type="application/rss+xml"/>{% for post in site.posts limit:10 %}
     <item>
       <title>{{ post.title }}</title>
       <link>http://aatiis.me{{ post.url }}</link>
-      <description>{{ post.summary }}</description>
-      <pubDate>{{ post.date }}</pubDate>
+      <description>{{ post.summary | xml_escape }}</description>
+      <pubDate>{{ post.date | date:"%a, %d %b %Y %H:%m:%S %z" }}</pubDate>
       <guid>http://aatiis.me{{ post.url }}</guid>
-    </item>
-    {% endfor %}
+    </item>{% endfor %}
   </channel>
 </rss>

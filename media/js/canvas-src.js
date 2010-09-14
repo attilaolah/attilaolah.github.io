@@ -187,7 +187,7 @@
             // Give the control to the composition loop
             composite(animations());
             // Insort the canvas to the DOM
-            $('.j_canvas').replaceWith(canvas);
+            $('.j-canvas').replaceWith(canvas);
         }
     };
 

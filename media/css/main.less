@@ -128,13 +128,19 @@ body {
             blockquote {
               margin: 1em 0;
             }
-            .summary {
-              margin: 1em 0 1em 40px;
-            }
             img {
               padding: 4px;
               border: 1px solid white;
               ._white();
+            }
+            .summary {
+              margin: 1em 0 1em 40px;
+            }
+            .loader {
+              background: url(/media/images/skin/ajax-loader-green.gif) no-repeat scroll 10px 19px transparent;
+              border-top: 1px dotted green;
+              font-size: 12px;
+              padding: 13px 2px 0 30px;
             }
             .date {
               background: url(/media/images/skin/icons/date.png) no-repeat scroll left top transparent;
@@ -178,7 +184,7 @@ body {
             margin: 0 0 10px;
             ._white();
             > .header {
-              border-bottom: 1px dotted #3d3;
+              border-bottom: 1px dotted green;
               font-weight: bold;
               margin: 0px 4px;
               padding: 3px 0 3px 25px;

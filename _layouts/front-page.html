@@ -2,13 +2,7 @@
 layout: base
 ---
 
-{% for post in site.posts limit:10 %}
-  <div class="post-preview">
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <blockquote>
-      <span class="date"></span> posted on: <code>{{ post.date | date_to_string }}</code>;
-      <span class="tags"></span> tags: {% for tag in post.tags %}<code>{{ tag }}</code>{% if forloop.last %};{% else %}, {% endif %}{% endfor %}
-    </blockquote>
-    <blockquote class="summary">{{ post.summary }}</blockquote>
-  </div>
-{% endfor %}
+<div id="previews">
+{% for post in site.posts limit:8 %}{% include post-preview.html %}{% endfor %}
+  <div class="j-loader loader">Loading more posts...</div>
+</div>

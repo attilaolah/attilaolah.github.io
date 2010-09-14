@@ -50,51 +50,76 @@
 
     var process_json_data = function (data) {
         var data = eval('(' + data + ')'),
-            ul = $('<ul/>', { 'class': 'j_archive_list treeview' });
+            ul = $('<ul/>', { 'class': 'j-archive-list treeview' });
 
         for (var i in data) if (data.hasOwnProperty(i)) {
             // Append each year to the list
             var year = data[i].date.slice(26, 30);
-            if (!(ul.children('.j_year_' + year)[0])) {
-                ul.append($('<li/>', { 'class': 'j_year_' + year })
+            if (!(ul.children('.j-year-' + year)[0])) {
+                ul.append($('<li/>', { 'class': 'j-year-' + year })
                   .append($('<span/>', { 'class': 'folder' }).text(year))
                 );
             }
             // Append each month to the list
             var month = longmonth(data[i].date.slice(4, 7));
-            if (!(ul.children('.j_year_' + year).find('.j_month_' + month.toLowerCase())[0])) {
-                if (!(ul.children('.j_year_' + year).find('.j_months')[0])) {
-                    ul.children('.j_year_' + year).append($('<ul/>', { 'class': 'j_months' }));
+            if (!(ul.children('.j-year-' + year).find('.j-month-' + month.toLowerCase())[0])) {
+                if (!(ul.children('.j-year-' + year).find('.j-months')[0])) {
+                    ul.children('.j-year-' + year).append($('<ul/>', { 'class': 'j-months' }));
                 }
-                ul.children('.j_year_' + year)
-                  .find('.j_months')
-                  .append($('<li/>', { 'class': 'j_month_' + month.toLowerCase() })
+                ul.children('.j-year-' + year)
+                  .find('.j-months')
+                  .append($('<li/>', { 'class': 'j-month-' + month.toLowerCase() })
                     .append($('<span/>', { 'class': 'folder' }).text(month))
-                    .append($('<ul/>', { 'class': 'j_posts' }))
+                    .append($('<ul/>', { 'class': 'j-posts' }))
                   );
             }
             // Append each post to the list
-            ul.children('.j_year_' + year)
-              .find('.j_months')
-              .find('.j_month_' + month.toLowerCase())
-              .find('.j_posts')
-              .append($('<li/>', { 'class': 'post j_post' })
+            ul.children('.j-year-' + year)
+              .find('.j-months')
+              .find('.j-month-' + month.toLowerCase())
+              .find('.j-posts')
+              .append($('<li/>', { 'class': 'post j-post' })
                 .append($('<a/>', { href: data[i].url, 'class': 'file' }).text(data[i].title))
               );
         }
         // Set up the tree view
-        $('.j_archives').append(ul).find('.j_loader').remove();
+        $('.j-archives').append(ul).find('.j-loader').remove();
         ul.treeview({
             animated: 'fast',
             collapsed: true
         });
         // Expand the first month
-        $('.j_archive_list span:first').click().parent().find('ul li:first span').click()
+        $('.j-archive-list span:first').click().parent().find('ul li:first span').click()
     };
+
+    // Load the rest of the posts if needed
+    var load_bottom_data_when_needed = function () {
+        // If the morker div is not present, don'n do anything.
+        if ($('#previews .j-loader')[0]) {
+            // Set up the scroll event listener
+            $(window).scroll(load_bottom_data_once);
+            // Fire in case there is no scroll event
+            load_bottom_data_once();
+        }
+    };
+
+    // The scroll event listener
+    var load_bottom_data_once = (function () {
+        var loaded = false;
+        return function () {
+            if (!loaded) {
+                if ($(window).scrollTop() + $(window).height() >= $('#previews .j-loader').offset().top) {
+                    $('#previews').load('/all-posts.html');
+                    loaded = true;
+                }
+            }
+        };
+    }());
 
     // Load archives when jQuery is ready
     wait_for_jquery_treeview(function () {
         $(load_json_data);
+        $(load_bottom_data_when_needed);
     });
 
 }());
