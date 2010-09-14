@@ -20,46 +20,50 @@ A simple use case
 Some [Django](http://www.djangoproject.com/) folks like to write their own
 *templatizer* decorators. It might look something like this:
 
-    import json
+{% highlight python %}
+import json
 
 
-    def jsonify(wrapped):
-        def json_wrapper(request):
-            result = wrapped(request)
-            dumped = json.dumps(result)
-            return dumped
-        return json_wrapper
+def jsonify(wrapped):
+    def json_wrapper(request):
+        result = wrapped(request)
+        dumped = json.dumps(result)
+        return dumped
+    return json_wrapper
+{% endhighlight %}
 
 Of course, the drawback here is once you have *templatized* your view using the
 decorator, you cannot use it any longer like an ordinary view (i.e. call from
 other views). As a workaround, I have been using a template decorator that
 looks something like this:
 
-    from decorator import decorator
+{% highlight python %}
+from decorator import decorator
 
-    from functools import partial
+from functools import partial
 
-    from django.http import HttpResponse
-    from django.shortcuts import render_to_response
-    from django.template import RequestContext
-
-
-    def decorator_factory(decfac):
-        return partial(lambda df, param: decorator(partial(df, param)), decfac)
+from django.http import HttpResponse
+from django.shortcuts import render_to_response
+from django.template import RequestContext
 
 
-    @decorator_factory
-    def template(template, f, request, *args, **kw):
-        """Decorator to load the view's template."""
+def decorator_factory(decfac):
+    return partial(lambda df, param: decorator(partial(df, param)), decfac)
 
-        def new(f, *args, **kw):
-            ret = f(*args, **kw) or {}
-            if isinstance(ret, HttpResponse):
-                return ret
-            return render_to_response(template, ret,
-                context_instance=RequestContext(request))
 
-        return new(f, request, *args, **kw)
+@decorator_factory
+def template(template, f, request, *args, **kw):
+    """Decorator to load the view's template."""
+
+    def new(f, *args, **kw):
+        ret = f(*args, **kw) or {}
+        if isinstance(ret, HttpResponse):
+            return ret
+        return render_to_response(template, ret,
+            context_instance=RequestContext(request))
+
+    return new(f, request, *args, **kw)
+{% endhighlight %}
 
 This way I can use the decorated views as I would use any other function.
 
@@ -69,14 +73,16 @@ Using Venusian
 
 With Venusina, this becomes even simpler (and more efficient):
 
-    import venusian
+{% highlight python %}
+import venusian
 
 
-    def jsonify(wrapped):
-        def callback(scanner, name, obj):
-            print 'jsonified'
-        venusian.attach(wrapped, callback)
-        return wrapped
+def jsonify(wrapped):
+    def callback(scanner, name, obj):
+        print 'jsonified'
+    venusian.attach(wrapped, callback)
+    return wrapped
+{% endhighlight %}
 
 As the [documentation](http://docs.repoze.org/venusian/) says:
 

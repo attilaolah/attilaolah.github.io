@@ -235,7 +235,7 @@ the ``shorturl`` template tag. To use it, add ``ao.shorturl`` to your
 ``INSTALLED_APPS``. Then in the template you can do something like this:
 
 {# hard-coded django template example #}
-<div class="highlight"><pre><code class="pycon"><span class="cp">{<!--//-->%</span> <span class="k">load</span> <span class="nv">shorturl</span> <span class="cp">%<!--//-->}</span><span class="x"></span> 
+<div class="highlight"><pre><code class="django"><span class="cp">{<!--//-->%</span> <span class="k">load</span> <span class="nv">shorturl</span> <span class="cp">%<!--//-->}</span><span class="x"></span> 
 <span class="x">&lt;a href=&quot;</span><span class="cp">{<!--//-->%</span> <span class="k">shorturl</span> <span class="nv">city</span> <span class="cp">%<!--//-->}</span><span class="x">&quot;&gt;</span><span class="cp">{<!--//-->{</span> <span class="nv">city.name</span> <span class="cp">}<!--//-->}</span><span class="x">&lt;/a&gt;</span> 
 </code></pre></div>
 

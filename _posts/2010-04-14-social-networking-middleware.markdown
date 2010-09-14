@@ -66,24 +66,30 @@ from the config file. That way the client machinery won't be loaded at all.
 
 To load the config file from the file, use the PyYAML module:
 
-    >>> import yaml
-    >>> with open('auth.yaml', 'r') as file:
-    ...     conf = yaml.load(confstr)
+{% highlight pycon %}
+>>> import yaml
+>>> with open('auth.yaml', 'r') as file:
+...     conf = yaml.load(confstr)
+{% endhighlight %}
 
 ``Note:`` for the google login to work, the callback must be the login path for
 google:
 
-    >>> conf['login_path'] % 'google'
-    '/login/google/'
+{% highlight pycon %}
+>>> conf['login_path'] % 'google'
+'/login/google/'
 
-    >>> conf['google']['callback']
-    'http://www.example.com/login/google/'
+>>> conf['google']['callback']
+'http://www.example.com/login/google/'
+{% endhighlight %}
 
 Say your downstream WSGI application is ``wsgi_app``, you can initialize the
 middleware like this:
 
-    >>> from ao.social import middleware
-    >>> app = middleware.AuthMiddleware(wsgi_app, conf)
+{% highlight pycon %}
+>>> from ao.social import middleware
+>>> app = middleware.AuthMiddleware(wsgi_app, conf)
+{% endhighlight %}
 
 
 About the ``User`` object
@@ -125,11 +131,13 @@ There are some handy shortcats for Django applications. If you add
 ``ao.social`` to your ``INSTALLED_APPS``, the ``social`` template library will
 become available. It contains the following three template tags:
 
-<pre><code>{<!--//-->% apikey method %<!--//-->}</code></pre>
+{# hard-coded django template example #}
+<div class="highlight"><pre><code class="django"><span class="cp">{<!--//-->%</span> <span class="k">apikey</span> <span class="nv">method</span> <span class="cp">%<!--//-->}</span><span class="x"></span></code></pre></div>
 
 ``apikey`` returns the api key for the given method. Not available for Google.
 
-<pre><code>{<!--//-->% liginbutton method onlogin %<!--//-->}</code></pre>
+{# hard-coded django template example #}
+<div class="highlight"><pre><code class="django"><span class="cp">{<!--//-->%</span> <span class="k">liginbutton</span> <span class="nv">method</span> <span class="nv">onlogin</span> <span class="cp">%<!--//-->}</span><span class="x"></span></code></pre></div>
 
 Renders a login button. For Facebook, it will render an
 [XFBML](http://wiki.developers.facebook.com/index.php/XFBML) login button. The
@@ -140,7 +148,8 @@ Facebook Connect script in the template.
 [JavaScript](http://en.wikipedia.org/wiki/JavaScript) statement that will be
 executed upon successful login.
 
-<pre><code>{<!--//-->% avatar height width %<!--//-->}</code></pre>
+{# hard-coded django template example #}
+<div class="highlight"><pre><code class="django"><span class="cp">{<!--//-->%</span> <span class="k">avatar</span> <span class="nv">height</span> <span class="nv">width</span> <span class="cp">%<!--//-->}</span><span class="x"></span></code></pre></div>
 
 Displays the user's profile picture.
 

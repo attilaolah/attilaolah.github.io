@@ -403,14 +403,12 @@ Reading the board from a file
 the standard input and and generates ``ao.tron.Board`` instances. Format
 the input like this:
 
-{% highlight pycon %}
-5 5
-#####
-#  2#
-#   #
-#1  #
-#####
-{% endhighlight %}
+    5 5
+    #####
+    #  2#
+    #   #
+    #1  #
+    #####
 
 The numbers on the first line show the height and withd of the board,
 respectively. The following lines represent the board, where:
@@ -422,7 +420,7 @@ respectively. The following lines represent the board, where:
 
 To use the function, in your source file you can do something like this:
 
-{% highlight pycon %}
+{% highlight python %}
 from ao.tron import generate, move
 for board  in generate():
     # do your stuff here

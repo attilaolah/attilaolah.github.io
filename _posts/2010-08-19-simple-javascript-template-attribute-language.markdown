@@ -22,6 +22,7 @@ how to use the TAL expressions with the "``jt``"
 You can check out this example in action by [clicking
 here](/downloads/javascript/jt-test.html).
 
+{% highlight html %}
     <!DOCTYPE html>
     <html xmlns:jt="http://www.example.com/jt">
       <head>
@@ -49,11 +50,13 @@ here](/downloads/javascript/jt-test.html).
         </ul>
       </body>
     </html>
+{% endhighlight %}
 
 The script is loaded from the "``jt-src.js``" file, and as soon as the
 [DOM](http://en.wikipedia.org/wiki/Document_Object_Model) is ready, it will
 render the document to look like this:
 
+{% highlight html %}
     <!DOCTYPE html>
     <html xmlns:jt="http://www.example.com/jt">
       <head>
@@ -89,6 +92,7 @@ render the document to look like this:
         </ul>
       </body>
     </html>
+{% endhighlight %}
 
 
 Future ideas

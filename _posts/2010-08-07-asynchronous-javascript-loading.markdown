@@ -20,28 +20,30 @@ The source code
 
 I use the following snippet to load external JS:
 
-    (function () {
+{% highlight javascript %}
+(function () {
 
-        // Asynchronous JS loader
-        var asynchronous_javascript_loader = (function () {
-            // Private members
-            var create = function (url) {
-                var script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.src = url;
-                document.getElementsByTagName('head')[0].appendChild(script);
-            };
-            // Public: export a Function object
-            return function (url) {
-                setTimeout(function () { create(url); }, 1);
-            };
-        })();
-
-        // Call the other script files from here
-        asynchronous_javascript_loader('http://www.example.com/foo-script.js');
-        asynchronous_javascript_loader('/media/js/some-local-js-file.js');
-
+    // Asynchronous JS loader
+    var asynchronous_javascript_loader = (function () {
+        // Private members
+        var create = function (url) {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = url;
+            document.getElementsByTagName('head')[0].appendChild(script);
+        };
+        // Public: export a Function object
+        return function (url) {
+            setTimeout(function () { create(url); }, 1);
+        };
     })();
+
+    // Call the other script files from here
+    asynchronous_javascript_loader('http://www.example.com/foo-script.js');
+    asynchronous_javascript_loader('/media/js/some-local-js-file.js');
+
+})();
+{% highlight javascript %}
 
 I put all that stuff in a closure so nothing gets exported to to the global
 namespace. Note that the ``setTimeout`` trick is [from
