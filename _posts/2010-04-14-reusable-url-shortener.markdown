@@ -234,9 +234,8 @@ the ``shorturl`` template tag. To use it, add ``ao.shorturl`` to your
 ``INSTALLED_APPS``. Then in the template you can do something like this:
 
 {% highlight django %}
-{{ "{%" }} load shorturl {% "%}" %}
-&lt;a href="{{ "{%" }} shorturl city {{ "%}" }}"&gt;{<!--//-->{ city.name }<!--//-->}&lt;/a&gt;
-<a hfef="foo">bar</a>
+{{ "{" }}% load shorturl %{% "}" %}
+<a href="{{ "{" }}% shorturl city %{{ "}" }}">{{ "{" }}{ city.name }{{ "}" }}</a>
 {% endhighlight %}
 
 Note that this will create an *absolute* url.
