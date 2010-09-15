@@ -78,6 +78,14 @@ This is how a usual `vimpdb` session looks like:
 </div>
 
 
+Keychain
+--------
+
+[Keychain](http://www.funtoo.org/en/security/keychain/intro/) is a handy tool
+for remembering passphrases across shell sessions. Very useful if you have an
+extra-long passphrase like me.
+
+
 Learning Programmers' Dvorak
 ----------------------------
 
