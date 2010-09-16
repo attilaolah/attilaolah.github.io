@@ -247,9 +247,56 @@ body {
                 background: url(/media/images/skin/icons/blog-small.png) no-repeat scroll left 3px transparent;
                 list-style-type: none;
                 margin: 0 0 5px -10px;
-                padding: 0 0 0 16px;
+                padding: 0 0 0 18px;
                 a {
                   text-decoration: none;
+                }
+              }
+            }
+          }
+          > .me {
+            > .header {
+              background: url(/media/images/skin/icons/user.png) no-repeat scroll 4px 6px transparent;
+            }
+            > ul {
+              font-size: 12px;
+              margin: 0 2px 0 20px;
+              padding: 5px 0 5px 5px;
+              ._i(@value) {
+                background-image: e(%('url(/media/images/skin/icons/social/%s.ico)', @value));
+              }
+              ._p(@value) {
+                background-image: e(%('url(/media/images/skin/icons/social/%s.png)', @value));
+              }
+              .bb { ._p(bb); }
+              .di { ._i(di); }
+              .dm { ._i(dm); }
+              .el { ._i(el); }
+              .fb { ._i(fb); }
+              .gh { ._i(gh); }
+              .go { ._i(go); }
+              .ic { ._i(ic); }
+              .in { ._i(in); }
+              .lf { ._i(lf); }
+              .mi { ._i(mi); }
+              .od { ._i(od); }
+              .pi { ._i(pi); }
+              .sf { ._i(sf); }
+              .so { ._i(so); }
+              .su { ._i(su); }
+              .tw { ._i(tw); }
+              .yt { ._i(yt); }
+              > li {
+                background-position: left 2px;
+                background-repeat: no-repeat;
+                background-size: 16px 16px;
+                list-style-type: none;
+                margin: 0 0 5px -10px;
+                padding: 0 0 0 18px;
+                a {
+                  line-height: 16px;
+                  text-decoration: none;
+                  width: 16px;
                 }
               }
             }
