@@ -94,7 +94,7 @@
 
     // Load the rest of the posts if needed
     var load_bottom_data_when_needed = function () {
-        // If the morker div is not present, don'n do anything.
+        // If the marker div is not present, don'n do anything.
         if ($('#previews .j-loader')[0]) {
             // Set up the scroll event listener
             $(window).scroll(load_bottom_data_once);
