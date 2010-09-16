@@ -109,7 +109,7 @@
         return function () {
             if (!loaded) {
                 if ($(window).scrollTop() + $(window).height() >= $('#previews .j-loader').offset().top) {
-                    $('#previews').load('/all-posts.html');
+                    $('#previews').load('/all-posts.html?' + Date().slice(4,15).replace(/ /g,"-").toLowerCase());
                     loaded = true;
                 }
             }
