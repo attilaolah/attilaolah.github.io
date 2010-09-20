@@ -29,6 +29,7 @@ I use the following snippet to load external JS:
         var create = function (url) {
             var script = document.createElement('script');
             script.type = 'text/javascript';
+            script.async = true;
             script.src = url;
             document.getElementsByTagName('head')[0].appendChild(script);
         };
@@ -56,3 +57,12 @@ These are ones that expect to be run before DOM readyness. Such an example is
 Good candidates for asynchronous loading are the [Facebook JavaScript
 SDK](http://developers.facebook.com/docs/reference/javascript/) and [Google
 Analytics](http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html).
+
+
+Updates
+-------
+
+* You can load less.js too, just trigger a `less.refresh()` after it has been loaded.
+* Have a look at [Richard Neil Ilagan's
+implementation](http://richardneililagan.com/2010/09/protip-load-javascript-into-your-pages-asynchronously/)
+as well.

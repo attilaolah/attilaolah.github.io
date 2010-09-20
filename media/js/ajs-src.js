@@ -2,7 +2,6 @@
 // @compilation_level ADVANCED_OPTIMIZATIONS
 // @output_file_name ajs-min.js
 // @js_externs FB.init = function (arg){};
-// @js_externs hljs.initHighlighting = function (){};
 // ==/ClosureCompiler==
 
 // Asynchronous JavaScript loader & startup scripts for aatiis.me
