@@ -1,0 +1,38 @@
+digraph {
+    myapp   [fillcolor=yellow,
+             label="My Webapp",
+             style=filled];
+    django  [fillcolor=red,
+             label="Django",
+             style=filled];
+    twod    [fillcolor=white,
+             label="twod.wsgi",
+             style=filled];
+    paste   [fillcolor=white,
+             label="Paste",
+             style=filled];
+    webob   [fillcolor=pink,
+             label="WebOb",
+             style=filled];
+    beaker  [fillcolor=pink,
+             label="Beaker",
+             style=filled];
+    coffin  [fillcolor=white,
+             label="Coffin",
+             style=filled];
+    jinja2  [fillcolor=pink,
+             label="Jinja2",
+             style=filled];
+    deform  [fillcolor=pink,
+             label="Deform",
+             style=filled];
+    myapp -> beaker;
+    myapp -> coffin;
+    myapp -> deform;
+    myapp -> twod;
+    twod -> django;
+    twod -> paste;
+    twod -> webob;
+    coffin -> django;
+    coffin -> jinja2;
+}
