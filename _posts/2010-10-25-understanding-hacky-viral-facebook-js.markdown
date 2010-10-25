@@ -21,7 +21,7 @@ you know :) Anyway, I figured something fishy's going on. Somebody must have
 [threatened him](http://en.wikipedia.org/wiki/AK-47) to do this, or maybe a
 [spam bot](http://en.wikipedia.org/wiki/Spambot) took control over his
 computer, which is highly unlikely, as he, like a good American, is a
-[Mac-freek too](http://twitter.com/TEDNews/status/18441255555) (sorry 'bout my
+[Mac-freak too](http://twitter.com/TEDNews/status/18441255555) (sorry 'bout my
 prejudice, I grew it over time).
 
 Anyway, when I saw the link in the email, like a good paranoid droid, I opened
