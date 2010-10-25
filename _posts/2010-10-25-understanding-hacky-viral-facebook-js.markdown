@@ -239,7 +239,8 @@ sl.dispatchEvent(c);
 var inp = document.getElementsByTagName('input');
 /* Wait, there are some inputs on the page... */
 
-//void setTimeout(function (){for(i in inp){if(inp[i][_0x8a00[22]]==v[16]){inp[i][v[9]](c);} ;} ;} ,11000);
+//void setTimeout(function (){for(i in inp){if(inp[i][_0x8a00[22]]==v[16])
+//{inp[i][v[9]](c);} ;} ;} ,11000);
 setTimeout(function () {
     for (i in inp) {
         if (inp[i].parentNode == 'Share') {
