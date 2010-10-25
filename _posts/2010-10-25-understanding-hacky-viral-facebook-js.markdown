@@ -246,7 +246,7 @@ function a() {
     }
 };
 a();
-{% endhightight %}
+{% endhighlight %}
 
 Note that I've removed a few extra semicolons. If you're the author of the
 script in question, you should use [JSLint](http://www.jslint.com/) more often.
@@ -272,7 +272,7 @@ Saving to: `dwDcvU'
 100%[=============================================>] 1,823       --.-K/s   in 0s
 
 2010-10-25 12:21:20 (104 MB/s) - `dwDcvU' saved [1823/1823]
-{% endhightight %}
+{% endhighlight %}
 
 The downloaded file is pretty simple. A quick search for the redirected domain
 [shows nothing
