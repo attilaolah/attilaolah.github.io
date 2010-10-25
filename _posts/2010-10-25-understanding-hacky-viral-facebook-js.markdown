@@ -17,7 +17,7 @@ Break up EVER!**", and he suggests I like it too.
 Now I know him well enough to know that he would probably not send me something
 like that - after all, we're programmers, [serious
 people](http://picasaweb.google.com/attilaolah/Obnob?authkey=Gv1sRgCJyxhImS67PdlAE&feat=directlink),
-you know :) Anyway, I figured something fishi's going on. Somebody must have
+you know :) Anyway, I figured something fishy's going on. Somebody must have
 [threatened him](http://en.wikipedia.org/wiki/AK-47) to do this, or maybe a
 [spam bot](http://en.wikipedia.org/wiki/Spambot) took control over his
 computer, which is highly unlikely, as he, like a good American, is a
