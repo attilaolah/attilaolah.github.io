@@ -33,7 +33,7 @@ window.ready = (() ->
             try 
                 document.documentElement.doScroll "left"
             catch e
-                setTimeout(do_scroll_check, 1)
+                setTimeout do_scroll_check, 1
                 return
             # Execute any waiting functions
             idempotent_fn()
@@ -46,19 +46,19 @@ window.ready = (() ->
         # Mozilla, Opera and webkit nightlies currently support this event
         if document.addEventListener
             # Use the handy event callback
-            document.addEventListener("DOMContentLoaded", idempotent_fn, false)
+            document.addEventListener "DOMContentLoaded", idempotent_fn, false
             # A fallback to window.onload, that will always work
-            window.addEventListener("load", idempotent_fn, false)
+            window.addEventListener "load", idempotent_fn, false
 
         # If IE event model is used
         else if document.attachEvent
             # Ensure firing before onload; maybe late but safe also for iframes
-            document.attachEvent("onreadystatechange", idempotent_fn)
+            document.attachEvent "onreadystatechange", idempotent_fn
             # A fallback to window.onload, that will always work
-            window.attachEvent("onload", idempotent_fn);
+            window.attachEvent "onload", idempotent_fn
             # If IE and not a frame:
             # continually check to see if the document is ready
-            do_scroll_check() if document?.documentElement?.doScroll and window?.frameElement == null
+            do_scroll_check() if document?.documentElement?.doScroll and window?.frameElement is null
 )()
 {% endhighlight %}
 
