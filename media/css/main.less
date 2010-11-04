@@ -84,6 +84,9 @@ p {
 .hidden {
   display: none;
 }
+.clear {
+  clear: both;
+}
 
 ._white(@bg: transparent) {
   background: url(/media/images/skin/bg-box.png) repeat scroll left top @bg;
@@ -264,43 +267,40 @@ body {
               background: url(/media/images/skin/icons/user.png) no-repeat scroll 4px 6px transparent;
             }
             > ul {
-              font-size: 12px;
-              margin: 0 2px 0 20px;
+              margin: 0 2px;
               padding: 5px 0 5px 5px;
               ._i(@value) {
-                background-image: e(%('url(/media/images/skin/icons/social/%s.ico)', @value));
+                @lpad: @value * 16;
+                background: e(%('url(/media/images/skin/social.png) no-repeat scroll -%spx top transparent', @lpad));
               }
-              ._p(@value) {
-                background-image: e(%('url(/media/images/skin/icons/social/%s.png)', @value));
-              }
-              .bb { ._p(bb); }
-              .di { ._i(di); }
-              .dl { ._i(dl); }
-              .dm { ._i(dm); }
-              .el { ._i(el); }
-              .fb { ._i(fb); }
-              .gh { ._i(gh); }
-              .go { ._i(go); }
-              .ic { ._i(ic); }
-              .in { ._i(in); }
-              .lf { ._i(lf); }
-              .mi { ._i(mi); }
-              .od { ._i(od); }
-              .pi { ._i(pi); }
-              .sf { ._i(sf); }
-              .so { ._i(so); }
-              .su { ._i(su); }
-              .tw { ._i(tw); }
-              .yt { ._i(yt); }
+              > .bb { ._i(6); }
+              > .di { ._i(12); }
+              > .dl { ._i(20); }
+              > .dm { ._i(17); }
+              > .el { ._i(8); }
+              > .fb { ._i(1); }
+              > .gh { ._i(5); }
+              > .go { ._i(0); }
+              > .ic { ._i(14); }
+              > .in { ._i(3); }
+              > .lf { ._i(4); }
+              > .mi { ._i(13); }
+              > .od { ._i(7); }
+              > .pi { ._i(15); }
+              > .sf { ._i(10); }
+              > .so { ._i(9); }
+              > .su { ._i(11); }
+              > .tw { ._i(2); }
+              > .yt { ._i(16); }
+              > .wk { ._i(18); }
+              > .os { ._i(19); }
               > li {
-                background-position: left 2px;
-                background-repeat: no-repeat;
-                background-size: 16px 16px;
+                float: left;
                 list-style-type: none;
-                margin: 0 0 5px -10px;
-                padding: 0 0 0 18px;
+                margin: 5px;
                 a {
-                  line-height: 16px;
+                  display: block;
+                  height: 16px;
                   text-decoration: none;
                   width: 16px;
                 }
