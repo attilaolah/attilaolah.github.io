@@ -42,7 +42,7 @@ enable, ``-`` means disable):
           * PPP over Ethernet (EXPERIMENTAL)
         * Wireless LAN
           + Intel PRO/Wireless 2200BG and 2915ABG Network Connection
-            * IPW2200 is needed to indirectly select WEXT_PRIV; [1]
+            * IPW2200 is needed to indirectly select WEXT_PRIV; **
           - Broadcom 43xx wireless support (mac80211 stack)
           - Broadcom 43xx-legacy wireless support (mac80211 stack)
           - The rest is not needed here
@@ -88,7 +88,7 @@ enable, ``-`` means disable):
         + NFS server support
         + CIFS support (advanced network filesystem, SMBFS successor)
 
-[1] see [bug #248450 comment #98](https://bugs.gentoo.org/248450#c98).
+`**` see [bug #248450 comment #98](https://bugs.gentoo.org/248450#c98).
 
 **Note:** this configuration applies for
 [``2.6.36.*``](http://www.kernel.org/), i.e., my generated kernel looks like
