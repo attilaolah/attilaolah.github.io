@@ -5,7 +5,7 @@ tags:
  - TED
  - inspiration
  - video
-summary: 
+summary: A video from TED.com.
 ---
 
 I saw [a
