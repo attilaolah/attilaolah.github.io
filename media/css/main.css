@@ -393,6 +393,10 @@ body > .wrapper > .container > .content .pad .main .comments > .fb_iframe_widget
 body > .wrapper > .container > .content .pad .main .comments > .fb_iframe_widget > span > iframe {
   width: inherit !important;
 }
+body > .wrapper > .container > .content .pad .main .comments > .fb_iframe_widget > span > iframe .post_area .connected label {
+  position: relative;
+  top: -4px;
+}
 body > .wrapper > .container > .content .sidebar > div {
   margin: 0 0 10px;
   background: url(/media/images/skin/bg-box.png) repeat scroll left top transparent;
