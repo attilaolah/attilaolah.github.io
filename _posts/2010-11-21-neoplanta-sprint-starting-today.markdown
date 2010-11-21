@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Neoplanta Sprint 2010 coming soon
+title: Neoplanta Sprint 2010 starting today
 tags:
  - Python
  - Plone
@@ -27,11 +27,15 @@ Putnik](http://www.google.com/search?q=hotel+putnik+novi+sad), which is in the
 city center. I'm arriving today afternoon, about 5pm. Looking forward to meet
 new people there.
 
+<div class="clear"><br/></div>
+
 <div class="center">
   <a href="http://eestec.net/news-and-offers/ecm-2010-in-general"><img src="http://eestec.net/news-and-offers/novisadnocu.jpg/image_large" alt="View from Petrovaradin Fortress at night"/></a>
   <br/>
   <em>Picture from the <a href="http://eestec.net/news-and-offers/ecm-2010-in-general">EESTEC website</a>.</em>
 </div>
+
+<div class="clear"><br/></div>
 
 <div class="center">
   <a href="http://lh5.ggpht.com/_ECkYvml2zGc/S1m_TclasrI/AAAAAAAAPsM/uuzkkY6VcLo/tvrdava-at-night.png.jpg"><img src="http://lh5.ggpht.com/_ECkYvml2zGc/S1m_TclasrI/AAAAAAAACnA/lfF2CR7sNWs/s800/tvrdava-at-night.png.jpg" alt="Petrovaradin Fortress at night"/></a>
