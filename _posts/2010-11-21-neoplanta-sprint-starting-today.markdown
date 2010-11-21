@@ -38,8 +38,8 @@ new people there.
 <div class="clear"><br/></div>
 
 <div class="center">
-  <a href="http://lh5.ggpht.com/_ECkYvml2zGc/S1m_TclasrI/AAAAAAAAPsM/uuzkkY6VcLo/tvrdava-at-night.png.jpg"><img src="http://lh5.ggpht.com/_ECkYvml2zGc/S1m_TclasrI/AAAAAAAACnA/lfF2CR7sNWs/s800/tvrdava-at-night.png.jpg" alt="Petrovaradin Fortress at night"/></a>
-  <em>Picture by me :)</em>
+  <a href="http://lh5.ggpht.com/_ECkYvml2zGc/S1m_TclasrI/AAAAAAAAPsM/uuzkkY6VcLo/tvrdava-at-night.png.jpg"><img src="http://lh5.ggpht.com/_ECkYvml2zGc/S1m_TclasrI/AAAAAAAACnA/lfF2CR7sNWs/s800/tvrdava-at-night.png.jpg" alt="Petrovaradin Fortress at night" style="max-width: 640px;"/></a>
   <br/>
+  <em>Picture by me :)</em>
 </div>
 
