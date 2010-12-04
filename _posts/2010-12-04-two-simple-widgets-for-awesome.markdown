@@ -22,13 +22,12 @@ This one is pretty simple, based on [this wiki
 page](http://awesome.naquadah.org/wiki/Acpitools-based_battery_widget)
 (requires ``acpitools``):
 
-    -- {{{ Hex converter, for RGB colors
+    -- Hex converter, for RGB colors
     function hex(inp)
         return inp > 16 and string.format("%X", inp) or string.format("0%X", inp)
     end
-    -- }}}
 
-    -- {{{ Battery monitor
+    -- Battery monitor
     mybattmon = widget({ type = "textbox", name = "mybattmon", align = "right" })
     function battery_status ()
         local output={} -- output buffer
@@ -56,7 +55,6 @@ page](http://awesome.naquadah.org/wiki/Acpitools-based_battery_widget)
         mybattmon.text = " " .. battery_status() .. " "
     end)
     my_battmon_timer:start()
-    -- }}}
 
 The nice thing about it is that it changes its color dynamically (and
 linearly). ``0%`` battery = ``#FF0000``, ``100%`` = ``#00FF00``.
@@ -67,7 +65,7 @@ CPU temperature monitor
 
 Based on the same code, looks very similar to the battery widget:
 
-    -- {{{ Heat monitor
+    -- Heat monitor
     myheatmon = widget({ type = "textbox", name = "myheatmon", align = "right" })
     function heat_status ()
         local output = {} -- output buffer
@@ -92,7 +90,6 @@ Based on the same code, looks very similar to the battery widget:
         myheatmon.text = heat_status() .. " "
     end)
     my_heatmon_timer:start()
-    -- }}}
 
 For example usage, have a look at my custom ``rc.lua``
 [here](/downloads/lua/rc.lua).
