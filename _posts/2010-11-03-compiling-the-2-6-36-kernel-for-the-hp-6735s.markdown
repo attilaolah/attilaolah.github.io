@@ -63,6 +63,9 @@ enable, ``-`` means disable):
           + ATI Radeon
             + Enable modesetting on radeon by default - NEW DRIVER
           - Deselect the rest
+        + ATI Radeon display support
+          + DDC/I2C for ATI Radeon support
+          + Support for backlight control
         + Bootup logo
     * File systems
       + Ext3 journalling file system support
