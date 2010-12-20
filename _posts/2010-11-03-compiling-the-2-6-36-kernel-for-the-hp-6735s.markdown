@@ -18,7 +18,7 @@ enable, ``-`` means disable):
 
     * General setup
       + Local version - append to kernel release: '-aiur-r1'
-      + Kernel compression mode (LZMA) (Optional; I like LZMA, so I enabled this.)
+      + Kernel compression mode (LZO)
     * Processor type and features
       + Processor family: 'Opteron/Athlon64/Hammer/K8'
     * Power management and ACPI options
@@ -46,6 +46,7 @@ enable, ``-`` means disable):
           - Broadcom 43xx wireless support (mac80211 stack)
           - Broadcom 43xx-legacy wireless support (mac80211 stack)
           - The rest is not needed here
+        * Universal TUN/TAP device driver support
       + Generic Thermal sysfs driver
         + Hardware monitoring support
       - Sonics Silicon Backplane
@@ -95,4 +96,11 @@ enable, ``-`` means disable):
 
 **Note:** this configuration applies for
 [``2.6.36.*``](http://www.kernel.org/), i.e., my generated kernel looks like
-this: ``kernel-genkernel-x86_64-2.6.36-gentoo-aiur-r1``.
+this: ``kernel-genkernel-x86_64-2.6.36-gentoo-r5-aiur-r1``.
+
+**EDIT:** recent kernels support
+[LZO](http://en.wikipedia.org/wiki/Lempel-Ziv-Oberhumer) compression using the
+[GNU lzop tool](http://www.lzop.org/). LZO is a super-fast compression
+algorithm. In non-trivial cases, decompression is able to exceed the speed of a
+straight memory-to-memory copy due to the reduced memory-reads. On Gentoo, this
+requires the package [app-arch/lzop](http://gentoo-portage.com/app-arch/lzop).
