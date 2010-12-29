@@ -345,8 +345,6 @@ cd $DIR
 * `install-rtorrent.sh`:
 
 {% highlight bash %}
-# Create a source dir & unpack the source there
-
 NAME="rtorrent"
 VER="0.8.7"
 DIR="$NAME-$VER"
