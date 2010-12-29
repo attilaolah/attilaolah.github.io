@@ -37,7 +37,7 @@ I'll experiment with CentOS.
 
 I can tell one thing for sure: CentOS is not for me.
 
-One major bpoblem is Python 2.4. What the hell? The other problem, I was not
+One major poblem is Python 2.4. What the hell? The other problem, I was not
 able to find the software I needed in the official repos.
 
 So I went with a hacky approach and installed an [additional
