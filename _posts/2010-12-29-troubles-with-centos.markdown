@@ -29,6 +29,12 @@ instead, I got [CentOS 5](http://www.centos.org/). Moreover, I didn't have
 access to the control ponel to reinstall the OS for a whole day, so I figured
 I'll experiment with CentOS.
 
+<div class="center">
+  <a href="/media/images/random/centos-5.jpg">
+    <img src="/media/images/random/centos-5.jpg"/>
+  </a>
+</div>
+
 I can tell one thing for sure: CentOS is not for me.
 
 One major bpoblem is Python 2.4. What the hell? The other problem, I was not
