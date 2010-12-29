@@ -615,6 +615,13 @@ body > .wrapper .footer ul li:first-child {
 body > .wrapper .footer ul li:last-child {
   border-right: none;
 }
+/* highlight & ul fixes */
+.highlight + ul {
+  margin-top: 1em;
+}
+ul + .highlight {
+  margin-top: 0.5em;
+}
 /* XXX: boilerplate */
 .treeview {
   font-size: 12px;
