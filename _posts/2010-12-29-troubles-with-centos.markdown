@@ -386,7 +386,7 @@ figured I'll donate the rest by seeding some open-source torrents. Hence
 
 I also needed to grab some files from the
 [Usenet](http://en.wikipedia.org/wiki/Usenet) and then transfer them to my
-laptop, hence [nzbcet](http://nzbget.sourceforge.net/Main_Page) and
+laptop, hence [nzbget](http://nzbget.sourceforge.net/Main_Page) and
 [mktorrent](http://mktorrent.sourceforge.net/).
 
 I needed to install a bunch of [Perl](http://www.perl.org/) libraries too, for
