@@ -29,10 +29,17 @@ enable, ``-`` means disable):
           + Deprecated power /proc/acpi directories
           + Deprecated /proc/acpi/event support
     * Networking support
+      + Networking options
+        + Packet socket
+        + Unix domain sockets
+        + TCP/IP networking
+          + IP: tunneling
+          + The IPv6 protocol
+          + The IPX protocol (only for StarCraft I fans)
       + Wireless
         + cfg80211 - wireless configuration API
         - Generic IEEE 802.11 Networking Stack (mac80211)
-          * This option conflics with the Breadcom STA driver.
+          * This option conflics with the Broadcom STA driver.
     * Device Drivers
       * Network device support
         * Ethernet (10 or 100Mbit)
@@ -59,15 +66,23 @@ enable, ``-`` means disable):
             + V4L USB devices
               + USB Video Class (UVC)
               + (My UVC manufacturer driver)
+      * Sound card support
+        * Advanced Linux Sound Architecture
+          + PCI sound devices
+            + Intel HD Audio
+              + Support jack plugging notification via input layer
       * Graphics support
         + Direct Rendering Manager (XFree86 4.1.0 and higher DRI support)
           + ATI Radeon
             + Enable modesetting on radeon by default - NEW DRIVER
           - Deselect the rest
-        + ATI Radeon display support
-          + DDC/I2C for ATI Radeon support
-          + Support for backlight control
+        + Support for frame buffer devices
+          + ATI Radeon display support
+            + DDC/I2C for ATI Radeon support
+            + Support for backlight control
         + Bootup logo
+      + MMC/SD/SDIO card support
+      + 
     * File systems
       + Ext3 journalling file system support
         + Ext3 extended attributes
