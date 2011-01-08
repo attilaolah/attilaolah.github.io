@@ -112,3 +112,10 @@ keyboard layout looks like this:
 
 I'm still getting used to it, but in the long term, this change is certainly
 going to be worth it.
+
+**EDIT:** As of `x11-base/xorg-server` version `1.9.99.*`, `X` doesn't seem to
+load the settings from the `xorg.conf` file, so I set up an `~/.Xkbmap` file
+that looks like this:
+
+    -layout us -variant dvp -option compose:102,numpad:shift3,kpdl:semi,\
+        keypad:atm,caps:shift,grp:switch,grp:alt_shift_toggle
