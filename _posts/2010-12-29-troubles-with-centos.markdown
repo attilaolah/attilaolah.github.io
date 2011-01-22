@@ -19,14 +19,14 @@ servers (although now obsolete, I'll have to have a look at
 
 So I headed over to [lowendbox.com](http://www.lowendbox.com/) to look for some
 really cheap solutions. I wouldn't run any production servers on the VPS. I
-don't need anything fancy. I was looking for an option with unmetered bandwith
+don't need anything fancy. I was looking for an option with unmetered bandwidth
 and as much storage as possible. This has lead me to a German VPS reseller whom
 I will not disclose. 
 
 I was happy to see that I can chose [Gentoo](http://www.gentoo.org/) for the
 OS. However, there is a bug with the website: Gentoo could not be installed,
 instead, I got [CentOS 5](http://www.centos.org/). Moreover, I didn't have
-access to the control ponel to reinstall the OS for a whole day, so I figured
+access to the control panel to reinstall the OS for a whole day, so I figured
 I'll experiment with CentOS.
 
 <div class="center">
@@ -384,7 +384,7 @@ export LD_RUN_PATH="$LOCAL/lib"
 Note on the installed files
 ---------------------------
 
-Since I have an unmetered plan, and of course I don't use up all my bandwith, I
+Since I have an unmetered plan, and of course I don't use up all my bandwidth, I
 figured I'll donate the rest by seeding some open-source torrents. Hence
 [libterront and rtorrent](http://libtorrent.rakshasa.no/).
 
