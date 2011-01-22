@@ -14,7 +14,7 @@ side-by-side or top-bottom view. Since back then I didn't get any answer on
 I figured I might just look into it myself, google it, read a few man pages,
 and then write it down for the rest of the world.
 
-**Note: I'm not encouraging anyone to download pirated 3D movies!**
+* **Note: I'm not encouraging anyone to download pirated 3D movies!**
 
 But, if you do have the movies, and they are in separate files, but you want to
 watch them on a 3DTV or a PS3 that can only play side-by-side, single-file 3D
