@@ -39,7 +39,7 @@ window.ready = (() ->
             idempotent_fn()
 
 
-        # If the browser ready event has already occured
+        # If the browser ready event has already occurred
         if document.readyState is "complete"
             return idempotent_fn()
 

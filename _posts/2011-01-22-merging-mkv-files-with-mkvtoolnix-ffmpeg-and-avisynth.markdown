@@ -23,7 +23,7 @@ movies, you'll end up merging your files.
 The GUI way
 -----------
 
-If you just want to know how te merge these files using the GUI, I'm not going
+If you just want to know how to merge these files using the GUI, I'm not going
 to write it down here, as there exists a very detailed tutorial about this over
 at [Ameic.net](http://www.ameic.net/blog/archives/22). Go read that if you want
 to do this using the GUI.
