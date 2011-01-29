@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Having fun at #swbru
+title: "Having fun at #swbru"
 tags:
  - Startup week
  - Startups
  - Brussels
-summary: #swbru == Startup Weekend in Brussels.
+summary: "#swbru == Startup Weekend in Brussels."
 ---
 
 The Slartup Weekend seems great so far. We're running surveys, andvertizing,
