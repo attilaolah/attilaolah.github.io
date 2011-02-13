@@ -421,6 +421,15 @@ body > .wrapper > .container > .content .sidebar > div > .header {
   margin: 0px 4px;
   padding: 3px 0 3px 25px;
 }
+body > .wrapper > .container > .content .sidebar > .avatar {
+  height: 145px;
+  position: relative;
+}
+body > .wrapper > .container > .content .sidebar > .avatar > img {
+  position: absolute;
+  left: -50px;
+  top: -9px;
+}
 body > .wrapper > .container > .content .sidebar > .archives > .header {
   background: url(/media/images/skin/icons/archives.png) no-repeat scroll 5px 5px transparent;
 }
