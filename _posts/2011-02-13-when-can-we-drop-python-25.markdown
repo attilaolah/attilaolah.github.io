@@ -8,7 +8,7 @@ summary: Just wondering for how long will I have to support Python 2.5.
 ---
 
 <div class="center right">
-  <a href="http://pypy.org/"><img src="/menda/images/random/pypy-logo.png" alt="PyPy"/></a>
+  <a href="http://pypy.org/"><img src="/media/images/random/pypy-logo.png" alt="PyPy"/></a>
 </div>
 
 There are mainly two reasons I need Python libraries to be compatible with 2.5.
@@ -17,7 +17,7 @@ only compatible with 2.5. PyPy trunk however is now compatible with 2.7, so
 this should not be a problem in the near future.
 
 <div class="center left">
-  <a href="http://code.google.com/appengine/"><img src="/menda/images/random/gae-logo.gif" alt="Google App Engine"/></a>
+  <a href="http://code.google.com/appengine/"><img src="/media/images/random/gae-logo.gif" alt="Google App Engine"/></a>
 </div>
 
 The other obstacle to upgrade was (and still is, at the time of writing)
