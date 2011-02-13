@@ -424,9 +424,10 @@ body > .wrapper > .container > .content .sidebar > div > .header {
 body > .wrapper > .container > .content .sidebar > .avatar {
   height: 145px;
   position: relative;
-}
-body > .wrapper > .container > .content .sidebar > .avatar > .header {
   text-align: right;
+}
+body > .wrapper > .container > .content .sidebar > .avatar > .bio {
+  padding-right: 3px;
 }
 body > .wrapper > .container > .content .sidebar > .avatar > img {
   position: absolute;
