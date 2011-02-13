@@ -567,6 +567,12 @@ body > .wrapper > .container > .content .sidebar > .me > ul > .dl {
 body > .wrapper > .container > .content .sidebar > .me > ul > .dl:hover, body > .wrapper > .container > .content .sidebar > .me > ul .dl:active {
   background: url(/media/images/skin/social.png) no-repeat scroll -320px top transparent;
 }
+body > .wrapper > .container > .content .sidebar > .me > ul > .dl {
+  background: url(/media/images/skin/social.png) no-repeat scroll -336px -16px transparent;
+}
+body > .wrapper > .container > .content .sidebar > .me > ul > .dl:hover, body > .wrapper > .container > .content .sidebar > .me > ul .dl:active {
+  background: url(/media/images/skin/social.png) no-repeat scroll -336px top transparent;
+}
 body > .wrapper > .container > .content .sidebar > .me > ul > li {
   float: left;
   list-style-type: none;
