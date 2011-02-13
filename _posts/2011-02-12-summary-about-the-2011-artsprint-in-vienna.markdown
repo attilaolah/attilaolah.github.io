@@ -5,7 +5,8 @@ tags:
  - Python
  - Pyramid
  - events
-summary: "A short summary about the work done by the participants of the a][rtsprinters in Vienna"
+summary: "A short summary about the work done by the participants of the
+a][rtsprinters in Vienna."
 ---
 
 In a nutshell, the
