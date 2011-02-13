@@ -26,7 +26,8 @@ As a result, we:
  * released `Plumber` 1.0 (an alternative to mixin-based extension of classes)
  * updated `Node`, `Yafowil` (and its widget libraries) and `cone.*` to `Pyramid`
  * improved the documentation of the stack
- * set up a buildbot to run periodical & on-demand unit-tests and code checks
+ * set up a [buildbot](http://trac.buildbot.net/) to run periodical & on-demand
+   unit-tests and code checks
  * worked on `agx`
  * had some productive discussions
  * met new friends & did some key signings
