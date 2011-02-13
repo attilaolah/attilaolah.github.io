@@ -428,12 +428,12 @@ body > .wrapper > .container > .content .sidebar > .avatar {
 body > .wrapper > .container > .content .sidebar > .avatar > .bio {
   padding: 0 5px 5px;
 }
-body > .wrapper > .container > .content .sidebar > .avatar > .bio > a.me {
+body > .wrapper > .container > .content .sidebar > .avatar > .bio a.me {
   font-weight: bold;
 }
 body > .wrapper > .container > .content .sidebar > .avatar > img {
   position: absolute;
-  left: -50px;
+  right: 108px;
   top: -9px;
 }
 body > .wrapper > .container > .content .sidebar > .archives > .header {
