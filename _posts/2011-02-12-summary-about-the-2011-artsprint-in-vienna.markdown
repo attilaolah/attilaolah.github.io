@@ -23,7 +23,7 @@ to Pyramid.
 
 As a result, we:
 
- * released `Plumber` 1.0 (An alternative to mixin-based extension of classes)
+ * released `Plumber` 1.0 (an alternative to mixin-based extension of classes)
  * updated `Node`, `Yafowil` (and its widget libraries) and `cone.*` to `Pyramid`
  * improved the documentation of the stack
  * set up a buildbot to run periodical & on-demand unit-tests and code checks
