@@ -606,6 +606,12 @@ body > .wrapper > .container > .content .sidebar > .me > ul > .ws {
 body > .wrapper > .container > .content .sidebar > .me > ul > .ws:hover, body > .wrapper > .container > .content .sidebar > .me > ul .ws:active {
   background: url(/media/images/skin/social.png) no-repeat scroll -352px top transparent;
 }
+body > .wrapper > .container > .content .sidebar > .me > ul > .ca {
+  background: url(/media/images/skin/social.png) no-repeat scroll -368px -16px transparent;
+}
+body > .wrapper > .container > .content .sidebar > .me > ul > .ca:hover, body > .wrapper > .container > .content .sidebar > .me > ul .ca:active {
+  background: url(/media/images/skin/social.png) no-repeat scroll -368px top transparent;
+}
 body > .wrapper > .container > .content .sidebar > .me > ul > li {
   float: left;
   list-style-type: none;
