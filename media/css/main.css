@@ -603,7 +603,7 @@ body > .wrapper > .container > .content .sidebar > .me > ul > .gr:hover, body > 
 body > .wrapper > .container > .content .sidebar > .me > ul > .ws {
   background: url(/media/images/skin/social.png) no-repeat scroll -352px -16px transparent;
 }
-body > .wrapper > .container > .content .sidebar > .me > ul > .gr:hover, body > .wrapper > .container > .content .sidebar > .me > ul .gr:active {
+body > .wrapper > .container > .content .sidebar > .me > ul > .ws:hover, body > .wrapper > .container > .content .sidebar > .me > ul .ws:active {
   background: url(/media/images/skin/social.png) no-repeat scroll -352px top transparent;
 }
 body > .wrapper > .container > .content .sidebar > .me > ul > li {
