@@ -422,12 +422,14 @@ body > .wrapper > .container > .content .sidebar > div > .header {
   padding: 3px 0 3px 25px;
 }
 body > .wrapper > .container > .content .sidebar > .avatar {
-  height: 145px;
   position: relative;
   text-align: right;
 }
 body > .wrapper > .container > .content .sidebar > .avatar > .bio {
   padding-right: 3px;
+}
+body > .wrapper > .container > .content .sidebar > .avatar > .bio > a.me {
+  font-weight: bold;
 }
 body > .wrapper > .container > .content .sidebar > .avatar > img {
   position: absolute;
