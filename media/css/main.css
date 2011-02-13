@@ -426,7 +426,7 @@ body > .wrapper > .container > .content .sidebar > .avatar {
   text-align: right;
 }
 body > .wrapper > .container > .content .sidebar > .avatar > .bio {
-  padding-right: 0 5px 5px;
+  padding: 0 5px 5px;
 }
 body > .wrapper > .container > .content .sidebar > .avatar > .bio > a.me {
   font-weight: bold;
