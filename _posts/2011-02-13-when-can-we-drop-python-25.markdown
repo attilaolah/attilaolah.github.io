@@ -28,7 +28,7 @@ there's light at the end of the tunnel.
 
 It was because of the lack of Python 2.7 support that I wrote an ad-hoc
 solution, a Python package named `seven` (available on
-[pypi](http://pypi.python.org/pypi/seven/0.5) and
+[pypi](http://pypi.python.org/pypi/seven) and
 [GitHub](https://github.com/aatiis/seven)), that adds a [new-style import
 hook](http://www.python.org/dev/peps/pep-0302/) that pre-processes Python code
 before evaluation, and converts it to Python 2.5 syntax. Most notably, it adds
