@@ -425,6 +425,9 @@ body > .wrapper > .container > .content .sidebar > .avatar {
   height: 145px;
   position: relative;
 }
+body > .wrapper > .container > .content .sidebar > .avatar > .header {
+  text-align: right;
+}
 body > .wrapper > .container > .content .sidebar > .avatar > img {
   position: absolute;
   left: -50px;
