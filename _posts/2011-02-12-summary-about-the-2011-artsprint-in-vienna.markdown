@@ -9,7 +9,7 @@ summary: "A short summary about the work done by the participants of the a][rtsp
 ---
 
 <div class="center right">
-  <img src="/media/images/random/artsprint-button.jpg" alt="Buttons, yay!"/></a>
+  <img src="/media/images/random/artsprint-button.jpg" alt="Buttons, yay!"/>
 </div>
 
 In a nutshell, the a][rtsprint was a one-week [Python](http://www.python.org/)

@@ -17,7 +17,7 @@ only compatible with 2.5. PyPy trunk however is now compatible with 2.7, so
 this should not be a problem in the near future.
 
 <div class="center left">
-  <a href="http://code.google.com/appengine/"><img src="/menda/images/random/gae-logo.png" alt="PyPy"/></a>
+  <a href="http://code.google.com/appengine/"><img src="/menda/images/random/gae-logo.gif" alt="Google App Engine"/></a>
 </div>
 
 The other obstacle to upgrade was (and still is, at the time of writing)
