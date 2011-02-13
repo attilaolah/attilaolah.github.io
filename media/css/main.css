@@ -348,6 +348,18 @@ body > .wrapper > .container > .content .pad .main h2 {
 body > .wrapper > .container > .content .pad .main blockquote {
   margin: 1em 0;
 }
+body > .wrapper > .container > .content .pad .main blockquote code {
+  border: none;
+  border-radius: 2px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+body > .wrapper > .container > .content .pad .main blockquote code.date {
+  border-left: 2px solid #FA0;
+}
+body > .wrapper > .container > .content .pad .main blockquote code.tag {
+  border-left: 2px solid #888;
+}
 body > .wrapper > .container > .content .pad .main img {
   padding: 4px;
   border: 1px solid white;
