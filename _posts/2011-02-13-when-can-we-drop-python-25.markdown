@@ -49,7 +49,7 @@ class C(object):
 C = decorated(C)
 {% endhighlight %}
 
-`seven` is in very early stages of development, and I was planning to put more
+`seven` is in a very early stage of development, and I was planning to put more
 effort in it, but now I really hope that there's goingt to be need for that, as
 Python 2.5 will slowle be replaced by newer versions at hosting services and
 Linux distros.
