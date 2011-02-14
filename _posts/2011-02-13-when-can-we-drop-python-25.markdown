@@ -7,7 +7,7 @@ tags:
 summary: Just wondering for how long will I have to support Python 2.5.
 ---
 
-<div class="center right">
+<div class="img center right">
   <a href="http://pypy.org/"><img src="/media/images/random/pypy-logo.png" alt="PyPy"/></a>
 </div>
 
@@ -16,7 +16,7 @@ First there's [PyPy](http://pypy.org/). The current release (version 1.4.1) is
 only compatible with 2.5. PyPy trunk however is now compatible with 2.7, so
 this should not be a problem in the near future.
 
-<div class="center left">
+<div class="img center left">
   <a href="http://code.google.com/appengine/"><img src="/media/images/random/gae-logo.gif" alt="Google App Engine"/></a>
 </div>
 

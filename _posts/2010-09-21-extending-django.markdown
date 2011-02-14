@@ -11,9 +11,9 @@ summary: Tips on how to replace some Django components.
 When I put together my [Django](http://www.djangoproject.com/) app, initially
 it looks something like this:
 
-<p class="center">
+<div class="img center">
   <img src="/media/images/random/django-depgraph.png" alt="Django App Components"/>
-</p>
+</div>
 
 Why would you want to do this? Well, there are several reasons:
 

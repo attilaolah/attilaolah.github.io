@@ -40,7 +40,7 @@ Currently my main browsers are:
 I use these tools more than 95% of the time I'm using my computer. This is me
 writing this very article using vim:
 
-<div class="center">
+<div class="img center">
   <a href="/media/images/random/environ.png">
     <img src="/media/images/random/environ-small.png"/>
   </a>
@@ -71,7 +71,7 @@ extensions are:
 
 This is how a usual `vimpdb` session looks like:
 
-<div class="center">
+<div class="img center">
   <a href="/media/images/random/vimpdb.png">
     <img src="/media/images/random/vimpdb-small.png"/>
   </a>
@@ -104,7 +104,7 @@ I was inspired by [this
 article](http://workawesome.com/productivity/dvorak-keyboard-layout/). Now my
 keyboard layout looks like this:
 
-<div class="center">
+<div class="img center">
   <a href="/media/images/random/dvp.png">
     <img src="/media/images/random/dvp-small.png"/>
   </a>

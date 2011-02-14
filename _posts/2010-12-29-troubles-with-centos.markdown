@@ -29,7 +29,7 @@ instead, I got [CentOS 5](http://www.centos.org/). Moreover, I didn't have
 access to the control panel to reinstall the OS for a whole day, so I figured
 I'll experiment with CentOS.
 
-<div class="center">
+<div class="img center">
   <a href="/media/images/random/centos-5.jpg">
     <img src="/media/images/random/centos-5.jpg"/>
   </a>

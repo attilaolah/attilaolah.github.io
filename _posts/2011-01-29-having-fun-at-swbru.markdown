@@ -16,7 +16,7 @@ people, and planning cow usage. So far not much coding though. I'll just have
 to make it up next week at
 [artsprint](http://www.coactivate.org/projects/artsprint2011).
 
-<div class="center">
+<div class="img center">
   <a href="http://brussels.startupweekend.org/">
     <img src="/media/images/random/swbru-logo.jpg"/>
   </a>

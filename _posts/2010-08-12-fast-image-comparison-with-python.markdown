@@ -20,7 +20,7 @@ Example result
 If you download the first 36 image results for the word "apple", you'll get
 something like this:
 
-<div class="center">
+<div class="img center">
   <img src="/media/images/random/apple-search-results.png" alt="Apple search results" />
 </div>
 
@@ -28,7 +28,7 @@ Now if you put those in a folder called ``results`` and run ``python imgcmp.py
 results/*``, it'll tell you that the most similar pictures are the following
 two:
 
-<div class="center">
+<div class="img center">
   <img src="/media/images/random/apple-similar-images.png" alt="Apple similar images" />
 </div>
 

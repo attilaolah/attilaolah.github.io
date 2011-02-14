@@ -9,7 +9,7 @@ summary: I'll upload my configuration in case my laptop gets hit by a truck.
 
 The two widgets next to the system tray:
 
-<div class="center">
+<div class="img center">
   <a href="/media/images/random/awesome-widgets.png">
     <img src="/media/images/random/awesome-widgets.png"/>
   </a>

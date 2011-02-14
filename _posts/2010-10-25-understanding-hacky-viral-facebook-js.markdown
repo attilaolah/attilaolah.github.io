@@ -32,13 +32,13 @@ accounts](http://developers.facebook.com/blog/post/35)", as per the [Facebook
 TOS](http://www.facebook.com/terms.php)). Then went to the page, which looked
 something like this:
 
-<div class="center">
+<div class="img center">
     <img src="/media/images/random/facebook-js-unliked.png" alt="Before I 'like' the page" />
 </div>
 
 So I guess I need to "like" this one too. Let's see what happens if I obey:
 
-<div class="center">
+<div class="img center">
     <img src="/media/images/random/facebook-js-liked.png" alt="After I 'like' it" />
 </div>
 

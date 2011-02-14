@@ -8,8 +8,8 @@ tags:
 summary: A short summary about the upcoming Plone sprint in Novi Sad.
 ---
 
-<div class="center right">
-  <a href="http://en.wikipedia.org/wiki/File:NoviSadCityHall.jpg"><img src="http://upload.wikimedia.org/wikipedia/en/thumb/b/bd/NoviSadCityHall.jpg/250px-NoviSadCityHall.jpg" alt="City Hall - Office of the mayor"/></a>
+<div class="img center right">
+  <a href="http://en.wikipedia.org/wiki/File:NoviSadCityHall.jpg"><img src="/media/images/random/novi-sad-city-hall.jpg" alt="City Hall - Office of the mayor"/></a>
   <br/>
   <em>City Hall. Picture from Wikipedia.</em>
 </div>
@@ -29,17 +29,16 @@ new people there.
 
 <div class="clear"><br/></div>
 
-<div class="center">
-  <a href="http://eestec.net/news-and-offers/ecm-2010-in-general"><img src="http://eestec.net/news-and-offers/novisadnocu.jpg/image_large" alt="View from Petrovaradin Fortress at night"/></a>
+<div class="img center">
+  <a href="http://eestec.net/news-and-offers/ecm-2010-in-general"><img src="/media/images/random/novi-sad-at-night.jpg" alt="View from Petrovaradin Fortress at night"/></a>
   <br/>
   <em>View from Petrovaradin Fortress at night. Picture from the <a href="http://eestec.net/news-and-offers/ecm-2010-in-general">EESTEC website</a>.</em>
 </div>
 
 <div class="clear"><br/></div>
 
-<div class="center">
-  <a href="http://lh5.ggpht.com/_ECkYvml2zGc/S1m_TclasrI/AAAAAAAAPsM/uuzkkY6VcLo/tvrdava-at-night.png.jpg"><img src="http://lh5.ggpht.com/_ECkYvml2zGc/S1m_TclasrI/AAAAAAAACnA/lfF2CR7sNWs/s800/tvrdava-at-night.png.jpg" alt="Petrovaradin Fortress at night" style="max-width: 640px;"/></a>
+<div class="img center">
+  <a href="http://lh5.ggpht.com/_ECkYvml2zGc/S1m_TclasrI/AAAAAAAAPsM/uuzkkY6VcLo/tvrdava-at-night.png.jpg"><img src="/media/images/random/tvrdjava-at-night.jpg" alt="Petrovaradin Fortress at night" style="max-width: 640px;"/></a>
   <br/>
   <em>Petrovaradin Fortress at night. Picture by me :)</em>
 </div>
-

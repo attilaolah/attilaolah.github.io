@@ -20,7 +20,7 @@ In a nutshell, the
   writing documentation, fixing tests, and converting the whole stack from
   `repoze.bfg` to Pyramid.
 
-<div class="center right">
+<div class="img center right">
   <img src="/media/images/random/artsprint-button.jpg" alt="Buttons, yay!"/>
 </div>
 

@@ -24,7 +24,7 @@ connecting to a single host, or a small set of hosts. This example shows the
 times spent downloading random pages from a single host, using both ``urllib2``
 and ``urllib3``:
 
-<div class="center">
+<div class="img center">
   <img src="/media/images/random/urllib-benchmark-results.png" alt="urllib2 vs. urllib3 benchmark results" class="white" />
 </div>
 

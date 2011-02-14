@@ -10,7 +10,10 @@ summary: A CoffeeScript implementation of the browser DOM ready listener.
 ---
 
 A while ago I've posted [about a JavaScript DOM ready event
-listener](/2010/08/07/writing-your-own-dom-ready-listener.html). Well, it turns out that a [CoffeeScript](http://jashkenas.github.com/coffee-script/) implementation is pretty easy to write, and in fact it looks much nicer than its JavaScript alternative. Here goes the source:
+listener](/2010/08/07/writing-your-own-dom-ready-listener.html). Well, it turns
+out that a [CoffeeScript](http://jashkenas.github.com/coffee-script/)
+implementation is pretty easy to write, and in fact it looks much nicer than
+its JavaScript alternative. Here goes the source:
 
 {% highlight javascript %}
 # DOM ready event listener
