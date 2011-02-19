@@ -354,6 +354,8 @@ body {
                 -moz-transition-property: opacity;
                 -moz-transition-diration: 1s;
                 -moz-transition-timing-function: ease-in-out;
+                -o-transition-property: opacity;
+                -o-transition-diration: 1s;
                 a {
                   display: block;
                   height: 16px;
@@ -364,6 +366,15 @@ body {
               > li:hover, li:active {
                 opacity: 1;
                 filter:alpha(opacity=100);
+                // "Transition"
+                -webkit-transition-property: opacity;
+                -webkit-transition-duration: 1s;
+                -webkit-transition-timing-function: ease-in-out;
+                -moz-transition-property: opacity;
+                -moz-transition-diration: 1s;
+                -moz-transition-timing-function: ease-in-out;
+                -o-transition-property: opacity;
+                -o-transition-diration: 1s;
               }
             }
           }
