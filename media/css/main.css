@@ -638,8 +638,8 @@ body > .wrapper > .container > .content .sidebar > .me > ul > li {
   display: inline-block;
   list-style-type: none;
   margin: 2px;
-  opacity: 0.75;
-  filter: alpha(opacity=75);
+  opacity: 0.33;
+  filter: alpha(opacity=33);
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 1s;
   -webkit-transition-timing-function: ease-in-out;
