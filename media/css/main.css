@@ -644,10 +644,10 @@ body > .wrapper > .container > .content .sidebar > .me > ul > li {
   -webkit-transition-duration: 1s;
   -webkit-transition-timing-function: ease-in-out;
   -moz-transition-property: opacity;
-  -moz-transition-diration: 1s;
+  -moz-transition-duration: 1s;
   -moz-transition-timing-function: ease-in-out;
   -o-transition-property: opacity;
-  -o-transition-diration: 1s;
+  -o-transition-duration: 1s;
 }
 body > .wrapper > .container > .content .sidebar > .me > ul > li a {
   display: block;
@@ -662,10 +662,10 @@ body > .wrapper > .container > .content .sidebar > .me > ul > li:hover, body > .
   -webkit-transition-duration: 1s;
   -webkit-transition-timing-function: ease-in-out;
   -moz-transition-property: opacity;
-  -moz-transition-diration: 1s;
+  -moz-transition-duration: 1s;
   -moz-transition-timing-function: ease-in-out;
   -o-transition-property: opacity;
-  -o-transition-diration: 1s;
+  -o-transition-duration: 1s;
 }
 body > .wrapper .footer {
   background: url(/media/images/skin/footer-pattern.png) repeat scroll left top #331100;
