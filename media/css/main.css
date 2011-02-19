@@ -470,6 +470,7 @@ body > .wrapper > .container > .content .sidebar > .me > .header {
 body > .wrapper > .container > .content .sidebar > .me > ul {
   margin: 0 2px;
   padding: 5px 0 5px 5px;
+  text-align: center;
 }
 body > .wrapper > .container > .content .sidebar > .me > ul > .go {
   background: url(/media/images/skin/social.png) no-repeat scroll -0px -16px transparent;
@@ -634,9 +635,9 @@ body > .wrapper > .container > .content .sidebar > .me > ul > .or:hover, body > 
   background: url(/media/images/skin/social.png) no-repeat scroll -416px top transparent;
 }
 body > .wrapper > .container > .content .sidebar > .me > ul > li {
-  float: left;
+  display: inline-block;
   list-style-type: none;
-  margin: 5px;
+  margin: 2px;
 }
 body > .wrapper > .container > .content .sidebar > .me > ul > li a {
   display: block;
