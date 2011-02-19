@@ -345,12 +345,25 @@ body {
                 display: inline-block;
                 list-style-type: none;
                 margin: 2px;
+                opacity: 0.75;
+                filter:alpha(opacity=75);
+                // "Transition"
+                -webkit-transition-property: opacity;
+                -webkit-transition-duration: 1s;
+                -webkit-transition-timing-function: ease-in-out;
+                -moz-transition-property: opacity;
+                -moz-transition-diration: 1s;
+                -moz-transition-timing-function: ease-in-out;
                 a {
                   display: block;
                   height: 16px;
                   text-decoration: none;
                   width: 16px;
                 }
+              }
+              > li:hover, li:active {
+                opacity: 1;
+                filter:alpha(opacity=100);
               }
             }
           }

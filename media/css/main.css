@@ -638,12 +638,24 @@ body > .wrapper > .container > .content .sidebar > .me > ul > li {
   display: inline-block;
   list-style-type: none;
   margin: 2px;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-property: opacity;
+  -moz-transition-diration: 1s;
+  -moz-transition-timing-function: ease-in-out;
 }
 body > .wrapper > .container > .content .sidebar > .me > ul > li a {
   display: block;
   height: 16px;
   text-decoration: none;
   width: 16px;
+}
+body > .wrapper > .container > .content .sidebar > .me > ul > li:hover, body > .wrapper > .container > .content .sidebar > .me > ul li:active {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 body > .wrapper .footer {
   background: url(/media/images/skin/footer-pattern.png) repeat scroll left top #331100;
