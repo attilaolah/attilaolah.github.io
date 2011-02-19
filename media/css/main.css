@@ -627,6 +627,12 @@ body > .wrapper > .container > .content .sidebar > .me > ul > .xi {
 body > .wrapper > .container > .content .sidebar > .me > ul > .xi:hover, body > .wrapper > .container > .content .sidebar > .me > ul .xi:active {
   background: url(/media/images/skin/social.png) no-repeat scroll -400px top transparent;
 }
+body > .wrapper > .container > .content .sidebar > .me > ul > .or {
+  background: url(/media/images/skin/social.png) no-repeat scroll -416px -16px transparent;
+}
+body > .wrapper > .container > .content .sidebar > .me > ul > .or:hover, body > .wrapper > .container > .content .sidebar > .me > ul .or:active {
+  background: url(/media/images/skin/social.png) no-repeat scroll -416px top transparent;
+}
 body > .wrapper > .container > .content .sidebar > .me > ul > li {
   float: left;
   list-style-type: none;
