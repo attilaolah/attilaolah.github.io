@@ -634,6 +634,12 @@ body > .wrapper > .container > .content .sidebar > .me > ul > .or {
 body > .wrapper > .container > .content .sidebar > .me > ul > .or:hover, body > .wrapper > .container > .content .sidebar > .me > ul .or:active {
   background: url(/media/images/skin/social.png) no-repeat scroll -416px top transparent;
 }
+body > .wrapper > .container > .content .sidebar > .me > ul > .id {
+  background: url(/media/images/skin/social.png) no-repeat scroll -432px -16px transparent;
+}
+body > .wrapper > .container > .content .sidebar > .me > ul > .id:hover, body > .wrapper > .container > .content .sidebar > .me > ul .id:active {
+  background: url(/media/images/skin/social.png) no-repeat scroll -432px top transparent;
+}
 body > .wrapper > .container > .content .sidebar > .me > ul > li {
   display: inline-block;
   list-style-type: none;
