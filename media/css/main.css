@@ -646,6 +646,12 @@ body > .wrapper > .container > .content .sidebar > .me > ul > .re {
 body > .wrapper > .container > .content .sidebar > .me > ul > .re:hover, body > .wrapper > .container > .content .sidebar > .me > ul .re:active {
   background: url(/media/images/skin/social.png) no-repeat scroll -448px top transparent;
 }
+body > .wrapper > .container > .content .sidebar > .me > ul > .fl {
+  background: url(/media/images/skin/social.png) no-repeat scroll -464px -16px transparent;
+}
+body > .wrapper > .container > .content .sidebar > .me > ul > .fl:hover, body > .wrapper > .container > .content .sidebar > .me > ul .fl:active {
+  background: url(/media/images/skin/social.png) no-repeat scroll -464px top transparent;
+}
 body > .wrapper > .container > .content .sidebar > .me > ul > li {
   display: inline-block;
   list-style-type: none;
