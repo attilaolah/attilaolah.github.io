@@ -360,6 +360,9 @@ body > .wrapper > .container > .content .pad .main blockquote code.date {
 body > .wrapper > .container > .content .pad .main blockquote code.tag {
   border-left: 2px solid #888;
 }
+body > .wrapper > .container > .content .pad .main blockquote + p {
+  margin-right: 0.5em;
+}
 body > .wrapper > .container > .content .pad .main .img {
   padding: 5px;
 }
