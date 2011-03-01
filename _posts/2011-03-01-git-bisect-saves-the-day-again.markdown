@@ -8,7 +8,7 @@ summary: "<code>git-bisect(1)</code> makes finding buggy commits easy & fun."
 ---
 
 I rarely use [`git
-bisect`](http://www.kernel.org/pub/software/scm/git/docs/git-bisect.html)`, but
+bisect`](http://www.kernel.org/pub/software/scm/git/docs/git-bisect.html), but
 when I do, it always amazes me how useful (and powerful) it is. And most of
 all, how simple. When I started using
 [`git`](http://www.kernel.org/pub/software/scm/git/docs/git.html), I haven't
