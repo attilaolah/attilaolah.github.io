@@ -7,9 +7,12 @@ tags:
 summary: "<code>git-bisect(1)</code> makes finding buggy commits easy & fun."
 ---
 
-I rarely use `git bisect`, but when I do, it always amazes me how useful (and
-powerful) it is. And most of all, how simple. When I started using `git`, I
-haven't used `git bisect` for quite long, mostly because it seemed a bit scary
+I rarely use `[git
+bisect](http://www.kernel.org/pub/software/scm/git/docs/git-bisect.html)`, but
+when I do, it always amazes me how useful (and powerful) it is. And most of
+all, how simple. When I started using
+`[git](http://www.kernel.org/pub/software/scm/git/docs/git.html)`, I haven't
+used `git bisect` for quite long, mostly because it seemed a bit scary
 - too much magic in there.
 
 But it's actually as simple as telling `git` which revision of the code is
