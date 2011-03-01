@@ -7,18 +7,18 @@ tags:
 summary: "<code>git-bisect(1)</code> makes finding buggy commits easy & fun."
 ---
 
-I rarely use `[git
-bisect](http://www.kernel.org/pub/software/scm/git/docs/git-bisect.html)`, but
+I rarely use [`git
+bisect`](http://www.kernel.org/pub/software/scm/git/docs/git-bisect.html)`, but
 when I do, it always amazes me how useful (and powerful) it is. And most of
 all, how simple. When I started using
-`[git](http://www.kernel.org/pub/software/scm/git/docs/git.html)`, I haven't
+[`git`](http://www.kernel.org/pub/software/scm/git/docs/git.html), I haven't
 used `git bisect` for quite long, mostly because it seemed a bit scary
 - too much magic in there.
 
 But it's actually as simple as telling `git` which revision of the code is
 right (`git bisect good`) and which one is wrong (`git bisect bad`). If the bug
 can be found with a test run (or, for example, a
-`[grep](http://en.wikipedia.org/wiki/Grep)`), `git bisect` can do some extra
+[`grep`](http://en.wikipedia.org/wiki/Grep)), `git bisect` can do some extra
 magic of dotormining which revision is right or wrong for us. But in many cases
 it's just easy to check by actially looking at the source code, so there's no
 need to automate things that much.
