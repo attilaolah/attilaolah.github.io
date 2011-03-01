@@ -2,8 +2,8 @@
 layout: post
 title: Merging .mkv files with mkvtooltix, ffmpeg and avisynth
 tags:
- - linux
- - 3d movies
+ - Linux
+ - 3D movies
 summary: Tools for merging stereoscopic video files to HDTV-compatible format.
 ---
 
