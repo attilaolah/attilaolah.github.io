@@ -2,9 +2,9 @@
 layout: post
 title: Troubles with CentOS
 tags:
- - Administration
  - Linux
  - CentOS
+ - administration
 summary: My experiences with CentOS (not very positive).
 ---
 
