@@ -35,7 +35,7 @@ enable, ``-`` means disable):
         + TCP/IP networking
           + IP: tunneling
           + The IPv6 protocol
-          + The IPX protocol (only for StarCraft I fans)
+        + The IPX protocol (only for StarCraft I fans)
       + Wireless
         + cfg80211 - wireless configuration API
         - Generic IEEE 802.11 Networking Stack (mac80211)
@@ -82,7 +82,6 @@ enable, ``-`` means disable):
             + Support for backlight control
         + Bootup logo
       + MMC/SD/SDIO card support
-      + 
     * File systems
       + Ext3 journalling file system support
         + Ext3 extended attributes
