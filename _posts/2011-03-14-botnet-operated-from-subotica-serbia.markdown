@@ -17,6 +17,12 @@ might have been me.
 
 Of course, it wasn't me.
 
+<div class="img center left">
+  <img src="/media/images/random/atiiila.gif" alt="Atila Alaćan"/>
+  <br/>
+  <em><code>atiiila</code></em>
+</div>
+
 [According to RTS](http://www.rts.rs/page/stories/sr/story/135/Hronika/857032)
 and [YU eco](http://www.yueco.rs/vest/hronika/uhap-en-haker-iz-subotice),
 **Atila Alaćan**, 27, from [Subotica,
@@ -35,12 +41,6 @@ How did he manage to get money from the Canadian company like this, still not
 clear to me. Who is this company anyway? No idea. All I know that Attila was
 stupid enough - according to the police - to redirect this money directly to
 his bank account. What was he thinking?
-
-<div class="img center left">
-  <img src="/media/images/random/atiiila.gif" alt="Atila Alaćan"/>
-  <br/>
-  <em>atiiila</em>
-</div>
 
 Anyway. After doing some researh on the guy, I found out that he used the
 **`atiiila`** alias to register on some sites. On [one scam
