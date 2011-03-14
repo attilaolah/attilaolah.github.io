@@ -48,7 +48,13 @@ site](http://infozarada.com/infozarada-nije-reklama.htm), I could even find a
 photo that is supposed to be him. He's giving a testimonial on one one of those
 nifty MLM schemes.
 
-Anyway, [googling for `atiiila`](http://www.google.com/search?q=atiiila&nfpr=1)
+<div class="img center">
+  <a href="http://www.rts.rs/page/stories/sr/story/135/Hronika/857032"><img src="/media/images/random/hackers.jpg" alt="Dummy 'hacker' picture"/></a>
+  <br/>
+  <em>This dummy picture comes from <a href="http://www.rts.rs/page/stories/sr/story/135/Hronika/857032">the RTS article</a>.</em>
+</div>
+
+[Googling for `atiiila`](http://www.google.com/search?q=atiiila&nfpr=1)
 I've found some rather interesting results. His nick is registered on a [Black
 Hat SEO
 forum](http://www.blackhatworld.com/blackhat-seo/members/7357-atiiila.html),
