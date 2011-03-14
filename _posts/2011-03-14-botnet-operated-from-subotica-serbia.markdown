@@ -45,7 +45,7 @@ his bank account. What was he thinking?
 Anyway. After doing some researh on the guy, I found out that he used the
 **`atiiila`** alias to register on some sites. On [one scam
 site](http://infozarada.com/infozarada-nije-reklama.htm), I could even find a
-photo that is supposed to be him. He's giving a testimonial on one one of those
+photo that is supposed to be him. He's giving a testimonial on one of those
 nifty MLM schemes.
 
 <div class="img center">
@@ -60,7 +60,7 @@ Hat SEO
 forum](http://www.blackhatworld.com/blackhat-seo/members/7357-atiiila.html),
 for instance. Another fairly interesting artifact is an `exe` file named
 `atiiila.exe` that shows up in a number of anti-virus site's public definition
-list. *Atiiila, are you really that dumb? Did you just give your virus your own
+list. *Are you really that dumb? Did you just give your virus your own
 nickname?*
 
 `atiiila`, if you're reading this, I only have one message for you:
