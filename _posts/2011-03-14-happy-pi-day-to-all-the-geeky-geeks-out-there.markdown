@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Happy #PiDay to all the geeky geeks out there!
+title: "Happy #PiDay to all the geeky geeks out there!"
 tags:
  - math
  - fun
