@@ -15,6 +15,7 @@ beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 terminal   = "konsole"
 chromium   = "chromium"
 firefox    = "firefox"
+ksnapshot  = "ksnapshot"
 editor     = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -102,7 +103,7 @@ function heat_status ()
             .. hex(255 * (105 - heat) / 65)
             .. "00\">" .. heat .. "&#8451;</span>")
     end
-    return table.concat(output," ")
+    return table.concat(output, " ")
 end
 myheatmon.text = heat_status() .. " "
 my_heatmon_timer = timer({timeout = 19})
@@ -126,8 +127,6 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   }
                         })
 
---mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
---                                     menu = mymainmenu })
 -- }}}
 
 -- {{{ Wibox
@@ -239,7 +238,6 @@ globalkeys = awful.util.table.join(
             awful.client.focus.byidx(-1)
             if client.focus then client.focus:raise() end
         end),
---    awful.key({ modkey,           }, "w", function () mymainmenu:show(true)        end),
 
     -- Layout manipulation
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end),
@@ -255,26 +253,29 @@ globalkeys = awful.util.table.join(
             end
         end),
 
-    -- Standard program
-    awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
-    awful.key({ modkey,           }, "'", function () awful.util.spawn(chromium) end),
-    awful.key({ modkey,           }, "q", function () awful.util.spawn(firefox) end),
-    awful.key({ modkey, "Control" }, "r", awesome.restart),
-    awful.key({ modkey, "Shift"   }, "q", awesome.quit),
+    -- Print screen
+    awful.key({                   }, "Print", function () awful.util.spawn(ksnapshot)         end),
 
-    awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
-    awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
-    awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1)      end),
-    awful.key({ modkey, "Shift"   }, "l",     function () awful.tag.incnmaster(-1)      end),
-    awful.key({ modkey, "Control" }, "h",     function () awful.tag.incncol( 1)         end),
-    awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1)         end),
-    awful.key({ modkey,           }, "space", function () awful.layout.inc(layouts,  1) end),
-    awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
+    -- Standard programs
+    awful.key({ modkey,           }, "Return",  function () awful.util.spawn(terminal)        end),
+    awful.key({ modkey,           }, "'",       function () awful.util.spawn(chromium)        end),
+    awful.key({ modkey,           }, "q",       function () awful.util.spawn(firefox)         end),
+    awful.key({ modkey, "Control" }, "r",       awesome.restart                                  ),
+    awful.key({ modkey, "Shift"   }, "q",       awesome.quit                                     ),
+
+    awful.key({ modkey,           }, "l",       function () awful.tag.incmwfact( 0.05)        end),
+    awful.key({ modkey,           }, "h",       function () awful.tag.incmwfact(-0.05)        end),
+    awful.key({ modkey, "Shift"   }, "h",       function () awful.tag.incnmaster( 1)          end),
+    awful.key({ modkey, "Shift"   }, "l",       function () awful.tag.incnmaster(-1)          end),
+    awful.key({ modkey, "Control" }, "h",       function () awful.tag.incncol( 1)             end),
+    awful.key({ modkey, "Control" }, "l",       function () awful.tag.incncol(-1)             end),
+    awful.key({ modkey,           }, "space",   function () awful.layout.inc(layouts,  1)     end),
+    awful.key({ modkey, "Shift"   }, "space",   function () awful.layout.inc(layouts, -1)     end),
 
     -- Prompt
-    awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
+    awful.key({ modkey            }, "r",       function () mypromptbox[mouse.screen]:run()   end),
 
-    awful.key({ modkey }, "x",
+    awful.key({ modkey            }, "x",
               function ()
                   awful.prompt.run({ prompt = "Run Lua code: " },
                   mypromptbox[mouse.screen].widget,
@@ -284,13 +285,13 @@ globalkeys = awful.util.table.join(
 )
 
 clientkeys = awful.util.table.join(
-    awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
-    awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end),
-    awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
-    awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
-    awful.key({ modkey,           }, "o",      awful.client.movetoscreen                        ),
-    awful.key({ modkey, "Shift"   }, "r",      function (c) c:redraw()                       end),
-    awful.key({ modkey,           }, "n",      function (c) c.minimized = not c.minimized    end),
+    awful.key({ modkey,           }, "f",        function (c) c.fullscreen = not c.fullscreen  end),
+    awful.key({ modkey, "Shift"   }, "c",        function (c) c:kill()                         end),
+    awful.key({ modkey, "Control" }, "space",    awful.client.floating.toggle                     ),
+    awful.key({ modkey, "Control" }, "Return",   function (c) c:swap(awful.client.getmaster()) end),
+    awful.key({ modkey,           }, "o",        awful.client.movetoscreen                        ),
+    awful.key({ modkey, "Shift"   }, "r",        function (c) c:redraw()                       end),
+    awful.key({ modkey,           }, "n",        function (c) c.minimized = not c.minimized    end),
     awful.key({ modkey,           }, "m",
         function (c)
             c.maximized_horizontal = not c.maximized_horizontal
