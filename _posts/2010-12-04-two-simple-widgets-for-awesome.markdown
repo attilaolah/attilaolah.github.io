@@ -98,3 +98,15 @@ my_heatmon_timer:start()
 
 For example usage, have a look at my custom ``rc.lua``
 [here](/downloads/lua/rc.lua).
+
+**UPDATE:** I've updated the temperature monitor to work without `acpitool`.
+Now instead of relying on legacy files in `/proc/`, it uses the new `ACPI`
+interface provided by `/sys/` files.
+
+I have also replaced the battery monitor with the `gnome-power-manager` applet,
+as it is more powerful and consumes less on-screan real estate. Start it from
+your `rc.lua` like this:
+
+{% highlight lua %}
+awful.util.spawn("gnome-power-manager")
+{% endhighlight %}
