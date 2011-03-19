@@ -370,6 +370,6 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 -- }}}
 
 -- Startup scripts:
-awful.util.spawn_with_shell("nautilus -n")
-awful.util.spawn_with_shell("xcompmgr -c -C -f -F -D 2.5 -l -2 -t -2 -r 2 -o 0.25")
-awful.util.spawn_with_shell("gnome-power-manager")
+awful.util.spawn("nautilus -n")
+awful.util.spawn("xcompmgr -c -C -f -F -D 2.5 -l -2 -t -2 -r 2 -o 0.25")
+awful.util.spawn("gnome-power-manager")
