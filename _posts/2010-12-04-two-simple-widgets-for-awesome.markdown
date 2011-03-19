@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Two simple widgets for Awesome
+title: Two simple widgets for awesome
 tags:
- - Awesome
+ - awesome
  - Lua
+ - Linux
 summary: I'll upload my configuration in case my laptop gets hit by a truck.
 ---
 
