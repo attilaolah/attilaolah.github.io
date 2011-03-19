@@ -9,8 +9,11 @@ summary: Tools for merging stereoscopic video files to HDTV-compatible format.
 
 A while ago I was looking for a way to merge two separate `.mkv` files (left
 and right views of a stereoscopic, 3D movie) into one file, to get a
-side-by-side or top-bottom view. Since back then I didn't get any answer on
-[SuperUser](http://superuser.com/questions/231938/combine-merge-left-right-video-files),
+side-by-side or top-bottom view. Since back then <strike>I didn't get any
+answer on
+[SuperUser](http://superuser.com/questions/231938/combine-merge-left-right-video-files)</strike>
+(**EDIT:** I've got [an
+answer](http://superuser.com/questions/231938/combine-merge-left-right-video-files/259068#259068)!),
 I figured I might just look into it myself, google it, read a few man pages,
 and then write it down for the rest of the world.
 
@@ -83,3 +86,22 @@ The resulting `result.mkv` file can now be played on a 3DTV or a PS3. You can
 now remove the temporary files:
 
     $ rm sound.ac3 video-sbs.mkv convert.avs
+
+**UPDATE:** I've just got [an
+answer](http://superuser.com/questions/231938/combine-merge-left-right-video-files/259068#259068)
+on
+[SuperUser](http://superuser.com/questions/231938/combine-merge-left-right-video-files/259068#259068)!
+In short, here's how no do it with
+[GStreamer](http://gstreamer.freedesktop.org/):
+
+    $ gst-launch-0.10 filesrc location=MVI_0735L.MOV ! decodebin2 name=Left \
+                      filesrc location=MVI_0735R.MOV ! decodebin2 name=Right \
+       Left. ! videoscale ! ffmpegcolorspace ! video/x-raw-yuv, 
+            width=1280, height=720 ! videobox border-alpha=0 right=-1280 ! queue ! mix. \
+       Right. ! videoscale ! ffmpegcolorspace ! video/x-raw-yuv, \
+            width=1280, height=720 ! videobox border-alpha=0 left=-1280 ! queue ! mix. \
+       Left. ! decodebin2 ! audioconvert ! audiopanorama panorama=-1.00 ! queue ! addaudio. \
+       Right. ! decodebin2 ! audioconvert ! audiopanorama panorama=1.00 ! queue ! addaudio. \
+       adder name=addaudio ! faac ! avmux. \
+       videomixer name=mix ! ffmpegcolorspace ! x264enc ! \
+       avimux name=avmux ! progressreport name="Encoding Progress" ! filesink location=out.avi
