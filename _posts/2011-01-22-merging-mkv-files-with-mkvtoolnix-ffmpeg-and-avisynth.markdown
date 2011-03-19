@@ -10,8 +10,8 @@ summary: Tools for merging stereoscopic video files to HDTV-compatible format.
 A while ago I was looking for a way to merge two separate `.mkv` files (left
 and right views of a stereoscopic, 3D movie) into one file, to get a
 side-by-side or top-bottom view. Since back then <strike>I didn't get any
-answer on
-[SuperUser](http://superuser.com/questions/231938/combine-merge-left-right-video-files)</strike>
+answer on <a
+href="http://superuser.com/questions/231938/combine-merge-left-right-video-files">SuperUser</a></strike>
 (**EDIT:** I've got [an
 answer](http://superuser.com/questions/231938/combine-merge-left-right-video-files/259068#259068)!),
 I figured I might just look into it myself, google it, read a few man pages,
