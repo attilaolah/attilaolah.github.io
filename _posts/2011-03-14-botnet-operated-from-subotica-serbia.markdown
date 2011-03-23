@@ -68,3 +68,19 @@ nickname?*
     TmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXANCk5ldmVyIGdvbm5hIGxldCB5b3UgZG93bg0KTmV2ZXIgZ29u
     bmEgcnVuIGFyb3VuZCBhbmQgZGVzZXJ0IHlvdQ0KTmV2ZXIgZ29ubmEgbWFrZSB5b3UgY3J5DQpOZXZl
     ciBnb25uYSBzYXkgZ29vZGJ5ZQ0KTmV2ZXIgZ29ubmEgdGVsbCBhIGxpZSBhbmQgaHVydCB5b3U=
+
+**UPDATE:** The court responsible for handling his case is the so-called "[High
+Court of Belgrade](http://www.bg.vi.sud.rs/)" (which, despite its name, is
+**not** the same as the "Supreme Court"). It is the one in the middle, in the
+dark-blue box with the green border:
+
+<div class="img center">
+  <a href="http://www.bg.vi.sud.rs/lt/articles/o-visem-sudu/polozaj/"><img src="/media/images/random/court-scheme-rs.gif" alt="Courts in Serbia"/></a>
+  <br/>
+  <em>Picture from the website of <a href="http://www.bg.vi.sud.rs/">the Court</a>.</em>
+</div>
+
+The court's website deosn't contain much information (other than an 'under
+construction' page), so, following the formal protocol, I filed a request for
+information about the case. They are required to answer each request within 15
+days, so let's see what they're going to say.
