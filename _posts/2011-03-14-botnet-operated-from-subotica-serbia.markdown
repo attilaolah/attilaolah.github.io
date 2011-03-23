@@ -80,7 +80,7 @@ dark-blue box with the green border:
   <em>Picture from the website of <a href="http://www.bg.vi.sud.rs/">the Court</a>.</em>
 </div>
 
-The court's website deosn't contain much information (other than an 'under
+The court's website doesn't contain much information (other than an 'under
 construction' page), so, following the formal protocol, I filed a request for
 information about the case. They are required to answer each request within 15
 days, so let's see what they're going to say.
