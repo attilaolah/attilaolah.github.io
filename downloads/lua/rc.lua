@@ -12,12 +12,15 @@ require("naughty")
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 
 -- Register commands for later
-terminal   = "konsole"
+printscr   = "ksnapshot"
+terminal   = "urxvt -depth 32 -bg rgba:0000/0000/0000/f0f0 -fn xft:Mono:pixelsize=12:antialias=false -w 5 -b 0 -e byobu -U"
+
 chromium   = "chromium"
 firefox    = "firefox"
-ksnapshot  = "ksnapshot"
-editor     = os.getenv("EDITOR") or "vim"
-editor_cmd = terminal .. " -e " .. editor
+
+nautilus   = "nautilus -n"
+xcompmgr   = "xcompmgr -c -C -f -F -D 2.5 -l -2 -t -2 -r 2 -o 0.25"
+powerman   = "gnome-power-manager"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -49,7 +52,7 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ '[ 0 ]', '[ 1 ]', '[ 2 ]', '[ 3 ]', '[ 4 ]', '[ 5 ]'}, s)
+    tags[s] = awful.tag({ '[ C ]', '[ 1 ]', '[ 2 ]', '[ 3 ]', '[ 4 ]', '[ 5 ]'}, s, awful.layout.suit.tile)
 end
 -- }}}
 
@@ -81,22 +84,6 @@ my_heatmon_timer:add_signal("timeout", function()
     myheatmon.text = heat_status() .. " "
 end)
 my_heatmon_timer:start()
--- }}}
-
--- {{{ Menu
--- Create a laucher widget and a main menu
-myawesomemenu = {
-   { "manual", terminal .. " -e man awesome" },
-   { "edit config", editor_cmd .. " " .. awful.util.getdir("config") .. "/rc.lua" },
-   { "restart", awesome.restart },
-   { "quit", awesome.quit }
-}
-
-mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "open terminal", terminal }
-                                  }
-                        })
-
 -- }}}
 
 -- {{{ Wibox
@@ -186,7 +173,6 @@ end
 
 -- {{{ Mouse bindings
 root.buttons(awful.util.table.join(
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
 ))
@@ -224,7 +210,7 @@ globalkeys = awful.util.table.join(
         end),
 
     -- Print screen
-    awful.key({                   }, "Print", function () awful.util.spawn(ksnapshot)         end),
+    awful.key({                   }, "Print",   function () awful.util.spawn(printscr)        end),
 
     -- Standard programs
     awful.key({ modkey,           }, "Return",  function () awful.util.spawn(terminal)        end),
@@ -326,11 +312,13 @@ awful.rules.rules = {
                      focus = true,
                      keys = clientkeys,
                      buttons = clientbuttons } },
+    { rule = { class = "URxvt" },
+      properties = { border_width = 0 } },
     { rule = { class = "MPlayer" },
       properties = { floating = true } },
-    { rule = { class = "pinentry" },
-      properties = { floating = true } },
     { rule = { class = "gimp" },
+      properties = { floating = true } },
+    { rule = { class = "pinentry" },
       properties = { floating = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
@@ -370,6 +358,7 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 -- }}}
 
 -- Startup scripts:
-awful.util.spawn("nautilus -n")
-awful.util.spawn("xcompmgr -c -C -f -F -D 2.5 -l -2 -t -2 -r 2 -o 0.25")
-awful.util.spawn("gnome-power-manager")
+awful.util.spawn(nautilus)
+awful.util.spawn(xcompmgr)
+awful.util.spawn(powerman)
+awful.util.spawn(terminal)
