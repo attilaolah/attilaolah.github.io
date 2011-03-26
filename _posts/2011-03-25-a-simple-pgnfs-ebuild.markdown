@@ -8,8 +8,8 @@ tags:
 summary: A very simple ebuild that builds Per Leslie Jensen's pGNFS on Gento.
 ---
 
-"[pGNFS](http://www.pgnfs.org/) is my implementation of the *General Number
-Field Sieve* written in C++. pGnfs is short for pleslie's GNFS implementation."
+[`pGNFS`](http://www.pgnfs.org/) is an implementation of the *General Number
+Field Sieve* written in C++. pGnfs is short for pleslie's GNFS implementation.
 
 {% highlight bash %}
 # Copyright 2011 Attila Olah
