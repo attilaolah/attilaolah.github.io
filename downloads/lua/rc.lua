@@ -13,7 +13,7 @@ beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 
 -- Register commands for later
 printscr   = "ksnapshot"
-terminal   = "urxvt -depth 32 -bg rgba:0000/0000/0000/f0f0 -fn xft:Mono:pixelsize=12:antialias=false -w 5 -b 0 -e byobu -U"
+terminal   = "urxvt -e byobu -U"
 
 chromium   = "chromium"
 firefox    = "firefox"
