@@ -18,7 +18,7 @@ I took a pretty simple approach: for each prime number `p`, calculate
 `10⁹⁹⁹⁹⁹⁹⁹⁹ % p` (the remainder after dividing by `p`). Then I used the result
 to create a partial
 [sieve](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes). After the first
-~33,800 primes, I still couldn't find a divisor for `10⁹⁹⁹⁹⁹⁹⁹⁹+37`. The chance
+100,000 primes, I still couldn't find a divisor for `10⁹⁹⁹⁹⁹⁹⁹⁹+37`. The chance
 that it is a prime is pretty damn small though (I haven't tried to run a
 [primality test](http://en.wikipedia.org/wiki/Primality_test) yet though).
 
