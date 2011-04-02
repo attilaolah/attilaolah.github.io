@@ -66,7 +66,7 @@ full source code is below:
     <html>
       <head>
         <meta charset=utf-8>
-        <title>CMAP: Building</title>
+        <title>Canvas 3D map</title>
         <script src=js/jquery.js></script>
         <script src=js/coffee-script.js></script>
         <script type=text/coffeescript>
