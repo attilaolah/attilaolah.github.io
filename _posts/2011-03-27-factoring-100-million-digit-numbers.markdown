@@ -17,10 +17,10 @@ idea was to see how hard it is to find the divisors of the first few hundred
 I took a pretty simple approach: for each prime number `p`, calculate
 `10⁹⁹⁹⁹⁹⁹⁹⁹ % p` (the remainder after dividing by `p`). Then I used the result
 to create a partial
-[sieve](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes). After the first
-300,000 primes, I still couldn't find a divisor for `10⁹⁹⁹⁹⁹⁹⁹⁹+37`. The chance
-that it is a prime is pretty damn small though (I haven't tried to run a
-[primality test](http://en.wikipedia.org/wiki/Primality_test) yet though).
+[sieve](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes). <strike>After the first
+300,000 primes, I still couldn't find a divisor for <code>10⁹⁹⁹⁹⁹⁹⁹⁹+37</code></strike>.
+**UPDATE:** `10⁹⁹⁹⁹⁹⁹⁹⁹+37` is divisible by `6870527` (the `468407`th prime)!
+The next one without a divisor is `10⁹⁹⁹⁹⁹⁹⁹⁹+69`.
 
 Here's the smallest prime divisor for the first few 100,000,000-digit integers
 (`I` = 10⁹⁹⁹⁹⁹⁹⁹⁹):
@@ -65,5 +65,37 @@ Here's the smallest prime divisor for the first few 100,000,000-digit integers
     | 34 + I |       2 |
     | 35 + I |       3 |
     | 36 + I |       2 |
-    | 37 + I | ??????? |
+    | 37 + I | 6870527 |
+    | 38 + I |       2 |
+    | 39 + I |     139 |
+    | 40 + I |       2 |
+    | 41 + I |       3 |
+    | 42 + I |       2 |
+    | 43 + I |      11 |
+    | 44 + I |       2 |
+    | 45 + I |       5 |
+    | 46 + I |       2 |
+    | 47 + I |       3 |
+    | 48 + I |       2 |
+    | 49 + I |      13 |
+    | 50 + I |       2 |
+    | 51 + I |      71 |
+    | 52 + I |       2 |
+    | 53 + I |       3 |
+    | 54 + I |       2 |
+    | 55 + I |       5 |
+    | 56 + I |       2 |
+    | 57 + I |      31 |
+    | 58 + I |       2 |
+    | 59 + I |       3 |
+    | 60 + I |       2 |
+    | 61 + I |      59 |
+    | 62 + I |       2 |
+    | 63 + I |  399389 |
+    | 64 + I |       2 |
+    | 65 + I |       3 |
+    | 66 + I |       2 |
+    | 67 + I |      17 |
+    | 68 + I |       2 |
+    | 69 + I | ??????? |
     '------------------'
