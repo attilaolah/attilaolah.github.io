@@ -23,8 +23,8 @@ I was able to render actual buildings from the OSM database:
 On the above picture, red buildings are "primary" ones (i.e. ones with an
 address or a house number), while the grey ones are "secondary". **A demo
 version of the canvas map can be seen
-[here](/demos/cmap/buildings/buildings.html) (but only by people with decent
-brawsers).**
+[here](/demos/cmap/buildings/buildings.html)** (but only by people with decent
+browsers).
 
 As a comparison, here's how [Mapnik](http://mapnik.org/) renders the same data:
 
