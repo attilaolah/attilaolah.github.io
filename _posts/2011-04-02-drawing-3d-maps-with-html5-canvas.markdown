@@ -55,5 +55,6 @@ relevant information). Other projects, such as
 objects, not just buildings, but they still require a lot of improvements, for
 example the display of road names is note very optimal.
 
-Hopefully, as more browsers support HTML5 and canvas by the day, people will
-implement great interactive applications using this technology.
+Hopefully, as more browsers support [HTML5](http://en.wikipedia.org/wiki/HTML5)
+and canvas by the day, people will implement great interactive applications
+using this technology.
