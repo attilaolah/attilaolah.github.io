@@ -49,7 +49,7 @@ canvas-based maps can be made more interactive (e.g. hovering or clicking on a
 building could highlight it and pop up a message with the complete address or
 relevant information). Other projects, such as
 [Cartagen](http://cartagen.org/), are capable of rendering a high variety of
-objects, not just buildings, but they still require a lot of improvments, for
+objects, not just buildings, but they still require a lot of improvements, for
 example the display of road names is note very optimal.
 
 Hopefully, as more browsers support HTML5 and canvas by the day, people will
