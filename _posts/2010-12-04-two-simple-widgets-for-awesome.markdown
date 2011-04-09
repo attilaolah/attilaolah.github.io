@@ -97,7 +97,7 @@ my_heatmon_timer:start()
 {% endhighlight %}
 
 For example usage, have a look at my custom ``rc.lua``
-[here](/downloads/lua/rc.lua).
+[here](https://github.com/aatiis/skel/raw/master/home/aatiis/.config/awesome/rc.lua).
 
 **UPDATE:** I've updated the temperature monitor to work without `acpitool`.
 Now instead of relying on legacy files in `/proc/`, it uses the new `ACPI`
