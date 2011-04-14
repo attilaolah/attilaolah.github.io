@@ -194,7 +194,7 @@ tt {
 html, body {
   border: none;
   color: #000;
-  font: 14px/150% 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+  font: 14px/150% 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -660,7 +660,6 @@ body > .wrapper > .container > .content .sidebar > .me > ul > li {
   list-style-type: none;
   margin: 2px;
   opacity: 0.33;
-  filter: alpha(opacity=33);
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 1s;
   -webkit-transition-timing-function: ease-in-out;
@@ -678,7 +677,6 @@ body > .wrapper > .container > .content .sidebar > .me > ul > li a {
 }
 body > .wrapper > .container > .content .sidebar > .me > ul > li:hover, body > .wrapper > .container > .content .sidebar > .me > ul li:active {
   opacity: 1;
-  filter: alpha(opacity=100);
   -webkit-transition-property: opacity;
   -webkit-transition-duration: 1s;
   -webkit-transition-timing-function: ease-in-out;
