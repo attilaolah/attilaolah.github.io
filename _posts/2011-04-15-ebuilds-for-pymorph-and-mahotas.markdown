@@ -40,7 +40,7 @@ probably do want that). `mahotas-0.6.4.ebuild`:
 
     python_enable_pyc
 
-`freeimage` can be found in the `gamerlay` overlay`. Add it using the command
+`freeimage` can be found in the `gamerlay` overlay. Add it using the command
 `layman --add gamerlay`. Then you should have `freeimage`:
 
     aatiis@aiur ~ $ eix freeimage
