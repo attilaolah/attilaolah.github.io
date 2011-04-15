@@ -8,7 +8,7 @@ tags:
 summary: "This is a tiny script that will change the wallpaper on each login."
 ---
 
-First, get some nice wallpapers. `KDE` hase a nice set of free wallpapers.
+First, get some nice wallpapers. `KDE` has a nice set of free wallpapers.
 Install them (`sudo emerge kde{,artwork}-wallpapers
 kdeartwork-weatherwallpapers`), and you'll get some nice wallpapers in
 `/usr/share/wallpapers`.
@@ -29,7 +29,7 @@ ln -s `set -- /usr/share/wallpapers/*/contents/images/1920x1200.jpg && \
 {% endhighlight %}
 
 The above snippet will pick a random wallpaper of size 1920x1200, and link it
-to `~/pics/wallpaper.jpg`. Then, just set your default wallpaper t,
+to `~/pics/wallpaper.jpg`. Then, just set your default wallpaper to,
 `~/pics/wallpaper.jpg`, and have this script run each time you log in to
 awesome, e.g:
 
@@ -39,7 +39,7 @@ awful.util.spawn("/path/to/change-wallpaper.sh")
 
 Remember to `chmod +x` your bash script. You can map the script to a key
 combination in awesome and use that to change the wallpaper whenever you feel
-like, or even create a cron job to do that for you.
+like, or even create a `cron` job to do that for you.
 
 References:
 
