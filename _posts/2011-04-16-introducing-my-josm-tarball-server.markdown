@@ -21,7 +21,7 @@ from [josm.aiur.co.rs](http://josm.aiur.co.rs/), a virtual server that I set up
 on [my company](http://aiur.co.rs/)'s VPS. An hourly `cron` job is responsible
 for checking out the latest revision over `SVN` and packaging it up.
 
-<div class="img center">
+<div class="img center clear">
   <a href="http://josm.aiur.co.rs/"><img src="/media/images/random/josm-tarball-server.png" alt="Apache server serving the JOSM tarballs"/></a>
   <br/>
   <em><code>Apache</code> server with the <code>JOSM</code> tarballs</em>
