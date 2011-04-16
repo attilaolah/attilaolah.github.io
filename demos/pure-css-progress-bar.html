@@ -92,10 +92,10 @@
         -webkit-box-shadow: 1px -1px 0 0 #8a8987;
         -moz-box-shadow: 1px -1px 0 0 #8a8987;
         box-shadow: 1px -1px 0 0 #8a8987;
-        /* Transition: */
-        -webkit-transition: width 4100ms linear;
+        /* Transition:
+        -webkit-transition: width 4s linear;
         -moz-transition: width 4s linear;
-        -o-transition: width 5600ms linear;
+        -o-transition: width 4sms linear; */
       }
       #progress .bar .inner {
         background: #5993ce;
@@ -189,19 +189,20 @@
               percent = 0,
               text = document.getElementsByClassName('text'),
               progressbar = document.getElementsByClassName('bar')[0];
-          // Start the animation:
-          progressbar.style.width = '100%';
           // Change progress bar text:
           interval = setInterval(function () {
-            if (++percent === 100) {
+            if (++percent === 400) {
               clearInterval(interval);
             }
-            for (var i in text) {
-              if (text.hasOwnProperty(i)) {
-                text[i].innerHTML = percent + '%';
+            if (!(percent % 4)) {
+              for (var i in text) {
+                if (text.hasOwnProperty(i)) {
+                  text[i].innerHTML = percent / 4 + '%';
+                }
               }
             }
-          }, 40);
+            progressbar.style.width = percent / 4 + '%';
+          }, 10);
         }, 1000);
       };
     </script>
