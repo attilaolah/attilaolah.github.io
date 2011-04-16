@@ -240,6 +240,10 @@ ul, ol {
 a:hover, a:active {
   color: #f30;
 }
+::selection, ::-moz-selection, ::-webkit-selection {
+  color: white;
+  background: url(/media/images/skin/bg-box.png) repeat scroll left top #66bb33;
+}
 ul > li {
   list-style-type: square;
 }
