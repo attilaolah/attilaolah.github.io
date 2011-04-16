@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Yet Another Pure CSS Progress Bar</title>
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      /* Reset */
+      html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,menu{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+      /* Fonts */
+      body{font:13px/1 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}
+      /* Standard body styles */
+      html, body {
+        height: 100%;
+        position: relative;
+        -webkit-text-size-adjust: none;
+        background: #d6d5d4;
+      }
+      body > div {
+        min-height: 100%;
+        position: relative;
+      }
+      .hidden {
+        display: none !important;
+      }
+      body {
+        text-align: center;
+      }
+      body > div {
+        height: 100%;
+      }
+      .table {
+        display: table;
+        width: 100%;
+        height: 85%;
+        min-height: 85%;
+      }
+      .table .cell {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      /* Progress bar styles */
+      #progress,
+      #progress span {
+        width: 304px;
+      }
+      #progress {
+        position: relative;
+        margin: 0 auto;
+        padding: 1px;
+        overflow: hidden;
+        background: #d9d8d7;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d6d5d4), color-stop(1, #e5e5e4));
+        background: -moz-linear-gradient(#d6d5d4 0%, #e5e5e4 100%);
+        background: -o-linear-gradient(#d6d5d4 0%, #e5e5e4 100%);
+      }
+      #progress,
+      #progress .bg {
+        height: 24px;
+      }
+      #progress .bg {
+        padding-right: 2px;
+        position: relative;
+        /* Background gradient */
+        background: #b7b5b3;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aba9a7), color-stop(.3, #b7b5b3), color-stop(1, #b7b5b3));
+        background: -moz-linear-gradient(#9da5b0 0%, #b7b5b3 30%, #b6bcc6 100%);
+        background: -o-linear-gradient(#9da5b0 0%, #b7b5b3 30%, #b6bcc6 100%);
+        /* Box shadow: */
+        -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.5), 0px 1px 0px 0px rgba(255,255,255,.5);
+        -moz-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.5), 0px 1px 0px 0px rgba(255,255,255,.5);
+        box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.5), 0px 1px 0px 0px rgba(255,255,255,.5);
+      }
+      #progress .rpad {
+        position: relative;
+        top: -25px;
+        border-right: 2px solid transparent;
+      }
+      #progress .bar {
+        overflow: hidden;
+        top: 1px;
+        width: 0;
+        margin: 1px 0 0 1px;
+        position: absolute;
+        /* Background gradient: */
+        background: #3f88d0;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6da8ef), color-stop(1, #3776b4));
+        background: -moz-linear-gradient(#6da8ef 0%, #3776b4 100%);
+        background: -o-linear-gradient(#6da8ef 0%, #3776b4 100%);
+        /* Box shadow: */
+        -webkit-box-shadow: 1px -1px 0 0 #8a8987;
+        -moz-box-shadow: 1px -1px 0 0 #8a8987;
+        box-shadow: 1px -1px 0 0 #8a8987;
+        /* Transition: */
+        -webkit-transition: width 4100ms linear;
+        -moz-transition: width 4s linear;
+        -o-transition: width 5600ms linear;
+      }
+      #progress .bar .inner {
+        background: #5993ce;
+        height: 23px;
+      }
+      #progress .bar .inner .hl {
+        position: absolute;
+        height: 32px;
+        width: 100%;
+        top: -32px;
+        /* Box shadow: */
+        box-shadow: 0px 12px 16px -4px rgba(255,255,255,.3), 0px 40px 8px -8px rgba(255,255,255,.3);
+        -moz-box-shadow: 0px 12px 16px -4px rgba(255,255,255,.4), 0px 40px 8px -8px rgba(255,255,255,.4);
+        -webkit-box-shadow: 0px 12px 16px -4px rgba(255,255,255,.3), 0px 40px 8px -8px rgba(255,255,255,.3);
+        /* Border radius: */
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+      }
+      #progress .bar .bt,
+      #progress .bar .inner .bl,
+      #progress .bar .inner .br,
+      #progress .bar .inner .bb {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+      }
+      #progress .bar .inner .bl,
+      #progress .bar .inner .br {
+        width: 1px;
+        padding: 1px 0;
+      }
+      #progress .bar .inner .br {
+        right: 0;
+        left: auto;
+      }
+      #progress .bar .inner .bb {
+        top: 22px;
+      }
+      #progress .bar .bt div,
+      #progress .bar .inner .bb div {
+        margin: 0 1px;
+        height: 1px;
+      }
+      #progress .bar .bt div {
+        /* Background gradient */
+        background: #d8e8f7;
+        background: -webkit-gradient(linear, left top, right top, color-stop(0, #6ca8ef), color-stop(.5, #d8e8f7), color-stop(1, #6ca8ef));
+        background: -moz-linear-gradient(left, #6ca8ef 0%, #d8e8f7 50%, #6ca8ef 100%);
+        background: -o-linear-gradient(left, #6ca8ef 0%, #d8e8f7 50%, #6ca8ef 100%);
+      }
+      #progress .bar .inner .bb div {
+        background: #3776B4;
+      }
+      #progress .bar .inner .bl div,
+      #progress .bar .inner .br div {
+        height: 21px;
+        /* Background gradient */
+        background: #d8e8f7;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #67a5ec), color-stop(1, #3776b4));
+        background: -moz-linear-gradient(#67a5ec 0%, #3776b4 100%);
+        background: -o-linear-gradient(#67a5ec 0%, #3776b4 100%);
+      }
+      #progress,
+      #progress .bg,
+      #progress .bar,
+      #progress .bar div {
+        /* Border radius: */
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+      }
+      #progress span {
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+        position: absolute;
+        line-height: 23px;
+        top: 2px;
+        left: 0;
+      }
+      #progress .bar span {
+        text-shadow: none;
+        top: 0;
+        color: white;
+      }
+    </style>
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          var interval,
+              percent = 0,
+              text = document.getElementsByClassName('text'),
+              progressbar = document.getElementsByClassName('bar')[0];
+          // Start the animation:
+          progressbar.style.width = '100%';
+          // Change progress bar text:
+          interval = setInterval(function () {
+            if (++percent === 100) {
+              clearInterval(interval);
+            }
+            for (var i in text) {
+              if (text.hasOwnProperty(i)) {
+                text[i].innerHTML = percent + '%';
+              }
+            }
+          }, 40);
+        }, 1000);
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <div class="table">
+        <div class="cell">
+          <div id="progress">
+            <div class="bg"></div>
+            <span class=text>0%</span>
+            <div class="rpad">
+              <div class="bar">
+                <div class="inner">
+                  <div class="hl"></div>
+                  <div class="bl"><div></div></div>
+                  <div class="br"><div></div></div>
+                  <div class="bb"><div></div></div>
+                  <span class="text">0%</span>
+                </div>
+                <div class="bt"><div></div></div>
+              </div>
+            </div>
+            <div class="rfloat"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
