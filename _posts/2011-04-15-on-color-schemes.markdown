@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On color shcemes
+title: On color schemes
 tags:
  - Linux
  - Vim
