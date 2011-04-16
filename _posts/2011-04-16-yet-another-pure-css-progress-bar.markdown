@@ -13,7 +13,7 @@ progress bar, in pure CSS. The transition of the blue bar is also done with
 CSS, only the text is being updated with JavaScript.
 
 <div class="img center">
-  <iframe src="/demos/pure-css-progress-bar" style="width:400px; height:180px; border: 0;">&nbsp;</iframe>
+  <iframe src="/demos/pure-css-progress-bar" style="width:400px; height:120px;">&nbsp;</iframe>
   <br/>
   <em>demo page <a href="/demos/pure-css-progress-bar">available here</a></em>
 </div>
