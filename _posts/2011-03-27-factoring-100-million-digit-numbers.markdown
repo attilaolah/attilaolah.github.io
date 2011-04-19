@@ -21,7 +21,7 @@ to create a partial
 300,000 primes, I still couldn't find a divisor for <code>10⁹⁹⁹⁹⁹⁹⁹⁹+37</code></strike>.
 **UPDATE:** `10⁹⁹⁹⁹⁹⁹⁹⁹+37` is divisible by `6870527` (the `468407`th prime)!
 The next one without a known divisor is `10⁹⁹⁹⁹⁹⁹⁹⁹+69` (tried to divide by the
-first 1,000,000 primes, no factors found so far).
+first 2,348,559 primes, no factors found so far).
 
 Here's the smallest prime divisor for the first few 100,000,000-digit integers
 (`I` = 10⁹⁹⁹⁹⁹⁹⁹⁹):
