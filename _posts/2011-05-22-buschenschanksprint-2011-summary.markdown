@@ -23,7 +23,11 @@ As for myself, I was greedy enough to only work on code that is currently
 related to the project I'm working on. Nevertheless, during the sprint we've
 implemented a new library, a [YAML](http://www.yaml.org/) connector for the
 [YAFOWIL](http://pypi.python.org/pypi/yafowil) form/widget library, called
-[yafowil.yaml](https://github.com/bluedynamics/yafowil.yaml).
+[yafowil.yaml](https://github.com/bluedynamics/yafowil.yaml). I also
+contributed a patch to
+[rod.recipe.appengine](http://pypi.python.org/pypi/rod.recipe.appengine), so
+now there's a new release [on
+PyPI](http://pypi.python.org/pypi/rod.recipe.appengine).
 
 We've also fixed a few small bugs in
 [cone.app](https://github.com/bluedynamics/cone.app) and
