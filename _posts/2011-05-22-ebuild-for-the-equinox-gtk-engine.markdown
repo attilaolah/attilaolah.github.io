@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ebuild for the Equinox GTK engine and themes
+title: Ebuild for the Equinox GTK engine
 tags:
  - Gentoo
  - Linux
