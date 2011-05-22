@@ -764,6 +764,7 @@ ul + .highlight {
 .treeview li .file {
   background: url(/media/images/skin/treeview/file.gif) left 1px no-repeat;
   line-height: 125%;
+  max-width: 130px;
 }
 .treeview li li.post + li.post {
   margin-top: -5px;
