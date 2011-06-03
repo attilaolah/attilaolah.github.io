@@ -156,6 +156,7 @@
         asynchronous_javascript_loader('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
         asynchronous_javascript_loader('http://connect.facebook.net/en_US/all.js');
         asynchronous_javascript_loader('http://www.google-analytics.com/ga.js');
+        asynchronous_javascript_loader('http://apis.google.com/js/plusone.js');
         asynchronous_javascript_loader('/media/js/jquery-treeview-src.js');
         asynchronous_javascript_loader('/media/js/data-src.js');
         asynchronous_javascript_loader('/media/js/tween-src.js');
