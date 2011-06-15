@@ -79,6 +79,6 @@ func init() {
 }
 {% endhighlight %}
 
-Most of the above code is basedf on [this
+Most of the above code is based on [this
 conversation](http://permalink.gmane.org/gmane.comp.lang.go.general/28267) on
 *comp.lang.go.general*.
