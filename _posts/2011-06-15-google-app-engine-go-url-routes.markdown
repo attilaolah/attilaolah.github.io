@@ -17,7 +17,7 @@ execute different Go packages. Instead, all this configuration is contained in
 the Go app itself, so the application configuration looks something like this:
 
 {% highlight yaml %}
-application: prcert
+application: mygoapp
 version: main
 runtime: go
 api_version: 1
