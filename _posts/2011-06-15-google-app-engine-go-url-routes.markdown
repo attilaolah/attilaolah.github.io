@@ -72,9 +72,9 @@ Then in the main application file, it can be used instead of the default handler
 {% highlight go %}
 func init() {
     rxhandler := new(rxh.RegexpHandler)
-    rxhandler.AddRoute("/users/([0-9]+)", users.UserHandler)
-    rxhandler.AddRoute("/posts/([0-9]+)", posts.PostHandler)
-    rxhandler.AddRoute("/.*", DefaultHandler)
+    rxhandler.AddRoute("^/users/([0-9]+)$", users.UserHandler)
+    rxhandler.AddRoute("^/posts/([0-9]+)$", posts.PostHandler)
+    rxhandler.AddRoute("^/.*$", DefaultHandler)
     http.Handle("/", rxhandler)
 }
 {% endhighlight %}
