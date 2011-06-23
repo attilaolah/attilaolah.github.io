@@ -47,8 +47,8 @@ Vote
 pls.
 
 <div class="img center">
-  <a href="/media/images/random/4kjoin-team.jpg">
-    <img alt="4KJoin" src="http://www.imaginecup.com/worldwide-finals/peoples-choice-award/view-and-vote.aspx?r=6495">
+  <a href="http://www.imaginecup.com/worldwide-finals/peoples-choice-award/view-and-vote.aspx?r=6495">
+    <img alt="4KJoin" src="/media/images/random/4kjoin-team.jpg">
   </a>
   <br/>
   <em>The 4KJoin team</em>
