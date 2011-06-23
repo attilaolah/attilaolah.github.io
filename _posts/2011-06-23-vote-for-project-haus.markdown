@@ -32,7 +32,7 @@ and
 [vote](http://www.imaginecup.com/worldwide-finals/peoples-choice-award/view-and-vote.aspx?r=6495)
 if you like it.
 
-Also, follow [4K-join](http://4kjoin.tumblr.com/) on
+Also, follow [4KJoin](http://4kjoin.tumblr.com/) on
 [Facebook](http://www.facebook.com/4Kjoin),
 [Twitter](http://twitter.com/4kjoin),
 [YouTube](http://youtube.com/user/4kjoin), [Tumblr](http://4kjoin.tumblr.com/),
@@ -45,3 +45,11 @@ tl;dr
 Vote
 [here](http://www.imaginecup.com/worldwide-finals/peoples-choice-award/view-and-vote.aspx?r=6495)
 pls.
+
+<div class="img center">
+  <a href="/media/images/random/4kjoin-team.jpg">
+    <img alt="4KJoin" src="http://www.imaginecup.com/worldwide-finals/peoples-choice-award/view-and-vote.aspx?r=6495">
+  </a>
+  <br/>
+  <em>The 4KJoin team</em>
+</div>
