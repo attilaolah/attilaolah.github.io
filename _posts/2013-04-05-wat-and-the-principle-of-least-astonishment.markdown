@@ -5,7 +5,6 @@ tags:
 - programming
 - videos
 source: https://www.destroyallsoftware.com/talks/wat
-link: video
 ---
 
 I came across [this video][1] while reading [a question][2] on [StackExchange

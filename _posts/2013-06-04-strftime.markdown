@@ -5,7 +5,6 @@ tags:
 - links
 - programming
 source: http://www.userobsessed.net/tips-and-tricks/2011/05/03/strftime-never-look-up-a-date-format-string-again/
-link: link
 ---
 
 Today on [Joe Fiorini][1]'s [blog][4] I [read about][2] a neat little website,

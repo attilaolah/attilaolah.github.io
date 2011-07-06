@@ -2,19 +2,13 @@
   <header>
     <time class="condensed thin" datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%d %B %Y" }}</time>
     <h1 class="condensed">
-      {% if page.link %}
-        <a href="{{ page.source }}">{{ page.title }}</a>
-      {% else %}
-        {{ page.title }}
-      {% endif %}
+      <a href="{{ page.source }}">{{ page.title }}</a>
     </h1>
   </header>
   <div class="video center">
     {{ page.embed }}
   </div>
-  <div class="markdown">
-    {{ page.content }}
-  </div>
+  {% include postbody.html %}
   <footer>
     {% if page.tags  %}
       <ul class="tags">

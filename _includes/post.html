@@ -1,18 +1,11 @@
 <article class="wrap">
   <header>
-    <time class="condensed thin" datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%d %B %Y" }}</time>
+    <time class="condensed thin" datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%d %b %Y" }}</time>
     <h1 class="condensed">
-      {% if page.link %}
-        <a href="{{ page.source }}">{{ page.title }}</a>
-        <!--<a href="{{ page.source }}" rel="source">{{ page.link }}</a>-->
-      {% else %}
-        <a href="{{ page.url }}">{{ page.title }}</a>
-      {% endif %}
+      <a href="{{ page.url }}">{{ page.title }}</a>
     </h1>
   </header>
-  <div class="markdown">
-    {{ content or page.content }}
-  </div>
+  {% include postbody.html %}
   <footer>
     {% if page.tags  %}
       <ul class="tags">

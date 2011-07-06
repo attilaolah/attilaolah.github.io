@@ -175,7 +175,7 @@ time {
     transform-origin: bottom right;
   }
 }
-@media only screen and (min-width: 521px) and (max-width: 1280px) {
+@media only screen and (min-width: 521px) and (max-width: 1120px) {
   time {
     top: 1.5rem;
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
@@ -188,7 +188,7 @@ time {
     transform: rotate3d(0, 0, 1, -90deg);
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1121px) {
   time {
     top: 3.375rem;
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
