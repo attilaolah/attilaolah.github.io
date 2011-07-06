@@ -3,7 +3,10 @@ article {
   .video iframe {
     border: 0;
     width: 100%;
-    max-width: 100%;
+    // 100% adds a black left-border to TED videos, so cut two pixels.
+    //max-width: 100%;
+    max-width: 52.875rem;
+    margin: 0 auto;
   }
   .ted {
     height: 480px;

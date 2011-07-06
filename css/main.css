@@ -536,7 +536,8 @@ article .video,
 article .video iframe {
   border: 0;
   width: 100%;
-  max-width: 100%;
+  max-width: 52.875rem;
+  margin: 0 auto;
 }
 article .ted {
   height: 480px;
