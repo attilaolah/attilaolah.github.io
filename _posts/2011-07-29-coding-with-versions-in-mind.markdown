@@ -4,6 +4,7 @@ title: Coding with versions in mind
 tags:
  - Python
  - programming
+ - git
 summary: Thoughts on writing code that is easy to upgrade.
 ---
 
