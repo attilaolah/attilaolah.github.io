@@ -1,6 +1,6 @@
 ---
 layout: post
-title: coding-with-versions-in-mind
+title: Coding with versions in mind
 tags:
  - Python
  - programming
