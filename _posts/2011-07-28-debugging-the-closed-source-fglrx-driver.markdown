@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Debugging AMD's closed source fglr driver
+title: Debugging AMD's closed source fglrx driver
 tags:
  - Linux
  - badassery
