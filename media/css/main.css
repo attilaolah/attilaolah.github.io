@@ -343,6 +343,8 @@ body > .wrapper > .container > .content .pad .main {
 body > .wrapper > .container > .content .pad .main h1 {
   font-size: 1.5em;
   margin: 0.67em 0;
+  position: relative;
+  z-index: 1;
 }
 body > .wrapper > .container > .content .pad .main h2 {
   font-size: 1.25em;
