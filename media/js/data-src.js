@@ -9,8 +9,7 @@
     // Wait for jQuery to load
     var wait_for_jquery_treeview = function (fn) {
         while ((typeof($) !== 'function') || !($() && $()['jquery'] && $()['treeview'])) {
-            setTimeout(function () { wait_for_jquery_treeview(fn); }, 10);
-            return;
+            return setTimeout(function () { wait_for_jquery_treeview(fn); }, 10);
         }
         fn();
     };
@@ -109,7 +108,12 @@
         return function () {
             if (!loaded) {
                 if ($(window).scrollTop() + $(window).height() >= $('#previews .j-loader').offset().top) {
-                    $('#previews').load('/all-posts.html?' + Date().slice(4,15).replace(/ /g,"-").toLowerCase());
+                    $.ajax({
+                        url: '/all-posts.html?date=' + Date().slice(4, 15).replace(/ /g,"-").toUpperCase(),
+                        success: function (data) {
+                            $('#previews').append($(data).splice(8));
+                        }
+                    });
                     loaded = true;
                 }
             }
