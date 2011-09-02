@@ -111,7 +111,8 @@
                     $.ajax({
                         url: '/all-posts.html?date=' + Date().slice(4, 15).replace(/ /g,"-").toUpperCase(),
                         success: function (data) {
-                            $('#previews').append($(data).splice(8));
+                            $('#previews .j-loader').remove();
+                            $('#previews').append($(data).splice(16));
                         }
                     });
                     loaded = true;
