@@ -419,15 +419,6 @@ body > .wrapper > .container > .content .pad .main .comments {
 body > .wrapper > .container > .content .pad .main .comments > .hr {
   margin: 5px 10px 10px 0;
 }
-body > .wrapper > .container > .content .pad .main .comments > .fb_iframe_widget {
-  width: 100% !important;
-}
-body > .wrapper > .container > .content .pad .main .comments > .fb_iframe_widget > span {
-  width: inherit !important;
-}
-body > .wrapper > .container > .content .pad .main .comments > .fb_iframe_widget > span > iframe {
-  width: inherit !important;
-}
 body > .wrapper > .container > .content .sidebar {
   max-width: 192px;
 }
@@ -921,6 +912,14 @@ pre .chunk {
 pre .tex .formula {
   opacity: 0.5;
 }
+/* Disqus Comments extra styles */
+#dsq-combo-widget.green #dsq-combo-content .dsq-combo-box {
+  margin-right: 10px;
+}
+/*
+ * GitHub CSS Syntax Highlighter
+ * http://github.com/mojombo/tpw/blob/master/css/syntax.css
+ */
 .highlight {
   /* Comment */
 

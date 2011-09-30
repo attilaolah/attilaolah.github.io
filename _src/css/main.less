@@ -247,15 +247,6 @@ body {
               > .hr {
                 margin: 5px 10px 10px 0;
               }
-              > .fb_iframe_widget {
-                width: 100% !important;
-                > span {
-                  width: inherit !important;
-                  > iframe {
-                    width: inherit !important;
-                  }
-                }
-              }
             }
           }
         }
@@ -629,8 +620,15 @@ pre {
   }
 }
 
-// GitHub CSS Syntax Highlighter
-// http://github.com/mojombo/tpw/blob/master/css/syntax.css
+/* Disqus Comments extra styles */
+#dsq-combo-widget.green #dsq-combo-content .dsq-combo-box {
+  margin-right: 10px;
+}
+
+/*
+ * GitHub CSS Syntax Highlighter
+ * http://github.com/mojombo/tpw/blob/master/css/syntax.css
+ */
 
 .highlight  {
   .c { color: #999988; font-style: italic } /* Comment */
