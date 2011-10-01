@@ -4,7 +4,16 @@ title: Vote for Project HAUS
 tags:
  - Programming
  - Microsoft
-summary: "Spare a vote if you like the project."
+summary: " This is just a quick appeal for a <a
+href=\"http://www.imaginecup.com/worldwide-finals/peoples-choice-award/view-and-vote.aspx?r=6495\">vote</a>.
+Some friends of mine at the <a
+href=\"http://en.wikipedia.org/wiki/Faculty_of_Technical_Sciences\">Faculty of
+Technical Sciences</a> in <a
+href=\"http://en.wikipedia.org/wiki/Novi_Sad\">Novi Sad</a> are the kinds of
+guys who actually do something useful at <a
+href=\"http://en.wikipedia.org/wiki/University_of_Novi_Sad\">the university. So
+they figured they go and win the <a href=\"http://www.imaginecup.com/\">Imagine
+Cup 2011</a>."
 ---
 
 This is just a quick appeal for a

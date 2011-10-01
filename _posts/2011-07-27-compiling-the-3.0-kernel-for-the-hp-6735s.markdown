@@ -4,10 +4,13 @@ title: Compiling the 3.0 kernel for the HP 6735s
 tags:
  - Linux
  - administration
-summary: Jotting down my kernel config, as usual.
+summary: "I use <code>genkernel</code> to compile my kernel: <code>$ sudo
+genkernel --clean --color --install --loglevel=5 --mrproper --menuconfig
+all</code>. To have all of my hardware working, I change the following
+things&hellip;"
 ---
 
-I use ``genkernel`` to compile the kernel:
+I use ``genkernel`` to compile my kernel:
 
 {% highlight console %}
 $ sudo genkernel --clean --color --install --loglevel=5 --mrproper --menuconfig all

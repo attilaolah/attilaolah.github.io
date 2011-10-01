@@ -5,7 +5,15 @@ tags:
  - Programming
  - App Engine
  - Go
-summary: "How to implement simple URL routes on App Engine using Go."
+summary: " Some time ago <a href=\"http://code.google.com/appengine/\">Google
+App Engine</a> <a
+href=\"http://code.google.com/appengine/docs/go/overview.html\">has added
+support</a> for <a href=\"http://golang.org/\">the Go programming language</a>
+. Application configuration for the Go runtime is similar to that of the Python
+apps, with slight differences: at the time of writing this, there is no support
+for specifying custom URL paths to execute different Go packages. Instead, all
+this configuration is contained in the Go app itself, so the application
+configuration looks something like this&hellip;"
 ---
 
 Some time ago [Google App Engine](http://code.google.com/appengine/) [has added
