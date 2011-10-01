@@ -221,7 +221,7 @@ do so is by pasting from various web sites.
 
 A note for non-English users: always keep your language set to English, that
 will help you correct most grammatical mistakes, like capitalising the letter
-*i* (which is Serbian for *and*).
+*i* (which is Serbian for "*and*").
 
 More information on grammar can be found on [The Oatmeal's
 website](http://theoatmeal.com/tag/grammar).
