@@ -8,19 +8,7 @@
 (function () {
 
     // API KEYS
-    var api_key_fb = '108684282519237',
-        api_key_ga = 'UA-13035482-3';
-
-    // Set up & export Facebook Async init
-    var facebook_async_init = function () { 
-        FB.init({
-            'appId': api_key_fb,
-            'status': true,
-            'cookie': true,
-            'xfbml': true
-        });
-    };
-    window['fbAsyncInit'] = facebook_async_init;
+    var api_key_ga = 'UA-13035482-3';
 
     // Initialize and export Google Analytics queue
     var google_analitics_gaq = window['_gaq'] || [
@@ -131,48 +119,24 @@
         };
     }());
 
-    // Wait for HLJS to load
-    var wait_for_hljs = function (fn) {
-        while (typeof(hljs) !== 'object') {
-            setTimeout(function () { wait_for_hljs(fn); }, 10);
-            return;
-        }
-        fn();
-    };
-
-    // Set up the dom ready event handler
-    var init_facebook_div = function () {
-        var div = document.createElement('div');
-        div.id = 'fb-root';
-        document.getElementsByTagName('body')[0].appendChild(div);
-    };
-    var init_hljs = function () {
-        wait_for_hljs(function () {
-            hljs.initHighlighting();
-        })
-    };
     var load_external_js = function () {
         // Call the other script files from here
         asynchronous_javascript_loader('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
-        asynchronous_javascript_loader('http://connect.facebook.net/en_US/all.js');
         asynchronous_javascript_loader('http://www.google-analytics.com/ga.js');
-        asynchronous_javascript_loader('http://apis.google.com/js/plusone.js');
         asynchronous_javascript_loader('/media/js/jquery-treeview-src.js');
         asynchronous_javascript_loader('/media/js/data-src.js');
         asynchronous_javascript_loader('/media/js/tween-src.js');
         asynchronous_javascript_loader('/media/js/canvas-src.js');
     };
-    var load_external_css = function () {
-        // XXX: load external css here
-    };
+    //var load_external_css = function () {
+    //    // XXX: load external css here
+    //};
 
 
     var init_main = function () {
         // List init functions here
-        init_facebook_div();
-        init_hljs();
         load_external_js();
-        load_external_css();
+        //load_external_css();
     };
     ready(init_main);
 

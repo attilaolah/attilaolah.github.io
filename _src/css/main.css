@@ -401,11 +401,6 @@ body > .wrapper > .container > .content .pad .main span.tags {
   margin: 0 -2px -4px 2px;
   width: 16px;
 }
-body > .wrapper > .container > .content .pad .main .plusone {
-  display: inline-block;
-  position: relative;
-  top: 2px;
-}
 body > .wrapper > .container > .content .pad .main .hr {
   background: url(/media/images/skin/bg-box.png) repeat scroll left top transparent;
   padding: 2px;
