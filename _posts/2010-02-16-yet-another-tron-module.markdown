@@ -24,8 +24,8 @@ to get some easy utility functions.
 The module
 ----------
 
-``ao.tron`` is a Python module for working with tron boards. For more
-information and examples, take a look at the next section. The package is also
+``ao.tron`` is a Python module for working with tron boards. For more
+information and examples, take a look at the next section. The package is also
 [available on PyPI](http://pypi.python.org/pypi/ao.tron).
 
 
@@ -33,8 +33,8 @@ The tron board
 --------------
 
 The class ``ao.tron.Board`` represents the state of the tron board in discrete
-time. It has some utility functions to make it easier for your bot to work
-with the board object. To construct a simple board object, we'll use the
+time. It has some utility functions to make it easier for your bot to work
+with the board object. To construct a simple board object, we'll use the
 ``ao.tron.generate`` generator:
 
 {% highlight pycon %}
@@ -55,7 +55,7 @@ with the board object. To construct a simple board object, we'll use the
 {% endhighlight %}
 
 To see that we actually have the correct board, we can use the
-``ao.tron.Board.board`` property. Note that this property is lazy, as are most
+``ao.tron.Board.board`` property. Note that this property is lazy, as are most
 other properties: they won't calculate the result unless you ask for it, and
 once calculated, they store it in the object for later use:
 
@@ -86,8 +86,8 @@ Similarly, we can use ``ao.tron.Board.them`` (and it's alias,
 (3, 3)
 {% endhighlight %}
 
-As you can see, the coordinates start from the lower left corner. The first
-coordinate is the X axis, the second is the Y axis. We can ask for any
+As you can see, the coordinates start from the lower left corner. The first
+coordinate is the X axis, the second is the Y axis. We can ask for any
 coordinate on the boar like this:
 
 {% highlight pycon %}
@@ -285,7 +285,7 @@ True
 The absolute distance between us and the enemy can be accessed with the
 ``ao.tron.Board.flight`` property.
 
-Note that walls are not taken account of. We may even be separated. This is
+Note that walls are not taken account of. We may even be separated. This is
 just a cheap call to see if we're far away on a huge map:
 
 {% highlight pycon %}
@@ -294,8 +294,8 @@ just a cheap call to see if we're far away on a huge map:
 {% endhighlight %}
 
 The accurate way to go in the enemys direction is to to access the
-``ao.tron.Board.chase`` property. Note that this will call ``ao.tron.Board.path``,
-which may be quite expensive on huge boards. Use it with caution. If you need
+``ao.tron.Board.chase`` property. Note that this will call ``ao.tron.Board.path``,
+which may be quite expensive on huge boards. Use it with caution. If you need
 a cheaper version, try ``ao.tron.Board.charge``:
 
 {% highlight pycon %}
@@ -305,8 +305,8 @@ a cheaper version, try ``ao.tron.Board.charge``:
 
 A cheaper way to do the same is to call ``ao.tron.Board.charge`` This call is
 very cheap, but it does not check for the shortest path; It doesn't even check
-if we're separated from the enemy or not. Use it when you're far from the
-enemy and want to get closer as quickly as possible. In this particular case,
+if we're separated from the enemy or not. Use it when you're far from the
+enemy and want to get closer as quickly as possible. In this particular case,
 it will show us different results:
 
 {% highlight pycon %}
@@ -346,9 +346,9 @@ As usual, the value is cached:
 True
 {% endhighlight %}
 
-The opposite of ``ao.tron.Board.charge`` is ``ao.tron.Board.flee``. This call
+The opposite of ``ao.tron.Board.charge`` is ``ao.tron.Board.flee``. This call
 is very cheap, but it does not check for the shortest path; It doesn't even
-check if we're separated from the enemy or not. Use it when you want to run
+check if we're separated from the enemy or not. Use it when you want to run
 away as quickly as possible:
 
 {% highlight pycon %}
@@ -400,7 +400,7 @@ Reading the board from a file
 -----------------------------
 
 ``ao.tron.generate`` is a simple function that reads the tron board from
-the standard input and and generates ``ao.tron.Board`` instances. Format
+the standard input and and generates ``ao.tron.Board`` instances. Format
 the input like this:
 
     5 5
@@ -411,7 +411,7 @@ the input like this:
     #####
 
 The numbers on the first line show the height and withd of the board,
-respectively. The following lines represent the board, where:
+respectively. The following lines represent the board, where:
 
 * ``"#"`` are walls
 * ``" "`` (whitespaces) are the floor
@@ -490,4 +490,4 @@ Clean up after the tests:
 >>> cleanup.cleanUp()
 {% endhighlight %}
 
-This is it for now. Maybe I'll play more with this in the future.
+This is it for now. Maybe I'll play more with this in the future.
