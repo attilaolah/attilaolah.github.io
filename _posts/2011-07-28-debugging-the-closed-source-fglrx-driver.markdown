@@ -9,7 +9,7 @@ href=\"http://en.wikipedia.org/wiki/Radeon_R700#Radeon_HD_4800\">Sapphire
 Radeon HD 4850</a> somehow ended up in my possession. I didn't know what was
 the problem, so I tried to plug it in in a mobo I just had lying around,
 running the <a href=\"https://wiki.ubuntu.com/OneiricOcelot\">nightly
-oneiric&hellip;"
+oneiric</a>&hellip;"
 ---
 
 A broken [Sapphire Radeon HD

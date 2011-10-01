@@ -13,7 +13,7 @@ href=\"http://en.wikipedia.org/wiki/Novi_Sad\">Novi Sad</a> are the kinds of
 guys who actually do something useful at <a
 href=\"http://en.wikipedia.org/wiki/University_of_Novi_Sad\">the university. So
 they figured they go and win the <a href=\"http://www.imaginecup.com/\">Imagine
-Cup 2011</a>."
+Cup 2011</a>&hellip;"
 ---
 
 This is just a quick appeal for a
