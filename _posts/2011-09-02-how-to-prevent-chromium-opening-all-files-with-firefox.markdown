@@ -5,7 +5,10 @@ tags:
  - Chromium
  - Awesome
  - Linux
-summary: A quicx & simple fix for all those with a tiling window manager.
+summary: "Chromium opens downloaded files using <code>xdg-open</code>.  Problem
+is, <code>xdg-open</code> doesn't work correctly with awesome (and also doesn't
+support a number of other, non-mainstream wms.) The piece of code responsible
+for detecting the desktop environment&hellip;"
 ---
 
 
@@ -16,7 +19,7 @@ Chromium opens downloaded files using `xdg-open`.  Problem is, `xdg-open`
 doesn't work correctly with awesome (and also doesn't support a number of
 other, non-mainstream wms.)
 
-The iece of code responsible for detecting the desktop environment:
+The piece of code responsible for detecting the desktop environment:
 
 {% highlight bash %}
 detectDE()

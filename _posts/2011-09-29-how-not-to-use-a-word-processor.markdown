@@ -6,7 +6,7 @@ tags:
  - office
 summary: "Here's a couple of things you should know when using a word
 processor. Although most people seem to already know this, some might not, so I
-felt the need to help those by posting this tutorial."
+felt the need to help those by posting this tutorial&hellip;"
 ---
 
 <div class="img center left">

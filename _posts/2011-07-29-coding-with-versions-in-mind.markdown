@@ -5,7 +5,9 @@ tags:
  - Python
  - programming
  - git
-summary: Thoughts on writing code that is easy to upgrade.
+summary: "The good thing with web apps is that you don't have to ship updates,
+worry about versioning, or upload & maintain separate versions of your app. You
+change something and everyone gets the new version&hellip;"
 ---
 
 The good thing with web apps is that you don't have to ship updates, worry
