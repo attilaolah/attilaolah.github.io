@@ -726,6 +726,9 @@ body > .wrapper .footer ul li:first-child {
 body > .wrapper .footer ul li:last-child {
   border-right: none;
 }
+#previews > div:first-child > .summary {
+  margin-right: 32px;
+}
 /* highlight & ul fixes */
 .highlight + ul {
   margin-top: 1em;
