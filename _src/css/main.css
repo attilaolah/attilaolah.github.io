@@ -913,10 +913,13 @@ pre .tex .formula {
   opacity: 0.5;
 }
 /* Disqus Comments extra styles */
+#disqus_thread {
+  margin-right: 10px;
+}
 #dsq-pagination {
   float: left;
 }
-#dsq-pagination > ul {
+#dsq-footer {
   margin: 2px 0;
 }
 #dsq-trackback-url {
