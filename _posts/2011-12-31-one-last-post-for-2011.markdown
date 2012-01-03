@@ -4,10 +4,10 @@ title: One last post for 2011
 tags:
  - summary
  - fun
-summary: "Here's a list of things that has happened with me this year&hellip;"
+summary: "Here's a list of things that has happened to me this year&hellip;"
 ---
 
-Here's a list of things that has happened with me this year.
+Here's a list of things that has happened to me this year.
 
 Among other things, I got married, found out I'm soon to be a dad, moved back
 to my home town, opened a company, __almost__ beat [John][5] in go-kart,
