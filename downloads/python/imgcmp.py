@@ -4,8 +4,11 @@ import Image
 import Levenshtein
 
 
-class ImageCompare(object):
-    """Compares two images."""
+class BWImageCompare(object):
+    """Compares two images (b/w)."""
+
+    _pixel = 255
+    _colour = False
 
     def __init__(self, imga, imgb, maxsize=64):
         """Save a copy of the image objects."""
@@ -19,9 +22,13 @@ class ImageCompare(object):
         imga = imga.resize((newx, newy), Image.BICUBIC)
         imgb = imgb.resize((newx, newy), Image.BICUBIC)
 
-        # Store the images in B/W Int format
-        self._imga = imga.convert('I')
-        self._imgb = imgb.convert('I')
+        if not self._colour:
+            # Store the images in B/W Int format
+            imga = imga.convert('I')
+            imgb = imgb.convert('I')
+
+        self._imga = imga
+        self._imgb = imgb
 
         # Store the common image size
         self.x, self.y = newx, newy
@@ -68,7 +75,7 @@ class ImageCompare(object):
         """Calculate the peak signal-to-noise ratio."""
 
         if not hasattr(self, '_psnr'):
-            self._psnr = 20 * math.log(255 / math.sqrt(self.mse), 10)
+            self._psnr = 20 * math.log(self._pixel / math.sqrt(self.mse), 10)
 
         return self._psnr
 
@@ -77,7 +84,7 @@ class ImageCompare(object):
         """Calculate the normalized root mean square deviation."""
 
         if not hasattr(self, '_nrmsd'):
-            self._nrmsd = math.sqrt(self.mse) / 255
+            self._nrmsd = math.sqrt(self.mse) / self._pixel
 
         return self._nrmsd
 
@@ -92,6 +99,44 @@ class ImageCompare(object):
             lv = Levenshtein.distance(stra, strb)
 
             self._lv = float(lv) / self.x / self.y
+
+        return self._lv
+
+
+class ImageCompare(BWImageCompare):
+    """Compares two images (colour)."""
+
+    _pixel = 255 ** 3
+    _colour = True
+
+    def _img_int(self, img):
+        """Convert an image to a list of pixels."""
+
+        x, y = img.size
+
+        for i in xrange(x):
+            for j in xrange(y):
+                pixel = img.getpixel((i, j))
+                yield pixel[0] | (pixel[1]<<8) | (pixel[2]<<16)
+
+    @property
+    def levenshtein(self):
+        """Calculate the Levenshtein distance."""
+
+        if not hasattr(self, '_lv'):
+            stra_r = ''.join((chr(x>>16) for x in self.imga_int))
+            strb_r = ''.join((chr(x>>16) for x in self.imgb_int))
+            lv_r = Levenshtein.distance(stra_r, strb_r)
+
+            stra_g = ''.join((chr((x>>8)&0xff) for x in self.imga_int))
+            strb_g = ''.join((chr((x>>8)&0xff) for x in self.imgb_int))
+            lv_g = Levenshtein.distance(stra_g, strb_g)
+
+            stra_b = ''.join((chr(x&0xff) for x in self.imga_int))
+            strb_b = ''.join((chr(x&0xff) for x in self.imgb_int))
+            lv_b = Levenshtein.distance(stra_b, strb_b)
+
+            self._lv = (lv_r + lv_g + lv_b) / 3. / self.x / self.y
 
         return self._lv
 
