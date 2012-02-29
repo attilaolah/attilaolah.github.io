@@ -88,7 +88,9 @@ The source code
 Here is the source code, you can copy-paste it or download it from
 [this gist](https://gist.github.com/1940208).
 
-<script src="https://gist.github.com/1940208.js?file=imgcmp.py"></script>
+<div class="img center">
+  <script src="https://gist.github.com/1940208.js?file=imgcmp.py"></script>
+</div>
 
 License
 -------
