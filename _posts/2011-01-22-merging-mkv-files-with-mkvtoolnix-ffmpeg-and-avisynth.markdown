@@ -64,6 +64,11 @@ so:
 
     $ eac3to video-left.mkv sound.ac3
 
+**UPDATE:** as *Marcin* mentioned in the comments, you can extract the autio
+simply using `ffmpeg`, you don't need `eac3to`:
+
+    $ ffmpeg -i video-left.mkv -acodec copy audio.ac3
+
 Next thing you're going to do is extract the video streams of both left and
 right files, and convert them to side-by-side view. To do so, you'll need to
 generate an `.avs` file that looks like this:
