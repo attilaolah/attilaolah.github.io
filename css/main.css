@@ -224,14 +224,16 @@ ul.home q>a {
 	color: #999;
 	font-size: 1.5rem;
 	line-height: 1rem;
+	text-align: right;
 	position: absolute;
+	left: -14.5rem;
+	width: 16rem;
 	text-transform: uppercase;
 	-webkit-transition: all 0.25s ease-in-out 0;
 }
 @media only screen and (max-width: 1280px) {
 	.post time {
 		top: 1.5rem;
-		left: -7.5rem;
 		-webkit-transform: rotateZ(-90deg);
 		-webkit-transform-origin: bottom right;
 	}
@@ -239,7 +241,6 @@ ul.home q>a {
 @media only screen and (min-width: 1280px) {
 	.post time {
 		top: 3rem;
-		left: -8rem;
 		-webkit-transform: rotateZ(0deg);
 		-webkit-transform-origin: bottom right;
 	}

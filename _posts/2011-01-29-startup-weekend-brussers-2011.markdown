@@ -1,0 +1,25 @@
+---
+layout: post
+title: Startup Weekend Brussels 2011
+tags:
+- Brussels
+- Startup
+---
+
+The *Startup Weekend* seems great so far. Running surveys, advertizing,
+planning a business, playing the [Kinect][1], beer, [mandarins][2], [lots][3]
+[of][4] [interesting][5] [people][6], and planning various cow usage.
+
+[1]: https://en.wikipedia.org/wiki/Kinect
+[2]: http://en.wikipedia.org/wiki/Mandarin_orange
+[3]: https://twitter.com/JohnGBeckett
+[4]: https://twitter.com/bilyachenko
+[5]: https://twitter.com/leoexter
+[6]: https://twitter.com/ramonsuarez
+
+
+{:.center}
+![View from location one](/images/2011/swbru-logo.jpg)
+
+So far not much coding though. I'll just have to make up for it next week at
+artsprint.
