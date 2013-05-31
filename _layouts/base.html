@@ -1,82 +1,47 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/media/css/main-min.css" type="text/css"/>
-    <link rel="alternate" type="application/rss+xml" title="Attila O. on code" href="http://feeds.feedburner.com/aatiisme"/>
-    <script src="/media/js/ajs-min.js"></script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="header">
-        <h1 class="title"><a href="/">Attila O. on code</a></h1>
-        <div class="flower"></div>
-        <div class="j-canvas canvas"></div>
-        <div class="grass"></div>
-      </div>
-      <div class="container">
-        <div class="content">
-          <div class="line">
-            <div class="unit size3of4">
-              <div class="pad">
-                <div class="main">
-                  {{ content }}
-                </div>
-              </div>
-            </div>
-            <div class="unit lastUnit">
-              <div class="sidebar">
-                <div class="avatar">
-                  <img src="/media/images/skin/avatar-clippy.png" alt="This is me."/>
-                  <div class="header">Hello, reader.</div>
-                  <div class="bio">
-                    <span>My name is<br/></span>
-                    <span><a href="mailto:me@aatiis.me" rel="me" class="me">Attila Ol&aacute;h</a><br/></span>
-                    <span>I'm currently a<br/></span>
-                    <span><strong>python coder</strong><br/></span>
-                    <span>at <a href="http://www.vemble.com/">Vemble B.V.</a><br/></span>
-                    <span>and <strong>founder</strong><br/></span>
-                    <span>of <a href="http://aiur.co.rs/">Aiur d.o.o.</a> Serbia</span>
-                  </div>
-                </div>
-                <div class="j-archives archives">
-                  <div class="header">Archives</div>
-                  <div class="j-loader loader">Loading archives...</div>
-                </div>
-                <div class="blogs">
-                  <div class="header">Worth checking out</div>
-                  <ul>
-                    <li><a href="https://github.com/blog/">The GitHub Blog</a></li>
-                    <li><a href="http://blog.notdot.net/">Nick's Blog</a></li>
-                    <li><a href="http://37signals.com/svn/">Signal vs. Noise</a></li>
-                    <li><a href="http://www.codinghorror.com/blog/">Coding Horror</a></li>
-                    <li><a href="http://www.stubbornella.org/">Stubbornella</a></li>
-                    <li><a href="http://www.spoiledmilk.dk/blog/">SpoiledMilk Blog</a></li>
-                    <li><a href="http://richardneililagan.com/">Richard Neil Ilagan</a></li>
-                  </ul>
-                </div>
-                <div class="me">
-                  <div class="header">Me on the web</div>
-                  {% include links-me.html %}
-                  <div class="clear"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <ul>
-          <li>&copy; 2011. Licensed under a <a href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons Attribution 3.0 Unported License</a>.</li>
-          <li><a href="/">home</a></li>
-          <li><a href="https://github.com/aatiis" rel="me">me @ github</a></li>
-          <li><a href="mailto:me@aatiis.me" rel="me">contact</a></li>
-        </ul>
-        <span>Pages created using <a href="http://github.com/mojombo/jekyll">jekyll</a>.</span>
-        <span>Styled using <a href="http://github.com/cloudhead/less.js">less.js</a> &amp; <a href="http://github.com/stubbornella/oocss">oocss grids</a>.</span>
-        <span>Hosted by <a href="http://github.com/">GitHub</a>.</span>
-      </div>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+	<meta charset="utf-8"/>
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="icon" type="image/png" href="/favicon.png" />
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<div class="flower">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="content">
+				<div class="avatar"></div>
+				<h1>Attila Ol&aacute;h</h1>
+				<h2>Full-time dad, part-time web developer.</h2>
+				<h2 class="live">Lives in
+					<a href="https://en.wikipedia.org/wiki/Bajmok">Bajmok</a>,
+					<a href="https://en.wikipedia.org/wiki/Serbia">Serbia</a>.
+				</h2>
+				<h2 class="work">Works at
+					<a href="http://www.vemble.com/">Vemble</a>.
+				</h2>
+				<h2 class="study">Studies at
+					<a href="https://www.udacity.com/">Udacity</a>.
+				</h2>
+			</div>
+		</div>
+	</header>
+	<div role="main"></div>
+	<footer>
+		&copy; 2011&ndash;2013 Attila Oláh &mdash; contact me at attilaolah@gmail.com
+	</footer>
+</body>
 </html>
