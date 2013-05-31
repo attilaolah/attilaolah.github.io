@@ -24,7 +24,7 @@
 			</div>
 			<div class="content">
 				<div class="avatar"></div>
-				<h1>Attila Ol&aacute;h</h1>
+				<h1><a href="{{ site.baseurl }}">Attila Ol&aacute;h</a></h1>
 				<h2>Full-time dad, part-time web developer.</h2>
 				<h2 class="live">Lives in
 					<a href="https://en.wikipedia.org/wiki/Bajmok">Bajmok</a>,
@@ -39,9 +39,12 @@
 			</div>
 		</div>
 	</header>
-	<div role="main"></div>
+	<div role="main">
+		{{ content }}
+	</div>
 	<footer>
-		&copy; 2011&ndash;2013 Attila Oláh &mdash; contact me at attilaolah@gmail.com
+		&copy; 2011&ndash;2013 Attila Oláh &ndash;
+		contact me at <a href="mailto:attilaolah@gmail.com" rel="me">attilaolah@gmail.com</a>
 	</footer>
 </body>
 </html>

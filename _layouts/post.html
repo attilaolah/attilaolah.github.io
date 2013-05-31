@@ -1,19 +1,9 @@
 ---
 layout: base
 ---
-
-<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-<div class="hr"></div>
-<blockquote>
-  <span class="date"></span> posted on: <code>{{ page.date | date_to_string }}</code>;
-  <span class="tags"></span> tags: {% for tag in page.tags %}<code>{{ tag }}</code>{% if forloop.last %};{% else %}, {% endif %}{% endfor %}
-</blockquote>
-
-{{ content }}
-
-<div class="comments">
-  <div class="hr"></div>
-  <div id="disqus_thread"></div>
-  <script>disqus_shortname="aatiis";disqus_identifier=location.pathname.replace(/\.html$/,"");(function(){var s;(s=document.createElement("script")).src="http://"+(disqus_shortname="aatiis")+".disqus.com/embed.js";s.async=!0;(document.head||document.getElementsByTagName("head")[0]).appendChild(s);})();</script>
-  <script src="http://aatiis.disqus.com/combination_widget.js?num_items=2&hide_mods=0&color=green&default_tab=popular&excerpt_length=200"></script>
+<div class="wrap post">
+	<time datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%d %B %Y" }}</time>
+	<h1>{{ page.title }}</h1>
+	<div class="hr"></div>
+	{{ content }}
 </div>

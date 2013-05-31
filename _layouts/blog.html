@@ -1,3 +1,15 @@
 ---
 layout: base
+title: Attila Oláh
 ---
+<ul class="wrap home">
+	{% for post in site.posts %}
+		<li>
+	 		<h1> <a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<q>
+				{{ post.excerpt }}
+				<a href="{{ post.url }}">…</a>
+			</q>
+		</li>
+	{% endfor %}
+</ul>
