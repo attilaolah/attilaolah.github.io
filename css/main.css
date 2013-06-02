@@ -428,7 +428,8 @@ ul.home > li {
 .pagination .next:after,
 .pagination .previous:before {
   font-size: 1.5rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
+  display: inline-block;
 }
 .pagination .current {
   color: #333;
