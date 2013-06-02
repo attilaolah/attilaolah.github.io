@@ -18,14 +18,6 @@ taking place in my favourite city, I decided to take part.
 [5]: http://www.zope.org/the-world-of-zope
 [6]: http://bluebream.zope.org/
 
-
-{:.right}
-[![City Hall](/images/2010/novi-sad-city-hall.jpg)
-City Hall. Picture: Wikipedia.
-][7]
-
-[7]: http://en.wikipedia.org/wiki/File:NoviSadCityHall.jpg
-
 The event is taking place at *Hotel Putnik*, in the city centre. I'm arriving
 today afternoon, about 5pm. Looking forward to meet new people.
 

@@ -456,15 +456,20 @@ ul.home > li {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-  padding: .25rem;
+  border: .75rem solid #fff;
+  box-shadow: 0 .125rem .25rem #ccc;
   box-sizing: border-box;
 }
 .post .right {
-  margin-top: 0;
   text-align: center;
 }
 .post .center {
   clear: both;
+}
+.post .right,
+.post .center {
+  margin-top: 0;
+  line-height: 200%;
 }
 .post li > p {
   margin: 0;
