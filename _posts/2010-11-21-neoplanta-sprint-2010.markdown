@@ -37,8 +37,8 @@ View from Petrovaradin Fortress at night. Picture: EESTEC.
 [8]: http://eestec.net/news-and-offers/ecm-2010-in-general
 
 {:.center}
-[![Petrovaradin Fortress at night](/images/2010/tvrdjava-at-night.jpg)
+[![Petrovaradin Fortress at night](/images/2010/tvrdjava-at-night-small.jpg)
 Petrovaradin Fortress at night. Picture: me.
 ][9]
 
-[9]: http://lh5.ggpht.com/_ECkYvml2zGc/S1m_TclasrI/AAAAAAAAPsM/uuzkkY6VcLo/tvrdava-at-night.png.jpg
+[9]: /images/2010/tvrdjava-at-night.jpg

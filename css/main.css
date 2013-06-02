@@ -64,7 +64,7 @@
   border: thin solid #eaeaea;
   border-radius: .1875rem;
   white-space: nowrap;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   padding: 0 .25rem;
   margin: 0 .125rem;
 }
@@ -205,8 +205,6 @@ header > div {
 header .avatar {
   width: 12rem;
   height: 12rem;
-  border: thin solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 0.125px #000000;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
@@ -404,6 +402,9 @@ ul.home > li {
   text-align: center;
   text-transform: lowercase;
   font-variant: small-caps;
+  height: 2rem;
+  /* FF fix */
+
 }
 .pagination > a,
 .pagination > span {
@@ -421,14 +422,15 @@ ul.home > li {
 }
 .pagination .previous:before {
   content: "\00AB";
+  line-height: 1.5rem;
 }
 .pagination .next:after {
   content: "\00BB";
+  line-height: 1rem;
 }
 .pagination .next:after,
 .pagination .previous:before {
   font-size: 1.5rem;
-  line-height: 1rem;
   display: inline-block;
 }
 .pagination .current {
@@ -468,5 +470,6 @@ ul.home > li {
   }
   .post h1 {
     text-align: center;
+    word-wrap: break-word;
   }
 }

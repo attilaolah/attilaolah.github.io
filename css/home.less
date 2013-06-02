@@ -10,6 +10,7 @@ ul.home {
   text-align: center;
   text-transform: lowercase;
   font-variant: small-caps;
+  height: 2rem; /* FF fix */
   > a, > span {
     font-size: 1.25rem;
   }
@@ -25,14 +26,15 @@ ul.home {
   }
   .previous:before {
     content: "\00AB";
+    line-height: 1.5rem;
   }
   .next:after {
     content: "\00BB";
+    line-height: 1rem;
   }
   .next:after,
   .previous:before {
     font-size: 1.5rem;
-    line-height: 1rem;
     display: inline-block;
   }
   .current {

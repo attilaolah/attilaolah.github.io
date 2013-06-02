@@ -64,3 +64,10 @@ experiences and friends.
 [11]: https://en.wikipedia.org/wiki/Delft
 [12]: https://en.wikipedia.org/wiki/Netherlands
 [13]: http://www.vemble.com/
+
+{:.center}
+[![Hermina and I](/images/2010/antwerp-zoo-small.jpg)
+In the Antwerp zoo.
+][14]
+
+[14]: /images/2010/antwerp-zoo.jpg

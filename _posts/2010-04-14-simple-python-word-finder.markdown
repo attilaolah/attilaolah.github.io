@@ -14,8 +14,6 @@ split words and check patterns for each word.
 
 [1]: http://www.python.org/
 
-
-
 This is just too simple to be released as a module, but I'll put the code here
 in case anyone needs it. I'm placing it in the [public domain][2], by the way.
 
