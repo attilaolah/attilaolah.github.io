@@ -5,13 +5,13 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
     http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>http://aatiis.me/</loc>
+    <loc>http://aatiis.github.io/</loc>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
 {% for post in site.posts %}
   <url>
-    <loc>http://aatiis.me{{ post.url }}</loc>
+    <loc>http://aatiis.github.io{{ post.url }}</loc>
     <lastmod>{{ post.date | date:"%Y-%m-%d" }}</lastmod>
     <changefreq>never</changefreq>
     <priority>0.80</priority>

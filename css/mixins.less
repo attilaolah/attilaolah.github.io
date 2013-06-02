@@ -1,0 +1,41 @@
+.text-size-adjust (@size: 100%) {
+  -webkit-text-size-adjust: @size;
+     -moz-text-size-adjust: @size;
+      -ms-text-size-adjust: @size;
+       -o-text-size-adjust: @size;
+          text-size-adjust: @size;
+}
+
+.border-radius (@radius: 100%) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+      -ms-border-radius: @radius;
+       -o-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.transition (@params) {
+  -webkit-transition: @params;
+     -moz-transition: @params;
+      -ms-transition: @params;
+       -o-transition: @params;
+          transition: @params;
+}
+
+.transform-origin (@origin) {
+  -webkit-transform-origin: @origin;
+     -moz-transform-origin: @origin;
+      -ms-transform-origin: @origin;
+       -o-transform-origin: @origin;
+          transform-origin: @origin;
+}
+
+.rotate (@angle: 0deg) {
+  -webkit-transform: rotate3d(0, 0, 1, @angle);
+     -moz-transform: rotate3d(0, 0, 1, @angle);
+      -ms-transform: rotate3d(0, 0, 1, @angle);
+      /* rotate3d not supported in opera…
+       -o-transform: rotate3d(0, 0, 1, @angle);*/
+       -o-transform: rotate(@angle);
+          transform: rotate3d(0, 0, 1, @angle);
+}

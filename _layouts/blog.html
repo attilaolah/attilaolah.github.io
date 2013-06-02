@@ -3,13 +3,43 @@ layout: base
 title: Attila Oláh
 ---
 <ul class="wrap home">
-	{% for post in site.posts %}
-		<li>
-	 		<h1> <a href="{{ post.url }}">{{ post.title }}</a></h1>
-			<q>
-				{{ post.excerpt }}
-				<a href="{{ post.url }}">…</a>
-			</q>
-		</li>
-	{% endfor %}
+  {% for post in paginator.posts %}
+  <li class="post">
+    <time class="condensed thin" datetime="{{ post.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ post.date | date: "%d %B %Y" }}</time>
+    <h1 class="condensed"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <div class="markdown">
+    {{ post.content }}
+    </div>
+  </li>
+  {% endfor %}
 </ul>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a class="previous" href="/">Previous</a>
+    {% else %}
+      <a class="previous" href="/{{ paginator.previous_page_path }}">Previous</a>
+    {% endif %}
+  {% endif %}
+  <ul>
+    <li>
+      {% if paginator.page == 1 %}
+        <span class="current">1</span>
+      {% else %}
+        <a href="/">1</a>
+      {% endif %}
+    </li>
+    {% for count in (2..paginator.total_pages) %}
+      <li>
+        {% if count == paginator.page %}
+          <span class="current">{{ count }}</span>
+        {% else %}
+          <a href="/page{{ count }}">{{ count }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  {% if paginator.next_page %}
+    <a class="next" href="/{{ paginator.next_page_path }}">Next</a>
+  {% endif %}
+</div>

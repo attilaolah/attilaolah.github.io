@@ -2,8 +2,9 @@
 layout: base
 ---
 <div class="wrap post">
-	<time datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%d %B %Y" }}</time>
-	<h1>{{ page.title }}</h1>
-	<div class="hr"></div>
-	{{ content }}
+  <time class="condensed thin" datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%d %B %Y" }}</time>
+  <h1 class="condensed">{{ page.title }}</h1>
+  <div class="markdown">
+    {{ content }}
+  </div>
 </div>

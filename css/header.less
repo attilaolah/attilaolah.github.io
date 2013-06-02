@@ -1,0 +1,122 @@
+/* Header styles. */
+header {
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.701961) 0 .0625rem 0;
+  background: url(/images/w/blackorchid.png);
+  overflow: hidden;
+  > div {
+    height: 32rem;
+  }
+  .avatar {
+    width: 12rem;
+    height: 12rem;
+    border: thin solid rgba(255, 255, 255, .25);
+    box-shadow: 0 0 .125px rgba(0, 0, 0, 1);
+    .border-radius;
+  }
+  h1 {
+    padding: 3rem 0 0;
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1rem;
+    margin: 1rem 0 0;
+    text-shadow: rgba(0, 0, 0, 1) 0 0 2rem,
+      rgba(0, 0, 0, 0.6875) 0 .0625rem 0;
+    + h2 {
+      color: #ccc;
+      display: inline;
+      + h2 {
+        margin: 0;
+      }
+    }
+  }
+  .flower {
+    position: relative;
+    width: 0;
+    height: 32rem;
+    > div {
+      width: 32rem;
+      height: 32rem;
+      position: absolute; bottom: -4rem; left: 12rem;
+      background-image: url(/images/w/texture.png);
+      box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, .75);
+      .transform-origin(bottom left);
+      .border-radius(100% 0);
+    }
+    > div+div+div+div+div+div {
+      left: 8rem;
+    }
+    > div:nth-child(1) {
+      background-color: #f44;
+      .rotate(-135deg);
+    }
+    > div:nth-child(2) {
+      background-color: #fb3;
+      .rotate(-95deg);
+    }
+    > div:nth-child(3) {
+      background-color: #9c0;
+      .rotate(-55deg);
+    }
+    > div:nth-child(4) {
+      background-color: #a6c;
+      .rotate(-15deg);
+    }
+    > div:nth-child(5) {
+      background-color: #33b5e5;
+      .rotate(25deg);
+    }
+    > div:nth-child(6) {
+      background-color: #c00;
+      .rotate(-115deg);
+    }
+    > div:nth-child(7) {
+      background-color: #f80;
+      .rotate(-75deg);
+    }
+    > div:nth-child(8) {
+      background-color: #690;
+      .rotate(-35deg);
+    }
+    > div:nth-child(9) {
+      background-color: #93c;
+      .rotate(5deg);
+    }
+    > div:nth-child(10) {
+      background-color: #09c;
+      .rotate(45deg);
+    }
+  }
+}
+
+/* Wide header styles. */
+@media screen and (min-width: 520px) {
+  header {
+    .content {
+      margin: -15rem 1rem 0;
+      padding-left: 13rem;
+    }
+    .avatar {
+      margin-left: -13rem;
+      float: left;
+    }
+  }
+}
+
+/* Narrow header styles. */
+@media screen and (max-width: 520px) {
+  header {
+    .content {
+      margin: -24rem 0 0;
+      text-align: center;
+    }
+    .avatar {
+      margin: 0 auto;
+    }
+    h1, h2 {
+      margin: 0;
+      padding: 1rem 0 0;
+    }
+  }
+}

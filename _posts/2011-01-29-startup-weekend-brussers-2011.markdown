@@ -19,7 +19,7 @@ planning a business, playing the [Kinect][1], beer, [mandarins][2], [lots][3]
 
 
 {:.center}
-![View from location one](/images/2011/swbru-logo.jpg)
+![Startup Weekend logo](/images/2011/swbru-logo.jpg)
 
 So far not much coding though. I'll just have to make up for it next week at
 artsprint.

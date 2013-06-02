@@ -6,14 +6,15 @@ tags:
 - Pyramid
 ---
 
-My lovely <del>girlfriend</del> <ins>now wife</ins> and I have attended the first
-four days of *Buschenschanksprint 2011*, in the beautiful hills and vineyards
-of [Berghausen][1], in [Styria][2], [Austria][3].
+My lovely <del>girlfriend</del> <ins>now wife</ins> and I have attended the
+first four days of [Buschenschanksprint 2011][18], in the beautiful hills and
+vineyards of [Berghausen][1], in [Styria][2], [Austria][3].
 
 
 [1]: https://en.wikipedia.org/wiki/Berghausen,_Austria
 [2]: https://en.wikipedia.org/wiki/Styria
 [3]: https://en.wikipedia.org/wiki/Austria
+[18]: http://www.coactivate.org/projects/buschenschanksprint-2011/project-home
 
 We had some great time, visited some [Buschenschänke][4], and, of course,
 wrote a lot of code. I mostly worked on code that was related to the project
@@ -39,15 +40,15 @@ We've also fixed a few small bugs in [cone.app][9] and [cone.tile][10], [AnneGil
 [15]: https://en.wikipedia.org/wiki/Amazon_S3
 
 {:.center}
-[![Location one]({{ site.url }}/images/2011/bss-location-one-small.jpg)
+[![Location one](/images/2011/bss-location-one-small.jpg)
 This was the sprint location…
 ][16]
 
-[16]: {{ site.url }}/images/2011/bss-location-one.jpg
+[16]: /images/2011/bss-location-one.jpg
 
 {:.center}
-[![View from location one]({{ site.url }}/images/2011/bss-view-location-one-small.jpg)
+[![View from location one](/images/2011/bss-view-location-one-small.jpg)
 …and this was the view from the location.
 ][17]
 
-[17]: {{ site.url }}/images/2011/bss-view-location-one.jpg
+[17]: /images/2011/bss-view-location-one.jpg

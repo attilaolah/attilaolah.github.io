@@ -1,0 +1,36 @@
+.post {
+  color: #404040;
+  position: relative;
+  padding: 1rem 1rem 1rem 2rem;
+  h1 {
+    color: #262626;
+    font-size: 2.5rem;
+    margin: 1rem 0 .5rem;
+    border-bottom: thin solid #ccc;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: .25rem;
+	box-sizing: border-box;
+  }
+  .right {
+    margin-top: 0;
+	text-align: center;
+  }
+  .center {
+    clear: both;
+  }
+  li > p {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .post {
+    padding: 1rem .5rem .5rem;
+	h1 {
+	  text-align: center;
+	}
+  }
+}
