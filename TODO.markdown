@@ -1,2 +1,2 @@
-* Add picture(s) to the Berlin post
 * Year should go first in post titles
+* Something like this for pictures: http://charliepark.org/about/
