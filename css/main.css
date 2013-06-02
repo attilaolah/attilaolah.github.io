@@ -37,7 +37,7 @@
 .center {
   text-align: center;
 }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 521px) {
   /* Right-align, but only on wide screens */
   .right {
     float: right;
@@ -147,8 +147,13 @@ time {
     text-align: center;
     margin: 1rem 0 -0.75rem;
   }
+  time:before,
+  time:after {
+    content: "\2014";
+    padding: .5rem;
+  }
 }
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 521px) {
   time {
     text-align: right;
     position: absolute;
@@ -166,7 +171,7 @@ time {
     transform-origin: bottom right;
   }
 }
-@media only screen and (min-width: 520px) and (max-width: 1280px) {
+@media only screen and (min-width: 521px) and (max-width: 1280px) {
   time {
     top: 1.5rem;
     -webkit-transform: rotate3d(0, 0, 1, -90deg);
@@ -179,9 +184,9 @@ time {
     transform: rotate3d(0, 0, 1, -90deg);
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1281px) {
   time {
-    top: 3rem;
+    top: 3.375rem;
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
     -moz-transform: rotate3d(0, 0, 1, 0deg);
     -ms-transform: rotate3d(0, 0, 1, 0deg);
@@ -365,7 +370,7 @@ header .flower > div:nth-child(10) {
   transform: rotate3d(0, 0, 1, 45deg);
 }
 /* Wide header styles. */
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 521px) {
   header .content {
     margin: -15rem 1rem 0;
     padding-left: 13rem;

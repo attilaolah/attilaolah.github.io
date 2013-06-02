@@ -65,9 +65,14 @@ time {
     display: block;
     text-align: center;
     margin: 1rem 0 -.75rem;
+    &:before,
+    &:after {
+      content: "\2014";
+      padding: .5rem;
+    }
   }
 }
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 521px) {
   time {
     text-align: right;
     position: absolute;
@@ -77,15 +82,15 @@ time {
     .transform-origin(bottom right);
   }
 }
-@media only screen and (min-width: 520px) and (max-width: 1280px) {
+@media only screen and (min-width: 521px) and (max-width: 1280px) {
   time {
     top: 1.5rem;
     .rotate(-90deg);
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1281px) {
   time {
-    top: 3rem;
+    top: 3.375rem;
     .rotate;
   }
 }
