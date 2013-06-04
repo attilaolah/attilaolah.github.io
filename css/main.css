@@ -109,8 +109,8 @@ a:active {
   background-color: #fb3;
   text-shadow: none;
 }
-footer,
-header *,
+body > header *,
+body > footer,
 div[role=main] {
   -webkit-transform: rotate3d(0, 0, 1, 0deg);
   -moz-transform: rotate3d(0, 0, 1, 0deg);
@@ -126,11 +126,11 @@ div[role=main] {
   box-shadow: 0 2rem 2rem 2rem rgba(0, 0, 0, 0.5);
 }
 body,
-footer,
+body > footer,
 div[role=main] {
   background: #fdfdfd url(http://aiur.co.rs/img/brillant.png) 0 0 repeat;
 }
-footer {
+body > footer {
   color: #999;
   text-align: center;
   padding: 2.5rem 0 2rem;
@@ -198,16 +198,16 @@ time {
   }
 }
 /* Header styles. */
-header {
+body > header {
   color: #fff;
   text-shadow: rgba(0, 0, 0, 0.701961) 0 0.0625rem 0;
   background: url(/images/w/blackorchid.png);
   overflow: hidden;
 }
-header > div {
+body > header > div {
   height: 32rem;
 }
-header .avatar {
+body > header .avatar {
   width: 12rem;
   height: 12rem;
   -webkit-border-radius: 100%;
@@ -216,28 +216,28 @@ header .avatar {
   -o-border-radius: 100%;
   border-radius: 100%;
 }
-header h1 {
+body > header h1 {
   padding: 3rem 0 0;
   font-size: 1.75rem;
 }
-header h2 {
+body > header h2 {
   font-size: 1rem;
   margin: 1rem 0 0;
   text-shadow: #000000 0 0 2rem, rgba(0, 0, 0, 0.6875) 0 0.0625rem 0;
 }
-header h2 + h2 {
+body > header h2 + h2 {
   color: #ccc;
   display: inline;
 }
-header h2 + h2 + h2 {
+body > header h2 + h2 + h2 {
   margin: 0;
 }
-header .flower {
+body > header .flower {
   position: relative;
   width: 0;
   height: 32rem;
 }
-header .flower > div {
+body > header .flower > div {
   width: 32rem;
   height: 32rem;
   position: absolute;
@@ -256,10 +256,10 @@ header .flower > div {
   -o-border-radius: 100% 0;
   border-radius: 100% 0;
 }
-header .flower > div + div + div + div + div + div {
+body > header .flower > div + div + div + div + div + div {
   left: 8rem;
 }
-header .flower > div:nth-child(1) {
+body > header .flower > div:nth-child(1) {
   background-color: #f44;
   -webkit-transform: rotate3d(0, 0, 1, -135deg);
   -moz-transform: rotate3d(0, 0, 1, -135deg);
@@ -270,7 +270,7 @@ header .flower > div:nth-child(1) {
   -o-transform: rotate(-135deg);
   transform: rotate3d(0, 0, 1, -135deg);
 }
-header .flower > div:nth-child(2) {
+body > header .flower > div:nth-child(2) {
   background-color: #fb3;
   -webkit-transform: rotate3d(0, 0, 1, -95deg);
   -moz-transform: rotate3d(0, 0, 1, -95deg);
@@ -281,7 +281,7 @@ header .flower > div:nth-child(2) {
   -o-transform: rotate(-95deg);
   transform: rotate3d(0, 0, 1, -95deg);
 }
-header .flower > div:nth-child(3) {
+body > header .flower > div:nth-child(3) {
   background-color: #9c0;
   -webkit-transform: rotate3d(0, 0, 1, -55deg);
   -moz-transform: rotate3d(0, 0, 1, -55deg);
@@ -292,7 +292,7 @@ header .flower > div:nth-child(3) {
   -o-transform: rotate(-55deg);
   transform: rotate3d(0, 0, 1, -55deg);
 }
-header .flower > div:nth-child(4) {
+body > header .flower > div:nth-child(4) {
   background-color: #a6c;
   -webkit-transform: rotate3d(0, 0, 1, -15deg);
   -moz-transform: rotate3d(0, 0, 1, -15deg);
@@ -303,7 +303,7 @@ header .flower > div:nth-child(4) {
   -o-transform: rotate(-15deg);
   transform: rotate3d(0, 0, 1, -15deg);
 }
-header .flower > div:nth-child(5) {
+body > header .flower > div:nth-child(5) {
   background-color: #33b5e5;
   -webkit-transform: rotate3d(0, 0, 1, 25deg);
   -moz-transform: rotate3d(0, 0, 1, 25deg);
@@ -314,7 +314,7 @@ header .flower > div:nth-child(5) {
   -o-transform: rotate(25deg);
   transform: rotate3d(0, 0, 1, 25deg);
 }
-header .flower > div:nth-child(6) {
+body > header .flower > div:nth-child(6) {
   background-color: #c00;
   -webkit-transform: rotate3d(0, 0, 1, -115deg);
   -moz-transform: rotate3d(0, 0, 1, -115deg);
@@ -325,7 +325,7 @@ header .flower > div:nth-child(6) {
   -o-transform: rotate(-115deg);
   transform: rotate3d(0, 0, 1, -115deg);
 }
-header .flower > div:nth-child(7) {
+body > header .flower > div:nth-child(7) {
   background-color: #f80;
   -webkit-transform: rotate3d(0, 0, 1, -75deg);
   -moz-transform: rotate3d(0, 0, 1, -75deg);
@@ -336,7 +336,7 @@ header .flower > div:nth-child(7) {
   -o-transform: rotate(-75deg);
   transform: rotate3d(0, 0, 1, -75deg);
 }
-header .flower > div:nth-child(8) {
+body > header .flower > div:nth-child(8) {
   background-color: #690;
   -webkit-transform: rotate3d(0, 0, 1, -35deg);
   -moz-transform: rotate3d(0, 0, 1, -35deg);
@@ -347,7 +347,7 @@ header .flower > div:nth-child(8) {
   -o-transform: rotate(-35deg);
   transform: rotate3d(0, 0, 1, -35deg);
 }
-header .flower > div:nth-child(9) {
+body > header .flower > div:nth-child(9) {
   background-color: #93c;
   -webkit-transform: rotate3d(0, 0, 1, 5deg);
   -moz-transform: rotate3d(0, 0, 1, 5deg);
@@ -358,7 +358,7 @@ header .flower > div:nth-child(9) {
   -o-transform: rotate(5deg);
   transform: rotate3d(0, 0, 1, 5deg);
 }
-header .flower > div:nth-child(10) {
+body > header .flower > div:nth-child(10) {
   background-color: #09c;
   -webkit-transform: rotate3d(0, 0, 1, 45deg);
   -moz-transform: rotate3d(0, 0, 1, 45deg);
@@ -371,26 +371,26 @@ header .flower > div:nth-child(10) {
 }
 /* Wide header styles. */
 @media screen and (min-width: 521px) {
-  header .content {
+  body > header .content {
     margin: -15rem 1rem 0;
     padding-left: 13rem;
   }
-  header .avatar {
+  body > header .avatar {
     margin-left: -13rem;
     float: left;
   }
 }
 /* Narrow header styles. */
 @media screen and (max-width: 520px) {
-  header .content {
+  body > header .content {
     margin: -24rem 0 0;
     text-align: center;
   }
-  header .avatar {
+  body > header .avatar {
     margin: 0 auto;
   }
-  header h1,
-  header h2 {
+  body > header h1,
+  body > header h2 {
     margin: 0;
     padding: 1rem 0 0;
   }
@@ -441,18 +441,18 @@ ul.home > li {
 .pagination .current {
   color: #333;
 }
-.post {
+article {
   color: #404040;
   position: relative;
   padding: 1rem 1rem 1rem 2rem;
 }
-.post h1 {
+article h1 {
   color: #262626;
   font-size: 2.5rem;
   margin: 1rem 0 .5rem;
   border-bottom: thin solid #ccc;
 }
-.post img {
+article img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
@@ -460,25 +460,42 @@ ul.home > li {
   box-shadow: 0 .125rem .25rem #ccc;
   box-sizing: border-box;
 }
-.post .right {
+article .right {
   text-align: center;
 }
-.post .center {
+article .center {
   clear: both;
 }
-.post .right,
-.post .center {
+article .right,
+article .center {
   margin-top: 0;
   line-height: 200%;
 }
-.post li > p {
+article li > p {
   margin: 0;
 }
+article footer {
+  color: #999;
+  text-transform: lowercase;
+  border-top: thin solid #ccc;
+}
+article footer ul,
+article footer li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+article footer li:before {
+  content: "#";
+}
+article footer a[rel=source] {
+  float: right;
+}
 @media only screen and (max-width: 520px) {
-  .post {
+  article {
     padding: 1rem .5rem .5rem;
   }
-  .post h1 {
+  article h1 {
     text-align: center;
     word-wrap: break-word;
   }

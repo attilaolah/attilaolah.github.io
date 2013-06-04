@@ -1,10 +1,24 @@
 ---
 layout: base
 ---
-<div class="wrap post">
-  <time class="condensed thin" datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%d %B %Y" }}</time>
-  <h1 class="condensed">{{ page.title }}</h1>
+<article class="wrap">
+  <header>
+    <time class="condensed thin" datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%d %B %Y" }}</time>
+    <h1 class="condensed">{{ page.title }}</h1>
+  </header>
   <div class="markdown">
     {{ content }}
   </div>
-</div>
+  <footer>
+    {% if page.tags  %}
+      <ul class="tags">
+        {% for tag in page.tags %}
+          <li>{{ tag }}{% unless forloop.last %},{% endunless %}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if page.source %}
+      <a rel="source" href="{{ page.source }}">Source</a>
+    {% endif %}
+  </footer>
+</article>
