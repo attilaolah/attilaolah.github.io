@@ -8,7 +8,12 @@ title: Attila Oláh
     <article>
       <header>
         <time class="condensed thin" datetime="{{ post.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ post.date | date: "%d %B %Y" }}</time>
-        <h1 class="condensed"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <h1 class="condensed">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          {% if post.link %}
+            <a href="{{ post.source }}" rel="source">{{ post.link }}</a>
+          {% endif %}
+        </h1>
       </header>
       <div class="markdown">
         {{ post.content }}

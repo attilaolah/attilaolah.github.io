@@ -2,11 +2,23 @@ article {
   color: #404040;
   position: relative;
   padding: 1rem 1rem 1rem 2rem;
+  min-height: 10rem;
   h1 {
-    color: #262626;
+    color: #333;
     font-size: 2.5rem;
     margin: 1rem 0 .5rem;
     border-bottom: thin solid #ccc;
+    a[rel=source] {
+      color: #ccc;
+      &:before {
+        content: "#";
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: inherit;
+      }
+    }
   }
   img {
     max-width: 100%;
@@ -29,6 +41,22 @@ article {
   }
   li > p {
     margin: 0;
+  }
+  blockquote {
+    margin: 0;
+    padding-left: 2rem;
+  }
+  .author,
+  blockquote {
+    font-style: italic;
+    font-family: 'Droid Serif', serif;
+    font-size: 1.25rem;
+  }
+  .author {
+    text-align: right;
+    &:before {
+      content: "\2014  ";
+    }
   }
   footer {
     color: #999;

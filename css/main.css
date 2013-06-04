@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic|Roboto+Condensed:400,300&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic|Roboto+Condensed:400,300|Droid+Serif:400italic&subset=latin,latin-ext);
 /* Fonts */
 .roboto {
   font-family: 'Roboto', sans-serif;
@@ -121,6 +121,11 @@ div[role=main] {
   -o-transform: rotate(0deg);
   transform: rotate3d(0, 0, 1, 0deg);
 }
+body > header,
+body > footer,
+div[role=main] {
+  min-width: 18rem;
+}
 div[role=main] {
   min-height: 16rem;
   box-shadow: 0 2rem 2rem 2rem rgba(0, 0, 0, 0.5);
@@ -140,6 +145,7 @@ time {
   font-size: 1.5rem;
   line-height: 1rem;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 @media only screen and (max-width: 520px) {
   time {
@@ -445,12 +451,24 @@ article {
   color: #404040;
   position: relative;
   padding: 1rem 1rem 1rem 2rem;
+  min-height: 10rem;
 }
 article h1 {
-  color: #262626;
+  color: #333;
   font-size: 2.5rem;
   margin: 1rem 0 .5rem;
   border-bottom: thin solid #ccc;
+}
+article h1 a[rel=source] {
+  color: #ccc;
+}
+article h1 a[rel=source]:before {
+  content: "#";
+}
+article h1 a[rel=source]:hover,
+article h1 a[rel=source]:focus,
+article h1 a[rel=source]:active {
+  color: inherit;
 }
 article img {
   max-width: 100%;
@@ -473,6 +491,22 @@ article .center {
 }
 article li > p {
   margin: 0;
+}
+article blockquote {
+  margin: 0;
+  padding-left: 2rem;
+}
+article .author,
+article blockquote {
+  font-style: italic;
+  font-family: 'Droid Serif', serif;
+  font-size: 1.25rem;
+}
+article .author {
+  text-align: right;
+}
+article .author:before {
+  content: "\2014  ";
 }
 article footer {
   color: #999;
