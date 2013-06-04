@@ -5,6 +5,7 @@ tags:
 - Sencha-Touch
 - API-design
 - HTTP
+source: https://gist.github.com/aatiis/3251348
 ---
 
 I've [recently][1] [learned][2] that [App Engine][3] chokes on HTTP DELETE

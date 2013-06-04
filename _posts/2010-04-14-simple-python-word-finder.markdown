@@ -4,6 +4,7 @@ title: Simple Python word finder
 tags:
 - Python
 - Regexp
+source: https://gist.github.com/aatiis/4681755
 ---
 
 A few days ago one of my customers asked me to put together a very simple
