@@ -61,12 +61,10 @@
   color: #333;
 }
 .markdown code {
-  border: thin solid #eaeaea;
-  border-radius: .1875rem;
+  background: #eee;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   white-space: nowrap;
-  font-size: 1.125rem;
-  padding: 0 .25rem;
-  margin: 0 .125rem;
+  padding: .0625rem .3125rem;
 }
 html {
   font-size: 100%;
