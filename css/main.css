@@ -532,3 +532,12 @@ article footer a[rel=source] {
     word-wrap: break-word;
   }
 }
+article .video,
+article .video iframe {
+  border: 0;
+  width: 100%;
+  max-width: 100%;
+}
+article .ted {
+  height: 480px;
+}

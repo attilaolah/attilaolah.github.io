@@ -5,31 +5,11 @@ title: Attila Oláh
 <ul class="wrap home">
   {% for page in paginator.posts %}
   <li>
-    <article>
-      <header>
-        <time class="condensed thin" datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%d %B %Y" }}</time>
-        <h1 class="condensed">
-          <a href="{{ page.url }}">{{ page.title }}</a>
-          {% if page.link %}
-            <a href="{{ page.source }}" rel="source">{{ page.link }}</a>
-          {% endif %}
-        </h1>
-      </header>
-      <div class="markdown">
-        {{ page.content }}
-      </div>
-      <footer>
-        {% if page.tags  %}
-          <ul class="tags">
-            {% for tag in page.tags %}
-              <li>{{ tag }}{% unless forloop.last %},{% endunless %}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-        {% if page.source %}
-          <a rel="source" href="{{ page.source }}">Source</a>
-        {% endif %}
-      </footer>
+    {% if page.layout == "page" %}
+      {% include page.html %}
+    {% else if page.layout == "video" %}
+      {% include video.html %}
+    {% endif %}
   </li>
   {% endfor %}
 </ul>
