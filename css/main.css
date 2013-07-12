@@ -539,6 +539,14 @@ article .video iframe {
   max-width: 52.875rem;
   margin: 0 auto;
 }
-article .ted {
-  height: 480px;
+article .player-youtube {
+  position: relative;
+  padding-bottom: 61%;
+  height: 0;
+}
+article .player-youtube > iframe {
+  height: 100%;
+}
+article .player-ted > iframe {
+  height: 30rem;
 }
