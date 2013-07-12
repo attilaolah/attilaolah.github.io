@@ -2,8 +2,7 @@
 layout: post
 title: irssi and camper_van
 tags:
-- computers
-- life
+- linux
 ---
 
 Recently I've come across a ruby irc server called [`camper_van`][1]. What it
@@ -18,8 +17,11 @@ Campfire for [work][5].
 [5]: http://www.vemble.com/
 
 The following is a simple script that starts the server (if not already
-running) and then opens up *irssi* in a new *gnome-terminal* session. The
-second file is an example *irssi* config file (merge it with
+running) and then opens up *irssi* in a new *gnome-terminal* session.
+
+{% gist 4444697 campervan %}
+
+The second file is an example *irssi* config file (merge it with
 `~/.irssi/config`).
 
-{% gist 4444697 %}
+{% gist 4444697 irssi-config.pl %}

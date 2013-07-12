@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Startup Weekend Brussels 2011
+title: 2011 Startup Weekend Brussels
 tags:
 - Brussels
 - Startup

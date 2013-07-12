@@ -40,10 +40,9 @@ in the forum][9], I got no decent reply.
 
 After reading the source, I came up with an [override][10] that fixes this
 behaviour. However, since overrides are now deprecated in favor of
-[Ext.define][11], the following gist now includes a correction to the above
-override fix.
+[Ext.define][11], the following gist now includes a correction to the override.
 
 [10]: http://docs.sencha.com/touch/2-0/#!/api/Ext-method-override
 [11]: http://docs.sencha.com/touch/2-0/#!/api/Ext-method-define
 
-{% gist 3251348 %}
+{% gist 3251348 ext-define.coffee %}

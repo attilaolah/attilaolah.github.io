@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "a][rtsprint Vienna 2011"
+title: "2011 a][rtsprint Vienna"
 tags:
 - Python
 - Pyramid

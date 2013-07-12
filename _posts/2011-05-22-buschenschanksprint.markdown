@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Buschenschanksprint 2011
+title: 2011 Buschenschanksprint
 tags:
 - Python
 - Pyramid
@@ -29,7 +29,10 @@ which is already publisted on PyPI.
 [7]: https://github.com/bluedynamics/yafowil.yaml
 [8]: https://pypi.python.org/pypi/rod.recipe.appengine
 
-We've also fixed a few small bugs in [cone.app][9] and [cone.tile][10], [AnneGilles][11] and [rnix][12] improved the documentation/tutorial, [Gogo][13] worked on the [axg][14] stack, and [AnneGilles][11] showed us a tutorial on their new [S3][15]-compliant database.
+We've also fixed a few small bugs in [cone.app][9] and [cone.tile][10],
+[AnneGilles][11] and [rnix][12] improved the documentation/tutorial, [Gogo][13]
+worked on the [axg][14] stack, and [AnneGilles][11] showed us a tutorial on
+their new [S3][15]-compliant database.
 
 [9]: https://github.com/bluedynamics/cone.app
 [10]: https://github.com/bluedynamics/cone.tile

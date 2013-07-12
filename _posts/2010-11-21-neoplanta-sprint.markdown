@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Neoplanta Sprint 2010
+title: 2010 Neoplanta Sprint
 tags:
 - Python
 - Plone
