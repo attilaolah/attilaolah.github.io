@@ -1,0 +1,12 @@
+<footer>
+  {% if page.tags  %}
+    <ul class="tags">
+      {% for tag in page.tags %}
+        <li>{{ tag }}{% unless forloop.last %},{% endunless %}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  {% if page.source %}
+    <a rel="source" href="{{ page.source }}">Source</a>
+  {% endif %}
+</footer>

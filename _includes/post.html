@@ -1,21 +1,5 @@
 <article class="wrap">
-  <header>
-    <time class="condensed thin" datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%d %b %Y" }}</time>
-    <h1 class="condensed">
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    </h1>
-  </header>
+  {% include postheader.html %}
   {% include postbody.html %}
-  <footer>
-    {% if page.tags  %}
-      <ul class="tags">
-        {% for tag in page.tags %}
-          <li>{{ tag }}{% unless forloop.last %},{% endunless %}</li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-    {% if page.source %}
-      <a rel="source" href="{{ page.source }}">Source</a>
-    {% endif %}
-  </footer>
+  {% include postfooter.html %}
 </article>
