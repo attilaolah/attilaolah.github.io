@@ -1,10 +1,17 @@
 <div class="comments">
   <div id="comments"></div>
   <script>
-    gapi.comments.render('comments', {
+    function gp () {
+      gapi.comments.render('comments', {
         first_party_property: 'BLOGGER',
         view_type: 'FILTERED_POSTMOD',
         href: location.protocol + '//' + location.host + '{{ page.url }}'
-    });
+      });
+    }
+    (function(d) {
+      var po = d.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js?onload=gp';
+      var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })(document);
   </script>
 </div>

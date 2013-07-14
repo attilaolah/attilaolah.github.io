@@ -569,6 +569,7 @@ article .author:before {
 }
 article footer {
   color: #999;
+  position: relative;
   text-transform: lowercase;
   border-top: thin solid #ccc;
 }
@@ -581,8 +582,33 @@ article footer li {
 article footer li:before {
   content: "#";
 }
+article footer a {
+  line-height: 24px;
+}
 article footer a[rel=source] {
   float: right;
+}
+article footer .button {
+  height: 24px;
+  position: absolute;
+  overflow: hidden;
+  display: inline-block;
+  top: 0;
+  margin-left: 4px;
+}
+article footer .button.twitter > iframe {
+  position: relative;
+  top: 2px;
+  left: -9px;
+}
+article footer .button.twitter .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fdfdfd url(http://aiur.co.rs/img/brillant.png) 0 0 repeat;
+}
+article footer .button.twitter .text:before {
+  content: "+";
 }
 article.post footer {
   margin-bottom: 1rem;
