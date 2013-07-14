@@ -1,0 +1,8 @@
+{% capture y %}{{ page.date | date: "%Y" | divide_by: 2 }}{% endcapture %}
+{% capture x %}{% if y == "2010" or y == "2012" or y == "2014" or y == "2016" %}even{% else %}odd{% endif %}{% endcapture %}
+<li class="year-{{ x }}" data-year="{{ y }}"{% if page.tags %} data-tags="{% for tag in page.tags %}{{ tag | downcase }}{% unless forloop.last %} {% endunless %}{% endfor %}"{% endif %}>
+  <time class="condensed thin" datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%d %B" }}</time>
+  <h2 class="condensed">
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  </h2>
+</li>

@@ -1,0 +1,104 @@
+@import "mixins.less";
+
+@leftcol: 140px;
+
+#archive {
+  position: relative;
+  padding: 32px 0 6px;
+  li {
+    position: relative;
+    list-style-type: none;
+    padding-left: @leftcol;
+    &:first-child {
+      time {
+        margin-top: 24px;
+      }
+      h2 {
+        padding-top: 16px;
+      }
+    }
+  }
+  time {
+    float: left;
+    display: block;
+    width: @leftcol;
+    text-align: right;
+    margin: 8px 0 0 -@leftcol;
+  }
+  h2 {
+    margin: 0 0 0 8px;
+    padding: 0 0 12px 8px;
+    border-left: 1px solid #999;
+    a {
+      color: #333;
+      position: relative;
+      &:before {
+        content: " ";
+        background: #fff;
+        border: 1px solid #999;
+        position: absolute;
+        top: 14px;
+        left: -12px;
+        width: 5px;
+        height: 5px;
+        .border-radius;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        &:before {
+          background: #999;
+          width: 3px; height: 3px;
+          border: 2px solid #333;
+        }
+      }
+    }
+  }
+  .separator,
+  .year-odd + .year-even,
+  .year-even + .year-odd {
+    margin-top: 8px;
+    border-top: 1px dashed #999;
+    &:before {
+      color: #999;
+      font-size: 24px;
+      line-height: 22px;
+      position: absolute;
+      top: -13px;
+      left: @leftcol - 16px;
+      width: 48px;
+      text-align: center;
+      content: attr(data-year);
+      .body-bg;
+      .condensed;
+      .thin;
+    }
+    time {
+      margin-top: 24px;
+    }
+    h2 {
+      padding-top: 16px;
+    }
+  }
+  &:before,
+  &:after {
+    content: " ";
+    position: absolute;
+    left: @leftcol + 5px;
+  }
+  &:before {
+    top: 32px;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    .rotate(45deg);
+  }
+  &:after {
+    width: 5px;
+    height: 5px;
+    bottom: 0;
+    border: 1px solid #999;
+    background: #fff;
+  }
+}

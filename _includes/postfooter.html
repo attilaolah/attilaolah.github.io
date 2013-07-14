@@ -1,8 +1,10 @@
 <footer>
-  {% if page.tags  %}
+  {% if page.tags %}
     <ul class="tags">
       {% for tag in page.tags %}
-        <li>{{ tag }}{% unless forloop.last %},{% endunless %}</li>
+        <li>
+          <a href="/archive/#{{ tag | downcase }}">{{ tag }}</a>{% unless forloop.last %},{% endunless %}
+        </li>
       {% endfor %}
     </ul>
   {% endif %}

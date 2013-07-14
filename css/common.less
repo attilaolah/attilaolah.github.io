@@ -49,54 +49,16 @@ div[role=main] {
   min-height: 16rem;
   box-shadow: 0 2rem 2rem 2rem rgba(0, 0, 0, .5);
 }
+.body-bg() {
+  background: #fdfdfd url(http://aiur.co.rs/img/brillant.png) 0 0 repeat;
+}
 body,
 body > footer,
 div[role=main] {
-  background: #fdfdfd url(http://aiur.co.rs/img/brillant.png) 0 0 repeat;
+  .body-bg;
 }
 body > footer {
   color: #999;
   text-align: center;
   padding: 2.5rem 0 2rem;
-}
-time {
-  color: #999;
-  font-size: 1.5rem;
-  line-height: 1rem;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-@media only screen and (max-width: 520px) {
-  time {
-    display: block;
-    text-align: center;
-    margin: 1rem 0 -.75rem;
-    &:before,
-    &:after {
-      content: "\2014";
-      padding: .5rem;
-    }
-  }
-}
-@media only screen and (min-width: 521px) {
-  time {
-    text-align: right;
-    position: absolute;
-    left: -14.5rem;
-    width: 16rem;
-    .transition(all 0.25s ease-in-out 0);
-    .transform-origin(bottom right);
-  }
-}
-@media only screen and (min-width: 521px) and (max-width: 1120px) {
-  time {
-    top: 1.5rem;
-    .rotate(-90deg);
-  }
-}
-@media only screen and (min-width: 1121px) {
-  time {
-    top: 3.375rem;
-    .rotate;
-  }
 }

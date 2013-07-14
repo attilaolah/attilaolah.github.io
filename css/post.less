@@ -80,6 +80,15 @@ article {
     }
   }
 }
+
+time {
+  color: #999;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 @media only screen and (max-width: 520px) {
   article {
     padding: 1rem .5rem .5rem;
@@ -87,5 +96,43 @@ article {
       text-align: center;
       word-wrap: break-word;
     }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  article time {
+    display: block;
+    text-align: center;
+    margin: 1rem 0 -.75rem;
+    &:before,
+    &:after {
+      content: "\2014";
+      padding: .5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 521px) {
+  article time {
+    text-align: right;
+    position: absolute;
+    left: -14.5rem;
+    width: 16rem;
+    .transition(all 0.25s ease-in-out 0);
+    .transform-origin(bottom right);
+  }
+}
+
+@media only screen and (min-width: 521px) and (max-width: 1120px) {
+  article time {
+    top: 1.5rem;
+    .rotate(-90deg);
+  }
+}
+
+@media only screen and (min-width: 1121px) {
+  article time {
+    top: 3.375rem;
+    .rotate;
   }
 }
