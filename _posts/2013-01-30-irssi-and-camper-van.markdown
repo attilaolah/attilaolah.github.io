@@ -2,7 +2,7 @@
 layout: post
 title: irssi and camper_van
 tags:
-- linux
+- programming
 source: https://gist.github.com/aatiis/4444697
 ---
 

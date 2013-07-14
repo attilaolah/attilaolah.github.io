@@ -3,6 +3,7 @@ layout: post
 title: 2010 Neoplanta Sprint
 tags:
 - programming
+- travel
 ---
 
 Today is the first day of the [2010 Neoplanta Sprint][2], [Serbia][3]. Now I'm
