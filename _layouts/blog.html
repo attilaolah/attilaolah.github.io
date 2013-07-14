@@ -5,7 +5,7 @@ title: Attila Oláh
 <ul class="wrap home">
   {% for page in paginator.posts %}
   <li>
-    <article class="wrap">
+    <article class="wrap"{% if page.lang %}lang="{{ page.lang }}"{% endif %}>
       {% if page.layout == "post" %}
         {% include post.html %}
       {% else if page.layout == "video" %}
