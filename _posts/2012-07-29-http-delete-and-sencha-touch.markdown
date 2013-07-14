@@ -2,9 +2,7 @@
 layout: post
 title: HTTP DELETE and Sencha Touch
 tags:
-- Sencha-Touch
-- API-design
-- HTTP
+- programming
 source: https://gist.github.com/aatiis/3251348
 ---
 

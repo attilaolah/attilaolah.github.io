@@ -2,8 +2,7 @@
 layout: post
 title: Simple Python word finder
 tags:
-- Python
-- Regexp
+- programming
 source: https://gist.github.com/aatiis/4681755
 ---
 

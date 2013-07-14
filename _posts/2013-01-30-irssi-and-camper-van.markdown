@@ -3,6 +3,7 @@ layout: post
 title: irssi and camper_van
 tags:
 - linux
+source: https://gist.github.com/aatiis/4444697
 ---
 
 Recently I've come across a ruby irc server called [`camper_van`][1]. What it

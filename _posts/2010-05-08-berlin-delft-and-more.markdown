@@ -2,9 +2,7 @@
 layout: post
 title: Berlin, Delft, and more
 tags:
-- Germany
-- Berlin
-- The-Netherlands
+- travel
 ---
 
 I've spent the last two weeks in [Berlin][1], [Germany][2], working on two

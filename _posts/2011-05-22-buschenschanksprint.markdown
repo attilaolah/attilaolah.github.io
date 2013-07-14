@@ -2,8 +2,8 @@
 layout: post
 title: 2011 Buschenschanksprint
 tags:
-- Python
-- Pyramid
+- programming
+- travel
 ---
 
 My lovely <del>girlfriend</del> <ins>now wife</ins> and I have attended the

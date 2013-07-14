@@ -21,7 +21,9 @@ window.onhashchange = (function(w, c){
         u.style.display = 'none';
         hash = w.location.hash.replace(/^#/, '');
         for (i=t;i-->0;) {
-          (li = a[i]).remove();
+          if ((li = a[i]).parentNode) {
+            u.removeChild(li, u);
+          }
           li.classList.remove(sep);
           if (!hash || li.dataset.tags.split(/\s+/).indexOf(hash)+1) {
             u.appendChild(li);

@@ -437,14 +437,16 @@ ul.home > li {
   border: 2px solid #333;
 }
 #archive .separator,
-#archive .year-odd + .year-even,
-#archive .year-even + .year-odd {
+#archive .year-2013 + :not(.year-2013),
+#archive .year-2012 + :not(.year-2012),
+#archive .year-2011 + :not(.year-2011) {
   margin-top: 8px;
   border-top: 1px dashed #999;
 }
 #archive .separator:before,
-#archive .year-odd + .year-even:before,
-#archive .year-even + .year-odd:before {
+#archive .year-2013 + :not(.year-2013):before,
+#archive .year-2012 + :not(.year-2012):before,
+#archive .year-2011 + :not(.year-2011):before {
   color: #999;
   font-size: 24px;
   line-height: 22px;
@@ -459,18 +461,21 @@ ul.home > li {
   font-weight: 300;
 }
 #archive .separator:before.thin,
-#archive .year-odd + .year-even:before.thin,
-#archive .year-even + .year-odd:before.thin {
+#archive .year-2013 + :not(.year-2013):before.thin,
+#archive .year-2012 + :not(.year-2012):before.thin,
+#archive .year-2011 + :not(.year-2011):before.thin {
   font-weight: 300;
 }
 #archive .separator time,
-#archive .year-odd + .year-even time,
-#archive .year-even + .year-odd time {
+#archive .year-2013 + :not(.year-2013) time,
+#archive .year-2012 + :not(.year-2012) time,
+#archive .year-2011 + :not(.year-2011) time {
   margin-top: 24px;
 }
 #archive .separator h2,
-#archive .year-odd + .year-even h2,
-#archive .year-even + .year-odd h2 {
+#archive .year-2013 + :not(.year-2013) h2,
+#archive .year-2012 + :not(.year-2012) h2,
+#archive .year-2011 + :not(.year-2011) h2 {
   padding-top: 16px;
 }
 #archive:before,

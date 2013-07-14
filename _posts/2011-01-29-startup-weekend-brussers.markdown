@@ -2,8 +2,7 @@
 layout: post
 title: 2011 Startup Weekend Brussels
 tags:
-- Brussels
-- Startup
+- travel
 ---
 
 The *Startup Weekend* seems great so far. Running surveys, advertizing,

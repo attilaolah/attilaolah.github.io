@@ -55,8 +55,9 @@
     }
   }
   .separator,
-  .year-odd + .year-even,
-  .year-even + .year-odd {
+  .year-2013 + :not(.year-2013),
+  .year-2012 + :not(.year-2012),
+  .year-2011 + :not(.year-2011) {
     margin-top: 8px;
     border-top: 1px dashed #999;
     &:before {
