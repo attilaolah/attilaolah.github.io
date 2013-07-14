@@ -5,11 +5,13 @@ title: Attila Oláh
 <ul class="wrap home">
   {% for page in paginator.posts %}
   <li>
-    {% if page.layout == "post" %}
-      {% include post.html %}
-    {% else if page.layout == "video" %}
-      {% include video.html %}
-    {% endif %}
+    <article class="wrap">
+      {% if page.layout == "post" %}
+        {% include post.html %}
+      {% else if page.layout == "video" %}
+        {% include video.html %}
+      {% endif %}
+    </article>
   </li>
   {% endfor %}
 </ul>

@@ -1,8 +1,6 @@
-<article class="wrap">
-  {% include postheader.html %}
-  <div class="video center player-{{ page.player }}">
-    {{ page.embed }}
-  </div>
-  {% include postbody.html %}
-  {% include postfooter.html %}
-</article>
+{% include postheader.html %}
+<div class="video center player-{{ page.player }}">
+  {{ page.embed }}
+</div>
+{% include postbody.html %}
+{% include postfooter.html %}

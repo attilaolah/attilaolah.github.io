@@ -523,6 +523,9 @@ article footer li:before {
 article footer a[rel=source] {
   float: right;
 }
+article.post footer {
+  margin-bottom: 1rem;
+}
 @media only screen and (max-width: 520px) {
   article {
     padding: 1rem .5rem .5rem;
@@ -531,6 +534,13 @@ article footer a[rel=source] {
     text-align: center;
     word-wrap: break-word;
   }
+}
+#comments,
+#comments > iframe {
+  width: 100% !important;
+}
+.comments {
+  margin: -3px -2px 0;
 }
 article .video,
 article .video iframe {
