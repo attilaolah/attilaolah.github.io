@@ -3,7 +3,7 @@ layout: post
 title: HTTP DELETE and Sencha Touch
 tags:
 - programming
-source: https://gist.github.com/aatiis/3251348
+source: https://gist.github.com/attilaolah/3251348
 ---
 
 I've [recently][1] [learned][2] that [App Engine][3] chokes on HTTP DELETE
