@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en-gb" itemscope itemtype="http://www.schema.org/Blog">
 <head>
-<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta charset="utf-8"/>
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,20 +40,30 @@
         <div></div>
         <div></div>
       </div>
-      <div class="content">
+      <div class="content" itemprop="author" itemscope itemtype="http://data-vocabulary.org/Person">
         <div class="avatar"></div>
-        <h1><a href="{{ site.baseurl }}">Attila Ol&aacute;h</a></h1>
+        <h1><a href="{{ site.baseurl }}" itemprop="name"><span itemprop="givenName">Attila</span> <span itemprop="familyName">Ol&aacute;h</span></a></h1>
         <h2>Full-time dad, part-time web developer.</h2>
-        <h2 class="live">Lives in
-          <a href="https://en.wikipedia.org/wiki/Bajmok">Bajmok</a>,
-          <a href="https://en.wikipedia.org/wiki/Serbia">Serbia</a>.
+        <h2 class="live" itemprop="address">Lives in
+          <span itemscope itemtype="http://data-vocabulary.org/PostalAddress">
+            <a href="https://en.wikipedia.org/wiki/Bajmok" itemprop="addressLocality">Bajmok</a>,
+            <a href="https://en.wikipedia.org/wiki/Serbia" itemprop="addressCountry">Serbia</a>.
+            <meta itemprop="email" content="attilaolah@gmail.com">
+            <meta itemprop="telephone" content="+381612539794">
+            <meta itemprop="streetAddress" content="JNA 74">
+            <meta itemprop="postalCode" content="24210">
+          </span>
         </h2>
-        <h2 class="work">Works at
-          <a href="http://www.vemble.com/">Vemble</a>.
+        <h2 class="work" itemprop="affiliation">Works at
+          <span itemscope itemtype="http://data-vocabulary.org/PostalAddress">
+            <a href="http://www.vemble.com/" itemprop="url">Vemble</a>.
+            <meta itemprop="logo" content="http://www.vemble.com/resources/img/logo.png">
+          </span>
         </h2>
         <h2 class="study">Studies at
           <a href="https://www.udacity.com/">Udacity</a>.
         </h2>
+        <link itemprop="nationality" href="https://en.wikipedia.org/wiki/Hungary">
       </div>
     </div>
   </header>
