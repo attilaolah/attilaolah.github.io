@@ -441,7 +441,8 @@ body {
   font-size: 1rem;
 }
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
   font-weight: normal;
 }
@@ -518,20 +519,20 @@ body > header .avatar {
   -o-border-radius: 100%;
   border-radius: 100%;
 }
-body > header h1 {
+body > header h2 {
   padding: 3rem 0 0;
   font-size: 1.75rem;
 }
-body > header h2 {
+body > header h3 {
   font-size: 1rem;
   margin: 1rem 0 0;
   text-shadow: #000000 0 0 2rem, rgba(0, 0, 0, 0.6875) 0 0.0625rem 0;
 }
-body > header h2 + h2 {
+body > header h3 + h3 {
   color: #ccc;
   display: inline;
 }
-body > header h2 + h2 + h2 {
+body > header h3 + h3 + h3 {
   margin: 0;
 }
 body > header .flower {
@@ -691,8 +692,8 @@ body > header .flower > div:nth-child(10) {
   body > header .avatar {
     margin: 0 auto;
   }
-  body > header h1,
-  body > header h2 {
+  body > header h2,
+  body > header h3 {
     margin: 0;
     padding: 1rem 0 0;
   }
