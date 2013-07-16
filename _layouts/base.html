@@ -15,10 +15,11 @@
       <meta property="og:image" content="http://attilaolah.eu/avatar/640.jpg">
       <meta property="og:url" content="http://attilaolah.eu/">
       <meta property="og:locale" content="en_GB">
-      <meta property="og:profile:first_name" content="Attila">
-      <meta property="og:profile:last_name" content="Ol&aacute;h">
-      <meta property="og:profile:username" content="attilaolah">
-      <meta property="og:profile:gender" content="male">
+      <meta property="og:description" content="Full-time dad, part-time web developer.">
+      <meta property="og:first_name" content="Attila">
+      <meta property="og:last_name" content="Ol&aacute;h">
+      <meta property="og:username" content="attilaolah">
+      <meta property="og:gender" content="male">
     {% endif %}
   {% else %}
     <meta property="og:title" content="{{ page.title }}">
@@ -29,13 +30,13 @@
     {% else %}
       <meta property="og:locale" content="en_GB">
     {% endif %}
-    <meta property="og:article:title" content="{{ page.title }}">
-    <meta property="og:article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
+    <meta property="og:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
     {% for tag in page.tags %}
       {% if tag != page.lang %}
-        <meta property="og:article:tag" content="{{ tag }}">
+        <meta property="og:tag" content="{{ tag }}">
       {% endif %}
     {% endfor %}
+    <meta property="og:description" content="{{ page.content | markdownify | strip_html | strip_newlines | truncatewords: 30 | xml_escape }}">
   {% endif %}
   <script type="text/javascript">
     var _gaq = [

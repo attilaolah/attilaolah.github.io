@@ -5,7 +5,7 @@ tags:
 - videos
 player: youtube
 source: http://tedxtalks.ted.com/video/TEDxCanberra-Ash-Donaldson-Cogn
-embed: "<iframe src=\"//www.youtube-nocookie.com/embed/NqONzcNbzh8\" frameborder=\"0\" allowfullscreen></iframe>"
+embed: "<iframe src=\"//www.youtube.com/embed/NqONzcNbzh8\" seamless allowfullscreen></iframe>"
 ---
 
 I was looking for a video on [cognitive dissonance][1] the other day, and I
