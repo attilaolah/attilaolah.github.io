@@ -46,4 +46,4 @@ nincs jól telepítve.
 Ha a telefon újraindul, de a program nem találja, ellenőrizd megint `adb
 devices` parancssal, hogy az adb illesztőprogram telepítődött-e.
 
-*Ez csak az HTP Desire-re alkalmazható.*
+*Ez csak az HTC Desire-re alkalmazható.*
