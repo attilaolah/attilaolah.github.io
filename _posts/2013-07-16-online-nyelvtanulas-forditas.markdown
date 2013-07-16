@@ -23,6 +23,11 @@ Nemrég azonban egy új érdekességre lettem figyelmes: [Duolingo][7].
 
 [7]: https://www.duolingo.com/
 
+{:.center}
+[![Duolingo](/images/2013/duolingo.png)
+Duolingo
+][7]
+
 A [Duolingo][7] az online nyelvtanulás egy játékos új formája. Az új nyelveket
 úgy tanuljuk meg, mint a saját anyanyelvünket, mindennapos gyakorlássan.
 Kevesebb nyelvtan és szamályok, több interaktív gyakorlás. Érdemes megemlíteni,
@@ -63,6 +68,11 @@ magyarra.)
 [14]: http://wellcaffeinated.net/
 [15]: http://minutephysics.com/
 [16]: http://cgpgrey.subtitl.us/
+
+{:.center}
+[![The European Union Explained\* videó fordítása](/images/2013/translate-cgpgrey.png)
+The European Union Explained\* videó fordítása
+][16]
 
 Azt is meg kell említeni, hogy az említett programok használatához angol (vagy
 legalább egy idegen) nyelv ismerete szükséges. Csak magyarral nem sokra
