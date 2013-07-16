@@ -60,7 +60,6 @@ article {
   }
   footer {
     color: #999;
-    position: relative;
     text-transform: lowercase;
     border-top: thin solid #ccc;
     ul, li {
@@ -76,30 +75,6 @@ article {
     }
     a[rel=source] {
       float: right;
-    }
-    .button {
-      height: 24px;
-      position: absolute;
-      overflow: hidden;
-      display: inline-block;
-      top: 0;
-      margin-left: 4px;
-      &.twitter {
-        > iframe {
-          position: relative;
-          top: 2px;
-          left: -9px;
-        }
-        .text {
-          position: absolute;
-          top: 0;
-          left: 0;
-          .body-bg;
-          &:before {
-            content: "+";
-          }
-        }
-      }
     }
   }
   &.post {

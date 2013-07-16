@@ -6,10 +6,6 @@
       {% endfor %}
     </ul>
   {% endif %}
-  <div class="button twitter">
-    <a class="twitter-share-button" href="https://twitter.com/share" data-url="http://attilaolah.eu{{ page.url }}" data-via="attilaolah"></a>
-    <a class="text" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fattilaolah.eu{{ page.url | escape }}&text={{ page.title | escape }}&via=attilaolah">tweet</a>
-  </div>
   {% if page.source %}
     <a rel="source" href="{{ page.source }}">Source</a>
   {% endif %}

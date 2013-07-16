@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html lang="en-gb" itemscope itemtype="http://www.schema.org/Blog">
+<html lang="en-gb" itemscope itemtype="http://www.schema.org/Blog" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="icon" type="image/jpeg" href="/favicon.jpg">
+  <link rel="icon" type="image/jpeg" href="/avatar/192.jpg">
   <link rel="alternate" type="application/rss+xml" title="RSS feed" href="/rss.xml">
   <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/atom.xml">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if page.content == "" %}
+    {% if page.url == "/" %}
+      <meta property="og:title" content="Attila Ol&aacute;h">
+      <meta property="og:type" content="profile">
+      <meta property="og:image" content="http://attilaolah.eu/avatar/640.jpg">
+      <meta property="og:url" content="http://attilaolah.eu/">
+      <meta property="og:locale" content="en_GB">
+      <meta property="og:profile:first_name" content="Attila">
+      <meta property="og:profile:last_name" content="Ol&aacute;h">
+      <meta property="og:profile:username" content="attilaolah">
+      <meta property="og:profile:gender" content="male">
+    {% endif %}
+  {% else %}
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://attilaolah.eu{{ page.url }}">
+    {% if page.lang %}
+      <meta property="og:locale" content="{{ page.lang_full }}">
+    {% else %}
+      <meta property="og:locale" content="en_GB">
+    {% endif %}
+    <meta property="og:article:title" content="{{ page.title }}">
+    <meta property="og:article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
+    {% for tag in page.tags %}
+      {% if tag != page.lang %}
+        <meta property="og:article:tag" content="{{ tag }}">
+      {% endif %}
+    {% endfor %}
+  {% endif %}
   <script type="text/javascript">
     var _gaq = [
         ['_setAccount', 'UA-13035482-4'],
@@ -67,7 +96,6 @@
   </header>
   <div role="main">
     {{ content }}
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </div>
   <footer>
     &copy; 2010&ndash;2013

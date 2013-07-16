@@ -4,6 +4,7 @@ title: Online nyelvtanulás, fordítás
 tags:
 - hu
 lang: hu
+lang_full: hu_HU
 ---
 
 Az utóbbi néhány évben egyre több dolgot és egyre hatásosabban lehet megtanulni

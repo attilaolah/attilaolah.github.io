@@ -5,6 +5,7 @@ tags:
 - programming
 - hu
 lang: hu
+lang_full: hu_HU
 ---
 
 Ha Linuxban vagy XP-ben vagy,
