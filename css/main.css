@@ -72,6 +72,7 @@
 }
 .markdown pre {
   padding: 5px;
+  overflow-x: auto;
 }
 .markdown code {
   white-space: nowrap;
