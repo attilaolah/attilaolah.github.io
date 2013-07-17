@@ -13,6 +13,8 @@ answer on <a href="http://superuser.com/q/231938/25095">SuperUser</a></del>
 answer</a></ins>, I figured I might just look into it myself, google it, read a
 few man pages, and then write it down for the rest of the world.
 
+[1]: http://superuser.com/a/259068/25095
+
 *I'm not encouraging anyone to download pirated films.* But, if you do have the
 movies, and they are in separate files, but you want to watch them on a 3DTV or
 a PS3 that can only play side-by-side, single-file 3D movies, you'll end up
