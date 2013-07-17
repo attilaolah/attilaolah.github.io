@@ -59,8 +59,10 @@ so:
 $ eac3to video-left.mkv sound.ac3
 {% endhighlight %}
 
-**UPDATE:** as *Marcin* mentioned, you can extract the autio simply using
-`ffmpeg`, you don't need `eac3to`:
+## Update 1
+
+As *Marcin* mentioned, you can extract the autio simply using `ffmpeg`, you
+don't need `eac3to`:
 
 {% highlight bash %}
 $ ffmpeg -i video-left.mkv -acodec copy audio.ac3
@@ -96,8 +98,9 @@ now remove the temporary files:
 $ rm sound.ac3 video-sbs.mkv convert.avs
 {% endhighlight %}
 
-**UPDATE:** I've just got [an answer][1] on SuperUser.  In short, here's how no
-do it with [GStreamer][6]:
+## Update 2
+I've just got [an answer][1] on SuperUser.  In short, here's how no do it with
+[GStreamer][6]:
 
 [6]: http://gstreamer.freedesktop.org/
 
