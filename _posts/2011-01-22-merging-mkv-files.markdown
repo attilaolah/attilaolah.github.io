@@ -7,13 +7,11 @@ tags:
 
 A while ago I was looking for a way to merge two separate `.mkv` files (left
 and right views of a stereoscopic, 3D movie) into one file, to get a
-side-by-side or top-bottom view. Since back then <strike>I didn't get any
-answer on <a href="http://superuser.com/q/231938/25095">SuperUser</a></strike>
-(**EDIT:** I've got [an answer][1]), I figured I might just look into it
-myself, google it, read a few man pages, and then write it down for the rest of
-the world.
-
-[1]: http://superuser.com/a/259068/25095
+side-by-side or top-bottom view. Since back then <del>I didn't get any
+answer on <a href="http://superuser.com/q/231938/25095">SuperUser</a></del>
+<ins>I've got <a href="http://superuser.com/a/259068/25095">an
+answer</a></ins>, I figured I might just look into it myself, google it, read a
+few man pages, and then write it down for the rest of the world.
 
 *I'm not encouraging anyone to download pirated films.* But, if you do have the
 movies, and they are in separate files, but you want to watch them on a 3DTV or
