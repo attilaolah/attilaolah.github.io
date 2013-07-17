@@ -103,3 +103,9 @@ analysing services and [tools][7] that analyse complexity, standard compliance,
 test coverage, etc.
 
 [7]: https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis
+
+**UPDATE:** [`pylint`][8] suggests method names should be not longer than 30
+characters (they should match `[a-z_][a-z0-9_]{2,30}$`), so the second example
+still passes the lint check, although just barely.
+
+[8]: https://pypi.python.org/pypi/pylint
