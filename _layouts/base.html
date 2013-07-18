@@ -36,7 +36,7 @@
         <meta property="og:tag" content="{{ tag }}">
       {% endif %}
     {% endfor %}
-    <meta property="og:description" content="{{ page.content | markdownify | strip_html | strip_newlines | truncatewords: 30 | xml_escape }}">
+    <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncatewords: 30 | xml_escape }}">
   {% endif %}
   <script type="text/javascript">
     var _gaq = [
