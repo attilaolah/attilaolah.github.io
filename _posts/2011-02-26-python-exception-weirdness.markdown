@@ -36,7 +36,7 @@ Exception: <C: str>
 {% endhighlight %}
 
 The traceback displays the Exception class's name (`__class__.__name__`), and
-the parameters passed when instantiating the exception, **converted to string**
+the parameters passed when instantiating the exception, *converted to string*
 (`str()`)! The same thing happens in both Python 2.X and 3.X.
 
 The thing is, I'd expect `repr()` instead of `str()`. But good to know how it
