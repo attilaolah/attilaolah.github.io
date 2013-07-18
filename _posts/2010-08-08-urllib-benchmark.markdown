@@ -28,7 +28,7 @@ urllib-benchmark-results.png
 
 {:.center}
 ![urllib2 vs. urllib3 benchmark results][6]
-Petrovaradin Fortress at night. Picture: me.
+urllib2 vs. urllib3 benchmark results
 
 [6]: /images/2010/urllib-benchmark-results.png
 
