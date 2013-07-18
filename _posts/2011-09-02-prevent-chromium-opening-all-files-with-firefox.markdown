@@ -40,9 +40,9 @@ start:
 KDE_FULL_SESSION="true" /usr/bin/xdg-open "$@"
 {% endhighlight %}
 
-I found some helpful information on `this forum`, though my idea is different
-as I want Chromium to use KDE software when opening files (`okular`,
-`gwenview`, etc.)
+I found some helpful information on <del>this forum</del> <ins>dead link
+removed</ins>, though my idea is different as I want Chromium to use KDE
+software when opening files (`okular`, `gwenview`, etc.)
 
 ## Update
 
