@@ -3,6 +3,7 @@ layout: post
 title: Debugging the fglrx driver
 tags:
 - programming
+source: https://gist.github.com/attilaolah/6025843
 ---
 
 A broken [Sapphire Radeon HD 4850][1] somehow ended up in my possession. I
@@ -38,26 +39,7 @@ any dumps here, as I believe that would violate copyright laws.) I assumed it
 returns a status code, so I tried overloading it and returning a different
 status code instead:
 
-{% highlight c %}
-#define _GNU_SOURCE 1
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <dlfcn.h>
-
-long PP_Initialize(void) {
-    fp = fopen("/dev/stderr", "a");
-    fprintf(fp, "DEBUG: entering PP_Initialize.\n");
-    close(fp);
-
-    // Call the original function but return a different value:
-    long (*orig)(void) = dlsym(RTLD_NEXT, "PP_Initialize");
-    orig();
-
-    return 0;
-}
-{% endhighlight %}
+{% gist 6025843 %}
 
 {% highlight console %}
 $ gcc -shared -fPIC -o preload.so preload.c -ldl
