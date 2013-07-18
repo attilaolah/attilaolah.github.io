@@ -27,7 +27,13 @@ friendly StackOverflow user][3], I put together a code snippet that:
 [4]: http://jquery.com/
 [5]: http://en.wikipedia.org/wiki/Idempotence
 
-{% gist 6025568 %}
+{% gist 6025568 domready.js %}
 
 I take no credit for writing this script. If you want to use it, please include
 jQuery's license comment.
+
+## Update
+
+Here is a CoffeeScript version:
+
+{% gist 6025568 domready.coffee %}
