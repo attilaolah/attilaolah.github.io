@@ -72,3 +72,13 @@ advantage of of the static regex-based checkers is that they are fast enough to
 run on every change you make to the buffer.
 
 [17]: http://www.vim.org/
+
+## Update
+
+For Go there is also [`golint`][17], which *can* be useful, for example it
+detects `for x, _ := range` and reports to drop the `_`; However, it mostly
+complains about missing comments :) And there's also [this][18].
+
+
+[17]: https://github.com/golang/lint
+[18]: https://github.com/golang/lint/issues/17
