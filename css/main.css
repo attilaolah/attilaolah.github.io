@@ -892,13 +892,18 @@ article h1 a[rel=source]:focus,
 article h1 a[rel=source]:active {
   color: inherit;
 }
-article img {
+article img:not([class^=icon]) {
   max-width: 100%;
   display: block;
   margin: 0 auto;
   border: .75rem solid #fff;
   box-shadow: 0 .125rem .25rem #ccc;
   box-sizing: border-box;
+}
+article img.icon-24 {
+  height: 24px;
+  width: 24px;
+  margin-bottom: -6px;
 }
 article .right {
   text-align: center;
@@ -929,6 +934,24 @@ article .author {
 }
 article .author:before {
   content: "\2014  ";
+}
+article .footnote {
+  margin-bottom: 0;
+}
+article .footnote:before {
+  content: " ";
+  display: block;
+  border-top: thin solid #999;
+  width: 240px;
+}
+article .footnote + .footnote {
+  margin: 0;
+}
+article .footnote + .footnote:before {
+  display: none;
+}
+article .footnote:last-child {
+  margin-bottom: 1em;
 }
 article footer {
   color: #999;

@@ -20,16 +20,20 @@ article {
       }
     }
   }
-  img {
+  img:not([class^=icon]) {
     max-width: 100%;
     display: block;
     margin: 0 auto;
-  border: .75rem solid #fff;
-  box-shadow: 0 .125rem .25rem #ccc;
-  box-sizing: border-box;
+    border: .75rem solid #fff;
+    box-shadow: 0 .125rem .25rem #ccc;
+    box-sizing: border-box;
+  }
+  img.icon-24 {
+    height: 24px; width: 24px;
+    margin-bottom: -6px;
   }
   .right {
-  text-align: center;
+    text-align: center;
   }
   .center {
     clear: both;
@@ -37,7 +41,7 @@ article {
   .right,
   .center {
     margin-top: 0;
-  line-height: 200%;
+    line-height: 200%;
   }
   li > p {
     margin: 0;
@@ -56,6 +60,24 @@ article {
     text-align: right;
     &:before {
       content: "\2014  ";
+    }
+  }
+  .footnote {
+    margin-bottom: 0;
+    &:before {
+      content: " ";
+      display: block;
+      border-top: thin solid #999;
+      width: 240px;
+    }
+    + .footnote {
+      margin: 0;
+      &:before {
+        display: none;
+      }
+    }
+    &:last-child {
+      margin-bottom: 1em;
     }
   }
   footer {

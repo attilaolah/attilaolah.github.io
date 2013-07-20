@@ -1,6 +1,9 @@
 ---
 layout: base
 ---
+{% if page.mathjax %}
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+{% endif %}
 <article class="wrap post"{% if page.lang %} lang="{{ page.lang }}"{% endif %}>
   {% include post.html %}
   {% include comments.html %}
