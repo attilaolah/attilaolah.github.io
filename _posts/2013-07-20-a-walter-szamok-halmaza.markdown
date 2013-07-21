@@ -136,7 +136,7 @@ A Walter számok halmazára érvényesek a következők:
 * A $$\mathbb{W}$$ halmaz nem kapható meg [Cayley–Dickson][5] konstrukcióval
   (más szóval
   <img class="icon-24" src="/images/2013/walter-48.jpg" title="Sóti Valentin">
-  *nem [kvanterion][6]*).
+  *nem [kvaternion][6]*).
 * Ha a $$(G; \oplus)$$ [csoport][7] [kommutatív][8] (azaz *Abel-csoport*), és a
   $$G$$ halmaz egységeleme a
   <img class="icon-24" src="/images/2013/walter-48.jpg" title="Sóti Valentin">,
