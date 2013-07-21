@@ -121,8 +121,8 @@ Melyben:
 * $$\mathbb{C}$$ a komplex számok halmaza,
 * $$\mathbb{W}$$ a Walter számok halmaza.
 
-[9]: http://hu.wikipedia.org/wiki/Term%C3%A9szetes_sz%C3%A1mok
-[10]: http://hu.wikipedia.org/wiki/Term%C3%A9szetes_sz%C3%A1mok#Term.C3.A9szetes_sz.C3.A1m-e_a_nulla.3F
+[9]: https://hu.wikipedia.org/wiki/Term%C3%A9szetes_sz%C3%A1mok
+[10]: https://hu.wikipedia.org/wiki/Term%C3%A9szetes_sz%C3%A1mok#Term.C3.A9szetes_sz.C3.A1m-e_a_nulla.3F
 [11]: https://hu.wikipedia.org/wiki/Eg%C3%A9sz_sz%C3%A1mok
 [12]: https://hu.wikipedia.org/wiki/Racion%C3%A1lis_sz%C3%A1m
 [13]: https://hu.wikipedia.org/wiki/Irracion%C3%A1lis_sz%C3%A1m
@@ -152,8 +152,8 @@ A Walter számok halmazára érvényesek a következők:
 [6]: https://en.wikipedia.org/wiki/Cayley%E2%80%93Dickson_construction#Quaternions
 [7]: https://hu.wikipedia.org/wiki/Csoport_(matematika)
 [8]: https://hu.wikipedia.org/wiki/Abel-csoport
-[16]: http://hu.wikipedia.org/wiki/Sz%C3%A1moss%C3%A1g
-[17]: http://hu.wikipedia.org/wiki/Kontinuumhipot%C3%A9zis
+[16]: https://hu.wikipedia.org/wiki/Sz%C3%A1moss%C3%A1g
+[17]: https://hu.wikipedia.org/wiki/Kontinuumhipot%C3%A9zis
 [18]: https://hu.wikipedia.org/wiki/Test_(algebra)
 [19]: https://hu.wikipedia.org/wiki/Gy%C5%B1r%C5%B1_(matematika)
 
