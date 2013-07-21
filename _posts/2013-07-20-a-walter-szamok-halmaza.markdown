@@ -119,7 +119,7 @@ Melyben:
 * $$\mathbb{R}$$ a [valós számok][15] halmaza
 * $$\mathbb{A}_R$$ az algebrai és a valós számok halmazainak metszete
 * $$\mathbb{C}$$ a komplex számok halmaza
-* $$\mathbb{W}$$ a Walter-számok halmaza
+* $$\mathbb{W}$$ a Walter számok halmaza
 
 [9]: http://hu.wikipedia.org/wiki/Term%C3%A9szetes_sz%C3%A1mok
 [10]: http://hu.wikipedia.org/wiki/Term%C3%A9szetes_sz%C3%A1mok#Term.C3.A9szetes_sz.C3.A1m-e_a_nulla.3F
@@ -129,7 +129,7 @@ Melyben:
 [14]: https://hu.wikipedia.org/wiki/Algebrai_sz%C3%A1m
 [15]: https://hu.wikipedia.org/wiki/Val%C3%B3s_sz%C3%A1mok
 
-A Walter-számok halmazára érvényesek a következők:
+A Walter számok halmazára érvényesek a következők:
 
 * A $$\mathbb{W}$$ halmaz nem kapható meg [Cayley–Dickson][5] konstrukcióval
   (más szóval
