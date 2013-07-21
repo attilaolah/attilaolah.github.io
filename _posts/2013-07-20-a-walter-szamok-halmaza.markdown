@@ -132,20 +132,20 @@ Melyben:
 A Walter számok halmazára érvényesek a következők:
 
 * A $$\mathbb{W}$$ halmaz [számossága][16] $$\aleph_2$$ (lásd:
-  [kontinuumhipotézis][17]),
+  [kontinuumhipotézis][17]).
 * A $$\mathbb{W}$$ halmaz nem kapható meg [Cayley–Dickson][5] konstrukcióval
   (más szóval
   <img class="icon-24" src="/images/2013/walter-48.jpg" title="Sóti Valentin">
-  *nem [kvanterion][6]*),
+  *nem [kvanterion][6]*).
 * Ha a $$(G; \oplus)$$ [csoport][7] [kommutatív][8] (azaz *Abel-csoport*), és a
-  $$G$$ halmaz egységeleme a 
+  $$G$$ halmaz egységeleme a
   <img class="icon-24" src="/images/2013/walter-48.jpg" title="Sóti Valentin">,
   akkor (és csakis akkor) a $$(G; \oplus)$$ csoportot *Walter-csoportnak*
-  nevezzük,
+  nevezzük.
 * Ebből következik, hogy
   $$W = (T, \oplus, \otimes)$$ [test][18] *Walter-test* akkor és csakis akkor,
   ha $$(T; \oplus)$$ Walter-csoport, továbbá
-* A $$\mathcal{W} = (W, \oplus, \otimes)$$ [gyűrű][19] *Walter-gyűrű* akkor és
+* a $$\mathcal{W} = (W, \oplus, \otimes)$$ [gyűrű][19] *Walter-gyűrű* akkor és
   csakis akkor, ha $$(W, \oplus)$$ Walter-csoport.
 
 [5]: https://en.wikipedia.org/wiki/Cayley%E2%80%93Dickson_construction
