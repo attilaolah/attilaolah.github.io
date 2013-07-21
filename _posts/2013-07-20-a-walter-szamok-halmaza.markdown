@@ -110,16 +110,16 @@ szemléltetem:
 
 Melyben:
 
-* $$\mathbb{N}$$ a [természetes számok][9] halmaza
+* $$\mathbb{N}$$ a [természetes számok][9] halmaza,
 * $$\mathbb{N}_0$$ a természetes számok $$0$$-val [kibővített halmaza][10]
-* $$\mathbb{Z}$$ az [egész számok][11] halmaza
-* $$\mathbb{Q}$$ a [racionális számok][12] halmaza
-* $$\mathbb{I}$$ az [iracionális számok][13] halmaza
-* $$\mathbb{A}$$ az [algebrai számok][14] halmaza
-* $$\mathbb{R}$$ a [valós számok][15] halmaza
-* $$\mathbb{A}_R$$ az algebrai és a valós számok halmazainak metszete
-* $$\mathbb{C}$$ a komplex számok halmaza
-* $$\mathbb{W}$$ a Walter számok halmaza
+* $$\mathbb{Z}$$ az [egész számok][11] halmaza,
+* $$\mathbb{Q}$$ a [racionális számok][12] halmaza,
+* $$\mathbb{I}$$ az [iracionális számok][13] halmaza,
+* $$\mathbb{A}$$ az [algebrai számok][14] halmaza,
+* $$\mathbb{R}$$ a [valós számok][15] halmaza,
+* $$\mathbb{A}_R$$ az algebrai és a valós számok halmazainak metszete,
+* $$\mathbb{C}$$ a komplex számok halmaza,
+* $$\mathbb{W}$$ a Walter számok halmaza.
 
 [9]: http://hu.wikipedia.org/wiki/Term%C3%A9szetes_sz%C3%A1mok
 [10]: http://hu.wikipedia.org/wiki/Term%C3%A9szetes_sz%C3%A1mok#Term.C3.A9szetes_sz.C3.A1m-e_a_nulla.3F
@@ -131,26 +131,31 @@ Melyben:
 
 A Walter számok halmazára érvényesek a következők:
 
+* A $$\mathbb{W}$$ halmaz [számossága][16] $$\aleph_2$$ (lásd:
+  [kontinuumhipotézis][17]),
 * A $$\mathbb{W}$$ halmaz nem kapható meg [Cayley–Dickson][5] konstrukcióval
   (más szóval
   <img class="icon-24" src="/images/2013/walter-48.jpg" title="Sóti Valentin">
-  *nem [kvanterion][6]*)
+  *nem [kvanterion][6]*),
 * Ha a $$(G; \oplus)$$ [csoport][7] [kommutatív][8] (azaz *Abel-csoport*), és a
   $$G$$ halmaz egységeleme a 
   <img class="icon-24" src="/images/2013/walter-48.jpg" title="Sóti Valentin">,
   akkor (és csakis akkor) a $$(G; \oplus)$$ csoportot *Walter-csoportnak*
-  nevezzük
+  nevezzük,
+* Ebből következik, hogy
+  $$W = (T, \oplus, \otimes)$$ [test][18] *Walter-test* akkor és csakis akkor,
+  ha $$(T; \oplus)$$ Walter-csoport, továbbá
+* A $$\mathcal{W} = (W, \oplus, \otimes)$$ [gyűrű][19] *Walter-gyűrű* akkor és
+  csakis akkor, ha $$(W, \oplus)$$ Walter-csoport.
 
 [5]: https://en.wikipedia.org/wiki/Cayley%E2%80%93Dickson_construction
 [6]: https://en.wikipedia.org/wiki/Cayley%E2%80%93Dickson_construction#Quaternions
 [7]: https://hu.wikipedia.org/wiki/Csoport_(matematika)
 [8]: https://hu.wikipedia.org/wiki/Abel-csoport
-
-
-
-
-
-
+[16]: http://hu.wikipedia.org/wiki/Sz%C3%A1moss%C3%A1g
+[17]: http://hu.wikipedia.org/wiki/Kontinuumhipot%C3%A9zis
+[18]: https://hu.wikipedia.org/wiki/Test_(algebra)
+[19]: https://hu.wikipedia.org/wiki/Gy%C5%B1r%C5%B1_(matematika)
 
 {:#fn-1.footnote}
 <sup>1</sup>Feri nevét megváltoztattuk a pofonok elkerülése érdekében.
