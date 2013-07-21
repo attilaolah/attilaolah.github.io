@@ -143,10 +143,10 @@ A Walter számok halmazára érvényesek a következők:
   akkor (és csakis akkor) a $$(G; \oplus)$$ csoportot *Walter-csoportnak*
   nevezzük.
 * Ebből következik, hogy
-  $$W = (T, \oplus, \otimes)$$ [test][18] *Walter-test* akkor és csakis akkor,
-  ha $$(T; \oplus)$$ Walter-csoport, továbbá
-* a $$\mathcal{W} = (W, \oplus, \otimes)$$ [gyűrű][19] *Walter-gyűrű* akkor és
-  csakis akkor, ha $$(W, \oplus)$$ Walter-csoport.
+  $$W = (G, \oplus, \otimes)$$ [test][18] *Walter-test* akkor és csakis akkor,
+  ha $$(G; \oplus)$$ Walter-csoport, továbbá
+* a $$\mathcal{W} = (G, \oplus, \otimes)$$ [gyűrű][19] *Walter-gyűrű* akkor és
+  csakis akkor, ha $$(G, \oplus)$$ Walter-csoport.
 
 [5]: https://en.wikipedia.org/wiki/Cayley%E2%80%93Dickson_construction
 [6]: https://en.wikipedia.org/wiki/Cayley%E2%80%93Dickson_construction#Quaternions
