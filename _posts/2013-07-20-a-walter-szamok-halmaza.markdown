@@ -16,8 +16,8 @@ támadni a számukra ismeretlen matematikai fogalmak sokaságát azzal az érvve
 hogy olyan [nincs is][1]. Igen, a gonosz matematikusok [kitalálnak][2]
 mindenféléket csak azért, hogy ezzel is bosszantsák a köznépet.
 
-[1]: http://youtube.com/TbNymweHW4E
-[2]: http://youtube.com/1EGDCh75SpQ
+[1]: http://youtu.be/TbNymweHW4E
+[2]: http://youtu.be/1EGDCh75SpQ
 
 Hosszas gondolkodás után arra jutottam, hogy az emberek legnagyobb része úgy
 néz minden matematikai fogalomra, hogy azt próbálja beleerőltetni a számára
