@@ -1,11 +1,19 @@
 /* Header styles. */
+
 body > header {
   color: #fff;
   text-shadow: rgba(0, 0, 0, 0.701961) 0 .0625rem 0;
-  background: url(/images/w/blackorchid.png);
   overflow: hidden;
-  > div {
+  .cover {
+    box-shadow: inset black 0 -32rem 24rem -24rem;
+    background: url(/images/w/cover.jpg) 50% 55% no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
     height: 32rem;
+  }
+  .wrap {
+    position: absolute;
+    top: 0; left: 0; right: 0;
   }
   .avatar {
     width: 12rem;
@@ -29,70 +37,13 @@ body > header {
       }
     }
   }
-  .flower {
-    position: relative;
-    width: 0;
-    height: 32rem;
-    > div {
-      width: 32rem;
-      height: 32rem;
-      position: absolute; bottom: -4rem; left: 12rem;
-      background-image: url(/images/w/texture.png);
-      box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, .75);
-      .transform-origin(bottom left);
-      .border-radius(100% 0);
-    }
-    > div+div+div+div+div+div {
-      left: 8rem;
-    }
-    > div:nth-child(1) {
-      background-color: #f44;
-      .rotate(-135deg);
-    }
-    > div:nth-child(2) {
-      background-color: #fb3;
-      .rotate(-95deg);
-    }
-    > div:nth-child(3) {
-      background-color: #9c0;
-      .rotate(-55deg);
-    }
-    > div:nth-child(4) {
-      background-color: #a6c;
-      .rotate(-15deg);
-    }
-    > div:nth-child(5) {
-      background-color: #33b5e5;
-      .rotate(25deg);
-    }
-    > div:nth-child(6) {
-      background-color: #c00;
-      .rotate(-115deg);
-    }
-    > div:nth-child(7) {
-      background-color: #f80;
-      .rotate(-75deg);
-    }
-    > div:nth-child(8) {
-      background-color: #690;
-      .rotate(-35deg);
-    }
-    > div:nth-child(9) {
-      background-color: #93c;
-      .rotate(5deg);
-    }
-    > div:nth-child(10) {
-      background-color: #09c;
-      .rotate(45deg);
-    }
-  }
 }
 
 /* Wide header styles. */
 @media screen and (min-width: 521px) {
   body > header {
     .content {
-      margin: -15rem 1rem 0;
+      margin: 18rem 1rem 0;
       padding-left: 13rem;
     }
     .avatar {
@@ -106,7 +57,7 @@ body > header {
 @media screen and (max-width: 520px) {
   body > header {
     .content {
-      margin: -24rem 0 0;
+      margin: 11rem 0 0;
       text-align: center;
     }
     .avatar {

@@ -31,6 +31,7 @@
 /* Enforce maximum page width */
 .wrap {
   max-width: 56rem;
+  min-width: 20rem;
   margin: 0 auto;
 }
 /* Centre-align content */
@@ -489,7 +490,6 @@ div[role=main] {
 }
 div[role=main] {
   min-height: 16rem;
-  box-shadow: 0 2rem 2rem 2rem rgba(0, 0, 0, 0.5);
 }
 body,
 body > footer,
@@ -505,11 +505,20 @@ body > footer {
 body > header {
   color: #fff;
   text-shadow: rgba(0, 0, 0, 0.701961) 0 0.0625rem 0;
-  background: url(/images/w/blackorchid.png);
   overflow: hidden;
 }
-body > header > div {
+body > header .cover {
+  box-shadow: inset #000000 0 -32rem 24rem -24rem;
+  background: url(/images/w/cover.jpg) 50% 55% no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
   height: 32rem;
+}
+body > header .wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 body > header .avatar {
   width: 12rem;
@@ -536,147 +545,10 @@ body > header h3 + h3 {
 body > header h3 + h3 + h3 {
   margin: 0;
 }
-body > header .flower {
-  position: relative;
-  width: 0;
-  height: 32rem;
-}
-body > header .flower > div {
-  width: 32rem;
-  height: 32rem;
-  position: absolute;
-  bottom: -4rem;
-  left: 12rem;
-  background-image: url(/images/w/texture.png);
-  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.75);
-  -webkit-transform-origin: bottom left;
-  -moz-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-  -o-transform-origin: bottom left;
-  transform-origin: bottom left;
-  -webkit-border-radius: 100% 0;
-  -moz-border-radius: 100% 0;
-  -ms-border-radius: 100% 0;
-  -o-border-radius: 100% 0;
-  border-radius: 100% 0;
-}
-body > header .flower > div + div + div + div + div + div {
-  left: 8rem;
-}
-body > header .flower > div:nth-child(1) {
-  background-color: #f44;
-  -webkit-transform: rotate3d(0, 0, 1, -135deg);
-  -moz-transform: rotate3d(0, 0, 1, -135deg);
-  -ms-transform: rotate3d(0, 0, 1, -135deg);
-  /* rotate3d not supported in opera…
-       -o-transform: rotate3d(0, 0, 1, @angle);*/
-
-  -o-transform: rotate(-135deg);
-  transform: rotate3d(0, 0, 1, -135deg);
-}
-body > header .flower > div:nth-child(2) {
-  background-color: #fb3;
-  -webkit-transform: rotate3d(0, 0, 1, -95deg);
-  -moz-transform: rotate3d(0, 0, 1, -95deg);
-  -ms-transform: rotate3d(0, 0, 1, -95deg);
-  /* rotate3d not supported in opera…
-       -o-transform: rotate3d(0, 0, 1, @angle);*/
-
-  -o-transform: rotate(-95deg);
-  transform: rotate3d(0, 0, 1, -95deg);
-}
-body > header .flower > div:nth-child(3) {
-  background-color: #9c0;
-  -webkit-transform: rotate3d(0, 0, 1, -55deg);
-  -moz-transform: rotate3d(0, 0, 1, -55deg);
-  -ms-transform: rotate3d(0, 0, 1, -55deg);
-  /* rotate3d not supported in opera…
-       -o-transform: rotate3d(0, 0, 1, @angle);*/
-
-  -o-transform: rotate(-55deg);
-  transform: rotate3d(0, 0, 1, -55deg);
-}
-body > header .flower > div:nth-child(4) {
-  background-color: #a6c;
-  -webkit-transform: rotate3d(0, 0, 1, -15deg);
-  -moz-transform: rotate3d(0, 0, 1, -15deg);
-  -ms-transform: rotate3d(0, 0, 1, -15deg);
-  /* rotate3d not supported in opera…
-       -o-transform: rotate3d(0, 0, 1, @angle);*/
-
-  -o-transform: rotate(-15deg);
-  transform: rotate3d(0, 0, 1, -15deg);
-}
-body > header .flower > div:nth-child(5) {
-  background-color: #33b5e5;
-  -webkit-transform: rotate3d(0, 0, 1, 25deg);
-  -moz-transform: rotate3d(0, 0, 1, 25deg);
-  -ms-transform: rotate3d(0, 0, 1, 25deg);
-  /* rotate3d not supported in opera…
-       -o-transform: rotate3d(0, 0, 1, @angle);*/
-
-  -o-transform: rotate(25deg);
-  transform: rotate3d(0, 0, 1, 25deg);
-}
-body > header .flower > div:nth-child(6) {
-  background-color: #c00;
-  -webkit-transform: rotate3d(0, 0, 1, -115deg);
-  -moz-transform: rotate3d(0, 0, 1, -115deg);
-  -ms-transform: rotate3d(0, 0, 1, -115deg);
-  /* rotate3d not supported in opera…
-       -o-transform: rotate3d(0, 0, 1, @angle);*/
-
-  -o-transform: rotate(-115deg);
-  transform: rotate3d(0, 0, 1, -115deg);
-}
-body > header .flower > div:nth-child(7) {
-  background-color: #f80;
-  -webkit-transform: rotate3d(0, 0, 1, -75deg);
-  -moz-transform: rotate3d(0, 0, 1, -75deg);
-  -ms-transform: rotate3d(0, 0, 1, -75deg);
-  /* rotate3d not supported in opera…
-       -o-transform: rotate3d(0, 0, 1, @angle);*/
-
-  -o-transform: rotate(-75deg);
-  transform: rotate3d(0, 0, 1, -75deg);
-}
-body > header .flower > div:nth-child(8) {
-  background-color: #690;
-  -webkit-transform: rotate3d(0, 0, 1, -35deg);
-  -moz-transform: rotate3d(0, 0, 1, -35deg);
-  -ms-transform: rotate3d(0, 0, 1, -35deg);
-  /* rotate3d not supported in opera…
-       -o-transform: rotate3d(0, 0, 1, @angle);*/
-
-  -o-transform: rotate(-35deg);
-  transform: rotate3d(0, 0, 1, -35deg);
-}
-body > header .flower > div:nth-child(9) {
-  background-color: #93c;
-  -webkit-transform: rotate3d(0, 0, 1, 5deg);
-  -moz-transform: rotate3d(0, 0, 1, 5deg);
-  -ms-transform: rotate3d(0, 0, 1, 5deg);
-  /* rotate3d not supported in opera…
-       -o-transform: rotate3d(0, 0, 1, @angle);*/
-
-  -o-transform: rotate(5deg);
-  transform: rotate3d(0, 0, 1, 5deg);
-}
-body > header .flower > div:nth-child(10) {
-  background-color: #09c;
-  -webkit-transform: rotate3d(0, 0, 1, 45deg);
-  -moz-transform: rotate3d(0, 0, 1, 45deg);
-  -ms-transform: rotate3d(0, 0, 1, 45deg);
-  /* rotate3d not supported in opera…
-       -o-transform: rotate3d(0, 0, 1, @angle);*/
-
-  -o-transform: rotate(45deg);
-  transform: rotate3d(0, 0, 1, 45deg);
-}
 /* Wide header styles. */
 @media screen and (min-width: 521px) {
   body > header .content {
-    margin: -15rem 1rem 0;
+    margin: 18rem 1rem 0;
     padding-left: 13rem;
   }
   body > header .avatar {
@@ -687,7 +559,7 @@ body > header .flower > div:nth-child(10) {
 /* Narrow header styles. */
 @media screen and (max-width: 520px) {
   body > header .content {
-    margin: -24rem 0 0;
+    margin: 11rem 0 0;
     text-align: center;
   }
   body > header .avatar {
