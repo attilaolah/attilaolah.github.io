@@ -21,7 +21,7 @@ just prefer to use git from the command line rather than from Vim.
 
 [3]: http://tpo.pe/
 
-* [pathogen][T0] is the single most useful plug-in for vim! ★★★★★
+* [pathogen][T0] is the single most useful plug-in for Vim! ★★★★★
 * [repeat][T7] for repeating plug-in maps ★★★★★
 * [sensible][T8] is a set of *very* useful defaults ★★★★★
 * [sleuth][T9] sets `shiftwidth` and `expandtab` in a smart way ★★★★★
@@ -58,9 +58,9 @@ just prefer to use git from the command line rather than from Vim.
 ### Others that I've tried:
 
 * [coffee-script][S1] for those `.coffee` files ★★★★★
-* [golang][S5] is the official Go vim script ★★★★★
-* [less][S7] is the vim syntax file for [LESS][4] ★★★★★
-* [css3-syntax][S4] adds CSS3 syntax support to vim's built-in `syntax/css.vim` ★★★★☆
+* [golang][S5] is the official Go Vim script ★★★★★
+* [less][S7] is the Vim syntax file for [LESS][4] ★★★★★
+* [css3-syntax][S4] adds CSS3 syntax support to Vim's built-in `syntax/css.vim` ★★★★☆
 * [markdown-folding][S8] allows folding markdown documents by section ★★★★☆
 * [colors-solarized][S2] is a "precision" colour scheme "for machines and people" ★★☆☆☆
 * [css-color][S3] is a nice concept, but I couldn't get it to work ☆☆☆☆☆
