@@ -14,7 +14,7 @@ repo][2].
 
 I am attaching my own rating to the scripts, but these aren't really objective.
 They are merely an indication how much I ended up using the scripts. For
-example, [vim-fugitive][B3] is so damn powerful it deserves a sixth star, but I
+example, [vim-fugitive][T3] is so damn powerful it deserves a sixth star, but I
 just prefer to use git from the command line rather than from Vim.
 
 ### [Tim Pope][3]'s scripts, in order of usefulness:
