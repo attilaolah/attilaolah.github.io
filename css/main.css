@@ -471,18 +471,6 @@ a:active {
   background-color: #fb3;
   text-shadow: none;
 }
-body > header *,
-body > footer,
-div[role=main] {
-  -webkit-transform: rotate3d(0, 0, 1, 0deg);
-  -moz-transform: rotate3d(0, 0, 1, 0deg);
-  -ms-transform: rotate3d(0, 0, 1, 0deg);
-  /* rotate3d not supported in opera…
-       -o-transform: rotate3d(0, 0, 1, @angle);*/
-
-  -o-transform: rotate(0deg);
-  transform: rotate3d(0, 0, 1, 0deg);
-}
 body > header,
 body > footer,
 div[role=main] {
