@@ -26,16 +26,17 @@ ul.home {
   }
   .previous:before {
     content: "\00AB";
-    line-height: 1.5rem;
+    top: 0rem;
   }
   .next:after {
     content: "\00BB";
-    line-height: 1rem;
+    top: 1rem / 16;
   }
   .next:after,
   .previous:before {
     font-size: 1.5rem;
     display: inline-block;
+    position: relative;
   }
   .current {
     color: #333;

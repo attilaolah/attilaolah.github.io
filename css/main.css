@@ -480,14 +480,15 @@ div[role=main] {
   min-height: 16rem;
 }
 body,
-body > footer,
 div[role=main] {
-  background: #fdfdfd url(http://aiur.co.rs/img/brillant.png) 0 0 repeat;
+  background: #fdfdfd url(/images/w/bg.png) 0 0 repeat;
 }
 body > footer {
   color: #999;
+  background: #fdfdfd url(/images/w/footer.png) 0 0 repeat;
   text-align: center;
   padding: 2.5rem 0 2rem;
+  margin-top: 2rem;
 }
 /* Header styles. */
 body > header {
@@ -591,16 +592,17 @@ ul.home > li {
 }
 .pagination .previous:before {
   content: "\00AB";
-  line-height: 1.5rem;
+  top: 0rem;
 }
 .pagination .next:after {
   content: "\00BB";
-  line-height: 1rem;
+  top: 0.0625rem;
 }
 .pagination .next:after,
 .pagination .previous:before {
   font-size: 1.5rem;
   display: inline-block;
+  position: relative;
 }
 .pagination .current {
   color: #333;
@@ -679,7 +681,7 @@ ul.home > li {
   width: 48px;
   text-align: center;
   content: attr(data-year);
-  background: #fdfdfd url(http://aiur.co.rs/img/brillant.png) 0 0 repeat;
+  background: #fdfdfd url(/images/w/bg.png) 0 0 repeat;
   font-family: 'Roboto Condensed', 'Roboto', sans-serif;
   font-weight: 300;
 }
