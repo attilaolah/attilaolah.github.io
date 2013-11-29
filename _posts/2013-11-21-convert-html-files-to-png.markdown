@@ -32,7 +32,7 @@ Here's what each line does:
   [pngcrush][4] instead)
 * `mv $f.png.o $f.png` replaces the original png with the optimised one
 
-[1]: //code.google.com/p/wkhtmltopdf
+[1]: https://code.google.com/p/wkhtmltopdf
 [2]: http://www.imagemagick.org/script/mogrify.php
 [3]: http://pngquant.org/
 [4]: http://pmt.sourceforge.net/pngcrush/
