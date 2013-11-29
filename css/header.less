@@ -14,6 +14,7 @@ body > header {
   .wrap {
     position: absolute;
     top: 0; left: 0; right: 0;
+    min-height: 512px;
   }
   .avatar {
     width: 12rem;
@@ -50,6 +51,93 @@ body > header {
       margin-left: -13rem;
       float: left;
     }
+    .flair {
+      position: absolute;
+      bottom: -8px; right: -24px;
+      line-height: 34px;
+      text-transform: uppercase;
+      z-index: 9;
+      img {
+        width: 208px;
+        height: 58px;
+        display: inline;
+        vertical-align: baseline;
+        margin-bottom: -38px;
+      }
+    }
+    .social {
+      position: absolute;
+      bottom: -26px; right: 184px;
+      height: 24px;
+      padding: 0; margin: 0;
+      white-space: nowrap;
+      z-index: 9;
+      + .social {
+        bottom: -28px; right: -26px;
+        width: 0;
+        li {
+          height: 20px;
+          width: 20px;
+        }
+      }
+      li {
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        a {
+          display: block;
+          height: 100%;
+        }
+        &:not(:hover) {
+          opacity: .5;
+        }
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        &.google {
+          background-image: url(/images/w/google-plus-2-48.png);
+        }
+        &.facebook {
+          background-image: url(/images/w/facebook-2-48.png);
+        }
+        &.twitter {
+          background-image: url(/images/w/twitter-2-48.png);
+        }
+        &.pinterest {
+          background-image: url(/images/w/pinterest-2-48.png);
+        }
+        &.github {
+          background-image: url(/images/w/github-7-48.png);
+        }
+        &.foursquare {
+          background-image: url(/images/w/foursquare-48.png);
+        }
+        &.linkedin {
+          background-image: url(/images/w/linkedin-2-48.png);
+        }
+        &.youtube {
+          background-image: url(/images/w/youtube-2-48.png);
+        }
+        &.lastfm {
+          background-image: url(/images/w/last-fm-2-48.png);
+        }
+        &.stackoverflow {
+          background-image: url(/images/w/stackoverflow-2-48.png);
+        }
+        &.flickr {
+          background-image: url(/images/w/flickr-2-48.png);
+        }
+        &.xing {
+          background-image: url(/images/w/xing-2-48.png);
+        }
+        &.blogger {
+          background-image: url(/images/w/blogger-2-48.png);
+        }
+        &.reddit {
+          background-image: url(/images/w/reddit-48.png);
+        }
+        background-size: cover;
+      }
+    }
   }
 }
 
@@ -66,6 +154,9 @@ body > header {
     h2, h3 {
       margin: 0;
       padding: 1rem 0 0;
+    }
+    .flair {
+      display: none;
     }
   }
 }
