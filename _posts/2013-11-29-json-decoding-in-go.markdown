@@ -420,7 +420,7 @@ type Record struct {
 ## Timestamps
 
 [`time.Time`][11] implements both `json.Marshaler` and `json.Unmarshaler`.
-Timestamps are formatted as [GRFC3339][12].
+Timestamps are formatted as [RFC3339][12].
 
 [11]: http://golang.org/pkg/time/#Time
 [12]: http://www.ietf.org/rfc/rfc3339.txt
