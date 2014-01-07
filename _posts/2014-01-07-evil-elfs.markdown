@@ -173,12 +173,12 @@ there, without completing the `call`ed function correctly. An easy fix is to
 `disable` the breakpoint at the beginning of the `commands` block, and
 re-enable them just before the `end`.
 
-## Resources
+## Sources
 
-* **gdb** — *the GNU debugger*: `man gdb`
-* **objdump** — *display information from object files*: `man objdump`
-* **libcurl** — *client-side URL transfers*: `man libcurl`
-* **lsof** — *list open files*: `man lsof`
+* **gdb** — the GNU debugger: `man gdb`
+* **objdump** — display information from object files: `man objdump`
+* **libcurl** — client-side URL transfers: `man libcurl`
+* **lsof** — list open files: `man lsof`
 * `.gdbinit` commands: [this answer on stack exchange][4]
 
 [4]: http://reverseengineering.stackexchange.com/a/3343/3531
