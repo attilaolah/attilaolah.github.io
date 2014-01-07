@@ -1,0 +1,184 @@
+---
+layout: post
+title: Evil ELFs
+tags:
+- programming
+- reverse-engineering
+---
+
+In this post I am going to demonstrate how to easily find out what an evil
+[ELF][1] is doing to your system. This can be useful if you have one that is
+making secure network connections and you want to have a closer look… Or just
+for fun.
+
+[1]: https://en.wikipedia.org/wiki/Executable_and_Linkable_Format
+
+## Linked library dependencies and `ldd`
+
+The easiest to start with are linked library dependencies. In our example:
+
+{% highlight bash %}
+$ ldd ./evil-elf
+  […]
+  libcurl.so.4 => /usr/lib64/libcurl.so.4 (0x00007fa94ba57000)
+  […]
+{% endhighlight %}
+
+The rest of the output is stripped; the important thing is that our app seems
+to use `libcurl` to communicate with the evil servers.
+
+## `LD_PRELOAD` and debug libraries
+
+To have some more info on what is going on behind the scenes, we can grab a
+copy of `libcurl` and build a debug version that has verbose logging enabled by
+default.
+
+{% highlight bash %}
+$ wget http://curl.haxx.se/download/curl-7.34.0.tar.lzma
+$ lzma -d curl-7.34.0.tar.lzma
+$ cd curl-7.34.0
+$ ./configure --enable-debug
+$ make
+{% endhighlight %}
+
+Now we can use the debug version of `libcurl.so` to get a lot of debugging
+output about the network connections made:
+
+{% highlight bash %}
+$ LD_PRELOAD=./curl-7.34.0/lib/.libs/libcurl.so ./evil-elf
+{% endhighlight %}
+
+The debug build automatically enables the [`CURLOPT_VERBOSE`] param, which logs
+all connection information, except the transferred payload. To also log the
+payload, have a look at the sample code in [`debug.c`][3] (part of the
+`libcurl` project).
+
+[2]: http://curl.haxx.se/libcurl/c/curl_easy_setopt.html#CURLOPTVERBOSE
+[3]: http://curl.haxx.se/libcurl/c/debug.html
+
+## Static (built-in) libs and `objdump`
+
+Now that we can inspect the traffic, we can use `curl` to impersonate the app.
+But what if the requests are signed, and the signature is verified on the
+server? We want to be able to generatet hose fingerprints ourselves.
+
+Let's assume that we've noticed a 40-char digit hex string in every request. 40
+characters? It is most likely SHA1. But we didn't see any linked library that
+could be used to generate such hashes… Perhaps they are not dynamically linked
+(that happens often with distributed binaries).
+
+To have a closer look at the evil app, let's take it apart with `objdump`:
+
+{% highlight bash %}
+$ objdump -ClDgTt -M intel evil-elf > evil-elf.asm
+$ ag -i sha1 evil-elf.asm
+35011:0000000000a8faae  w   DF .text    000000000000001a  Base        boost::uuids::detail::sha1::sha1()
+2983642:  a8ec8e:       e8 61 10 00 00          call   a8fcf4 <boost::uuids::detail::sha1::process_bytes(void const*, unsigned long)>
+2983647:  a8eca4:       e8 b7 13 00 00          call   a90060 <boost::uuids::detail::sha1::get_digest(unsigned int (&) [5])>
+[…]
+{% endhighlight %}
+
+Bingo! It seems the Boost library is used to generate the sha1 hashes. A quick
+look at the source reveals that the routines live inside `boost/uuid/sha1.hpp`.
+
+## Runtime inspection with `gdb`
+
+Instead of preloading a debug version of this, we'll use `gdb` to break
+execution of the app when it feeds the string to be hashed:
+
+{% highlight bash %}
+$ gdb
+GNU gdb (Gentoo 7.6.2 p1) 7.6.2
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-pc-linux-gnu".
+For bug reporting instructions, please see:
+<http://bugs.gentoo.org/>.
+(gdb) file ./evil-elf
+(gdb) break boost::uuids::detail::sha1::process_bytes
+(gdb) run
+[…]
+{% endhighlight %}
+
+Now when execution stops at `process_bytes`, we know that the string (`char *`
+to be strict) we need is somewhere at hand. Probably near the top of the stack,
+or maybe in a register. We know it is the first parameter when calling the
+function, but the compiler may have mangled that away, plus we have to consider
+the hidden argument (`this`) implied when calling a C++ method.
+
+{% highlight bash %}
+Breakpoint 1, 0x0000000000a8fcf8 in boost::uuids::detail::sha1::process_bytes(void const*, unsigned long) ()
+(gdb) info registers
+rax            0x7fffffff8480   140737488323712
+rbx            0x7fffffff8850   140737488324688
+rcx            0x1208008        18907144
+rdx            0x94     148
+[…]
+{% endhighlight %}
+
+We can try printing these addresses as characters to see if we find our `char *`.
+
+{% highlight bash %}
+0x7fffffff8480: 1 '\001'        35 '#'  69 'E'  103 'g' -119 '\211'     -85 '\253'      -51 '\315'      -17 '\357'
+0x7fffffff8488: -2 '\376'       -36 '\334'
+(gdb) x/10c $rbx
+0x7fffffff8850: 64 '@'  0 '\000'        0 '\000'        0 '\000'        0 '\000'        0 '\000'        0 '\000'        0 '\000'
+0x7fffffff8858: 0 '\000'        0 '\000'
+(gdb) x/10c $rcx
+0x1208008:      80 'P'  79 'O'  83 'S'  84 'T'  38 '&'  104 'h' 116 't' 116 't'
+0x1208010:      112 'p' 115 's'
+{% endhighlight %}
+
+There it is, in the `RCX` register! Let's print it as a string!
+
+{% highlight bash %}
+(gdb) x/s $rcx
+0x1208008:      "POST&https%3A%2F%evil%2Ecom%2Fapi%2Fv1%2Fauth%2Fclient&&SECRET&1389088091&NONCE&SIGNATURE&"
+{% endhighlight %}
+
+Awesome. Now that we see how the signature is being generated, we can do the
+same when faking the requests with `curl`.
+
+## Automate it all with `.gdbinit`
+
+One easy way to automate printing the data being hashed is by creating a
+`.gdbinit` file like this:
+
+
+{% highlight bash %}
+set environment LD_PRELOAD=./curl-7.34.0/lib/.libs/libcurl.so
+
+file ./evil-elf
+
+break boost::uuids::detail::sha1::process_bytes
+commands $bpnum
+x/s $rcx
+continue
+end
+
+run
+{% endhighlight %}
+
+Now, to start the monitered version of `evil-elf`, just run `gdb`, and the rest
+will be taken care of.
+
+## A few more hints
+
+When running commands from `gdb`, you can call functions as well, using the
+`call` command. However, it is easy to run into recursions, and `gdb` will stop
+there, without completing the `call`ed function correctly. An easy fix is to
+`disable` the breakpoint at the beginning of the `commands` block, and
+re-enable them just before the `end`.
+
+## Resources
+
+* **The GNU Debugger**: `man gdb`
+* **objdump** - *display information from object files*: `man objdump`
+* **libcurl** - *client-side URL transfers*: `man libcurl`
+* **lsof** - *list open files*: `man lsof`
+* `.gdbinit` `commands`: [this answer on stack exchange][4]
+
+[4]: http://reverseengineering.stackexchange.com/a/3343/3531
