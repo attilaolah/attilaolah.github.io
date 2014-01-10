@@ -60,7 +60,7 @@ payload, have a look at the sample code in [`debug.c`][3] (part of the
 
 Now that we can inspect the traffic, we can use `curl` to impersonate the app.
 But what if the requests are signed, and the signature is verified on the
-server? We want to be able to generatet those fingerprints ourselves.
+server? We want to be able to generate those fingerprints ourselves.
 
 Let's assume that we've noticed a 40-char digit hex string in every request. 40
 characters? It is most likely SHA1. But we didn't see any linked library that
