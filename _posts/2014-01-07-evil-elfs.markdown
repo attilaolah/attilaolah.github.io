@@ -104,10 +104,10 @@ For bug reporting instructions, please see:
 {% endhighlight %}
 
 Now when execution stops at `process_bytes`, we know that the string (`char *`
-to be strict) we need is somewhere at hand. Probably near the top of the stack,
-or maybe in a register. We know it is the first parameter when calling the
-function, but the compiler may have mangled that away, plus we have to consider
-the hidden argument (`this`) implied when calling a C++ method.
+to be precise) we need is somewhere at hand. Probably near the top of the
+stack, or maybe in a register. We know it is the first parameter when calling
+the function, but the compiler may have mangled that away, plus we have to
+consider the hidden argument (`this`) implied when calling a C++ method.
 
 {% highlight bash %}
 Breakpoint 1, 0x0000000000a8fcf8 in boost::uuids::detail::sha1::process_bytes(void const*, unsigned long) ()
