@@ -78,7 +78,7 @@ $ ag -i sha1 evil-elf.asm
 […]
 {% endhighlight %}
 
-Bingo! It seems the Boost library is used to generate the sha1 hashes. A quick
+Bingo! It seems the Boost library is used to generate the SHA1 hashes. A quick
 look at the source reveals that the routines live inside `boost/uuid/sha1.hpp`.
 
 ## Runtime inspection with `gdb`
@@ -162,7 +162,7 @@ end
 run
 {% endhighlight %}
 
-Now, to start the monitered version of `evil-elf`, just run `gdb`, and the rest
+Now, to start the monitored version of `evil-elf`, just run `gdb`, and the rest
 will be taken care of.
 
 ## A few more hints
