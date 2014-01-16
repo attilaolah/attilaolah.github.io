@@ -46,9 +46,9 @@ the user can put that data in the database, it counts as user input.
 
 [3]: //xkcd.com/327
 
-##  Use HTTPS.
+## Use HTTPS
 
-* Trivial to set up ✓
+* <del>Trivial</del> <ins>Might be tricky<ins> to set up
 * Costs $$$ (but then what doesn't)
 
 Handling sensitive user data (or any user data for that matter; go ask your
@@ -108,7 +108,7 @@ person on the other end of the wire).
 * Stop adding stupid password length limits (you're going to hash it anyway)
 * Stop telling me my password is not secure enough because it only contains 28
   random letters, but no digits
-* And lastly, *for fuck's sake*, [stop asking me][6] to use upper case letters,
+* And lastly, [stop asking me][6] to use upper case letters,
   lower case letters, at least one digit, two punctuation marks and one [beauty
   mark][7] in my password.
 
