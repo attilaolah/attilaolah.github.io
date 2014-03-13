@@ -21,7 +21,7 @@ title: Attila Oláh
     {% if paginator.previous_page == 1 %}
       <a class="previous" href="/" rel="prev">Previous</a>
     {% else %}
-      <a class="previous" href="/{{ paginator.previous_page_path }}" rel="prev">Previous</a>
+      <a class="previous" href="{{ paginator.previous_page_path }}" rel="prev">Previous</a>
     {% endif %}
   {% endif %}
   <ul>
@@ -43,6 +43,6 @@ title: Attila Oláh
     {% endfor %}
   </ul>
   {% if paginator.next_page %}
-    <a class="next" href="/{{ paginator.next_page_path }}" rel="next">Next</a>
+    <a class="next" href="{{ paginator.next_page_path }}" rel="next">Next</a>
   {% endif %}
 </div>
