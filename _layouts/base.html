@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/dst/main.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,700italic|Roboto+Condensed:300,400&subset=latin,latin-ext">
   <link rel="icon" type="image/jpeg" href="/avatar/192.jpg">
   <link rel="alternate" type="application/rss+xml" title="RSS feed" href="/rss.xml">
   <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/atom.xml">
@@ -38,20 +39,6 @@
     {% endfor %}
     <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncatewords: 30 | xml_escape }}">
   {% endif %}
-  <script type="text/javascript">
-    var _gaq = [
-        ['_setAccount', 'UA-13035482-4'],
-        ['_trackPageview']
-      ],
-      ___gcfg = {
-        parsetags: 'explicit'
-      };
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
 </head>
 <body class="roboto">
   <header>
@@ -59,48 +46,32 @@
     <div class="wrap">
       <div class="content" itemprop="author" itemscope itemtype="http://data-vocabulary.org/Person">
         <div class="avatar"></div>
-        <h2><a href="{{ site.baseurl }}" itemprop="url"><span itemprop="name"><span itemprop="givenName">Attila</span> <span itemprop="familyName">Ol&aacute;h</span></span></a></h2>
-        <h3>Full-time dad, part-time web developer.</h3>
-        <h3 class="live">Lives in
-          <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/PostalAddress">
-            <a href="https://en.wikipedia.org/wiki/Chiang_Mai" itemprop="addressLocality">Chiang Mai</a>,
-            <a href="https://en.wikipedia.org/wiki/Thailand" itemprop="addressCountry">Thailand</a>.
-            <meta itemprop="email" content="attilaolah@gmail.com">
-            <meta itemprop="telephone" content="+381612539794">
-            <meta itemprop="streetAddress" content="36 Morakot Rd">
-            <meta itemprop="postalCode" content="50300">
-          </span>
-        </h3>
-        <h3 class="work">Works at
-          <span itemprop="affiliation" itemscope itemtype="http://data-vocabulary.org/PostalAddress">
-            <a href="http://www.vemble.com/" itemprop="url">Vemble</a>.
-            <meta itemprop="logo" content="http://www.vemble.com/resources/img/logo.png">
-          </span>
-        </h3>
-        <h3 class="study">Studies at
-          <a href="https://www.udacity.com/">Udacity</a>.
-        </h3>
+        <h2><a href="{{ site.baseurl }}" itemprop="url"><span itemprop="name"><strong itemprop="givenName">Attila</strong> <span itemprop="familyName">Ol&aacute;h</span></span></a></h2>
+        <h3 class="condensed thin"><strong>Full-time dad</strong>, part-time web developer.</h3>
+        <h3 class="condensed thin" itemprop="affiliation">Technical Interviewer at oDesk.</h3>
+        <link itemprop="nationality" href="https://en.wikipedia.org/wiki/Serbia">
         <link itemprop="nationality" href="https://en.wikipedia.org/wiki/Hungary">
       </div>
-      <a class="flair condensed thin" href="//stackexchange.com/users/91952/attila-o">
-        Stack Exchange
-        <img alt="profile" src="http://stackexchange.com/users/flair/91952.png?theme=clean">
-      </a>
-      <ul class="social">
-        <li class="twitter"><a href="//twitter.com/attilaolah"></a></li>
-        <li class="github"><a href="//github.com/attilaolah"></a></li>
-        <li class="linkedin"><a href="//www.linkedin.com/in/attilaolah"></a></li>
-      </ul>
     </div>
   </header>
   <div role="main">
     {{ content }}
   </div>
   <footer>
-    &copy; 2010&ndash;2014
     <a href="https://plus.google.com/112887311846435666179?rel=author" rel="publisher">Attila Oláh</a>
-    <span class="wide">&ndash;</span><br class="narrow">
-    <a href="mailto:attilaolah@gmail.com" rel="me">attilaolah@gmail.com</a>
+    <span class="wide">||</span><br class="narrow">
+    <a href="mailto:attila@attilaolah.eu" rel="me">attila@attilaolah.eu</a>
   </footer>
+  {% if page.url == "/" %}
+    <div class="meta" itemprop="address" itemscope itemtype="http://data-vocabulary.org/PostalAddress">
+      <link itemprop="addressLocality" href="https://en.wikipedia.org/wiki/Bajmok">
+      <link itemprop="addressCountry" href="https://en.wikipedia.org/wiki/Serbia">
+      <meta itemprop="email" content="attila@attilaolah.eu">
+      <meta itemprop="telephone" content="+381612539794">
+      <meta itemprop="streetAddress" content="74, Jugoslovenske Narodne Armije">
+      <meta itemprop="postalCode" content="24210">
+    </dir>
+  {% endif %}
+  <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-13035482-4','attilaolah.eu');ga('send','pageview')</script>
 </body>
 </html>

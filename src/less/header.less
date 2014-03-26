@@ -1,0 +1,87 @@
+/* Header styles. */
+
+body > header {
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.701961) 0 .0625rem 0;
+  overflow: hidden;
+  .cover {
+    box-shadow: inset black 0 -32rem 24rem -24rem;
+    background: url(/images/w/cover.jpg) 50% 55% no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 32rem;
+  }
+  .wrap {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    min-height: 512px;
+  }
+  .avatar {
+    width: 12rem;
+    height: 12rem;
+    .border-radius;
+  }
+  h2 {
+    padding: 1.25rem 0 0;
+    font-size: 3rem;
+    font-weight: 100;
+    a:hover {
+      text-decoration: none;
+    }
+    strong {
+      font-weight: 300;
+    }
+  }
+  h3 {
+    margin: 0;
+    color: #ccc;
+    font-size: 1.5rem;
+    text-shadow: rgba(0, 0, 0, 1) 0 0 2rem,
+      rgba(0, 0, 0, 0.6875) 0 .0625rem 0;
+    text-transform: uppercase;
+    strong {
+      font-weight: inherit;
+    }
+    + h3 {
+      color: #999;
+      display: inline;
+      + h3 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+/* Wide header styles. */
+@media screen and (min-width: 521px) {
+  body > header {
+    .content {
+      margin: 18rem 1rem 0;
+      padding-left: 13rem;
+    }
+    .avatar {
+      margin-left: -13rem;
+      float: left;
+    }
+  }
+}
+
+/* Narrow header styles. */
+@media screen and (max-width: 520px) {
+  body > header {
+    .content {
+      margin: 11rem 0 0;
+      text-align: center;
+    }
+    .avatar {
+      margin: 0 auto;
+    }
+    h2, h3 {
+      margin: 0;
+      padding: 0;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+}
