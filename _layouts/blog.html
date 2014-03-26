@@ -2,10 +2,9 @@
 layout: base
 title: Attila Oláh
 ---
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <ul class="wrap home">
   {% for page in paginator.posts %}
-  <li>
+  <li{% if page.mathjax %} class="mathjax"{% endif %}>
     <article class="wrap"{% if page.lang %} lang="{{ page.lang }}"{% endif %} itemscope itemtype="http://schema.org/BlogPosting">
       {% if page.layout == "post" %}
         {% include post.html %}

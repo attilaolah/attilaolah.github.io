@@ -39,6 +39,7 @@
     {% endfor %}
     <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncatewords: 30 | xml_escape }}">
   {% endif %}
+  <script src="/dst/main.min.js" async></script>
 </head>
 <body class="roboto">
   <header>

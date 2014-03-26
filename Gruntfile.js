@@ -4,41 +4,35 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
     uglify: {
-      dist: {
+      all: {
         files: {
-          'dist/<%= pkg.name %>.min.js': 'dist/<%= pkg.name %>.js'
+          'dst/main.min.js': 'dst/main.js'
         }
       },
       options: {
-        banner : '/*! <%= pkg.title || pkg.name %> - ' +
-          '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-          '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-          '* Copyright © <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>; */',
         report: 'gzip'
       }
     },
-    coffee : {
-      plugin : {
-        files: [{
-          expand: true,
-          cwd: 'src/',
-          src: '*.coffee',
-          dest: 'dist/',
-          ext: '.js'
-        }]
+    coffee: {
+      all: {
+        options: {
+          join: true
+        },
+        files: {
+          'dst/main.js': 'src/coffee/*.coffee'
+        }
       }
     },
     less: {
-      compile: {
+      all: {
         files: {
           'dst/main.css': 'src/less/main.less'
         }
       }
     },
     csso: {
-      compress: {
+      all: {
         options: {
           report: 'gzip',
         },
@@ -47,7 +41,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    watch : {
+    watch: {
       files: [
         'src/**',
       ],
