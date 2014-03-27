@@ -3,7 +3,7 @@
 body > header {
   color: #fff;
   text-shadow: rgba(0, 0, 0, 0.701961) 0 .0625rem 0;
-  overflow: hidden;
+  position: relative;
   .cover {
     box-shadow: inset black 0 -32rem 24rem -24rem;
     background: url(/images/w/cover.jpg) 50% 55% no-repeat;
@@ -15,6 +15,7 @@ body > header {
     position: absolute;
     top: 0; left: 0; right: 0;
     min-height: 512px;
+    overflow-x: hidden;
   }
   .avatar {
     width: 12rem;
