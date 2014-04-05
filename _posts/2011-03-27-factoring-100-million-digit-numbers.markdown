@@ -6,28 +6,27 @@ tags:
 ---
 
 Yesterday I figured I'll try to [factor][1] the first few numbers greater than
-10⁹⁹⁹⁹⁹⁹⁹⁹ (or at least find their smallest divisors). The idea was to see how
-hard it is to find the divisors of the first few hundred [100,000,000][2]-digit
+10¹⁰⁰⁰⁰⁰⁰⁰⁰ (or at least find their smallest divisors). The idea was to see how
+hard it is to find the divisors of the first few hundred 100,000,001-digit
 numbers.
 
 [1]: http://en.wikipedia.org/wiki/Integer_factorization
-[2]: http://en.wikipedia.org/wiki/100000000
 
-I took a pretty simple approach: for each prime number p, calculate 10⁹⁹⁹⁹⁹⁹⁹⁹
-% p (the remainder after dividing by p). Then I used the result to create a
-partial [sieve][3]. After the first 300,000 primes, I still couldn't find a
-divisor for 10⁹⁹⁹⁹⁹⁹⁹⁹+37.
+I took a pretty simple approach: for each prime number p, calculate
+10¹⁰⁰⁰⁰⁰⁰⁰⁰%p (the remainder after dividing by p). Then I used the result to
+create a partial [sieve][3]. After the first 300,000 primes, I still couldn't
+find a divisor for 10¹⁰⁰⁰⁰⁰⁰⁰⁰+37.
 
 [3]: http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
 
 ## Update
 
-10⁹⁹⁹⁹⁹⁹⁹⁹+3 is divisible by 6870527 (the 468407th prime)!  The next one
+10¹⁰⁰⁰⁰⁰⁰⁰⁰+37 is divisible by 6,870,527 (the 468,407th prime). The next one
 without a known divisor is 10⁹⁹⁹⁹⁹⁹⁹⁹+69 (tried to divide by the first
 2,348,559 primes, no factors found so far).
 
-Here's the smallest prime divisor for the first few 100,000,000-digit integers
-(`I` = 10⁹⁹⁹⁹⁹⁹⁹⁹):
+Here's the smallest prime divisor for the first few 100,000,001-digit integers
+(`I` = 10¹⁰⁰⁰⁰⁰⁰⁰⁰):
 
     .------------------.
     | number | divisor |
@@ -101,5 +100,4 @@ Here's the smallest prime divisor for the first few 100,000,000-digit integers
     | 66 + I |       2 |
     | 67 + I |      17 |
     | 68 + I |       2 |
-    | 69 + I | ??????? |
     '------------------'
