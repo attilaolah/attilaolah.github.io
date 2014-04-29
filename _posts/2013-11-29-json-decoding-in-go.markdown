@@ -269,22 +269,24 @@ type Record struct {
     URL    string `json:"url"`
 }
 
-type Author struct {
+type Author author
+
+type author struct {
     ID    uint64 `json:"id"`
     Email string `json:"email"`
 }
 
 func (a *Author) UnmarshalJSON(b []byte) (err error) {
-    err = json.Unmarshal(b, a); err == nil {
+	j, s, n := author{}, "", uint64(0)
+    if err = json.Unmarshal(b, &j); err == nil {
+		*a = Author(j)
         return
     }
-    var s string
-    err = json.Unmarshal(b, &s); err == nil {
+    if err = json.Unmarshal(b, &s); err == nil {
         a.Email = s
         return
     }
-    var n uint64
-    err = json.Unmarshal(b, &n); err == nil {
+    if err = json.Unmarshal(b, &n); err == nil {
         a.ID = n
     }
     return
@@ -312,6 +314,17 @@ func Decode(r io.Reader) (x Records, err error) {
     return
 }
 {% endhighlight %}
+
+**NOTE:** Thanks to [Riobard Zhan][riobard] for pointing out a mistake in the
+[previous version][prev] of this article. The reason I have two types above,
+`Author` and `author`, is to avoid an infinite recursion when unmarshalling
+into an `Author` instance. The private `author` type is used to trigger the
+built-in JSON unmarshal machinery, while the exported `Author` type is used to
+implement the `json.Unmarshaler` interface. The trick with the conversion near
+the top of the `Unmarshal` is used to avoid the recursion.
+
+[riobard]: http://riobard.com/
+[prev]: http://git.io/CXgbWw
 
 ## What about encoding?
 
