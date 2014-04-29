@@ -269,12 +269,13 @@ type Record struct {
     URL    string `json:"url"`
 }
 
-type Author author
-
-type author struct {
+type Author struct {
     ID    uint64 `json:"id"`
     Email string `json:"email"`
 }
+
+// Used to avoid recursion in UnmarshalJSON below.
+type author Author
 
 func (a *Author) UnmarshalJSON(b []byte) (err error) {
 	j, s, n := author{}, "", uint64(0)
@@ -315,9 +316,9 @@ func Decode(r io.Reader) (x Records, err error) {
 }
 {% endhighlight %}
 
-You can try the above example in the [Go playground][play].
+You can [go play with this][play].
 
-[play]: http://play.golang.org/p/0Pz0yyil3i
+[play]: http://play.golang.org/p/mK3iWoWsMN
 
 **NOTE:** Thanks to [Riobard Zhan][riobard] for pointing out a mistake in the
 [previous version][prev] of this article. The reason I have two types above,
