@@ -315,6 +315,10 @@ func Decode(r io.Reader) (x Records, err error) {
 }
 {% endhighlight %}
 
+You can try the above example in the [Go playground][play].
+
+[play]: http://play.golang.org/p/0Pz0yyil3i
+
 **NOTE:** Thanks to [Riobard Zhan][riobard] for pointing out a mistake in the
 [previous version][prev] of this article. The reason I have two types above,
 `Author` and `author`, is to avoid an infinite recursion when unmarshalling
