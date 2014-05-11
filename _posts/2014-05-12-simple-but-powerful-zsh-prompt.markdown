@@ -6,7 +6,7 @@ tags:
 - linux
 ---
 
-Over the years, I've been changing my Bash prompt every now and then. Since I
+Over the years, I've been changing my bash prompt every now and then. Since I
 switched to [zsh][2] last year, and started using [oh-my-zsh][3], I've slowly
 put together the perfect prompt for my needs.
 
