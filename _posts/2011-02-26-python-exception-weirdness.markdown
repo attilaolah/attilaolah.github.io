@@ -37,7 +37,7 @@ Exception: <C: str>
 
 The traceback displays the Exception class's name (`__class__.__name__`), and
 the parameters passed when instantiating the exception, *converted to string*
-(`str()`)! The same thing happens in both Python 2.X and 3.X.
+(`str()`)! The same thing happens in both Python 2 and Python 3.
 
 The thing is, I'd expect `repr()` instead of `str()`. But good to know how it
 works. If I want to see consistent output in both `pdb` and tracebacks, I just
