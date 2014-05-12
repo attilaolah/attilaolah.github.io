@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simple but powerful zsh prompt
+title: A simple but powerful zsh prompt
 tags:
 - programming
 - linux
