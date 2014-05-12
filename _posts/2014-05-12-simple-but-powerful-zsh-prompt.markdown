@@ -22,16 +22,22 @@ visibility):
 
 ### Parts of the left prompt, from left to right:
 
-* `1z` shows that there is one background job (`vim`), suspended with
-  <kbd>Ctrl</kbd>+<kbd>Z</kbd>, hence the `z` — this one goes away if there are
-  no background jobs
-* `tp` is the hostname, useful to distinguish between `ssh` sessions
-* `git:master` shows that I'm in a git repo and that `master` is the currently
-  active branch, this one is *very* useful
-* the `…` after the git branch indicates that there are unstaged changes or
-  newly added files — this also goes away in a clean tree
-* the next part is just `$PWD` collapsed with `~` when applicable
-* the final green `$` shows that I'm not the root user
+* <code style="background: black"><span style="color: #c4a000;">1</span><span style="color: #c00;">z</span></code>
+  shows that there is one background job (`vim`), suspended with
+  <kbd>Ctrl</kbd>+<kbd>Z</kbd> (hence the `z`) — this goes away if there are no
+  background jobs
+* <code style="background: black; color: #06989a;">tp</code>
+  is the hostname, useful to tell apart `ssh` sessions
+* <code style="background: black; color: #aaa;"><span style="color: #3465a4;">git</span>:<span style="color: #c00;">master</span></code>
+  shows that I'm in a git repo and that `master` is the currently active
+  branch, this one is *very* useful
+* <code style="background: black; color: #c4a000;">…</code>
+  after the git branch indicates that there are unstaged changes or newly added
+  files — this goes away in a clean tree
+* <code style="background: black; color: #aaa;">~/github.com/attilaolah/…</code>
+  is just the `$PWD` collapsed with `~` when applicable
+* <code style="background: black; color: #4e9a06;">$</code>
+  shows that I'm not the root user
 * there's a trailing space to make it a word boundary when selecting with the
   mouse
 
@@ -41,19 +47,18 @@ window.
 
 ### Parts of the right prompt, from right to left:
 
-* the time, including seconds, which is useful when I forget to prefix a long
-  running command with `time`, but I still want to know how long did it take to
-  complete (there's also a ZSH plug-in for this)
-* the red `=` before the time indicates a non-zero exit status from the
-  previous command
+* <code style="background: black; color: #aaa;">1:23:52</code>
+  is the time, which is useful when I forget to prefix a long
+  running command with `time`
+* <code style="background: black; color: #c00;">=</code>
+  before the time indicates a non-zero exit status from the previous command
 
-My prompt does not contain too many things, mostly in order to keep it fast. I
-used to have a plug-in that would display various stats about the current git
-repo in the right prompt, but it made the prompt reloads noticeably smaller,
-and this is not something I can afford in a shell. Everything must be fast
-enough for me not to notice it.
+I used to have `git_prompt_status` in the right prompt (that shows a summary of
+changes in the current repo), but it was making the terminal noticeably slower,
+which is not something I tolerate. Hitting enter in a terminal must feel
+instant.
 
-If anyone likes it, here's the `.zshrc` recipe:
+### The source, if anyone likes it:
 
 {% highlight bash %}
 ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[blue]%}git%{$reset_color%}:%{$fg[red]%}"
