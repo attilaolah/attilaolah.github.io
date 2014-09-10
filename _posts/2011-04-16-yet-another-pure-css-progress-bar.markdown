@@ -24,6 +24,7 @@ Demo code [can be found here][3].
 [3]: /demos/pure-css-progress-bar.html
 
 Tested with:
+
 * Chromium/Chrome 12
 * Firefox 4
 * Opera 11
