@@ -201,3 +201,9 @@ Note that this is only practical when you want to rename one or two fields in a
 big struct. When renaming all fields, it is often simpler (and cleaner) to just
 create a new object altogether (i.e. a *serialiser*) and avoid the struct
 composition.
+
+### Related posts:
+
+* [JSON decoding in Go][7]
+
+[7]: /2013/11/29/json-decoding-in-go/

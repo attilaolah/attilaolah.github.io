@@ -490,3 +490,10 @@ Authors can now be encoded/decoded to/from a number of formats:
 </author>
 <author id="5678"/>
 {% endhighlight %}
+
+### Related posts:
+
+* [JSON and struct composition in Go][15]
+
+
+[15]: /2014/09/10/json-and-struct-composition-in-go/
