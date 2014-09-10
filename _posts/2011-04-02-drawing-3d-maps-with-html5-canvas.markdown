@@ -12,11 +12,11 @@ Today I had some free time, so I played around with the
 easy to draw 3D-looking buildings on a canvas. After an hour or two of coding,
 I was able to render actual buildings from the OSM database:
 
-<div class="img center">
-  <img src="/images/random/cmap-canvas-buildings.png" alt="Buildings rendered on a canvas" class="white" />
-  <br/>
-  <em>Buildings rendered on a canvas</em>
-</div>
+{:.center}
+![Buildings rendered on a canvas][1]
+Buildings rendered on a canvas
+
+[1]: /images/2011/cmap-canvas-buildings.png
 
 On the above picture, red buildings are "primary" ones (i.e. ones with an
 address or a house number), while the grey ones are "secondary". **A demo
@@ -26,19 +26,20 @@ browsers).
 
 As a comparison, here's how [Mapnik](http://mapnik.org/) renders the same data:
 
-<div class="img center">
-  <img src="/images/random/mapnik-osm-buildings.png" alt="Same map rendered by Mapnik" class="white" />
-  <br/>
-  <em>Same map rendered by <a href="http://mapnik.org/">Mapnik</a></em>
-</div>
+{:.center}
+![Same map rendered by Mapnik][2]
+Same map rendered by [Mapnik][3]
+
+[2]: /images/2011/mapnik-osm-buildings.png
+[3]: //mapnik.org/
 
 Even nicer is the result when it is drawn over Mapnik's tiles:
 
-<div class="img center">
-  <img src="/images/random/mapnik-canvas-combined-buildings.png" alt="The two images merged together" class="white" />
-  <br/>
-  <em>The two images merged together</em>
-</div>
+{:.center}
+![The two images merged together][4]
+The two images merged together
+
+[4]: /images/2011/mapnik-canvas-combined-buildings.png
 
 The above result could be improved by not rendering any of the buildings by
 Mapnik, only the ground, & the roads. Then the canvas renderer could just place
