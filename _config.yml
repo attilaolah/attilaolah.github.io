@@ -1,4 +1,5 @@
 permalink: pretty
+timezone: Europe/Belgrade
 markdown: kramdown
 paginate: 6
 exclude:
