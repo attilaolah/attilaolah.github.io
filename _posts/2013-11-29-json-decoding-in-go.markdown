@@ -176,12 +176,12 @@ func Decode(r io.Reader) (x *Record, err error) {
         return
     }
     var s string
-    err = json.Unmarshal(x.AuthorRaw, &s); err == nil {
+    if err = json.Unmarshal(x.AuthorRaw, &s); err == nil {
         x.AuthorEmail = s
         return
     }
     var n uint64
-    err = json.Unmarshal(x.AuthorRaw, &n); err == nil {
+    if err = json.Unmarshal(x.AuthorRaw, &n); err == nil {
         x.AuthorID = n
     }
     return
@@ -231,16 +231,16 @@ func Decode(r io.Reader) (x *Record, err error) {
     if err = json.NewDecoder(r).Decode(x); err != nil {
         return
     }
-    err = json.Unmarshal(x.AuthorRaw, &x.Author); err == nil {
+    if err = json.Unmarshal(x.AuthorRaw, &x.Author); err == nil {
         return
     }
     var s string
-    err = json.Unmarshal(x.AuthorRaw, &s); err == nil {
+    if err = json.Unmarshal(x.AuthorRaw, &s); err == nil {
         x.Author.Email = s
         return
     }
     var n uint64
-    err = json.Unmarshal(x.AuthorRaw, &n); err == nil {
+    if err = json.Unmarshal(x.AuthorRaw, &n); err == nil {
         x.Author.ID = n
     }
     return
