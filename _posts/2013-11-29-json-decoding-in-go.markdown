@@ -21,7 +21,7 @@ Take this example. We want to decode a JSON object that looks like this:
 
 {% highlight json %}
 {
-  "author": "attila@attilaolah.eu",
+  "author": "attilaolah@gmail.com",
   "title":  "My Blog",
   "url":    "http://attilaolah.eu"
 }
@@ -49,7 +49,7 @@ input stream that looks like this:
 
 {% highlight json %}
 [{
-  "author": "attila@attilaolah.eu",
+  "author": "attilaolah@gmail.com",
   "title":  "My Blog",
   "url":    "http://attilaolah.eu"
 }, {
@@ -193,7 +193,7 @@ want to accept a third format:
 
 {% highlight json %}
 [{
-  "author": "attila@attilaolah.eu",
+  "author": "attilaolah@gmail.com",
   "title":  "My Blog",
   "url":    "http://attilaolah.eu"
 }, {
@@ -347,9 +347,9 @@ type Author struct {
 }
 {% endhighlight %}
 
-Now `1234` will be turned into `{"id":1234}`, `"attila@attilaolah.eu"` to
-`{"email":"attila@attilaolah.eu"}`, and
-`{"id":1234,"email":"attila@attilaolah.eu"}` will be left intact when
+Now `1234` will be turned into `{"id":1234}`, `"attilaolah@gmail.com"` to
+`{"email":"attilaolah@gmail.com"}`, and
+`{"id":1234,"email":"attilaolah@gmail.com"}` will be left intact when
 re-encoding objects.
 
 ## Using `json.Marshaler`
@@ -383,10 +383,10 @@ func (a *Author) MarshalJSON() ([]byte, error) {
 }
 {% endhighlight %}
 
-Now `1234`, `"attila@attilaolah.eu"` and
-`{"id":1234,"email":"attila@attilaolah.eu"}` are left intact, but `{"id":1234}`
-is turned into `1234` and `{"email":"attila@attilaolah.eu"}` is turned into
-`"attila@attilaolah.eu"`.
+Now `1234`, `"attilaolah@gmail.com"` and
+`{"id":1234,"email":"attilaolah@gmail.com"}` are left intact, but `{"id":1234}`
+is turned into `1234` and `{"email":"attilaolah@gmail.com"}` is turned into
+`"attilaolah@gmail.com"`.
 
 Another way to do the same would be to have two types, one that always encodes
 to an object (`Author`), and one that encodes to the minimal representation
@@ -474,7 +474,7 @@ Authors can now be encoded/decoded to/from a number of formats:
 {% highlight json %}
 [{
   "id": 1234,
-  "email": "attila@attilaolah.eu"
+  "email": "attilaolah@gmail.com"
 },
   "nospam@westartup.eu",
   5678
@@ -483,7 +483,7 @@ Authors can now be encoded/decoded to/from a number of formats:
 
 {% highlight xml %}
 <author id="1234">
-  <email>attila@attilaolah.eu</email>
+  <email>attilaolah@gmail.com</email>
 </author>
 <author>
   <email>nospam@westartup.eu</email>

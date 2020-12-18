@@ -139,7 +139,7 @@ structs, we can decode into a combined struct and use the values separately:
 
 {% highlight go %}
 json.Unmarshal([]byte(`{
-  "url": "attila@attilaolah.eu",
+  "url": "attilaolah@gmail.com",
   "title": "Attila's Blog",
   "visitors": 6,
   "page_views": 14
