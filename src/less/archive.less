@@ -1,6 +1,6 @@
 @import "mixins.less";
 
-@leftcol: 140px;
+@leftcol: 156px;
 
 #archive {
   position: relative;
@@ -14,7 +14,8 @@
         margin-top: 24px;
       }
       h2 {
-        padding-top: 16px;
+        padding-top: 43px;
+        margin-top: -25px;
       }
     }
   }
@@ -23,7 +24,7 @@
     display: block;
     width: @leftcol;
     text-align: right;
-    margin: 8px 0 0 -@leftcol;
+    margin: 6px 0 0 -@leftcol;
   }
   h2 {
     margin: 0 0 0 8px;
@@ -32,6 +33,7 @@
     a {
       color: #333;
       position: relative;
+      padding-top: 4px;
       &::before {
         content: " ";
         background: #fff;
@@ -88,7 +90,7 @@
     left: @leftcol + 5px;
   }
   &::before {
-    top: 32px;
+    top: 16px;
     width: 6px;
     height: 6px;
     border-top: 1px solid #999;

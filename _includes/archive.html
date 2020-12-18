@@ -1,6 +1,6 @@
 {% capture year %}{{ page.date | date: "%Y" | divide_by: 2 }}{% endcapture %}
 <li class="year-{{ year }}" data-year="{{ year }}"{% if page.tags %} data-tags="{{ page.tags | join: " " }}"{% endif %}>
-  <time class="condensed thin" datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%d %B" }}</time>
+  <time class="condensed thin" datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%B %d" }}</time>
   <h2 class="condensed">
     <a href="{{ page.url }}">{{ page.title }}</a>
   </h2>
