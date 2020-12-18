@@ -51,10 +51,11 @@ it against `libbluetooth`.
 * Google brings me to [Go Issue #1880][16]. It is already fixed.
 * Scrolling down, I notice [this comment][17].
 
-> I meet this problem too,when compile go for arm,there are some problem
-> `eg:# runtime/cgo`<br>
-> `cc1: error: unrecognized command line option '-marm'`<br>
-> when compiling finished,cgo.a for arm not creat.
+> I meet this problem too, when compile go for arm, there are some problems, eg:
+> ```
+> # runtime/cgo cc1: error: unrecognized command line option '-marm'
+> ````
+> when compiling finished, cgo.a for arm not creat.
 
 And [the answer][18]:
 
