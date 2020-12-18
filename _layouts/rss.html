@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Attila Oláh</title>
-    <link>http://attilaolah.eu/</link>
-    <atom:link href="http://attilaolah.eu/rss.xml" rel="self" type="application/rss+xml" />
+    <link>https://attilaolah.eu/</link>
+    <atom:link href="https://attilaolah.eu/rss.xml" rel="self" type="application/rss+xml" />
     <description>Full-time dad, part-time web developer.</description>
     <language>en-gb</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
@@ -11,10 +11,10 @@
     {% for post in site.posts %}
     <item>
       <title>{{ post.title }}</title>
-      <link>http://attilaolah.eu{{ post.url }}</link>
+      <link>https://attilaolah.eu{{ post.url }}</link>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
       <author>attilaolah@gmail.com (Attila Oláh)</author>
-      <guid>http://attilaolah.eu{{ post.id }}</guid>
+      <guid>https://attilaolah.eu{{ post.id }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}

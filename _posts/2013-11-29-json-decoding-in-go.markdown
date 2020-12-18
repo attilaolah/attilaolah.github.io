@@ -23,7 +23,7 @@ Take this example. We want to decode a JSON object that looks like this:
 {
   "author": "attilaolah@gmail.com",
   "title":  "My Blog",
-  "url":    "http://attilaolah.eu"
+  "url":    "https://attilaolah.eu"
 }
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ input stream that looks like this:
 [{
   "author": "attilaolah@gmail.com",
   "title":  "My Blog",
-  "url":    "http://attilaolah.eu"
+  "url":    "https://attilaolah.eu"
 }, {
   "author": 1234567890,
   "title":  "Westartup",
@@ -195,7 +195,7 @@ want to accept a third format:
 [{
   "author": "attilaolah@gmail.com",
   "title":  "My Blog",
-  "url":    "http://attilaolah.eu"
+  "url":    "https://attilaolah.eu"
 }, {
   "author": 1234567890,
   "title":  "Westartup",
