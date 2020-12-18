@@ -14,7 +14,7 @@ vineyards of [Berghausen][1], in [Styria][2], [Austria][3].
 [1]: https://en.wikipedia.org/wiki/Berghausen,_Austria
 [2]: https://en.wikipedia.org/wiki/Styria
 [3]: https://en.wikipedia.org/wiki/Austria
-[18]: http://www.coactivate.org/projects/buschenschanksprint-2011/project-home
+[18]: https://www.coactivate.org/projects/buschenschanksprint-2011/project-home
 
 We had some great time, visited some [Buschenschänke][4], and, of course,
 wrote a lot of code. I mostly worked on code that was related to the project
@@ -39,7 +39,7 @@ their new [S3][15]-compliant database.
 [11]: https://twitter.com/annegilles
 [12]: https://twitter.com/rnixy
 [13]: https://twitter.com/madeofbunnies
-[14]: http://agx.me/
+[14]: https://agx.me/
 [15]: https://en.wikipedia.org/wiki/Amazon_S3
 
 {:.center}

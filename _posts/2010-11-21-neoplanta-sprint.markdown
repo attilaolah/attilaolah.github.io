@@ -11,12 +11,12 @@ not really an expert in [Plone][4], but I have had some experience with
 [<del>Zope 3</del>][5] [<ins>BlueBream</ins>][6], and since the sprint is
 taking place in my favourite city, I decided to take part.
 
-[1]: http://www.coactivate.org/projects/neoplanta-sprint
+[1]: https://www.coactivate.org/projects/neoplanta-sprint
 [2]: https://en.wikipedia.org/wiki/Novi_Sad
 [3]: https://en.wikipedia.org/wiki/Serbia
 [4]: https://plone.org/
-[5]: http://www.zope.org/the-world-of-zope
-[6]: http://bluebream.zope.org/
+[5]: https://www.zope.org/the-world-of-zope
+[6]: https://bluebream.zope.org/
 
 The event is taking place at *Hotel Putnik*, in the city centre. I'm arriving
 today afternoon, about 5pm. Looking forward to meet new people.
@@ -26,7 +26,7 @@ today afternoon, about 5pm. Looking forward to meet new people.
 View from Petrovaradin Fortress at night. Picture: EESTEC.
 ][8]
 
-[8]: http://eestec.net/news-and-offers/ecm-2010-in-general
+[8]: https://eestec.net/news-and-offers/ecm-2010-in-general
 
 {:.center}
 [![Petrovaradin Fortress at night](/images/2010/tvrdjava-at-night-small.jpg)

@@ -14,8 +14,8 @@ Campfire for [work][5].
 [1]: https://github.com/aniero/camper_van
 [2]: https://campfirenow.com/
 [3]: https://en.wikipedia.org/wiki/Internet_Relay_Chat
-[4]: http://www.irssi.org/
-[5]: http://www.vemble.com/
+[4]: https://www.irssi.org/
+[5]: https://www.vemble.com/
 
 The following is a simple script that starts the server (if not already
 running) and then opens up *irssi* in a new *gnome-terminal* session.

@@ -12,8 +12,8 @@ by squaring][1], which greatly reduces the number of steps it is needed for a
 given imput. Computing large [exponents modulo][2] a number is even faster and
 requires less memory, as it reduces the size of the resulting integer.
 
-[1]: http://en.wikipedia.org/wiki/Exponentiation_by_squaring
-[2]: http://en.wikipedia.org/wiki/Modular_exponentiation
+[1]: https://en.wikipedia.org/wiki/Exponentiation_by_squaring
+[2]: https://en.wikipedia.org/wiki/Modular_exponentiation
 
 The following implementation works for both Python 3 and python 2 (although in
 Python 3 it will run faster):
@@ -42,7 +42,7 @@ show you how it actually calculates the result:
 And finally, if you're wondering where would you need madular exponentiation,
 well, it comes in handy for example when generating [Pratt certificates][3].
 
-[3]: http://en.wikipedia.org/wiki/Primality_certificate#Pratt_certificates
+[3]: https://en.wikipedia.org/wiki/Primality_certificate#Pratt_certificates
 
 ## Update
 

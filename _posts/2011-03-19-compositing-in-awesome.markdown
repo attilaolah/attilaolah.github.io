@@ -34,8 +34,8 @@ my awesome's color theme. The buttons are smaller, good for laptop screens.
 With the light shadows and fading provided by `xcompmgr`, this engine looks
 great and works really well with awesome.
 
-[3]: http://gnome-look.org/content/show.php/Aurora+Gtk+Engine?content=56438
-[4]: http://gnome-look.org/content/show.php/Equinox+GTK+Engine?content=121881
+[3]: https://gnome-look.org/content/show.php/Aurora+Gtk+Engine?content=56438
+[4]: https://gnome-look.org/content/show.php/Equinox+GTK+Engine?content=121881
 
 {:.center}
 ![Awesome WM widgets][2]

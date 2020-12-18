@@ -11,11 +11,11 @@ has some features (like re-using connections, aka [HTTP Keep-Alive][3]) that
 are not present in the [Python 2][4] version of `urllib` and `urllib2`.
 Another package that provides HTTP Keep-Alive is [httplib2][5].
 
-[1]: http://pypi.python.org/pypi/urllib3
-[2]: http://pypi.python.org/pypi/
-[3]: http://en.wikipedia.org/wiki/Keepalive
-[4]: http://www.python.org/
-[5]: http://pypi.python.org/pypi/httplib2
+[1]: https://pypi.python.org/pypi/urllib3
+[2]: https://pypi.python.org/pypi/
+[3]: https://en.wikipedia.org/wiki/Keepalive
+[4]: https://www.python.org/
+[5]: https://pypi.python.org/pypi/httplib2
 
 ## Benchmark results on a single host
 
@@ -43,10 +43,10 @@ Google Docs Spreadsheet and generate a nice chart).
 If you run it, it will also prent the result summary, something like this:
 
     Starting urllib2/urllib3 benchmark...
-     * crawling: http://theoatmeal.com/
-     * crawling: http://theoatmeal.com/comics/party_gorilla
-     * crawling: http://theoatmeal.com/comics/slinky
-     * crawling: http://theoatmeal.com/blog/floss
+     * crawling: https://theoatmeal.com/
+     * crawling: https://theoatmeal.com/comics/party_gorilla
+     * crawling: https://theoatmeal.com/comics/slinky
+     * crawling: https://theoatmeal.com/blog/floss
      ...
     Finishing benchmark, writing results to file `results.cvs`
     Total times:

@@ -17,8 +17,8 @@ it against `libbluetooth`.
 * Link against `libbluetooth`. Needs custom `ldflags`.
 * Do all this on [Wercker].
 
-[Raspberry Pi]: http://www.raspberrypi.org/
-[Wercker]: http://wercker.com/
+[Raspberry Pi]: https://www.raspberrypi.org/
+[Wercker]: https://wercker.com/
 
 
 ## Steps I go through
@@ -72,8 +72,8 @@ because GCC doesn't speak ARM. We can fix that. We have Gentoo. We have
 [mitchellh]: https://twitter.com/mitchellh
 [deeeet]: https://twitter.com/deeeet
 
-[1]: http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go
-[2]: http://dave.cheney.net/2013/07/09/an-introduction-to-cross-compilation-with-go-1-1
+[1]: https://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go
+[2]: https://dave.cheney.net/2013/07/09/an-introduction-to-cross-compilation-with-go-1-1
 [3]: https://github.com/laher/goxc
 [4]: https://github.com/laher/goxc/pull/54
 [5]: https://github.com/karalabe/xgo
@@ -84,12 +84,12 @@ because GCC doesn't speak ARM. We can fix that. We have Gentoo. We have
 [10]: https://github.com/tcnksm/wercker-step-gox
 [11]: https://app.wercker.com/#applications/54391f7d84570fc622001320/tab/details
 [12]: https://app.wercker.com/#applications/5438e27b2131b5070f0d38bc/tab/details
-[13]: http://golang.org/doc/go1.4#gocmd
+[13]: https://golang.org/doc/go1.4#gocmd
 [14]: https://app.wercker.com/#applications/5492f12e6b3ba8733d986071/tab/details
 [16]: https://golang.org/issue/1880
 [17]: https://github.com/golang/go/issues/1880#issuecomment-66056700
 [18]: https://github.com/golang/go/issues/1880#issuecomment-66056701
-[19]: http://www.gentoo.org/proj/en/base/embedded/cross-development.xml
+[19]: https://www.gentoo.org/proj/en/base/embedded/cross-development.xml
 
 
 ## Installing the ARM toolchain under Gentoo
@@ -121,7 +121,7 @@ that important, I stopped after I hit the first few failures.
 * Screw that. I don't need i386. Let's just stick with ARM. One less problem.
 
 
-[15]: http://packages.ubuntu.com/precise/libs/libc6-dev
+[15]: https://packages.ubuntu.com/precise/libs/libc6-dev
 
 Apparently, compiling `cgo` code to multiple targets on the same host requires
 a true multilib system. One that has a multilib GCC. My Gentoo installation is
@@ -133,5 +133,5 @@ support, I need a separate container for each architecture — not so fun.
 
 ## Some useful links
 
-* [Raspberri Pi - Gentoo Wiki](http://wiki.gentoo.org/wiki/Raspberry_Pi)
-* [Experimenting with Go on Android](http://river.styx.org/ww/2011/03/godroid) (March 2011.)
+* [Raspberri Pi - Gentoo Wiki](https://wiki.gentoo.org/wiki/Raspberry_Pi)
+* [Experimenting with Go on Android](https://river.styx.org/ww/2011/03/godroid) (March 2011.)

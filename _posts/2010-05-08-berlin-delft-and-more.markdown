@@ -30,8 +30,8 @@ context processor. I'll write about it in details when it gets released (that
 is, when I find some time to improve test coverage and review the
 documentation.)
 
-[5]: http://www.sproud.de/
-[6]: http://wsgi.org/
+[5]: https://www.sproud.de/
+[6]: https://wsgi.org/
 
 
 During my stay I tested a few toolkits and learned some new techniques. Here
@@ -51,7 +51,7 @@ are the highlightn, including some CSS and JavaScript tricks:
   publicly forking projects on [GitHub][8] and [BitBucket][9].
 * Use [YAML][10], even more.
 
-[7]: http://lesscss.org/
+[7]: https://lesscss.org/
 [8]: https://github.com/
 [9]: https://bitbucket.com/
 [10]: https://yaml.org/
@@ -61,7 +61,7 @@ experiences and friends.
 
 [11]: https://en.wikipedia.org/wiki/Delft
 [12]: https://en.wikipedia.org/wiki/Netherlands
-[13]: http://www.vemble.com/
+[13]: https://www.vemble.com/
 
 {:.center}
 [![Hermina and I](/images/2010/antwerp-zoo-small.jpg)

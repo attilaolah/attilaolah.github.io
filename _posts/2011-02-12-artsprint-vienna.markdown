@@ -10,9 +10,9 @@ The [artsprint][1] was a one-week [Python][2]/[Pyramid][2]/[Node][3] sprint at
 the [\]a\[ Academy of Fine Arts][8], [Vienna][9]. 27 Participants were mostly
 [BDA][4] people, with the addition of some other Python enthusiasts.
 
-[1]: http://www.coactivate.org/projects/artsprint2011
+[1]: https://www.coactivate.org/projects/artsprint2011
 [2]: https://www.python.org/
-[3]: http://docs.pylonsproject.org/
+[3]: https://docs.pylonsproject.org/
 [8]: https://en.wikipedia.org/wiki/Academy_of_Fine_Arts_Vienna
 [9]: https://en.wikipedia.org/wiki/Vienna
 
@@ -26,7 +26,7 @@ We've been working on a stack of libraries that most of use on a daily basis,
 focusing mainly on writing documentation, fixing tests, and converting the
 whole stack from `repoze.bfg` to Pyramid.
 
-[4]: http://bluedynamics.com/
+[4]: https://bluedynamics.com/
 
 *And we even had a [button machine][7].*
 
@@ -43,7 +43,7 @@ As a result, we:
  * spent some quality time at the [Metalab][6]
  * had loads of fun in Vienna!
 
-[5]: http://trac.buildbot.net/
+[5]: https://trac.buildbot.net/
 [6]: https://en.wikipedia.org/wiki/Metalab
 
 {:.center}

@@ -29,12 +29,12 @@ Ezután
 * telepítds az adb illesztőprogramot (letölthető [itt][5] vagy [itt][6])
 * töltsd le és indítsd el a [föltörő programot][7] ([alőző verzió][8])
 
-[3]: http://drivers.softpedia.com/progDownload/HTC-Sync-Manager-USB-Driver-20410-Download-240924.html
-[4]: http://forum.xda-developers.com/showthread.php?t=943726
-[5]: http://downloads.unrevoked.com/recovery/android-usb-driver.zip
-[6]: http://www.sieempi.eu/data/android-usb-driver.zip
-[7]: http://www.sieempi.eu/data/HTC_Desire_Unlock_v0.9.5.rar
-[8]: http://www.sieempi.eu/data/HTC_Desire_Unlock_v0.9.4.rar
+[3]: https://drivers.softpedia.com/progDownload/HTC-Sync-Manager-USB-Driver-20410-Download-240924.html
+[4]: https://forum.xda-developers.com/showthread.php?t=943726
+[5]: https://downloads.unrevoked.com/recovery/android-usb-driver.zip
+[6]: https://www.sieempi.eu/data/android-usb-driver.zip
+[7]: https://www.sieempi.eu/data/HTC_Desire_Unlock_v0.9.5.rar
+[8]: https://www.sieempi.eu/data/HTC_Desire_Unlock_v0.9.4.rar
 
 VirtualBox alatt oda kell figyelni arra, hogy az USB port továbbítva legyen a
 vendég oprendszernek.

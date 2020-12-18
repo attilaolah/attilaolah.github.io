@@ -9,8 +9,8 @@ Here is a list of Vim scripts I picked up in the past few years that I find
 very useful. All of them can be found as [submodules][1] in my [dotvim
 repo][2].
 
-[1]: http://git-scm.com/book/en/Git-Tools-Submodules
-[2]: http://git.io/mI3qWg
+[1]: https://git-scm.com/book/en/Git-Tools-Submodules
+[2]: https://git.io/mI3qWg
 
 I am attaching my own rating to the scripts, but these aren't really objective.
 They are merely an indication how much I ended up using the scripts. For
@@ -19,7 +19,7 @@ just prefer to use git from the command line rather than from Vim.
 
 ### [Tim Pope][3]'s scripts, in order of usefulness:
 
-[3]: http://tpo.pe/
+[3]: https://tpo.pe/
 
 * [pathogen][T0] is the single most useful plug-in for Vim! ★★★★★
 * [repeat][T7] for repeating plug-in maps ★★★★★
@@ -76,10 +76,10 @@ just prefer to use git from the command line rather than from Vim.
 [S9]: https://github.com/kevinw/pyflakes-vim
 [S10]: https://github.com/attilaolah/pyflakes-vim
 
-[4]: http://lesscss.org/
+[4]: https://lesscss.org/
 
 Check out my [dotvim repo][5] or [this screencast][6] by Tim Pope for tips on
 how to put them all together.
 
 [5]: https://github.com/attilaolah/dotvim
-[6]: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+[6]: https://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/

@@ -10,7 +10,7 @@ planning a business, playing the [Kinect][1], beer, [mandarins][2], [lots][3]
 [of][4] [interesting][5] [people][6], and planning various cow usage.
 
 [1]: https://en.wikipedia.org/wiki/Kinect
-[2]: http://en.wikipedia.org/wiki/Mandarin_orange
+[2]: https://en.wikipedia.org/wiki/Mandarin_orange
 [3]: https://twitter.com/JohnGBeckett
 [4]: https://twitter.com/bilyachenko
 [5]: https://twitter.com/leoexter

@@ -9,8 +9,8 @@ Incidentally, decoding JSON data (or really, almost any data structure) is
 really easy in [Go][0] (golang). We simply call [`json.Unmarshal(…)`][1] and
 boom!  We have nice data structures.
 
-[0]: http://golang.org
-[1]: http://golang.org/pkg/encoding/json/#Unmarshal
+[0]: https://golang.org
+[1]: https://golang.org/pkg/encoding/json/#Unmarshal
 
 Well, except if our input source is not very well defined (meaning *not
 strictly typed*).
@@ -55,7 +55,7 @@ input stream that looks like this:
 }, {
   "author": 1234567890,
   "title":  "Westartup",
-  "url":    "http://www.westartup.eu"
+  "url":    "https://www.westartup.eu"
 }]
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ input stream that looks like this:
 An quick & easy fix is to decode the `author` field to an `interface{}` and
 then do a [type switch][2]. Something like this:
 
-[2]: http://golang.org/doc/effective_go.html#type_switch
+[2]: https://golang.org/doc/effective_go.html#type_switch
 
 {% highlight go %}
 type Record struct {
@@ -101,8 +101,8 @@ Luckily there's an easy way to fix this: by calling [`Decoder.UseNumber()`][3].
 "UseNumber causes the `Decoder` to unmarshal a number into an `interface{}` as
 a [`Number`][4] instead of as a `float64`" — from [the docs][3].
 
-[3]: http://golang.org/pkg/encoding/json/#Decoder.UseNumber
-[4]: http://golang.org/pkg/encoding/json/#Number
+[3]: https://golang.org/pkg/encoding/json/#Decoder.UseNumber
+[4]: https://golang.org/pkg/encoding/json/#Number
 
 Now our previous example would look something like this:
 
@@ -133,8 +133,8 @@ have ta call [`Decoder.Decode(…)`][5] (or [`json.Unmarshal(…)`][6]) with a
 `*uint64` argument (a pointer to a `uint64`). We could do that simply by
 directly decoding the string representation of the number. Instead of:
 
-[5]: http://golang.org/pkg/encoding/json/#Decoder.Decode
-[6]: http://golang.org/pkg/encoding/json/#Unmarshal
+[5]: https://golang.org/pkg/encoding/json/#Decoder.Decode
+[6]: https://golang.org/pkg/encoding/json/#Unmarshal
 
 {% highlight go %}
         n, err = t.Int64()
@@ -155,8 +155,8 @@ do that, the [`json`][7] package provides a more powerful type:
 message, so we can do it ourselves later. (We can also use it to special-case
 encoding of a value.)
 
-[7]: http://golang.org/pkg/encoding/json/
-[8]: http://golang.org/pkg/encoding/json/#RawMessage
+[7]: https://golang.org/pkg/encoding/json/
+[8]: https://golang.org/pkg/encoding/json/#RawMessage
 
 Here is our example, using `json.RawMessage`:
 
@@ -199,14 +199,14 @@ want to accept a third format:
 }, {
   "author": 1234567890,
   "title":  "Westartup",
-  "url":    "http://www.westartup.eu"
+  "url":    "https://www.westartup.eu"
 }, {
   "author": {
     "id":    1234567890,
     "email": "nospam@westartup.eu"
   },
   "title":  "Westartup",
-  "url":    "http://www.westartup.eu"
+  "url":    "https://www.westartup.eu"
 }]
 {% endhighlight %}
 
@@ -258,7 +258,7 @@ nice if the `Author` type could somehow *decode itself*?
 Implement that by any type, and the `json` package will use that to unmarshal
 your object.
 
-[9]: http://golang.org/pkg/encoding/json/#Unmarshaler
+[9]: https://golang.org/pkg/encoding/json/#Unmarshaler
 
 Let's move the decode logic to the `Author` struct:
 
@@ -318,7 +318,7 @@ func Decode(r io.Reader) (x Records, err error) {
 
 You can [go play with this][play].
 
-[play]: http://play.golang.org/p/mK3iWoWsMN
+[play]: https://play.golang.org/p/mK3iWoWsMN
 
 **NOTE:** Thanks to [Riobard Zhan][riobard] for pointing out a mistake in the
 [previous version][prev] of this article. The reason I have two types above,
@@ -328,8 +328,8 @@ built-in JSON unmarshal machinery, while the exported `Author` type is used to
 implement the `json.Unmarshaler` interface. The trick with the conversion near
 the top of the `Unmarshal` is used to avoid the recursion.
 
-[riobard]: http://riobard.com/
-[prev]: http://git.io/CXgbWw
+[riobard]: https://riobard.com/
+[prev]: https://git.io/CXgbWw
 
 ## What about encoding?
 
@@ -359,7 +359,7 @@ For encoding custom stuff, there's the [`json.Marshaler`][10] interface. It's
 works similarly to `json.Unmarshaler`. You implement it, and the `json` package
 uses it. 
 
-[10]: http://golang.org/pkg/encoding/json/#Marshaler
+[10]: https://golang.org/pkg/encoding/json/#Marshaler
 
 Let's say that we want to save some bandwidth, and always transfer the minimal
 information required to reconstruct the objects by the `json.Unmarshaler`. We
@@ -440,14 +440,14 @@ type Record struct {
 [`time.Time`][11] implements both `json.Marshaler` and `json.Unmarshaler`.
 Timestamps are formatted as [RFC3339][12].
 
-[11]: http://golang.org/pkg/time/#Time
-[12]: http://www.ietf.org/rfc/rfc3339.txt
+[11]: https://golang.org/pkg/time/#Time
+[12]: https://www.ietf.org/rfc/rfc3339.txt
 
 However, it is important to remember that `time.Time` is a struct type, hence
 `json` will never consider it "empty" (`json` will *not* consult
 [`Time.IsZero()`][13])
 
-[13]: http://golang.org/pkg/time/#Time.IsZero
+[13]: https://golang.org/pkg/time/#Time.IsZero
 
 To omit zero timestamps with the `omitempty` tag, use a pointer (i.e.
 `*time.Time`) instead.
@@ -459,7 +459,7 @@ Combine these two, and you have objects that you can expose through an API
 supporting [various encoding formats][14]. Let me finish with a simple yet
 powerful example:
 
-[14]: http://golang.org/pkg/encoding/
+[14]: https://golang.org/pkg/encoding/
 
 {% highlight go %}
 type Author struct {

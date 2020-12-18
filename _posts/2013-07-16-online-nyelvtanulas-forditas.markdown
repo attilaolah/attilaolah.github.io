@@ -45,7 +45,7 @@ gazdái fizetnek a Duolingó-nak, így az ott dolgozó fejlesztőknek sem kell
 éhezniük. No meg persze több befektető is pénzeli őket, [többek között Ashton
 Kutcher][11].
 
-[11]: http://www.post-gazette.com/stories/business/news/ashton-kutcher-backs-cmu-duos-startup-duolingo-641086/
+[11]: https://www.post-gazette.com/stories/business/news/ashton-kutcher-backs-cmu-duos-startup-duolingo-641086/
 
 Persze akinek már jól megy a fordítás, annak van mit fordítania online.
 Folyamatos használat után még a Google fordító is segítséget kér a
@@ -53,7 +53,7 @@ felhasználótól: a [translate.google.com/question][12] oldalon a Google
 lehetőséget ad a fordító rendszer fejlesztésére azoknak, akikről úgy ítéli,
 hogy jól beszélnek legalább két nyelvet.
 
-[12]: http://translate.google.com/question
+[12]: https://translate.google.com/question
 
 {:.center}
 [![Google fordító](/images/2013/google-translate.png)
@@ -65,10 +65,10 @@ Caffeinated][14] és a [MinutePhysics][15] [közös projektjéhez][13] (ajánlan
 mindenki figyelmébe [cgpgrey videóit][16], többnyire már le vannak fordítva
 magyarra.)
 
-[13]: http://translate.minutephysics.com/
-[14]: http://wellcaffeinated.net/
-[15]: http://minutephysics.com/
-[16]: http://cgpgrey.subtitl.us/
+[13]: https://translate.minutephysics.com/
+[14]: https://wellcaffeinated.net/
+[15]: https://minutephysics.com/
+[16]: https://cgpgrey.subtitl.us/
 
 {:.center}
 [![The European Union Explained\* videó fordítása](/images/2013/translate-cgpgrey.png)

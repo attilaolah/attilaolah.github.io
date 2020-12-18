@@ -4,7 +4,7 @@ title: Ash Donaldson on cognitive dissonance
 tags:
 - videos
 player: youtube
-source: http://tedxtalks.ted.com/video/TEDxCanberra-Ash-Donaldson-Cogn
+source: https://tedxtalks.ted.com/video/TEDxCanberra-Ash-Donaldson-Cogn
 embed: |
   <iframe
     src="https://www.youtube.com/embed/NqONzcNbzh8"

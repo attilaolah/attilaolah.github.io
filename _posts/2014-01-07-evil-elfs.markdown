@@ -34,7 +34,7 @@ copy of `libcurl` and build a debug version that has verbose logging enabled by
 default.
 
 {% highlight bash %}
-$ wget http://curl.haxx.se/download/curl-7.34.0.tar.lzma
+$ wget https://curl.haxx.se/download/curl-7.34.0.tar.lzma
 $ lzma -d curl-7.34.0.tar.lzma
 $ cd curl-7.34.0
 $ ./configure --enable-debug
@@ -53,8 +53,8 @@ all connection information, except the transferred payload. To also log the
 payload, have a look at the sample code in [`debug.c`][3] (part of the
 `libcurl` project).
 
-[2]: http://curl.haxx.se/libcurl/c/curl_easy_setopt.html#CURLOPTVERBOSE
-[3]: http://curl.haxx.se/libcurl/c/debug.html
+[2]: https://curl.haxx.se/libcurl/c/curl_easy_setopt.html#CURLOPTVERBOSE
+[3]: https://curl.haxx.se/libcurl/c/debug.html
 
 ## Static (built-in) libs and `objdump`
 
@@ -90,13 +90,13 @@ execution of the app when it feeds the string to be hashed:
 $ gdb
 GNU gdb (Gentoo 7.6.2 p1) 7.6.2
 Copyright (C) 2013 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
 and "show warranty" for details.
 This GDB was configured as "x86_64-pc-linux-gnu".
 For bug reporting instructions, please see:
-<http://bugs.gentoo.org/>.
+<https://bugs.gentoo.org/>.
 (gdb) file ./evil-elf
 (gdb) break boost::uuids::detail::sha1::process_bytes
 (gdb) run
@@ -181,4 +181,4 @@ re-enable them just before the `end`.
 * **lsof** — list open files: `man lsof`
 * `.gdbinit` commands: [this answer on stack exchange][4]
 
-[4]: http://reverseengineering.stackexchange.com/a/3343/3531
+[4]: https://reverseengineering.stackexchange.com/a/3343/3531

@@ -12,11 +12,11 @@ contain both letters and numbers. As simple as it may be, I've decided to make
 it a little more robust by wrapping it in a class that can be configured to
 split words and check patterns for each word.
 
-[1]: http://www.python.org/
+[1]: https://www.python.org/
 
 This is just too simple to be released as a module, but I'll put the code here
 in case anyone needs it. I'm placing it in the [public domain][2].
 
-[2]: http://en.wikipedia.org/wiki/Public_domain
+[2]: https://en.wikipedia.org/wiki/Public_domain
 
 {% gist 4681755 %}

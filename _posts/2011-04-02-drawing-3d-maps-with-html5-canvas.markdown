@@ -8,7 +8,7 @@ summary: "A snippet of code that draws nice, 3D-looking buildings on a map."
 ---
 
 Today I had some free time, so I played around with the
-[OpenStreetMap](http://www.openstreetmap.org/) API. It turns out it's quite
+[OpenStreetMap](https://www.openstreetmap.org/) API. It turns out it's quite
 easy to draw 3D-looking buildings on a canvas. After an hour or two of coding,
 I was able to render actual buildings from the OSM database:
 
@@ -24,7 +24,7 @@ version of the canvas map can be seen
 [here](/demos/cmap/buildings/buildings.html)** (but only by people with decent
 browsers).
 
-As a comparison, here's how [Mapnik](http://mapnik.org/) renders the same data:
+As a comparison, here's how [Mapnik](https://mapnik.org/) renders the same data:
 
 {:.center}
 ![Same map rendered by Mapnik][2]
@@ -50,7 +50,7 @@ While maps rendered on the server side are more compatible with old browsers,
 canvas-based maps can be made more interactive (e.g. hovering or clicking on a
 building could highlight it and pop up a message with the complete address or
 relevant information). Other projects, such as
-[Cartagen](http://cartagen.org/), are capable of rendering a high variety of
+[Cartagen](https://cartagen.org/), are capable of rendering a high variety of
 objects, not just buildings, but they still require a lot of improvements, for
 example the display of road names is note very optimal.
 

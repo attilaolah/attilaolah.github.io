@@ -38,8 +38,8 @@ Very often nobody will care:
 * whether the code passes [linters][1]
 * about [McCabe's complexity][2]
 
-[1]: http://en.wikipedia.org/wiki/Lint_(software)
-[2]: http://en.wikipedia.org/wiki/Cyclomatic_complexity
+[1]: https://en.wikipedia.org/wiki/Lint_(software)
+[2]: https://en.wikipedia.org/wiki/Cyclomatic_complexity
 
 …and in general, it is likely that (other than the programmer) nobody will even
 look at any code.

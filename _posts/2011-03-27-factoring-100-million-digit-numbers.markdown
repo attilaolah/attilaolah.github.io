@@ -10,14 +10,14 @@ Yesterday I figured I'll try to [factor][1] the first few numbers greater than
 hard it is to find the divisors of the first few hundred 100,000,001-digit
 numbers.
 
-[1]: http://en.wikipedia.org/wiki/Integer_factorization
+[1]: https://en.wikipedia.org/wiki/Integer_factorization
 
 I took a pretty simple approach: for each prime number p, calculate
 10¹⁰⁰⁰⁰⁰⁰⁰⁰%p (the remainder after dividing by p). Then I used the result to
 create a partial [sieve][3]. After the first 300,000 primes, I still couldn't
 find a divisor for 10¹⁰⁰⁰⁰⁰⁰⁰⁰+37.
 
-[3]: http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+[3]: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
 
 ## Update
 

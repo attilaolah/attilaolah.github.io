@@ -19,7 +19,7 @@ Awesome WM widgets
 This one is pretty simple, based on [this wiki page][2]: (requires
 `acpitools`):
 
-[2]: http://awesome.naquadah.org/wiki/Acpitools-based_battery_widget
+[2]: https://awesome.naquadah.org/wiki/Acpitools-based_battery_widget
 
 {% gist 6025651 batterymonitor.lua %}
 

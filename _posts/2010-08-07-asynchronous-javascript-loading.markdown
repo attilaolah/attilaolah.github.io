@@ -34,7 +34,7 @@ I use the following snippet to load external JS:
     })();
 
     // Call the other script files from here
-    load('http://www.example.com/foo-script.js');
+    load('https://www.example.com/foo-script.js');
     load('/media/js/some-local-js-file.js');
 
 })();
@@ -43,19 +43,19 @@ I use the following snippet to load external JS:
 I put all that stuff in a closure so nothing gets exported to to the global
 namespace. Note that the ``setTimeout`` trick is [from here][1].
 
-[1]: http://www.artzstudio.com/2008/07/beating-blocking-javascript-asynchronous-js/
+[1]: https://www.artzstudio.com/2008/07/beating-blocking-javascript-asynchronous-js/
 
 Note also that some JavaScript files will not work if you load them like this.
 These are ones that expect to be run before DOM readyness. Such an example is
 [less.js][2].
 
-[2]: http://github.com/cloudhead/less.js
+[2]: https://github.com/cloudhead/less.js
 
 Good candidates for asynchronous loading are the [Facebook JavaScript SDK][3]
 and [Google Analytics] [4].
 
-[3]: http://developers.facebook.com/docs/reference/javascript/
-[4]: http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html
+[3]: https://developers.facebook.com/docs/reference/javascript/
+[4]: https://code.google.com/apis/analytics/docs/tracking/asyncTracking.html
 
 ## Update
 
@@ -63,4 +63,4 @@ and [Google Analytics] [4].
   loaded.
 * Have a look at [Richard Neil Ilagan's implementation][5] as well.
 
-[5]: http://richardneililagan.com/2010/09/protip-load-javascript-into-your-pages-asynchronously/
+[5]: https://richardneililagan.com/2010/09/protip-load-javascript-into-your-pages-asynchronously/

@@ -8,12 +8,12 @@ tags:
 A while ago I was looking for a way to merge two separate `.mkv` files (left
 and right views of a stereoscopic, 3D movie) into one file, to get a
 side-by-side or top-bottom view. Since back then <del>I didn't get any
-answer on <a href="http://superuser.com/q/231938/25095">SuperUser</a></del>
-<ins>I've got <a href="http://superuser.com/a/259068/25095">an
+answer on <a href="https://superuser.com/q/231938/25095">SuperUser</a></del>
+<ins>I've got <a href="https://superuser.com/a/259068/25095">an
 answer</a></ins>, I figured I might just look into it myself, google it, read a
 few man pages, and then write it down for the rest of the world.
 
-[1]: http://superuser.com/a/259068/25095
+[1]: https://superuser.com/a/259068/25095
 
 *I'm not encouraging anyone to download pirated films.* But, if you do have the
 movies, and they are in separate files, but you want to watch them on a 3DTV or
@@ -24,7 +24,7 @@ If you just want to know how to merge these files using the GUI, I'm not going
 to write it down here, as there exists a very detailed tutorial about this over
 at [Ameic.net][2]. Go read that if you want to do this using the GUI.
 
-[2]: http://www.ameic.net/blog/archives/22
+[2]: https://www.ameic.net/blog/archives/22
 
 If you'd rather do it in the command line though (which would allow you to
 create a batch to process all your movies later, `nice` the process while
@@ -40,9 +40,9 @@ Here's what you're going to need:
 [Portage][3]. `ffmpeg` is also [available for Gentoo][4]. You can find out more
 about Avisynth [on their home page][5].
 
-[3]: http://gentoo-portage.com/media-video/mkvtoolnix
-[4]: http://gentoo-portage.com/media-video/ffmpeg
-[5]: http://www.avisynth.org
+[3]: https://gentoo-portage.com/media-video/mkvtoolnix
+[4]: https://gentoo-portage.com/media-video/ffmpeg
+[5]: https://www.avisynth.org
 
 {% highlight bash %}
 $ sudo emerge -at mkvtoolnix
@@ -102,7 +102,7 @@ $ rm sound.ac3 video-sbs.mkv convert.avs
 I've just got [an answer][1] on SuperUser.  In short, here's how no do it with
 [GStreamer][6]:
 
-[6]: http://gstreamer.freedesktop.org/
+[6]: https://gstreamer.freedesktop.org/
 
 {% highlight bash %}
 $ gst-launch-0.10 \

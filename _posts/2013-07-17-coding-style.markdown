@@ -82,15 +82,15 @@ isn't a strict enough style guide that can help. While [PEP8][3] has loads of
 instructions on how to *format* the code, it doesn't say that much about
 semantics like [naming things][4].
 
-[2]: http://www.python.org/
-[3]: http://www.python.org/dev/peps/pep-0008/
-[4]: http://quotabl.es/quotes/97013
+[2]: https://www.python.org/
+[3]: https://www.python.org/dev/peps/pep-0008/
+[4]: https://quotabl.es/quotes/97013
 
 For that matter, I'd like to point out that [Go][5] has some guidelines for
 this. [Effective Go][6] lists the following naming conventions:
 
-[5]: http://golang.org/
-[6]: http://golang.org/doc/effective_go.html#names
+[5]: https://golang.org/
+[6]: https://golang.org/doc/effective_go.html#names
 
 * getters should be named like `Owner()`, not `GetOwner()`
 * methods that convert to a well-known type should be named like `String()`,

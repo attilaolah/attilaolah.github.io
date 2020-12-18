@@ -4,7 +4,7 @@ title: Your brain at work
 tags:
 - videos
 player: youtube
-source: http://youtu.be/XeJSXfXep4M
+source: https://youtu.be/XeJSXfXep4M
 embed: |
   <iframe
     src="https://www.youtube.com/embed/XeJSXfXep4M"

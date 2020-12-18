@@ -3,14 +3,14 @@ layout: post
 title: strfmti.me
 tags:
 - programming
-source: http://www.userobsessed.net/tips-and-tricks/2011/05/03/strftime-never-look-up-a-date-format-string-again/
+source: https://www.userobsessed.net/tips-and-tricks/2011/05/03/strftime-never-look-up-a-date-format-string-again/
 ---
 
 Today on [Joe Fiorini][1]'s [blog][4] I [read about][2] a neat little website,
 [strfti.me][3]. It is exactly what the name suggests: a simple yet full
 reference of `strftime` implementations.
 
-[1]: http://twitter.com/userobsessed
-[2]: http://www.userobsessed.net/tips-and-tricks/2011/05/03/strftime-never-look-up-a-date-format-string-again/
-[3]: http://strfti.me/
-[4]: http://www.userobsessed.net
+[1]: https://twitter.com/userobsessed
+[2]: https://www.userobsessed.net/tips-and-tricks/2011/05/03/strftime-never-look-up-a-date-format-string-again/
+[3]: https://strfti.me/
+[4]: https://www.userobsessed.net

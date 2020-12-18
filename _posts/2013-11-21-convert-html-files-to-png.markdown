@@ -33,6 +33,6 @@ Here's what each line does:
 * `mv $f.png.o $f.png` replaces the original png with the optimised one
 
 [1]: https://code.google.com/p/wkhtmltopdf
-[2]: http://www.imagemagick.org/script/mogrify.php
-[3]: http://pngquant.org/
-[4]: http://pmt.sourceforge.net/pngcrush/
+[2]: https://www.imagemagick.org/script/mogrify.php
+[3]: https://pngquant.org/
+[4]: https://pmt.sourceforge.net/pngcrush/

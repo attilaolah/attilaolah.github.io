@@ -10,7 +10,7 @@ A broken [Sapphire Radeon HD 4850][1] somehow ended up in my possession. I
 didn't know what was the problem, so I tried to plug it in in a mobo I just had
 lying around, running the [nightly oneiric][2].
 
-[1]: http://en.wikipedia.org/wiki/Radeon_R700#Radeon_HD_4800
+[1]: https://en.wikipedia.org/wiki/Radeon_R700#Radeon_HD_4800
 [2]: https://wiki.ubuntu.com/OneiricOcelot
 
 The card showed up fine in `lspci`. I didn't try using it with the open-source
@@ -19,7 +19,7 @@ play around a little with [OpenCL][3], so I went for the closed-source Catalyst
 driver. (This was a few days ago, when 11.6 was the newest version around - I
 haven't tried it with the latest 11.7 or with the 11.8 preview versions.)
 
-[3]: http://en.wikipedia.org/wiki/OpenCL
+[3]: https://en.wikipedia.org/wiki/OpenCL
 
 The driver didn't start, X choked on this error:
 
@@ -28,7 +28,7 @@ The driver didn't start, X choked on this error:
 Since the driver is not open-sourced, googling around didn't reveal any usable
 source code on PP_Initialize. So I turned to [`objdump`][4].
 
-[4]: http://en.wikipedia.org/wiki/Objdump
+[4]: https://en.wikipedia.org/wiki/Objdump
 
 {% highlight console %}
 $ objdump -CRd fglrx_drv.so
@@ -54,7 +54,7 @@ I was wondering if maybe `PPLIB` is part of the code that manages
 [PowerPlay][5] functions, and if maybe just disabling it all and setting the
 fan speed manually to 100% would give me a result.
 
-[5]: http://en.wikipedia.org/wiki/ATI_PowerPlay
+[5]: https://en.wikipedia.org/wiki/ATI_PowerPlay
 
 Well, I was wrong. The only thing I gained was some experience with `objdump`,
 reverse-engineering, some C and assembly. After disassembling the card itself,

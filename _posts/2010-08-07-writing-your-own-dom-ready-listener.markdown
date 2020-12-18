@@ -12,9 +12,9 @@ exporting any globals (keeping everything in an anonymous function's closure)
 and without including any external file. As a result, with some help of [a
 friendly StackOverflow user][3], I put together a code snippet that:
 
-[1]: http://stackoverflow.com/q/3430455/252239
+[1]: https://stackoverflow.com/q/3430455/252239
 [2]: https://en.wikipedia.org/wiki/Document_Object_Model
-[3]: http://stackoverflow.com/users/113716/patrick-dw
+[3]: https://stackoverflow.com/users/113716/patrick-dw
 
 * takes a single function as argument,
 * attaches that function to the DOM ready event in all browsers supported by
@@ -24,8 +24,8 @@ friendly StackOverflow user][3], I put together a code snippet that:
 * compiles down to less than 590 bytes (less than 300 bytes gzipped),
 * is based on the [jQuery][4] source code (I take no credit for it).
 
-[4]: http://jquery.com/
-[5]: http://en.wikipedia.org/wiki/Idempotence
+[4]: https://jquery.com/
+[5]: https://en.wikipedia.org/wiki/Idempotence
 
 {% gist 6025568 domready.js %}
 

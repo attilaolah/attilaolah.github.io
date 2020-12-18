@@ -17,4 +17,4 @@ This is one of the most common aliases I use.
 * `xargs(1)`
 * [`jq`]
 
-[`jq`]: http://stedolan.github.io/jq/
+[`jq`]: https://stedolan.github.io/jq/
