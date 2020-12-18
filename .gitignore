@@ -1,4 +1,5 @@
+_site
 dst/main.css
 dst/main.js
 node_modules
-_site
+third_party/bundle
