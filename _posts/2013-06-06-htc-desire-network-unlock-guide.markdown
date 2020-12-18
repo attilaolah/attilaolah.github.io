@@ -21,13 +21,12 @@ Then,
 * connect the Desire (make sure USB debugging is enabled)
 * install [HTC Sync][3], that will install the Android driver for the Desire
   (no, the Google USB drivers from the SDK won't work)
-* install the adb drivers (download from [here][5] or [here][6])
+* install the adb drivers (download from [here][5])
 * download and run the [unlock app][7] ([previous version][8])
 
 [3]: http://drivers.softpedia.com/progDownload/HTC-Sync-Manager-USB-Driver-20410-Download-240924.html
 [4]: http://forum.xda-developers.com/showthread.php?t=943726
 [5]: http://downloads.unrevoked.com/recovery/android-usb-driver.zip
-[6]: http://www.sieempi.eu/data/android-usb-driver.zip
 [7]: http://www.sieempi.eu/data/HTC_Desire_Unlock_v0.9.5.rar
 [8]: http://www.sieempi.eu/data/HTC_Desire_Unlock_v0.9.4.rar
 
