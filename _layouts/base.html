@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-gb" itemscope itemtype="http://schema.org/Blog" prefix="og: http://ogp.me/ns#">
+<html lang="en-gb" itemscope itemtype="https://schema.org/Blog" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/dst/main.min.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,700italic|Roboto+Condensed:300,400&subset=latin,latin-ext">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,700italic|Roboto+Condensed:300,400&subset=latin,latin-ext">
   <link rel="icon" type="image/jpeg" href="/avatar/192.jpg">
   <link rel="alternate" type="application/rss+xml" title="RSS feed" href="/rss.xml">
   <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/atom.xml">
@@ -13,8 +13,8 @@
     {% if page.url == "/" %}
       <meta property="og:title" content="Attila Ol&aacute;h">
       <meta property="og:type" content="profile">
-      <meta property="og:image" content="http://attilaolah.eu/avatar/640.jpg">
-      <meta property="og:url" content="http://attilaolah.eu/">
+      <meta property="og:image" content="https://attilaolah.eu/avatar/640.jpg">
+      <meta property="og:url" content="https://attilaolah.eu/">
       <meta property="og:locale" content="en_GB">
       <meta property="og:description" content="Full-time dad, part-time web developer.">
       <meta property="og:first_name" content="Attila">
@@ -25,7 +25,7 @@
   {% else %}
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="http://attilaolah.eu{{ page.url }}">
+    <meta property="og:url" content="https://attilaolah.eu{{ page.url }}">
     {% if page.lang %}
       <meta property="og:locale" content="{{ page.lang_full }}">
     {% else %}
@@ -45,11 +45,10 @@
   <header>
     <div class="cover"></div>
     <div class="wrap">
-      <div class="content" itemprop="author" itemscope itemtype="http://data-vocabulary.org/Person">
+      <div class="content" itemprop="author" itemscope itemtype="https://data-vocabulary.org/Person">
         <div class="avatar"></div>
-        <h2><a href="{{ site.baseurl }}" itemprop="url"><span itemprop="name"><strong itemprop="givenName">Attila</strong> <span itemprop="familyName">Ol&aacute;h</span></span></a></h2>
-        <h3 class="condensed thin"><strong>Site Reliability Engineer</strong> @ <a href="//careers.google.com/locations/zurich">Google Zürich</a>.</h3>
-        <h3 class="condensed thin wide" itemprop="affiliation"><a href="//youtu.be/FyQi79aYfxU">Nerdfighter</a>, traveller, <a href="//blog.golang.org/gopher">gopher</a>, dad.</h3>
+        <h2><a href="{{ site.url }}" itemprop="url"><span itemprop="name"><strong itemprop="givenName">Attila</strong> <span itemprop="familyName">Ol&aacute;h</span></span></a></h2>
+        <h3 class="condensed thin"><strong>SRE</strong> @ <a href="//careers.google.com/locations/zurich">Google Zürich</a></h3>
         <link itemprop="nationality" href="https://en.wikipedia.org/wiki/Serbia">
         <link itemprop="nationality" href="https://en.wikipedia.org/wiki/Hungary">
       </div>
@@ -64,7 +63,7 @@
     <a href="mailto:attilaolah@gmail.com" rel="me">attilaolah@gmail.com</a>
   </footer>
   {% if page.url == "/" %}
-    <div class="meta" itemprop="address" itemscope itemtype="http://data-vocabulary.org/PostalAddress">
+    <div class="meta" itemprop="address" itemscope itemtype="https://data-vocabulary.org/PostalAddress">
       <link itemprop="addressLocality" href="https://en.wikipedia.org/wiki/Bajmok">
       <link itemprop="addressCountry" href="https://en.wikipedia.org/wiki/Serbia">
       <meta itemprop="email" content="attilaolah@gmail.com">
