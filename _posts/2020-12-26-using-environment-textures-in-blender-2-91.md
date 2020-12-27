@@ -81,6 +81,8 @@ actual transformation, add a **Mapping** node between the **Texture
 Coordinate** and **Environment Texture** nodes, and change the **X** axis of
 the **Scale** factor from 1 to -1, like so:
 
+[![Add Mapping node](/images/2020/add-vector-mapping.png)](/images/2020/add-vector-mapping.png)
+
 [![Mapping node connected](/images/2020/mapping-node-connected.png)](/images/2020/mapping-node-connected.png)
 
 The default cube should have the texture applied the right way now. Here is how
