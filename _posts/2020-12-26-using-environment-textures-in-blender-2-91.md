@@ -95,3 +95,7 @@ apply a SubSurf modifier, rotate it 180° along the Z axis and render it to get
 a more reasonable-looking planet Earth:
 
 [![Earth](/images/2020/earth-sphere-r-180.png)](/images/2020/earth-sphere-r-180.png)
+
+Next step in the series:
+
+- [Baking Environment Textures in Blender 2.91](/2020/12/27/baking-environment-textures-in-blender-2-91/)
