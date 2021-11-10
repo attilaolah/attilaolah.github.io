@@ -159,5 +159,5 @@ TADA! We can… well, we can observe the globe. This game isn't very interactive
 yet, but in the next tutorial we'll see how to add a simple short script to
 make the globe interact with the mouse. We'll also discuss camera properties
 like aspect locking, focal length and field of view in detail, and see how
-other engines like Google Maps uses different camera settings for a nice and
+other engines like Google Maps use different camera settings for a nice and
 smooth transition effect.
