@@ -105,3 +105,7 @@ The exported image texture now has the North pole projected to the top face of
 a cube:
 
 [![North Pole @ 1024pk](/images/2020/zp-1024.png)](/images/2020/zp-1024.png)
+
+Next step in the series:
+
+- [Rendering Earth in Godot 3.4](/2021/11/10/rendering-earth-in-godot-3-4/)
