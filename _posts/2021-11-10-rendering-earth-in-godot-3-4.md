@@ -66,7 +66,9 @@ node (which can now be removed):
 
 [![Connect image texture](/images/2021/connect-image-texture.png)](/images/2021/connect-image-texture.png)
 
-Next step is to create a simple geme in Godot and import the globe from
+## Welcom to Godot
+
+The next step is to create a simple geme in Godot and import the globe from
 Blender. Fire up Godot (I'm using version 3.4) and create a new project. No
 need to use a template, we really just want an empty project.
 
@@ -86,6 +88,7 @@ Back in Godot, notice that the `globe.glb` file has appeard under `res://`:
 
 [![Godot: `globe.glb`](/images/2021/godot-res-globe-glb.png)](/images/2021/godot-res-globe-glb.png)
 
+## Setting up a 3D scene
 
 Now, normally, you could simply drag and drop it to the main view. But we
 haven't set up a root node yet, so there's nowhere for the scene to go. To fix
@@ -161,3 +164,7 @@ make the globe interact with the mouse. We'll also discuss camera properties
 like aspect locking, focal length and field of view in detail, and see how
 other engines like Google Maps use different camera settings for a nice and
 smooth transition effect.
+
+Next step in the series:
+
+- [Rotating Earth in Godot 3.4](/2021/11/11/rotating-earth-in-godot-3-4/)
