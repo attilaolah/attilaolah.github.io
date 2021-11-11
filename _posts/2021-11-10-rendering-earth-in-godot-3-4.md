@@ -141,7 +141,7 @@ To move it out, you can use the same method as earlier when moving the UV
 sphere, or by simply dragging the blue arrow to pull it along the Z axis. Hold
 down **Ctrl** to snap to the grid.
 
-Moving the camera back by 1 units should be good enough, but wouldn't it be
+Moving the camera back by 2 units should be good enough, but wouldn't it be
 even better if we could see what the camera sees? One easy way to do that is by
 selecting the **2 Viewports** or **2 Viewports (Alt)** under the **View** menu,
 then, while having the camera object selected in the node tree, click the
