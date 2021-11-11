@@ -321,19 +321,19 @@ func look_from(orientation: Vector3) -> void:
 
 
 # Normalise a vector by keeping its "y" coordinate unchanged.
-func normalize_keep_y(pos: Vector3) -> Vector3:
-    var x2: float = pos.x * pos.x
-    var y2: float = pos.y * pos.y
-    var z2: float = pos.z * pos.z
+func normalize_keep_y(v: Vector3) -> Vector3:
+    var x2: float = v.x * v.x
+    var y2: float = v.y * v.y
+    var z2: float = v.z * v.z
 
-    if pos.x == 0:
+    if v.x == 0:
         # Special-case to avoid a division by zero error below.
-        var z1: float = sign(pos.z) * sqrt(1 - y2)
-        return Vector3(0.0, pos.y, z1)
+        var z1: float = sign(v.z) * sqrt(1 - y2)
+        return Vector3(0.0, v.y, z1)
 
-    var x1: float = sign(pos.x) * sqrt((1 - y2) / (1 + z2 / x2))
-    var z1: float = pos.z / pos.x * x1
-    return Vector3(x1, pos.y, z1)
+    var x1: float = sign(v.x) * sqrt((1 - y2) / (1 + z2 / x2))
+    var z1: float = v.z / v.x * x1
+    return Vector3(x1, v.y, z1)
 
 
 func on_click(position: Vector3) -> void:
