@@ -273,7 +273,7 @@ don't get closer to the poles than the two endpoints of the interpolated
 vectors.
 
 To do that, we can imagine shearing our vector "outwards", away from the Y
-axes, until the point ends up on the unit sphere (i.e. we end up with a unit
+axis, until the point ends up on the unit sphere (i.e. we end up with a unit
 vector).  If \\((x, y, z)\\) is the current interpolated vector, and \\((x_1,
 y_1, z_1)\\) is the unit vector we're trying to calculate at each frame, we can
 observe the following relations:
@@ -291,7 +291,7 @@ extract \\(x_1\\) from the third equation. The result is:
 
 $$
 \begin{align}
-    z_1 &= \frac {x_1z} x \\
+    z_1 &= \frac {x_1} x z \\
     x_1 &= \pm \sqrt {\frac {1 - y^2} {1 + \left( \frac z x \right)^2}}
 \end{align}
 $$
