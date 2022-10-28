@@ -66,7 +66,7 @@ node (which can now be removed):
 
 [![Connect image texture](/images/2021/connect-image-texture.png)](/images/2021/connect-image-texture.png)
 
-## Welcom to Godot
+## Welcome to Godot
 
 The next step is to create a simple geme in Godot and import the globe from
 Blender. Fire up Godot (I'm using version 3.4) and create a new project. No
