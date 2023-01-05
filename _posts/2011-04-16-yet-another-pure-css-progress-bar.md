@@ -12,7 +12,7 @@ with CSS, only the text is being updated with JavaScript.</del> The animation
 is done using JavaScript to make sure it synchronizes nicely with the
 percentage text. It is also possible to animate it with pure CSS though.
 
-[1]: https://skunkworks.ivanvanderbyl.com/
+[1]: https://ivan.dev
 
 {:.center}
 <iframe src="/demos/pure-css-progress-bar.html" style="width:100%; height:120px;">&nbsp;</iframe>
