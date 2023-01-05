@@ -297,7 +297,7 @@ $$
 $$
 
 Note that in the solution above the sign of \\(x_1\\) (and consequently the
-sign of \\(z_1\\) can be positive or negative, but for our camera motion we
+sign of \\(z_1\\)) can be positive or negative, but for our camera motion we
 want to keep the sign of all coordinates the same. The simplest way to do that
 in GDScript is using the
 [`sign`](https://docs.godotengine.org/en/stable/classes/class_@gdscript.html#class-gdscript-method-sign)
