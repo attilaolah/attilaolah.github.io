@@ -99,7 +99,7 @@ $ rm sound.ac3 video-sbs.mkv convert.avs
 {% endhighlight %}
 
 ## Update 2
-I've just got [an answer][1] on SuperUser.  In short, here's how no do it with
+I've just got [an answer][1] on SuperUser.  In short, here's how to do it with
 [GStreamer][6]:
 
 [6]: https://gstreamer.freedesktop.org/
