@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en-gb" itemscope itemtype="https://schema.org/Blog" prefix="og: https://ogp.me/ns#">
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title | default: "ATL's Blog" }}</title>
-  <link rel="stylesheet" href="/dst/main.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,700italic|Roboto+Condensed:300,400&subset=latin,latin-ext">
-  <link rel="icon" type="image/jpeg" href="/avatar/192.jpg">
-  <link rel="alternate" type="application/rss+xml" title="RSS feed" href="/rss.xml">
-  <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/atom.xml">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% if page.content == "" %}
-    {% if page.url == "/" %}
-      <meta property="og:title" content="Attila Ol&aacute;h">
-      <meta property="og:type" content="profile">
-      <meta property="og:image" content="https://attilaolah.eu/avatar/640.jpg">
-      <meta property="og:url" content="https://attilaolah.eu/">
-      <meta property="og:locale" content="en_GB">
-      <meta property="og:description" content="Full-time dad, part-time web developer.">
-      <meta property="og:first_name" content="Attila">
-      <meta property="og:last_name" content="Ol&aacute;h">
-      <meta property="og:username" content="attilaolah">
-      <meta property="og:gender" content="male">
-    {% endif %}
-  {% else %}
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://attilaolah.eu{{ page.url }}">
-    {% if page.lang %}
-      <meta property="og:locale" content="{{ page.lang_full }}">
-    {% else %}
-      <meta property="og:locale" content="en_GB">
-    {% endif %}
-    <meta property="og:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
-    {% for tag in page.tags %}
-      {% if tag != page.lang %}
-        <meta property="og:tag" content="{{ tag }}">
-      {% endif %}
-    {% endfor %}
-    <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncatewords: 30 | xml_escape }}">
-  {% endif %}
-  <script src="/dst/main.min.js" async></script>
-</head>
-<body class="roboto">
-  <header>
-    <div class="cover"></div>
-    <div class="wrap">
-      <div class="content" itemprop="author" itemscope itemtype="https://data-vocabulary.org/Person">
-        <div class="avatar"></div>
-        <h2><a href="{{ site.url }}" itemprop="url"><span itemprop="name"><strong itemprop="givenName">Attila</strong> <span itemprop="familyName">Ol&aacute;h</span></span></a></h2>
-        <h3 class="condensed thin">Tech Infra / <strong>Site Reliability Engineer</strong></h3>
-        <link itemprop="nationality" href="https://en.wikipedia.org/wiki/Serbia">
-        <link itemprop="nationality" href="https://en.wikipedia.org/wiki/Hungary">
-      </div>
+
+<meta charset="utf-8">
+<title>{{ page.title | default: "ATL's Blog" }}</title>
+
+<link rel="stylesheet" href="/dst/main.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,700italic|Roboto+Condensed:300,400&subset=latin,latin-ext">
+<link rel="icon" type="image/jpeg" href="/avatar/192.jpg">
+<link rel="alternate" type="application/rss+xml" title="RSS feed" href="/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom feed" href="/atom.xml">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{%- if page.content == "" %}
+  {%- if page.url == "/" %}
+<meta property="og:title" content="Attila Ol&aacute;h">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="https://attilaolah.eu/avatar/640.jpg">
+<meta property="og:url" content="https://attilaolah.eu/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:description" content="Full-time dad, part-time web developer.">
+<meta property="og:first_name" content="Attila">
+<meta property="og:last_name" content="Ol&aacute;h">
+<meta property="og:username" content="attilaolah">
+<meta property="og:gender" content="male">
+  {%- endif %}
+{%- else %}
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://attilaolah.eu{{ page.url }}">
+  {%- if page.lang %}
+<meta property="og:locale" content="{{ page.lang_full }}">
+  {%- else %}
+<meta property="og:locale" content="en_GB">
+  {%- endif %}
+<meta property="og:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
+  {%- for tag in page.tags %}
+    {%- if tag != page.lang %}
+<meta property="og:tag" content="{{ tag }}">
+    {%- endif %}
+  {%- endfor %}
+<meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | truncatewords: 30 | xml_escape }}">
+{%- endif %}
+
+<script src="/dst/main.min.js" async></script>
+
+<header>
+  <div class="cover"></div>
+  <div class="wrap">
+    <div class="content" itemprop="author" itemscope itemtype="https://data-vocabulary.org/Person">
+      <div class="avatar"></div>
+      <h2><a href="{{ site.url }}" itemprop="url"><span itemprop="name"><strong itemprop="givenName">Attila</strong> <span itemprop="familyName">Ol&aacute;h</span></span></a></h2>
+      <h3 class="condensed thin">Tech Infra / <strong>Site Reliability Engineer</strong></h3>
+      <link itemprop="nationality" href="https://en.wikipedia.org/wiki/Serbia">
+      <link itemprop="nationality" href="https://en.wikipedia.org/wiki/Hungary">
     </div>
-  </header>
-  <div role="main">
-    {{ content }}
   </div>
-  <footer>
-    <span>Attila Oláh</span>
-    <span class="wide">//</span><br class="narrow">
-    <a href="mailto:attilaolah@gmail.com" rel="me">attilaolah@gmail.com</a>
-  </footer>
-</body>
-</html>
+</header>
+<div role="main">
+  {{ content }}
+</div>
+<footer>
+  <span>Attila Oláh</span>
+  <span class="wide">//</span><br class="narrow">
+  <a href="mailto:attilaolah@gmail.com" rel="me">attilaolah@gmail.com</a>
+</footer>
