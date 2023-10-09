@@ -1,7 +1,6 @@
 permalink: pretty
 timezone: Europe/Zurich
 markdown: kramdown
-paginate: 6
 exclude:
 - node_modules
 - third_party

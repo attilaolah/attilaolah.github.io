@@ -1,7 +1,8 @@
-{% capture year %}{{ page.date | date: "%Y" | divide_by: 2 }}{% endcapture %}
-<li class="year-{{ year }}" data-year="{{ year }}"{% if page.tags %} data-tags="{{ page.tags | join: " " }}"{% endif %}>
-  <time class="condensed thin" datetime="{{ page.date | date: "%Y-%m-%dT00:00:00Z" }}">{{ page.date | date: "%B %d" }}</time>
-  <h2 class="condensed">
-    <a href="{{ page.url }}">{{ page.title }}</a>
-  </h2>
+{%- capture year %}{{ page.date | date: "%Y" | divide_by: 2 }}{% endcapture %}
+{%- if year != prev %}
+<li class="year"><h2>{{ year }}</h2></li>
+{%- endif %}
+{%- capture prev %}{{ year | default: 0 }}{% endcapture %}
+<li class="year-{{ year }}" data-year="{{ year }}">
+  <a href="{{ page.url }}">{{ page.title }}</a>
 </li>

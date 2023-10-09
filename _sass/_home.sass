@@ -1,44 +1,9 @@
-ul.home
-  padding: 0
-  > li
-    list-style-type: none
-
-.pagination
-  color: #999
-  margin: 2rem 0 0
-  text-align: center
-  text-transform: lowercase
-  font-variant: small-caps
-
-  // FF fix:
-  height: 2rem
-
-  > a, > span
-    font-size: 1.25rem
-
-  ul
-    display: inline-block
-    font-size: .9375rem
-    margin: 0 .5rem
-    padding: 0
-
+#archive
   li
-    display: inline
-    margin: 0 .25rem
+    &.year
+      list-style-type: none
+    &:not(.year)
+      margin-left: 24px
 
-  .previous:before
-    content: "\00AB"
-    top: 0rem
-
-  .next:after
-    content: "\00BB"
-    top: 1rem / 16
-
-  .next:after,
-  .previous:before
-    font-size: 1.5rem
-    display: inline-block
-    position: relative
-
-  .current
-    color: #333
+    h2
+      margin: 24px 0 8px

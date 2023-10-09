@@ -1,0 +1,11 @@
+---
+layout: base
+---
+<main class="wrap">
+  <h1>Blog posts</h1>
+  <ul id="archive">
+    {%- for page in site.posts %}
+      {%- include archive.html %}
+    {%- endfor %}
+  </ul>
+</main>

@@ -76,10 +76,10 @@ camera to, the position to look at, and the "up" orientation.
 The new camera position can be obtained by scaling the `position` vector to the
 length of the vector specifying the camera origin:
 
-```
+{% highlight gdscript %}
 var distance_from_origin: float = camera.transform.origin.length()
 var new_camera_position: Vector3 = position.normalized() * distance_from_origin
-```
+{% endhighlight %}
 
 Note that we use `position.normalized()` to re-scale the position to a unit
 vector. This wouldn't be necessary if our collision object was a perfect
@@ -93,13 +93,13 @@ keep looking at the globe, so we'll pass the world origin `Vector3.ZERO` as the
 second argument. To keep the camera orientation so that north is always up and
 south is down, we pass `Vector3.UP` as the third argument.
 
-```
+{% highlight gdscript %}
 camera.look_at_from_position(new_camera_position, Vector3.ZERO, Vector3.UP)
-```
+{% endhighlight %}
 
 The final script should look something like this:
 
-```
+{% highlight gdscript %}
 extends Camera
 
 
@@ -109,7 +109,7 @@ func _on_Area_input_event(
     var distance_from_origin: float = camera.transform.origin.length()
     var new_camera_position: Vector3 = position.normalized() * distance_from_origin
     camera.look_at_from_position(new_camera_position, Vector3.ZERO, Vector3.UP)
-```
+{% endhighlight %}
 
 Now we can hit **F5** to test our game. Let's try to cli… Oh no! What's
 happening? The Earth is going nuts!
@@ -118,7 +118,7 @@ OK, time to calm down, this is progress. The crazy camera movement is because
 all mouse movement is treated as input events, not just the clicks. To ignore
 events other than left mouse-click, we can add an `if` guard:
 
-```
+{% highlight gdscript %}
 func _on_Area_input_event(
     camera: Camera, event: InputEvent, position: Vector3, _normal: Vector3, _shape_idx: int
 ) -> void:
@@ -126,7 +126,7 @@ func _on_Area_input_event(
         var distance_from_origin: float = camera.transform.origin.length()
         var new_camera_position: Vector3 = position.normalized() * distance_from_origin
         camera.look_at_from_position(new_camera_position, Vector3.ZERO, Vector3.UP)
-```
+{% endhighlight %}
 
 Re-run the game with **F5** and now we can click around the globe, looking at
 it from various positions.
@@ -141,9 +141,9 @@ immediately? Luckily Godot provides a simple helper to do such animations: the
 Go ahead and add one to the Camera node. We'll call it tween and access it via
 a property in our Camera script:
 
-```
+{% highlight gdscript %}
 onready var tween: Tween = get_node("Tween")
-```
+{% endhighlight %}
 
 To use the script, we'll replace the `camera.look_at_from_position(…)` call
 with a call to `tween.interpolate_method(…)`. Note that we cannot easily use
@@ -153,10 +153,10 @@ knows how to interpolate vectors.
 
 First we move our camera transform code to its own method:
 
-```
+{% highlight gdscript %}
 func look_from(position: Vector3) -> void:
     look_at_from_position(position, Vector3.ZERO, Vector3.UP)
-```
+{% endhighlight %}
 
 Note that we're accessing `look_at_from_position(…)` directly, without using a
 reference to the Camera node. This is possible because our class extends the
@@ -166,7 +166,7 @@ be needed). This works because we attached our script to the Camera node.
 
 Now, change the event handling code to use the `tween` object:
 
-```
+{% highlight gdscript %}
 tween.interpolate_method(
     self,
     "look_from",
@@ -177,7 +177,7 @@ tween.interpolate_method(
     Tween.EASE_OUT
 )
 tween.start()
-```
+{% endhighlight %}
 
 The arguments here are:
 
@@ -218,7 +218,7 @@ method to treat its input as an orientation, not a position vector.
 
 The final script file now looks like this:
 
-```
+{% highlight gdscript %}
 extends Camera
 
 onready var tween: Tween = get_node("Tween")
@@ -244,7 +244,7 @@ func _on_Area_input_event(
 ) -> void:
     if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
         on_click(position)
-```
+{% endhighlight %}
 
 **F5** again, and yay! We now have a much smoother camera movement, that goes
 around the globe. It is also no longer possible to clip into the globe by
@@ -301,7 +301,7 @@ built-in.
 
 Putting it all together, this is how the script file looks like:
 
-```
+{% highlight gdscript %}
 extends Camera
 
 onready var tween: Tween = get_node("Tween")
@@ -345,7 +345,7 @@ func _on_Area_input_event(
 ) -> void:
     if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
         on_click(position)
-```
+{% endhighlight %}
 
 Hit **F5** one last time, and finally! We've got some nice, smooth camera
 movement that doesn't go wonkers near the North and South pole.

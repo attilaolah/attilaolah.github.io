@@ -5,11 +5,25 @@ html
 body
   margin: 0
   padding: 0
-  font-size: 1rem
+  font-size: 1.25rem
 
 h1, h2, h3
   margin: 0
   font-weight: normal
+
+h1
+  color: #333
+  font-size: 2.5rem
+  margin: 1rem 0 .5rem
+  a[rel=source]
+    color: #ccc
+    &:before
+      content: "#"
+
+    &:hover,
+    &:focus,
+    &:active
+      color: inherit
 
 li
   list-style-type: square
@@ -29,22 +43,15 @@ a:active
   background-color: #fb3
   text-shadow: none
 
+main,
+article
+  padding: 2rem 1rem
+
 body > header,
-body > footer,
 div[role=main]
   // min-width same as .wrap
   min-width: 20rem
   overflow: hidden
-
-div[role=main]
-  min-height: 16rem
-
-body > footer
-  color: #999
-  background: #111
-  text-align: center
-  padding: 2.5rem 0 2rem
-  margin-top: 2rem
 
 // http://meta.superuser.com/q/4788
 kbd
