@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Coding style
-tags:
-- programming
 ---
 
 Today's rant is about [coding style][1], readability and code review.

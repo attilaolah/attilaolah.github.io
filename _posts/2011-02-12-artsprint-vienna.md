@@ -1,9 +1,6 @@
 ---
 layout: post
 title: "2011 a][rtsprint Vienna"
-tags:
-- programming
-- travel
 ---
 
 The [artsprint][1] was a one-week [Python][2]/[Pyramid][2]/[Node][3] sprint at

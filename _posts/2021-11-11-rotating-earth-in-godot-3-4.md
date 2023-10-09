@@ -1,11 +1,6 @@
 ---
 layout: post
 title: Rotating Earth in Godot 3.4
-tags:
-- godot
-- 3d
-- math
-mathjax: on
 ---
 
 In the previous tutorial,

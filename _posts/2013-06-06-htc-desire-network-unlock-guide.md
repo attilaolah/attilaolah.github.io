@@ -1,8 +1,6 @@
 ---
 layout: post
 title: HTC Desire network unlock guide
-tags:
-- programming
 ---
 
 If under Linux or XP,

@@ -1,10 +1,6 @@
 ---
 layout: post
 title: Python modular exponentiation by squaring
-tags:
-- math
-- programming
-source: https://gist.github.com/attilaolah/6025863
 ---
 
 Exponentiation of large numbers can easily be implemented using [exponentiation

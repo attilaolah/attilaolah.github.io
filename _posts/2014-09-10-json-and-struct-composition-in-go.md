@@ -1,9 +1,6 @@
 ---
 layout: post
 title: JSON and struct composition in Go
-tags:
-- programming
-- golang
 ---
 
 Say you are decoding a JSON object into a Go struct. It comes from a service

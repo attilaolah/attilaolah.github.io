@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Merging mkv files
-tags:
-- programming
 ---
 
 A while ago I was looking for a way to merge two separate `.mkv` files (left

@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Rendering Earth in Godot 3.4
-tags:
-- blender
-- 3d
 ---
 
 In a previous post,

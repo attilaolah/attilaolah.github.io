@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Baking Environment Textures in Blender 2.91
-tags:
-- blender
-- 3d
 ---
 
 This tutorial will demonstrate how to re-project Equirectangular images to cube

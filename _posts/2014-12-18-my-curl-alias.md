@@ -1,8 +1,6 @@
 ---
 layout: post
 title: My cURL alias
-tags:
-- programming
 ---
 
 This is one of the most common aliases I use.

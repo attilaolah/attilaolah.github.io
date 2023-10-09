@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Python exception weirdness
-tags:
-- programming
 ---
 
 This may have been obvious to others, but I have just found out that in Python,

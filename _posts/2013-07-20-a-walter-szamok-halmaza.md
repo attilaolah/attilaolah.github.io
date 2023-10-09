@@ -1,10 +1,6 @@
 ---
 layout: post
 title: A Walter számok halmaza
-tags:
-- math
-- hu
-mathjax: on
 lang: hu
 ---
 

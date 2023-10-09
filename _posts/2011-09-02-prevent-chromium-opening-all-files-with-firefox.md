@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Prevent Chromium opening all files with Firefox
-tags:
-- programming
 ---
 
 Chromium opens downloaded files using `xdg-open`.  Problem is, `xdg-open`

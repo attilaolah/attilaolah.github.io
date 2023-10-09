@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Benchmarking urllib2 vs. urllib3
-tags:
-- programming
-source: https://gist.github.com/attilaolah/6025493
 ---
 
 [`urllib3`][1] seems to be a long-abandoned project on [PyPI][2]. However, it

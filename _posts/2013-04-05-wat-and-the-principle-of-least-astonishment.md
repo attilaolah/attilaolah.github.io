@@ -1,10 +1,6 @@
 ---
 layout: post
 title: WAT and the principle of least astonishment
-tags:
-- programming
-- videos
-source: https://www.destroyallsoftware.com/talks/wat
 ---
 
 I came across [this video][1] while reading [a question][2] on [StackExchange

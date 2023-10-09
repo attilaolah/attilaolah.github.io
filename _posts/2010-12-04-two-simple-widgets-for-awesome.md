@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Two simple widgets for awesome
-tags:
-- programming
-source: https://gist.github.com/attilaolah/6025651
 ---
 
 The two widgets next to the system tray:

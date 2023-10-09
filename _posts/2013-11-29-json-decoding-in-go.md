@@ -1,8 +1,6 @@
 ---
 layout: post
 title: JSON decoding in Go
-tags:
-- programming
 ---
 
 Incidentally, decoding JSON data (or really, almost any data structure) is

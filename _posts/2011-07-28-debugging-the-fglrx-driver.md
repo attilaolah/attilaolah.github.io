@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Debugging the fglrx driver
-tags:
-- programming
-source: https://gist.github.com/attilaolah/6025843
 ---
 
 A broken [Sapphire Radeon HD 4850][1] somehow ended up in my possession. I

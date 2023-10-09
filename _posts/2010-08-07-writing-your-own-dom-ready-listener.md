@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Writing your own DOM ready listener
-tags:
-- programming
-source: https://gist.github.com/attilaolah/6025568
 ---
 
 Today I asked [a question][1] on StackOverflow on how to attach a function to

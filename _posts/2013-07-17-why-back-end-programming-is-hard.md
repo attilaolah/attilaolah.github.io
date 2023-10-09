@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Why back-end programming is hard
-tags:
-- programming
 ---
 
 Or to put it in another way, why is font-end programming way easier.

@@ -1,11 +1,8 @@
 ---
 layout: post
 title: HTC Desire hálózatfüggetlenítése
-tags:
-- programming
-- hu
 lang: hu
-lang_full: hu_HU
+locale: hu_HU
 ---
 
 Ha Linuxban vagy XP-ben vagy,

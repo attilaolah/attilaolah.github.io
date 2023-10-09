@@ -1,9 +1,6 @@
 ---
 layout: post
 title: A simple but powerful zsh prompt
-tags:
-- programming
-- linux
 ---
 
 Over the years, I've been changing my bash prompt every now and then. Since I

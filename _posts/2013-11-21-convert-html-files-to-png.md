@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Convert HTML files to PNG
-tags:
-- programming
 ---
 
 For some stupid reason I ended up having to convert a whole lot of HTML files

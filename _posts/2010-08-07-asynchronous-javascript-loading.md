@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Asynchronous JavaScript loading
-tags:
-- programming
 ---
 
 If your website has a sufficient amount of static content, it might be a good

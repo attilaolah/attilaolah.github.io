@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Factoring 100 million digit numbers
-tags:
-- math
 ---
 
 Yesterday I figured I'll try to [factor][1] the first few numbers greater than

@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Quick security checklist
-tags:
-- programming
-- security
 ---
 
 This is intended to be a short list of things to check before you go publish a

@@ -1,8 +1,6 @@
 ---
 layout: post
 title: To lint or not to lint
-tags:
-- programming
 ---
 
 In general it is always a good idea to run static checkers through the code. It

@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Compositing in awesome
-tags:
-- programming
 ---
 
 A while ago I wrote [two widgets for awesome][1]. Later on I've added a little

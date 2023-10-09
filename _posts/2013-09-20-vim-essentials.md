@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Vim essentials
-tags:
-- programming
 ---
 
 Here is a list of Vim scripts I picked up in the past few years that I find

@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Drawing 3D maps with HTML5 canvas
-tags:
- - programming
- - coffeescript
 summary: "A snippet of code that draws nice, 3D-looking buildings on a map."
 ---
 

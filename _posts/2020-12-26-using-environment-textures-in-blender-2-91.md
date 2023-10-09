@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Using Environment Textures in Blender 2.91
-tags:
-- blender
-- 3d
 ---
 
 This tutorial will demonstrate how to use equirectangular environment textures

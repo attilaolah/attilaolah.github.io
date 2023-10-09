@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Cross-compiling CGO to ARM
-tags:
-- programming
 ---
 
 This is a story about a a piece of Go code that wanted to be cross-compiled for

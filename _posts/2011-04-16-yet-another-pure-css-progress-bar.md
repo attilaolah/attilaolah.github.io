@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Yet another pure CSS progress bar
-tags:
-- programming
 summary: "Here's one to all you CSS freaks out there."
 ---
 
