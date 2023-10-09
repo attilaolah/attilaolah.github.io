@@ -6,11 +6,11 @@ tags:
 ---
 
 If your website has a sufficient amount of static content, it might be a good
-idea to load all the extra JavaScript files asynchronously.
-<del>This</del><ins>my old</ins> blog, for example, shows the static content as
-soon as possible, allowing its visitors to read the main content (the article)
-while the not-so-important content (like Facebook Like buttons, "Web 2.0"
-widgets and all that crap) is on its way from the server.
+idea to load all the extra JavaScript files asynchronously. <del>This</del>
+<ins>my old</ins> blog, for example, shows the static content as soon as
+possible, allowing its visitors to read the main content (the article) while
+the not-so-important content (like Facebook Like buttons, "Web 2.0" widgets and
+all that crap) is on its way from the server.
 
 I use the following snippet to load external JS:
 
