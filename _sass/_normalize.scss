@@ -9,9 +9,7 @@
  */
 
 html {
-  /*
-   * https://github.com/necolas/normalize.css/issues/788
-   * line-height: 1.15; */ /* 1 */
+  line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
