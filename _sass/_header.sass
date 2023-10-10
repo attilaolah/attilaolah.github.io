@@ -1,13 +1,27 @@
+$covh: 24rem
+
 body > header
   color: #fff
   text-shadow: rgba(0, 0, 0, 0.701961) 0 .0625rem 0
   position: relative
   .cover
-    box-shadow: inset black 0 -32rem 24rem -24rem
+    box-shadow: inset black 0 -32rem $covh (-$covh)
     background: url(/images/w/cover.jpg) center center no-repeat
     background-size: cover
     box-sizing: border-box
-    height: 24rem
+    height: $covh
+    margin: 0 auto
+    max-width: 120rem
+
+    &::before
+      content: ""
+      display: block
+      background: black
+      height: $covh
+      position: absolute
+      left: 0
+      right: 0
+      z-index: -1
 
   .wrap
     position: absolute
