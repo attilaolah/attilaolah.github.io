@@ -2,6 +2,7 @@
 layout: post
 title: A Walter számok halmaza
 lang: hu
+mathjax: on
 ---
 
 *Ajánlom minden olyan ismerősöm figyelmébe, aki azt hiszi, hogy a gyök kettő
