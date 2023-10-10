@@ -4,19 +4,14 @@ title: Rotating Earth in Godot 3.4
 mathjax: on
 ---
 
-In the previous tutorial,
-[Rendering Earth in Godot 3.4](/2021/11/10/rendering-earth-in-godot-3-4/), I
-showed how to make a simple Earth model in Blender and import it to Godot. In
-this post, we'll explore how to rotate the globe, thus making our "game"
-interactive.
+In the previous tutorial, [Rendering Earth in Godot 3.4], I showed how to make
+a simple Earth model in Blender and import it to Godot. In this post, we'll
+explore how to rotate the globe, thus making our "game" interactive.
 
 This is how the node tree and resource tree should look like (adjusted from the
-previous post to follow
-[Godot's file naming conventions](https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_styleguide.html#file-names)).
+previous post to follow [Godot's file naming conventions]).
 
 [![Starting point]][Starting point]
-
-[Starting point]: /images/2021/godot-rotating-earth-starting-point.png
 
 The `uneverse.tscn` file contains our "Universe" spatial node, and the
 `globe.glb` (imported) file contains the base class for our "Globe" spatial
@@ -356,3 +351,7 @@ movement that doesn't go wonkers near the North and South pole.
 I hope this tutorial was a nice example of how even some basic algebra can come
 in handy when doing game development. A future post will go into more detail
 about field of view, focal length and other camera settings, so stay tuned.
+
+[Rendering Earth in Godot 3.4]: /2021/11/10/rendering-earth-in-godot-3-4/
+[Godot's file naming conventions]: https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_styleguide.html#file-names
+[Starting point]: /images/2021/godot-rotating-earth-starting-point.png
