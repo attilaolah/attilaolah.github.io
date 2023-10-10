@@ -14,7 +14,9 @@ This is how the node tree and resource tree should look like (adjusted from the
 previous post to follow
 [Godot's file naming conventions](https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_styleguide.html#file-names)).
 
-[![Starting point](/images/2021/godot-rotating-earth-starting-point.png)](/images/2021/godot-rotating-earth-starting-point.png)
+[![Starting point]][Starting point]
+
+[Starting point]: /images/2021/godot-rotating-earth-starting-point.png
 
 The `uneverse.tscn` file contains our "Universe" spatial node, and the
 `globe.glb` (imported) file contains the base class for our "Globe" spatial
