@@ -1,8 +1,8 @@
 {%- capture year %}{{ page.date | date: "%Y" | divide_by: 2 }}{% endcapture %}
 {%- if year != prev %}
-<li class="year"><h2>{{ year }}</h2></li>
+    <li class="year"><h2>{{ year }}</h2></li>
 {%- endif %}
 {%- capture prev %}{{ year | default: 0 }}{% endcapture %}
-<li class="year-{{ year }}" data-year="{{ year }}">
-  <a href="{{ page.url }}">{{ page.title }}</a>
-</li>
+    <li class="year-{{ year }}" data-year="{{ year }}">
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </li>
